@@ -1,6 +1,6 @@
-## 金融数学
+# Mathematical Foundations
 
-欢迎来到金融数学！这是金融数学网站<https://sxpyggy.github.io/Financial-Mathematics/>的仓库。
+Welcome to Mathematical Foundations! This the repo of the course website <https://sxpyggy.github.io/Mathematical-Foundations/>.
 
-此网站由授课老师高光远、助教程轶鹏、助教胡夏新管理，欢迎大家反馈意见到助教、微信群、或邮箱<guangyuan.gao@ruc.edu.cn>。
+The repo is maintained by the lecturer Guangyuan Gao and the tutor Yan Cai. If you have any questions, please do not hesitate to contact us via the emails: <guangyuan.gao@ruc.edu.cn> or <2017201678@ruc.edu.cn> .
 
