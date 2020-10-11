@@ -1,7 +1,7 @@
 --- 
 title: "Mathematical Foundations"
 # author: "Financial Mathematics"
-date: "2020-10-11 13:34:54"
+date: "2020-10-11 13:42:41"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -24,7 +24,7 @@ This is the website of Mathematical Foundations. We create this website  to
 
 - Answer the important questions raised by students.
 
-- Clarify the possible confusion due to language.
+- Clarify possible confusions due to language.
 
 **To get the most of mathematics, you should practice as much as possible.**
 
