@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 | Mathematical Foundations</title>
+  <meta name="description" content="The output format is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 | Mathematical Foundations" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="The output format is bookdown::gitbook." />
+  <meta name="github-repo" content="sxpyggy/Mathematical-Foundations" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 | Mathematical Foundations" />
+  
+  <meta name="twitter:description" content="The output format is bookdown::gitbook." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="s2.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Mathematical Foundations</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>👨‍🏫 Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#q-and-a"><i class="fa fa-check"></i>🤔 Q and A</a></li>
+</ul></li>
+<li class="part"><span><b>I 📖 SUMMARY</b></span></li>
+<li class="chapter" data-level="1" data-path="linear-equations.html"><a href="linear-equations.html"><i class="fa fa-check"></i><b>1</b> Linear Equations</a></li>
+<li class="chapter" data-level="2" data-path="non-linear-equations.html"><a href="non-linear-equations.html"><i class="fa fa-check"></i><b>2</b> Non-linear Equations</a></li>
+<li class="part"><span><b>II 💡 SOLUTIONS</b></span></li>
+<li class="chapter" data-level="" data-path="s2.html"><a href="s2.html"><i class="fa fa-check"></i>Chapter 2</a><ul>
+<li class="chapter" data-level="" data-path="s2.html"><a href="s2.html#mq2"><i class="fa fa-check"></i>Multiple choice questions</a><ul>
+<li class="chapter" data-level="" data-path="s2.html"><a href="s2.html#mq2.1"><i class="fa fa-check"></i>Question 1</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="s2.html"><a href="s2.html#eq2"><i class="fa fa-check"></i>Examination questions</a><ul>
+<li class="chapter" data-level="" data-path="s2.html"><a href="s2.html#eq2.1"><i class="fa fa-check"></i>Question 1</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html"><i class="fa fa-check"></i>Chapter 1</a><ul>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1"><i class="fa fa-check"></i>Multiple choice questions</a><ul>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.1"><i class="fa fa-check"></i>Question 1</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.2"><i class="fa fa-check"></i>Question 2</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.3"><i class="fa fa-check"></i>Question 3</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.4"><i class="fa fa-check"></i>Question 4</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.5"><i class="fa fa-check"></i>Question 5</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.6"><i class="fa fa-check"></i>Question 6</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.7"><i class="fa fa-check"></i>Question 7</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.8"><i class="fa fa-check"></i>Question 8</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.9"><i class="fa fa-check"></i>Question 9</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.10"><i class="fa fa-check"></i>Question 10</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.11"><i class="fa fa-check"></i>Question 11</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.12"><i class="fa fa-check"></i>Question 12</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.13"><i class="fa fa-check"></i>Question 13</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.14"><i class="fa fa-check"></i>Question 14</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.15"><i class="fa fa-check"></i>Question 15</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.16"><i class="fa fa-check"></i>Question 16</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.17"><i class="fa fa-check"></i>Question 17</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#mq1.18"><i class="fa fa-check"></i>Question 18</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#eq1"><i class="fa fa-check"></i>Examination questions</a><ul>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#eq1.6"><i class="fa fa-check"></i>Question 6</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#eq1.7"><i class="fa fa-check"></i>Question 7</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#eq1.8"><i class="fa fa-check"></i>Question 8</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#eq1.9"><i class="fa fa-check"></i>Question 9</a></li>
+<li class="chapter" data-level="" data-path="s1.html"><a href="s1.html#eq1.10"><i class="fa fa-check"></i>Question 10</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/sxpyggy/Mathematical-Foundations" target="blank">GitHub repo</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Mathematical Foundations</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="s1" class="section level1 unnumbered">
+<h1>Chapter 1</h1>
+<div id="mq1" class="section level2 unnumbered">
+<h2>Multiple choice questions</h2>
+<div id="mq1.1" class="section level3 unnumbered">
+<h3>Question 1</h3>
+<p><strong>Answer : E</strong></p>
+<p>Q is on the horizontal axis, so we transform the function:
+<span class="math display">\[ 3P+4Q=9 \]</span>
+Transposition of terms, we get:
+<span class="math display">\[ 3P=-4Q+9 \]</span>
+Divide both sides by 3, we get:
+<span class="math display">\[ P=\frac{-4Q+9}{3}  \]</span>
+Simplify it:
+<span class="math display">\[ P=-\frac{4}{3}Q+3 \]</span>
+Thus, the slope of the line is <strong>-4/3</strong>.</p>
+<p>When Q=0, we get P=3, so the intercept on the P-axis is <strong>3</strong>.</p>
+</div>
+<div id="mq1.2" class="section level3 unnumbered">
+<h3>Question 2</h3>
+<p><strong>Answer : B</strong>
+<span class="math display">\[ 5(3x-4y)-(2x-3y) \]</span>
+<span class="math display">\[ =(15x-20y)-(2x-3y) \]</span>
+<span class="math display">\[ = 15x-20y-2x+3y \]</span>
+<span class="math display">\[ = 15x-2x-20y+3y \]</span>
+<span class="math display">\[ = (15-2)x+(-20+3)y \]</span>
+<span class="math display">\[ = 13x-17y \]</span>
+Thus, we choose B.</p>
+</div>
+<div id="mq1.3" class="section level3 unnumbered">
+<h3>Question 3</h3>
+<p><strong>Answer : C</strong></p>
+<p>Q is the quantity and must be greater than or equal to 0.
+<span class="math display">\[ Q\geq0 \]</span>
+Thus, <span class="math display">\[ Q=4P-25\geq0 \]</span>
+<span class="math display">\[ 4P\geq25 \]</span>
+<span class="math display">\[ P\geq \frac{25}{4} \]</span>
+Thus, we choose C.</p>
+</div>
+<div id="mq1.4" class="section level3 unnumbered">
+<h3>Question 4</h3>
+<p><strong>Answer : D</strong></p>
+<p><span class="math display">\[ 2(x+3)-(5x+1)\geq4 \]</span>
+<span class="math display">\[ (2x+6)-(5x+1)\geq4 \]</span>
+<span class="math display">\[ 2x+6-5x-1\geq4 \]</span>
+<span class="math display">\[ (2x-5x)+(6-1)\geq4 \]</span>
+<span class="math display">\[ -3x+5\geq4 \]</span>
+Transposition of terms, we get:
+<span class="math display">\[ 5-4\geq3x \]</span>
+<span class="math display">\[ 1\geq3x \]</span>
+Divide both sides by 3, we get:
+<span class="math display">\[ \frac{1}{3}\geq x \]</span>
+Thus, we choose D.</p>
+</div>
+<div id="mq1.5" class="section level3 unnumbered">
+<h3>Question 5</h3>
+<p><strong>Answer : A</strong></p>
+<p><span class="math display">\[\begin{cases} 4x-2y =3\\ 6x-3y=4 \end{cases}\]</span>
+In order to solve the system of equations, multiply both sides of equation 1 by 3 and multiply both sides of equation 2 by 2, we get:
+<span class="math display">\[\begin{cases} 3(4x-2y) =3\times3\\ 2(6x-3y)=2\times4 \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 12x-6y =9\\ 12x-6y=8 \end{cases}\]</span>
+Equation 1 minus equation 2, we get:
+<span class="math display">\[ 0=1 \]</span>
+This is a meaningless equation. Thus, the simultaneous equations has no solution, we choose A.</p>
+</div>
+<div id="mq1.6" class="section level3 unnumbered">
+<h3>Question 6</h3>
+<p><strong>Answer : A</strong></p>
+<p>To get the equilibrium price, we calculate with simultaneous equations.
+<span class="math display">\[\begin{cases} P=-3Q+75\\ P=2Q+15 \end{cases}\]</span>
+Equation 1 minus equation 2, we get:
+<span class="math display">\[ 0=(-3Q+75)-(2Q+15) \]</span>
+<span class="math display">\[ 0=-3Q+75-2Q-15 \]</span>
+<span class="math display">\[ 0=-5Q+60 \]</span>
+<span class="math display">\[ 5Q=60 \]</span>
+<span class="math display">\[ Q=12 \]</span>
+Substitute the Q value into any equation (here we choose equation 1), we get the P value.
+<span class="math display">\[ P=-3\times 12 +75 \]</span>
+<span class="math display">\[ P=39 \]</span>
+Thus, we choose A.</p>
+</div>
+<div id="mq1.7" class="section level3 unnumbered">
+<h3>Question 7</h3>
+<p><strong>Answer : E</strong></p>
+<p>As a fixed tax of $5 is imposed, so supply equation is changed to be :
+<span class="math display">\[ P-5=2Q+15 \]</span>
+<span class="math display">\[ P=2Q+20 \]</span>
+To get the post-tax equilibrium price, we calculate with simultaneous equations.
+<span class="math display">\[\begin{cases} P=-3Q+75\\ P=2Q+20 \end{cases}\]</span>
+Equation 1 minus equation 2, we get:
+<span class="math display">\[ 0=(-3Q+75)-(2Q+20) \]</span>
+<span class="math display">\[ 0=-3Q+75-2Q-20 \]</span>
+<span class="math display">\[ 0=-5Q+55 \]</span>
+<span class="math display">\[ 5Q=55 \]</span>
+<span class="math display">\[ Q=11 \]</span>
+Substitute the Q value into any equation (here we choose equation 1), we get the P value.
+<span class="math display">\[ P=-3\times 11 +75 \]</span>
+<span class="math display">\[ P=42 \]</span>
+Thus, we choose E.</p>
+</div>
+<div id="mq1.8" class="section level3 unnumbered">
+<h3>Question 8</h3>
+<p><strong>Answer : B</strong></p>
+<p>we get a and b with simultaneous equations.
+<span class="math display">\[\begin{cases} 6=a\times10+b\\ 4.5=a\times25+b \end{cases}\]</span>
+Equation 1 minus equation 2, we get:
+<span class="math display">\[ 6-4.5=(10-25)a \]</span>
+<span class="math display">\[ 1.5=-15a \]</span>
+<span class="math display">\[ a=-0.1\]</span>
+Substitute the a value into any equation (here we choose equation 1), we get the b value.
+<span class="math display">\[ 6=-0.1\times 10 + b\]</span>
+<span class="math display">\[ 6=-1 + b\]</span>
+<span class="math display">\[ b=7 \]</span>
+Thus, the function is:
+<span class="math display">\[ P=-0.1Q+7 \]</span>
+Substitute the Q=14 into the function, we get:
+<span class="math display">\[ P=-0.1\times14+7 \]</span>
+<span class="math display">\[ P=5.6 \]</span>
+Thus, we choose B.</p>
+</div>
+<div id="mq1.9" class="section level3 unnumbered">
+<h3>Question 9</h3>
+<p><strong>Answer : D</strong></p>
+<p>As <span class="math display">\[ Y=C+G+I \]</span>
+Substitute C,G,I into the function, we get:
+<span class="math display">\[ Y=(0.8Y+20)+30+90 \]</span>
+<span class="math display">\[ Y-0.8Y=20+90+30 \]</span>
+<span class="math display">\[ 0.2Y = 140 \]</span>
+<span class="math display">\[ Y=700 \]</span>
+When government expenditure rises by 1 unit, in other words,<strong>G=31</strong>. Substitute C=0.8Y+20,G=31,I=90 into the function, we get:
+<span class="math display">\[ Y=C+G+I
+    =0.8Y+20+31+90 \]</span>
+<span class="math display">\[ 0.2Y = 151 \]</span>
+<span class="math display">\[ Y=705 \]</span>
+As <span class="math display">\[ 705-700=5 \]</span>
+So the change in the value of Y is 5. We choose D.</p>
+</div>
+<div id="mq1.10" class="section level3 unnumbered">
+<h3>Question 10</h3>
+<p><strong>Answer : A</strong></p>
+<p>As <span class="math display">\[ Y=C+S \]</span>
+Substitute C=0.75Y+4,S=3.5 into the function, we get:
+<span class="math display">\[ Y=0.75Y+4+3.5 \]</span>
+<span class="math display">\[ 0.25Y = 7.5 \]</span>
+<span class="math display">\[ Y= 30 \]</span>
+Thus, we choose A.</p>
+</div>
+<div id="mq1.11" class="section level3 unnumbered">
+<h3>Question 11</h3>
+<p><strong>Answer : D</strong></p>
+<p>As you can see the graphs in the textbook, the slope of supply function is positive, so <strong>a&gt;0</strong>;The slope of demand function is negative, so <strong>c&lt;0</strong>;Both the demand function and the supply function are in the first quadrant, and he intercept on the P-axis is greater than 0 for the supply function and the demand function, so <strong>b&gt;0</strong> and <strong>d&gt;0</strong>. Also, in order to make the equilibrium to exist, <strong>d&gt;b</strong>.</p>
+</div>
+<div id="mq1.12" class="section level3 unnumbered">
+<h3>Question 12</h3>
+<p><strong>Answer : D</strong></p>
+<p><span class="math display">\[ x=\frac{5y+12}{y+3} \]</span>
+<span class="math display">\[ x(y+3)=5y+12 \]</span>
+<span class="math display">\[ xy+3x=5y+12 \]</span>
+<span class="math display">\[ xy-5y=12-3x \]</span>
+<span class="math display">\[ (x-5)y=3(4-x) \]</span>
+<span class="math display">\[ y = \frac{3(4-x)}{x-5} \]</span>
+Thus, we choose D.</p>
+</div>
+<div id="mq1.13" class="section level3 unnumbered">
+<h3>Question 13</h3>
+<p><strong>Answer : C</strong></p>
+<p><span class="math display">\[ \frac{4}{x+2} - \frac{1}{x-1}\\
+ = \frac{4(x-1)-(x+2)}{(x+2)(x-1)}\\
+ = \frac{4x-4-x-2}{(x+2)(x-1)}\\
+ = \frac{3x-6}{(x+2)(x-1)}\\
+ = \frac{3(x-2)}{(x+2)(x-1)}\]</span>
+Thus, we choose C.</p>
+</div>
+<div id="mq1.14" class="section level3 unnumbered">
+<h3>Question 14</h3>
+<p><strong>Answer : E</strong></p>
+<p><span class="math display">\[\begin{cases} ax+by=c\\ dx+ey=f \end{cases}\]</span>
+<span class="math display">\[\begin{cases} d(ax+by)=cd\\ a(dx+ey)=af \end{cases}\]</span>
+<span class="math display">\[\begin{cases} adx+bdy=cd\\ adx+aey=af \end{cases}\]</span>
+Equation 1 minus equation 2, we get:
+<span class="math display">\[ (bd-ae)y=cd-af \]</span>
+<span class="math display">\[ y = \frac{cd-af}{bd-ae}\\
+     = \frac{af-cd}{ae-bd}\]</span>
+Substitute y into any equation(we choose equation 1), we get:
+<span class="math display">\[ ax+b\frac{af-cd}{ae-bd}=c \]</span>
+<span class="math display">\[ ax = c-b\frac{af-cd}{ae-bd}\\
+      = \frac{c(ae-bd)-b(af-cd)}{ae-bd}\\
+      = \frac{ace-bcd-abf+bcd}{ae-bd}\\
+      = \frac{ace-abf}{ae-bd}\\
+      = \frac{a(ce-bf)}{ae-bd}\]</span>
+Divide both sides by a, we get:
+<span class="math display">\[ x=\frac{ce-bf}{ae-bd}\]</span>
+Thus, we choose E.</p>
+</div>
+<div id="mq1.15" class="section level3 unnumbered">
+<h3>Question 15</h3>
+<p><strong>Answer : A</strong></p>
+<p>If the system of equations has infinitely many solutions, this shows that the number of equation elements is more than the number of equations.
+<span class="math display">\[\begin{cases} x-2y+5z=7\\ 2x+3y-2z=-3\\ 4x-y+8z=k \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 4(x-2y+5z)=4\times7\\ 2(2x+3y-2z)=-3\times2\\ 4x-y+8z=k \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 4x-8y+20z=28\\ 4x+6y-4z=-6\\ 4x-y+8z=k \end{cases}\]</span></p>
+<p>Equation 2 minus equation 1, Equation 2 minus equation 3,we get:
+<span class="math display">\[\begin{cases} 7y-12z=-17\\ 7y-12z=-6-k \end{cases}\]</span>
+The number of equation elements is more than the number of equations, so the above two equations are equivalent, in other words,
+<span class="math display">\[ 7y-12z=-17=-6-k \]</span>
+<span class="math display">\[ k=11 \]</span>
+Thus, we choose A.</p>
+</div>
+<div id="mq1.16" class="section level3 unnumbered">
+<h3>Question 16</h3>
+<p><strong>Answer : A</strong></p>
+<p>As <span class="math display">\[ Y=C+I+G+X-M \]</span>
+<span class="math display">\[ Y=(0.7Y+100)+30+50+80-(0.1Y+50) \]</span>
+<span class="math display">\[ Y=0.7Y+100+30+50+80-0.1Y-50 \]</span>
+<span class="math display">\[ Y-0.7Y+0.1Y= 100+30+50+80-50 \]</span>
+<span class="math display">\[ 0.4Y=210 \]</span>
+<span class="math display">\[ Y=525 \]</span>
+Thus, we choose A.</p>
+</div>
+<div id="mq1.17" class="section level3 unnumbered">
+<h3>Question 17</h3>
+<p><strong>Answer : D</strong></p>
+<p><span class="math display">\[\begin{cases} 3x+5y-z=-12\\ 2x-3y+2z=22\\ x+4y-3z=-10 \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 2(3x+5y-z)=-12\times2\\ 3(2x-3y+2z)=22\times3\\ 6(x+4y-3z)=-10\times6 \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 6x+10y-2z)=-24\\ 6x-9y+6z)=66\\ 6x+24y-18z)=-60 \end{cases}\]</span>
+Equation 1 minus equation 2, Equation 3 minus equation 2,we get:
+<span class="math display">\[\begin{cases} 19y-8z=-90\\ 33y-24z=-126 \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 3(19y-8z)=-90\times3\\ 33y-24z=-126 \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 57y-24z=-270\\ 33y-24z=-126 \end{cases}\]</span>
+Equation 1 minus equation 2,we get:
+<span class="math display">\[ 24y=-144 \]</span>
+<span class="math display">\[ y=-6 \]</span>
+Substitute y into one of the equation(we choose equation 33y-24z=-126), we get:
+<span class="math display">\[ 33\times(-6)-24z=-126 \]</span>
+<span class="math display">\[ z=-3 \]</span>
+Thus, we choose D.</p>
+</div>
+<div id="mq1.18" class="section level3 unnumbered">
+<h3>Question 18</h3>
+<p><strong>Answer : C</strong></p>
+<p>As the price of a complementary good decreases, the demand of the good that we care about increases, the supply of the good doesn’t shift.Thus, the demand curve of the good shifts right, and the equilibrium price and quantity both increases. We choose C.</p>
+</div>
+</div>
+<div id="eq1" class="section level2 unnumbered">
+<h2>Examination questions</h2>
+<p>Questions 1-5 are homework. The solutions to them will be announced later.</p>
+<div id="eq1.6" class="section level3 unnumbered">
+<h3>Question 6</h3>
+<p><strong>(a)</strong>
+<span class="math display">\[ C+I=0.75Y+18+22\\
+      =0.75Y+40 \]</span>
+When Y=0,
+<span class="math display">\[ C+I = 0.75\times0+40\\
+       =40 \]</span>
+When Y=100,
+<span class="math display">\[ C+I = 0.75\times100+40\\
+       =115 \]</span>
+When Y=200,
+<span class="math display">\[ C+I = 0.75\times200+40\\
+       =190 \]</span></p>
+<p>The graphs are omitted, please refer to textbook answers(page 673 ).
+<span class="math display">\[ Y = C+I 
+     = 0.75Y+40 \]</span></p>
+<p><span class="math display">\[ 0.25Y=40 \]</span>
+<span class="math display">\[ Y=160 \]</span>
+Thus, the equilibrium level of national income is <strong>160</strong>.</p>
+<p>The equilibrium level of national income decreases, you can refer to textbook answers(page 673 ).</p>
+</div>
+<div id="eq1.7" class="section level3 unnumbered">
+<h3>Question 7</h3>
+<p><strong>(a)</strong>
+These goods are substitutable. As in the demand function for good 1, the coefficient of P2 is positive, which means that when the demand for good 1 rises, the price of good 2 increases so that the demand for good 2 decreases. It is the same in the demand function for good 2.</p>
+<p><strong>(b)</strong>
+To get the equilibrium price and quantity,we use <span class="math display">\[ Q_D = Q_S\]</span>
+<span class="math display">\[\begin{cases} 120-2P_1+P_2=-7+7P_1\\ 168+3P_1-7P_2=-3+20P_2 \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 9P_1-P_2=127\\ 3P_1-27P_2=-171 \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 9P_1-P_2=127\\ 3(3P_1-27P_2)=-171\times3 \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 9P_1-P_2=127\\ 3(3P_1-27P_2)=-171\times3 \end{cases}\]</span>
+Equation 1 minus equation 2,we get:
+<span class="math display">\[80P_2=640 \]</span>
+<span class="math display">\[ P_2 = 8 \]</span>
+Substitute the value into any equation (we choose equation 1)
+<span class="math display">\[ 120-2P_1+8 ==-7+7P_1 \]</span>
+<span class="math display">\[ P_1=15 \]</span>
+<span class="math display">\[ Q_1 = -7+7P_1\\
+       = -7+7\times15\\
+       = 98 \]</span>
+<span class="math display">\[ Q_2 = -3+20P_2\\
+       = -3+20\times8\\
+       = 157 \]</span>
+The equilibrium price and quantity for good 1 are 15 and 98;The equilibrium price and quantity for good 2 are 8 and 157.</p>
+<p><strong>(c)</strong>
+As there is a subsidy of $4 on good 1, the subsidy have effect on the supply function, so
+<span class="math display">\[ P_1&#39; = P_1 + 4 \]</span>
+So <span class="math display">\[ Q_{D_1} = 120-2P_1+P_2  ;  Q_{S2} = -7+7{P_1}&#39;\\
+      Q_{D_1} = 168+3P_1-7P_2  ;  Q_{S2} = -3+20{P_2}\]</span>
+<span class="math display">\[\begin{cases} 120-2P_1+P_2=-7+7(P_1+4)\\ 168+3P_1-7P_2=-3+20P_2 \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 9P_1-P_2=99\\ 3P_1-27P_2=-171 \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 9P_1-P_2=99\\ 3(3P_1-27P_2)=-171\times3 \end{cases}\]</span><br />
+Equation 1 minus equation 2,we get:
+<span class="math display">\[80P_2=612\]</span>
+<span class="math display">\[ P_2 = 7.65 \]</span>
+Substitute the value into any equation (we choose equation 1)
+<span class="math display">\[ 120-2P_1+P_2=-7+7(P_1+4) \]</span>
+<span class="math display">\[ 120-2P_1+7.65=-7+7(P_1+4) \]</span>
+<span class="math display">\[P_1 = 11.85 \]</span>
+<span class="math display">\[11.85-15=-3.15 \\
+  7.65-8=-0.35 \]</span>
+For good 1, the equilibrium price reduces by $3.15;For good 2, the equilibrium price reduces by $0.35.</p>
+</div>
+<div id="eq1.8" class="section level3 unnumbered">
+<h3>Question 8</h3>
+<p><strong>(a)</strong><br />
+<span class="math display">\[ 3f+4s \leq 3000 \]</span>
+Substitute s=270 into the function, we get:
+<span class="math display">\[ 3f+4\times270 \leq 3000 \]</span>
+<span class="math display">\[ 3f \leq 3000-4\times270  \]</span>
+<span class="math display">\[ 3f\leq 1920  \]</span>
+<span class="math display">\[ f \leq 640 \]</span>
+Thus, the maximum amount of flour is 640kg.</p>
+<p><strong>(b)</strong></p>
+<p>(i)<span class="math display">\[ P=\frac{36}{2Q+5}\\
+       =\frac{36}{2\times3.5+5}\\
+       =\frac{36}{12}\\
+       =3 \]</span>
+(ii)<span class="math display">\[ P=2.4\\
+        =\frac{36}{2Q+5}\]</span>
+<span class="math display">\[ 2.4(2Q+5)=36 \]</span>
+<span class="math display">\[ 4.8Q+12=36 \]</span>
+<span class="math display">\[ 4.8Q=24 \]</span>
+<span class="math display">\[ Q=5 \]</span>
+(iii)<span class="math display">\[ P=\frac{36}{2Q+5} \]</span>
+<span class="math display">\[ P(2Q+5)=36 \]</span>
+<span class="math display">\[ 2PQ+5P=36 \]</span>
+<span class="math display">\[ 2PQ=36-5P \]</span>
+<span class="math display">\[ Q=\frac{36-5P}{2P} \]</span>
+<strong>(c)</strong></p>
+<p>As <span class="math display">\[ Y=C+S \]</span>
+<span class="math display">\[ S=Y-C\\
+    =Y-\frac{Y^2 + 100}{Y+2}\\
+    =\frac{Y(Y+2)-(Y^2 + 100)}{Y+2}\\
+    =\frac{Y^2+2Y-Y^2-100}{Y+2}\\
+    =\frac{2Y-100}{Y+2}\]</span></p>
+</div>
+<div id="eq1.9" class="section level3 unnumbered">
+<h3>Question 9</h3>
+<p><strong>(a)</strong>
+Firstly, we get x and y expressed by m and n.
+<span class="math display">\[\begin{cases} 2x+6y=1\\ 3x+my=n \end{cases}\]</span><br />
+<span class="math display">\[\begin{cases} 3(2x+6y)=3\\ 2(3x+my)=2n \end{cases}\]</span><br />
+Equation 1 minus equation 2,we get:
+<span class="math display">\[(18-2m)y=3-2n\]</span>
+<span class="math display">\[ y=\frac{3-2n}{2(9-m)}\]</span>
+Substitute the value of y into any equation (we choose equation 1)
+<span class="math display">\[ 2x+6(\frac{3-2n}{2(9-m)}) =1\]</span>
+<span class="math display">\[ x= \frac{6n-m}{2(9-m)} \]</span>
+Thus, when m=9, the system fail to possess a unique solution.</p>
+<p>When m=9,
+<span class="math display">\[\begin{cases} 2x+6y=1\\ 3x+9y=n \end{cases}\]</span><br />
+<span class="math display">\[\begin{cases} 2x+6y=1\\ \frac{2}{3}(3x+9y)=\frac{2}{3}n \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 2x+6y=1\\ 2x+3y=\frac{2}{3}n\end{cases}\]</span>
+Equation 1 minus equation 2,we get:
+<span class="math display">\[ 0 = 1-\frac{2}{3}n \]</span>
+When m=9, n = 1.5, the above equation(0=1-2/3n) exits, the two equations in the system of equations are equivalent, so the system has infinite solutions;When<span class="math display">\[ m=9, n \neq1.5\]</span>, the above equation(0=1-2/3n) doesn’t exit, the system doesn’t have any solution.</p>
+<p><strong>(b)</strong>
+<span class="math display">\[\begin{cases} 5P_1-3P_2=39\\ 2P_1+4P_2-3P_3=28\\ 3P_2+P_3=29 \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 5P_1-3P_2=39\\ 2P_1+4P_2-3P_3=28\\ 3(3P_2+P_3)=29\times3 \end{cases}\]</span>
+Equation 2 plus equation 3,we get:
+<span class="math display">\[\begin{cases} 5P_1-3P_2=39\\ 2P_1+13P_2=115 \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 2(5P_1-3P_2)=78\\ 5(2P_1+13P_2)=575 \end{cases}\]</span>
+Equation 2 minus equation 1,we get:
+<span class="math display">\[ 71P_2=497 \]</span>
+<span class="math display">\[ P_2=7 \]</span>
+As<span class="math display">\[ 5P_1-3P_2=39 \]</span>
+<span class="math display">\[ 5P_1 -3 \times 7 =39 \]</span>
+<span class="math display">\[ P_1 =12 \]</span>
+As <span class="math display">\[ 3P_2+P_3=29 \]</span>
+<span class="math display">\[ 3\times7+P_3=29 \]</span>
+<span class="math display">\[ P_3 = 8 \]</span></p>
+</div>
+<div id="eq1.10" class="section level3 unnumbered">
+<h3>Question 10</h3>
+<p><strong>(a)</strong><br />
+As <span class="math display">\[ Y=C+I;M_S=L_1+L_2 \]</span>
+<span class="math display">\[\begin{cases} Y=(0.6Y+60)+(-40r+1300)\\ 600=0.2Y+(-30r+40) \end{cases}\]</span>
+<span class="math display">\[\begin{cases} 0.4Y=-40r+1360\\ 0.2Y=30r+560 \end{cases}\]</span><br />
+<span class="math display">\[\begin{cases} 0.5(0.4Y)=0.5(-40r+1360)\\ 0.2Y=30r+560 \end{cases}\]</span><br />
+<span class="math display">\[\begin{cases} 0.2Y=-20r+680\\ 0.2Y=30r+560 \end{cases}\]</span><br />
+Equation 2 minus equation 1,we get:
+<span class="math display">\[ 0 = 50r-120 \]</span>
+<span class="math display">\[ r = 2.4 \]</span>
+As<span class="math display">\[ 600=0.2Y+(-30r+40) \]</span>
+<span class="math display">\[Y=3160\]</span>
+The equilibrium values of Y and r will decrease when the MPC decreases. As the MPC decreases, the slope of the function(C = 0.6Y+60) decreases, we assume it decreases to be a, then a&lt;0.6 .
+As <span class="math display">\[ Y=C+I\\
+       =aY+60-40R+1300\]</span>
+<span class="math display">\[(1-a)Y=-40r+1360 \]</span>
+<span class="math display">\[Y = \frac{-40}{1-a}r+\frac{1360}{1-a} \]</span>
+When we draw a LM-IS curves(refer to the textbook on page 674), the slope of IS curve increases, the curve moves to the lower left.So the equilibrium values of Y and r will decrease when the MPC decreases.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="s2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

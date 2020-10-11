@@ -1,121 +1,448 @@
-# 💡 Solutions to homework {-}
+# (PART) 💡 SOLUTIONS {-}
 
 
 
-**[⏱️ 随堂测验](#exe)**
+# Chapter 2 {- #s2}
 
-## Week 3 {- #w3s}
+## Multiple choice questions {- #mq2}
 
-**Problem 1**
+### Question 1 {- #mq2.1}   
 
-The most convenient comparison date is **the end of the 40th year**.
+## Examination questions {- #eq2}
 
-For Susan:
+### Question 1 {- #eq2.1}   
 
-$$100s_{\overline{40}\mid}=Xa_{\overline{15}\mid}$$ at $8\%$
+# Chapter 1 {- #s1}
 
-$$X=3026.55$$
+## Multiple choice questions {- #mq1}
 
-For Jeff:
+### Question 1 {- #mq1.1} 
 
-$$100s_{\overline{40}\mid}=Ya_{\overline{15}\mid}$$ at $10\%$
+**Answer : E**
 
-$$Y=5818.93$$
+Q is on the horizontal axis, so we transform the function:
+$$ 3P+4Q=9 $$
+Transposition of terms, we get: 
+$$ 3P=-4Q+9 $$
+Divide both sides by 3, we get:
+$$ P=\frac{-4Q+9}{3}  $$
+Simplify it:
+$$ P=-\frac{4}{3}Q+3 $$
+Thus, the slope of the line is **-4/3**.
 
-$$Y-X=2792.38$$
+When Q=0, we get P=3, so the intercept on the P-axis is **3**.
 
-**Problem 2**
+### Question 2 {- #mq1.2} 
 
-Amount to be paid at age $65$ to guarantee a monthly life income of $\$3000$ is
+**Answer : B**
+$$ 5(3x-4y)-(2x-3y) $$
+$$ =(15x-20y)-(2x-3y) $$
+$$ = 15x-20y-2x+3y $$
+$$ = 15x-2x-20y+3y $$
+$$ = (15-2)x+(-20+3)y $$
+$$ = 13x-17y $$
+Thus, we choose B.
 
-$$3000\times\frac{\$1000}{9.65}$$
+### Question 3 {- #mq1.3} 
 
-$AV$ of contributions at age $65$ is $X\ddot s_{\overline{300}\mid}$ at $\frac{2}{3}\%$
+**Answer : C**
 
-Namely, $$X=\frac{(3000)\frac{\$1000}{9.65}}{\ddot s_{\overline{300}\mid}}=324.72$$
+Q is the quantity and must be greater than or equal to 0.
+$$ Q\geq0 $$
+Thus, $$ Q=4P-25\geq0 $$
+$$ 4P\geq25 $$
+$$ P\geq \frac{25}{4} $$
+Thus, we choose C.
 
-**Problem 3**
+### Question 4 {- #mq1.4} 
 
-Paul withdraws $100\ddot a_{\overline{120}\mid 0.01}=7039.76$ at the end of years $6$ to $20$.
+**Answer : D**
 
-$P$ is the $PV$ of these withdrawals at $8\%$
+$$ 2(x+3)-(5x+1)\geq4 $$
+$$ (2x+6)-(5x+1)\geq4 $$
+$$ 2x+6-5x-1\geq4 $$
+$$ (2x-5x)+(6-1)\geq4 $$
+$$ -3x+5\geq4 $$
+Transposition of terms, we get: 
+$$ 5-4\geq3x $$
+$$ 1\geq3x $$
+Divide both sides by 3, we get:
+$$ \frac{1}{3}\geq x $$
+Thus, we choose D.
 
-$$P=7039.76v^5a_{\overline{15}\mid}=41009.68$$
+### Question 5 {- #mq1.5} 
 
-## Week 2 {- #w2s}
+**Answer : A**
 
-**Problem 1**
+$$\begin{cases} 4x-2y =3\\ 6x-3y=4 \end{cases}$$ 
+In order to solve the system of equations, multiply both sides of equation 1 by 3 and multiply both sides of equation 2 by 2, we get:
+$$\begin{cases} 3(4x-2y) =3\times3\\ 2(6x-3y)=2\times4 \end{cases}$$ 
+$$\begin{cases} 12x-6y =9\\ 12x-6y=8 \end{cases}$$
+Equation 1 minus equation 2, we get:
+$$ 0=1 $$
+This is a meaningless equation. Thus, the simultaneous equations has no solution, we choose A.
 
-AV in 2 years = 1173.54, so we set: 
-$$1173.54=1000\left(1+\frac{K}{4}\right)^{4}\left(1-\frac{K}{4}\right)^{-4}=1000\left(\frac{4+K}{4-K}\right)^{4}$$
-Thus,
-$$\frac{4+K}{4-K}=1.17354^{1/4}=1.0408$$
-Solving for K, we get:
-$$K=0.08$$
+### Question 6 {- #mq1.6} 
 
-**Problem 2**
+**Answer : A**
 
-AV in 8 years:
+To get the equilibrium price, we calculate with simultaneous equations.
+$$\begin{cases} P=-3Q+75\\ P=2Q+15 \end{cases}$$
+Equation 1 minus equation 2, we get:
+$$ 0=(-3Q+75)-(2Q+15) $$
+$$ 0=-3Q+75-2Q-15 $$
+$$ 0=-5Q+60 $$
+$$ 5Q=60 $$
+$$ Q=12 $$
+Substitute the Q value into any equation (here we choose equation 1), we get the P value.
+$$ P=-3\times 12 +75 $$
+$$ P=39 $$
+Thus, we choose A.
 
-**Fund X**:$$e^{(0.05)(8)}=e^{0.4}$$
-**Fund Y**:$$\left(1+\frac{j}{2}\right)^{(2)(8)}=\left(1+\frac{j}{2}\right)^{16}$$
-At the end of eight years, Fund $X$ is 1.05 times as large as Fund $Y$, so we set:
-$$e^{0.4}=1.05\left(1+\frac{j}{2}\right)^{16}$$
-Thus,
-$$j=2\left[\left(\frac{e^{0.4}}{1.05}\right)^{\frac{1}{16}}-1\right]=0.044$$
+### Question 7 {- #mq1.7} 
 
-**Problem 3**
+**Answer : E**
 
-Fund $X$ equals Fund $Y$ at the end of four years, so we set:
-$$1000(1.04)^{6}(1+i)=1000e^{\int_{0}^{4} \frac{1}{(15-t)} dt}$$
-Then,
-$$1000e^{\int_{0}^{4} \frac{1}{(15-t)} dt}=1000e^{-\ln(15-t)|_{0}^{4}}=1000\left(\frac{15}{11}\right)$$
-
-Thus,
-$$(1+i)=\frac{15}{(11)(1.04)^6}=1.0777$$
-$$i=0.0777$$
-
-## Week 1 {- #w1s}
-
-**Problem 1** 
-
-To compare the two funds, we assume that equal investments of $X$ are made at time 0.
-
-John's **accumulation function** is $$t^2+2t+1$$
-
-Edna's **accumulation function** is $$2t^{2}+1$$
-
-To determine when Edna's investment exceeds John's, we set:
-
-$$ X(2t^{2}+1)>X(t^{2}+2t+1)$$
-
-which reduces to:
-
-$$t^{2}-2t>0$$ or $$t(t-2)>0$$
-
-Thus, Edna's fund exceeds John's after 2 years.
-
-
-**Problem 2**
-
-$$PV=1000v+2000v^{3}=2540.15 $$
-
-since $$v=1.075^{-1}$$
-
-
-**Problem 3**
-
-Discounting at $10\%$, the net present values are $4.59$,$-2.36$ and $-9.54$ for Projects A,B,and C respectively.
-
-Take Project A as an example:
-
-$$NPV=-800+500v+500v^{2}-175v^{3}+100v^{4}=4.59$$ 
-
-since $$v=1.10^{-1}$$
-
-Hence, only Project A should be funded.
+As a fixed tax of $5 is imposed, so supply equation is changed to be :
+$$ P-5=2Q+15 $$
+$$ P=2Q+20 $$
+To get the post-tax equilibrium price, we calculate with simultaneous equations.
+$$\begin{cases} P=-3Q+75\\ P=2Q+20 \end{cases}$$
+Equation 1 minus equation 2, we get:
+$$ 0=(-3Q+75)-(2Q+20) $$
+$$ 0=-3Q+75-2Q-20 $$
+$$ 0=-5Q+55 $$
+$$ 5Q=55 $$
+$$ Q=11 $$
+Substitute the Q value into any equation (here we choose equation 1), we get the P value.
+$$ P=-3\times 11 +75 $$
+$$ P=42 $$
+Thus, we choose E.
 
 
+### Question 8 {- #mq1.8} 
 
+**Answer : B**
+
+we get a and b with simultaneous equations.
+$$\begin{cases} 6=a\times10+b\\ 4.5=a\times25+b \end{cases}$$
+Equation 1 minus equation 2, we get:
+$$ 6-4.5=(10-25)a $$
+$$ 1.5=-15a $$
+$$ a=-0.1$$
+Substitute the a value into any equation (here we choose equation 1), we get the b value.
+$$ 6=-0.1\times 10 + b$$
+$$ 6=-1 + b$$
+$$ b=7 $$
+Thus, the function is:
+$$ P=-0.1Q+7 $$
+Substitute the Q=14 into the function, we get:
+$$ P=-0.1\times14+7 $$
+$$ P=5.6 $$
+Thus, we choose B.
+
+### Question 9 {- #mq1.9} 
+
+**Answer : D**
+
+As $$ Y=C+G+I $$
+Substitute C,G,I into the function, we get:
+$$ Y=(0.8Y+20)+30+90 $$
+$$ Y-0.8Y=20+90+30 $$
+$$ 0.2Y = 140 $$
+$$ Y=700 $$
+When government expenditure rises by 1 unit, in other words,**G=31**. Substitute C=0.8Y+20,G=31,I=90 into the function, we get:
+$$ Y=C+G+I
+    =0.8Y+20+31+90 $$
+$$ 0.2Y = 151 $$
+$$ Y=705 $$
+As $$ 705-700=5 $$
+So the change in the value of Y is 5. We choose D.
+
+### Question 10 {- #mq1.10} 
+
+**Answer : A**
+
+As $$ Y=C+S $$
+Substitute C=0.75Y+4,S=3.5 into the function, we get:
+$$ Y=0.75Y+4+3.5 $$
+$$ 0.25Y = 7.5 $$
+$$ Y= 30 $$
+Thus, we choose A.
+
+### Question 11 {- #mq1.11} 
+
+**Answer : D**
+
+As you can see the graphs in the textbook, the slope of supply function is positive, so **a>0**;The slope of demand function is negative, so **c<0**;Both the demand function and the supply function are in the first quadrant, and he intercept on the P-axis is greater than 0 for the supply function and the demand function, so **b>0** and **d>0**. Also, in order to make the equilibrium to exist, **d>b**.
+
+### Question 12 {- #mq1.12} 
+
+**Answer : D**
+
+$$ x=\frac{5y+12}{y+3} $$
+$$ x(y+3)=5y+12 $$
+$$ xy+3x=5y+12 $$
+$$ xy-5y=12-3x $$
+$$ (x-5)y=3(4-x) $$
+$$ y = \frac{3(4-x)}{x-5} $$
+Thus, we choose D.
+
+### Question 13 {- #mq1.13} 
+
+**Answer : C**
+
+$$ \frac{4}{x+2} - \frac{1}{x-1}\\
+ = \frac{4(x-1)-(x+2)}{(x+2)(x-1)}\\
+ = \frac{4x-4-x-2}{(x+2)(x-1)}\\
+ = \frac{3x-6}{(x+2)(x-1)}\\
+ = \frac{3(x-2)}{(x+2)(x-1)}$$
+Thus, we choose C.
+
+### Question 14 {- #mq1.14} 
+
+**Answer : E**
+
+$$\begin{cases} ax+by=c\\ dx+ey=f \end{cases}$$
+$$\begin{cases} d(ax+by)=cd\\ a(dx+ey)=af \end{cases}$$
+$$\begin{cases} adx+bdy=cd\\ adx+aey=af \end{cases}$$
+Equation 1 minus equation 2, we get:
+$$ (bd-ae)y=cd-af $$
+$$ y = \frac{cd-af}{bd-ae}\\
+     = \frac{af-cd}{ae-bd}$$
+Substitute y into any equation(we choose equation 1), we get:
+$$ ax+b\frac{af-cd}{ae-bd}=c $$
+$$ ax = c-b\frac{af-cd}{ae-bd}\\
+      = \frac{c(ae-bd)-b(af-cd)}{ae-bd}\\
+      = \frac{ace-bcd-abf+bcd}{ae-bd}\\
+      = \frac{ace-abf}{ae-bd}\\
+      = \frac{a(ce-bf)}{ae-bd}$$
+Divide both sides by a, we get:
+$$ x=\frac{ce-bf}{ae-bd}$$
+Thus, we choose E.
+
+### Question 15 {- #mq1.15} 
+
+**Answer : A**
+
+If the system of equations has infinitely many solutions, this shows that the number of equation elements is more than the number of equations.
+$$\begin{cases} x-2y+5z=7\\ 2x+3y-2z=-3\\ 4x-y+8z=k \end{cases}$$
+$$\begin{cases} 4(x-2y+5z)=4\times7\\ 2(2x+3y-2z)=-3\times2\\ 4x-y+8z=k \end{cases}$$
+$$\begin{cases} 4x-8y+20z=28\\ 4x+6y-4z=-6\\ 4x-y+8z=k \end{cases}$$
+
+Equation 2 minus equation 1, Equation 2 minus equation 3,we get:
+$$\begin{cases} 7y-12z=-17\\ 7y-12z=-6-k \end{cases}$$
+The number of equation elements is more than the number of equations, so the above two equations are equivalent, in other words,
+$$ 7y-12z=-17=-6-k $$
+$$ k=11 $$
+Thus, we choose A.
+
+### Question 16 {- #mq1.16}
+
+**Answer : A**
+
+As $$ Y=C+I+G+X-M $$
+$$ Y=(0.7Y+100)+30+50+80-(0.1Y+50) $$
+$$ Y=0.7Y+100+30+50+80-0.1Y-50 $$
+$$ Y-0.7Y+0.1Y= 100+30+50+80-50 $$
+$$ 0.4Y=210 $$
+$$ Y=525 $$
+Thus, we choose A.
+
+### Question 17 {- #mq1.17}
+
+**Answer : D**
+
+$$\begin{cases} 3x+5y-z=-12\\ 2x-3y+2z=22\\ x+4y-3z=-10 \end{cases}$$
+$$\begin{cases} 2(3x+5y-z)=-12\times2\\ 3(2x-3y+2z)=22\times3\\ 6(x+4y-3z)=-10\times6 \end{cases}$$
+$$\begin{cases} 6x+10y-2z)=-24\\ 6x-9y+6z)=66\\ 6x+24y-18z)=-60 \end{cases}$$
+Equation 1 minus equation 2, Equation 3 minus equation 2,we get:
+$$\begin{cases} 19y-8z=-90\\ 33y-24z=-126 \end{cases}$$
+$$\begin{cases} 3(19y-8z)=-90\times3\\ 33y-24z=-126 \end{cases}$$
+$$\begin{cases} 57y-24z=-270\\ 33y-24z=-126 \end{cases}$$
+Equation 1 minus equation 2,we get:
+$$ 24y=-144 $$
+$$ y=-6 $$
+Substitute y into one of the equation(we choose equation 33y-24z=-126), we get:
+$$ 33\times(-6)-24z=-126 $$
+$$ z=-3 $$
+Thus, we choose D.
+
+### Question 18 {- #mq1.18}
+
+**Answer : C**
+
+As the price of a complementary good decreases, the demand of the good that we care about increases, the supply of the good doesn't shift.Thus, the demand curve of the good shifts right, and the equilibrium price and quantity both increases. We choose C.
+
+## Examination questions {- #eq1}
+
+Questions 1-5 are homework. The solutions to them will be announced later.
+
+### Question 6 {- #eq1.6}
+
+**(a)**
+$$ C+I=0.75Y+18+22\\
+      =0.75Y+40 $$
+When Y=0, 
+$$ C+I = 0.75\times0+40\\
+       =40 $$
+When Y=100, 
+$$ C+I = 0.75\times100+40\\
+       =115 $$
+When Y=200, 
+$$ C+I = 0.75\times200+40\\
+       =190 $$
+       
+The graphs are omitted, please refer to textbook answers(page 673 ).
+$$ Y = C+I 
+     = 0.75Y+40 $$
+
+$$ 0.25Y=40 $$
+$$ Y=160 $$
+Thus, the equilibrium level of national income is **160**.
+
+The equilibrium level of national income decreases, you can refer to textbook answers(page 673 ).
+
+### Question 7 {- #eq1.7}
+
+**(a)**
+These goods are substitutable. As in the demand function for good 1, the coefficient of P2 is positive, which means that when the demand for good 1 rises, the price of good 2 increases so that the demand for good 2 decreases. It is the same in the demand function for good 2.
+
+**(b)**
+To get the equilibrium price and quantity,we use $$ Q_D = Q_S$$
+$$\begin{cases} 120-2P_1+P_2=-7+7P_1\\ 168+3P_1-7P_2=-3+20P_2 \end{cases}$$
+$$\begin{cases} 9P_1-P_2=127\\ 3P_1-27P_2=-171 \end{cases}$$
+$$\begin{cases} 9P_1-P_2=127\\ 3(3P_1-27P_2)=-171\times3 \end{cases}$$
+$$\begin{cases} 9P_1-P_2=127\\ 3(3P_1-27P_2)=-171\times3 \end{cases}$$
+Equation 1 minus equation 2,we get:
+$$80P_2=640 $$
+$$ P_2 = 8 $$
+Substitute the value into any equation (we choose equation 1)
+$$ 120-2P_1+8 ==-7+7P_1 $$
+$$ P_1=15 $$
+$$ Q_1 = -7+7P_1\\
+       = -7+7\times15\\
+       = 98 $$
+$$ Q_2 = -3+20P_2\\
+       = -3+20\times8\\
+       = 157 $$
+The equilibrium price and quantity for good 1 are 15 and 98;The equilibrium price and quantity for good 2 are 8 and 157.
+
+**(c)**
+As there is a subsidy of $4 on good 1, the subsidy have effect on the supply function, so 
+$$ P_1' = P_1 + 4 $$
+So $$ Q_{D_1} = 120-2P_1+P_2  ;  Q_{S2} = -7+7{P_1}'\\
+      Q_{D_1} = 168+3P_1-7P_2  ;  Q_{S2} = -3+20{P_2}$$
+$$\begin{cases} 120-2P_1+P_2=-7+7(P_1+4)\\ 168+3P_1-7P_2=-3+20P_2 \end{cases}$$
+$$\begin{cases} 9P_1-P_2=99\\ 3P_1-27P_2=-171 \end{cases}$$
+$$\begin{cases} 9P_1-P_2=99\\ 3(3P_1-27P_2)=-171\times3 \end{cases}$$      
+Equation 1 minus equation 2,we get:
+$$80P_2=612$$
+$$ P_2 = 7.65 $$
+Substitute the value into any equation (we choose equation 1)
+$$ 120-2P_1+P_2=-7+7(P_1+4) $$
+$$ 120-2P_1+7.65=-7+7(P_1+4) $$
+$$P_1 = 11.85 $$
+$$11.85-15=-3.15 \\
+  7.65-8=-0.35 $$
+For good 1, the equilibrium price reduces by $3.15;For good 2, the equilibrium price reduces by $0.35.
+
+### Question 8 {- #eq1.8} 
+
+**(a)**       
+$$ 3f+4s \leq 3000 $$
+Substitute s=270 into the function, we get:
+$$ 3f+4\times270 \leq 3000 $$
+$$ 3f \leq 3000-4\times270  $$
+$$ 3f\leq 1920  $$
+$$ f \leq 640 $$
+Thus, the maximum amount of flour is 640kg.
+       
+**(b)**
+
+(i)$$ P=\frac{36}{2Q+5}\\
+       =\frac{36}{2\times3.5+5}\\
+       =\frac{36}{12}\\
+       =3 $$
+(ii)$$ P=2.4\\
+        =\frac{36}{2Q+5}$$
+    $$ 2.4(2Q+5)=36 $$
+    $$ 4.8Q+12=36 $$
+    $$ 4.8Q=24 $$
+    $$ Q=5 $$
+(iii)$$ P=\frac{36}{2Q+5} $$
+     $$ P(2Q+5)=36 $$
+     $$ 2PQ+5P=36 $$
+     $$ 2PQ=36-5P $$
+     $$ Q=\frac{36-5P}{2P} $$
+**(c)**
+
+As $$ Y=C+S $$
+$$ S=Y-C\\
+    =Y-\frac{Y^2 + 100}{Y+2}\\
+    =\frac{Y(Y+2)-(Y^2 + 100)}{Y+2}\\
+    =\frac{Y^2+2Y-Y^2-100}{Y+2}\\
+    =\frac{2Y-100}{Y+2}$$
+       
+### Question 9 {- #eq1.9}
+
+**(a)** 
+Firstly, we get x and y expressed by m and n.
+$$\begin{cases} 2x+6y=1\\ 3x+my=n \end{cases}$$      
+$$\begin{cases} 3(2x+6y)=3\\ 2(3x+my)=2n \end{cases}$$      
+Equation 1 minus equation 2,we get:
+$$(18-2m)y=3-2n$$
+$$ y=\frac{3-2n}{2(9-m)}$$
+Substitute the value of y into any equation (we choose equation 1)
+$$ 2x+6(\frac{3-2n}{2(9-m)}) =1$$
+$$ x= \frac{6n-m}{2(9-m)} $$
+Thus, when m=9, the system fail to possess a unique solution.
+
+When m=9,
+$$\begin{cases} 2x+6y=1\\ 3x+9y=n \end{cases}$$      
+$$\begin{cases} 2x+6y=1\\ \frac{2}{3}(3x+9y)=\frac{2}{3}n \end{cases}$$ 
+$$\begin{cases} 2x+6y=1\\ 2x+3y=\frac{2}{3}n\end{cases}$$ 
+Equation 1 minus equation 2,we get:
+$$ 0 = 1-\frac{2}{3}n $$
+When m=9, n = 1.5, the above equation(0=1-2/3n) exits, the two equations in the system of equations are equivalent, so the system has infinite solutions;When$$ m=9, n \neq1.5$$, the above equation(0=1-2/3n) doesn't exit, the system doesn't have any solution.
+
+**(b)**
+$$\begin{cases} 5P_1-3P_2=39\\ 2P_1+4P_2-3P_3=28\\ 3P_2+P_3=29 \end{cases}$$ 
+$$\begin{cases} 5P_1-3P_2=39\\ 2P_1+4P_2-3P_3=28\\ 3(3P_2+P_3)=29\times3 \end{cases}$$ 
+Equation 2 plus equation 3,we get:
+$$\begin{cases} 5P_1-3P_2=39\\ 2P_1+13P_2=115 \end{cases}$$ 
+$$\begin{cases} 2(5P_1-3P_2)=78\\ 5(2P_1+13P_2)=575 \end{cases}$$ 
+Equation 2 minus equation 1,we get:
+$$ 71P_2=497 $$
+$$ P_2=7 $$
+As$$ 5P_1-3P_2=39 $$
+$$ 5P_1 -3 \times 7 =39 $$
+$$ P_1 =12 $$
+As $$ 3P_2+P_3=29 $$
+$$ 3\times7+P_3=29 $$
+$$ P_3 = 8 $$
+
+### Question 10 {- #eq1.10}
+
+**(a)**      
+As $$ Y=C+I;M_S=L_1+L_2 $$
+$$\begin{cases} Y=(0.6Y+60)+(-40r+1300)\\ 600=0.2Y+(-30r+40) \end{cases}$$
+$$\begin{cases} 0.4Y=-40r+1360\\ 0.2Y=30r+560 \end{cases}$$       
+$$\begin{cases} 0.5(0.4Y)=0.5(-40r+1360)\\ 0.2Y=30r+560 \end{cases}$$          
+$$\begin{cases} 0.2Y=-20r+680\\ 0.2Y=30r+560 \end{cases}$$           
+Equation 2 minus equation 1,we get:
+$$ 0 = 50r-120 $$
+$$ r = 2.4 $$
+As$$ 600=0.2Y+(-30r+40) $$
+$$Y=3160$$
+The equilibrium values of Y and r will decrease when the MPC decreases. As the MPC decreases, the slope of the function(C = 0.6Y+60) decreases, we assume it decreases to be a, then a<0.6 .
+As $$ Y=C+I\\
+       =aY+60-40R+1300$$
+   $$(1-a)Y=-40r+1360 $$
+   $$Y = \frac{-40}{1-a}r+\frac{1360}{1-a} $$
+When we draw a LM-IS curves(refer to the textbook on page 674), the slope of IS curve increases, the curve moves  to the lower left.So the equilibrium values of Y and r will decrease when the MPC decreases.
+
+     
+       
 
 
