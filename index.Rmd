@@ -30,7 +30,15 @@ This website is maintained by <u>Guangyuan Gao</u> and <u>Yan Cai</u>. If you ha
 
 ## 🖊️ Homework {-}
 
-Examination Questions 1-5 on page 116 is due on **2020/10/13 (18:00 Beijing Time)**.
+❗ Examination Questions 1-5 on page 116 is due on **2020/10/13 (18:00 Beijing Time)**. 
+
+Homework is normally due right before the next lecture. 
+
+You should send either a typed document or a scanned/photoed handwritten manuscript to the tutor's email address <2017201678@ruc.edu.cn>. You should show the **calculation/proof details** in your submitted document.
+
+Please name the subject of your email as `your uni id-chapter-question numbers`, e.g.,  `u2017201678-Chapter1-Q1-Q5`.
+
+The solutions to homework will be announced in this website. 
 
 To get the most of mathematics, you should practice as much as possible.
 Our homework is far from enough to master the knowledge in the textbook. **You are strongly recommended to try all the questions in the textbook.**
@@ -38,17 +46,6 @@ Our homework is far from enough to master the knowledge in the textbook. **You a
 ## 🤔 Q and A {-}
 
 **I will update this section frequently to answer the important questions. You are welcomed to ask questions!**
-
-**👉 Homework** (2020/10/11)
-
-Homework is due right before the next lecture. 
-You should send either a typed document or a scanned/photoed handwritten manuscript to the tutor's email address <2017201678@ruc.edu.cn>. 
-
-You should show the **calculation/proof details** in the homework.
-
-Please name the subject of your email as `your uni id-chapter-question numbers`, e.g., for this week `u2017201678-Chapter1-Q1-Q5`.
-
-The solutions to homework will be announced in this website. 
 
 **👉 Components of the final result** (2020/10/11)
  
