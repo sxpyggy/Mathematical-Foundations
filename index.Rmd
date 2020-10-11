@@ -26,12 +26,14 @@ This is the website of Mathematical Foundations. We create this website  to
 
 - Clarify possible confusions due to language.
 
-**To get the most of mathematics, you should practice as much as possible.**
-
-**Our homework is far from enough to master the knowledge in the textbook. You are strongly recommended to try all the questions in the textbook.**
-
-
 This website is maintained by <u>Guangyuan Gao</u> and <u>Yan Cai</u>. If you have any questions, please don't hesitate to contact us via <guangyuan.gao@ruc.edu.cn> or <2017201678@ruc.edu.cn>.
+
+## 🖊️ Homework {-}
+
+Examination Questions 1-5 on page 116 is due on **2020/10/13 (18:00 Beijing Time)**.
+
+To get the most of mathematics, you should practice as much as possible.
+Our homework is far from enough to master the knowledge in the textbook. **You are strongly recommended to try all the questions in the textbook.**
 
 ## 🤔 Q and A {-}
 
