@@ -90,4 +90,86 @@
 
 # Non-linear Equations
 
+#### Quadratic functions {-}
+
+- **Quadratic function** A function of the form $f(x)=ax^2+bx+c$ where $a\neq0.$
+
+- **Solution formula** The solution of a quadratic equation $ax^2+bx+c=0$ is given by $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.$$
+
+- **Square root** The solutions of the equation $x^2=c$ which are written as $\pm\sqrt{c}$.
+
+- **Discriminant** The number $b^2-4ac$, which is used to indicate the number of solutions of the quadratic equation $ax^2+bx+c=0.$
+
+- **Parabola** The shape of the graph of a quadratic function.
+
+- **U-shaped curve** A curve bends upwards, like the letter U.
+
+#### Polynomials {-}
+
+- **Polynomial** A function of the form $a_nx^n+a_{n-1}x^{n-1}+\ldots+a_0$. The highest power $n$ is called the degree of the polynomial.
+
+- **Continuous** When $\lim_{x\rightarrow a}f(x)=f(a)$ at all points in the domain.
+
+- **Discontinuous** When the graph of the function has jumps or gaps.
+
+#### Profit analysis {-}
+
+- **Total cost** The sum of the total variable and fixed costs: $TC = TVC + FC$.
+
+- **Fixed costs** Total costs that are independent of output.
+
+- **Variable costs** Total costs that change according to the amount of output produced.
+
+- **Average cost** Total cost per unit of output: $AC = TC/Q$.
+
+- **Rectangular hyperbola (L-shaped curve)** A hyperbola with horizontal and vertical asymptotes bending like the letter L, such as the function $f(x)=a+b/x$.
+
+- **Total revenue** A firm’s total earnings from the sales of a good: $TR = PQ$.
+
+- **Profit** Total revenue minus total cost: $\pi = TR − TC$.
+
+#### Indices and logarithms {-}
+
+- $M=b^n$ is called the **exponential form** of $M$ to **base** $b$. The number $n$ is referred to as the **index, power, exponent** or the logarithm of $M$ to base $b$, $\log_b M=n$.
+
+- **Four rules of indices**
+
+  1. $$b^m\times b^n=b^{m+n}$$
+  
+  2. $$b^m\div b^n=b^{m-n}$$
+  
+  3. $$(b^m)^n=b^{mn}$$
+  
+  4. $$(ab)^n=a^nb^n$$
+  
+- **Three rules of logarithms**
+  
+  1. $$\log_b(x\times y)=\log_bx +\log_b y$$
+  
+  2. $$\log_b(x\div y)=\log_bx -\log_b y$$
+  
+  3. $$\log_bx^m=m\log_bx$$
+  
+- **Homogeneous function** A function with the property that when all of the inputs are multiplied by a constant, $\lambda$, the output is multiplied by $\lambda^n$ where $n$ is the degree of homogeneity.
+
+#### The exponential and natural logarithm functions
+
+- **Euler number** $$e=\lim_{m\rightarrow\infty}\left(1+\frac{1}{m}\right)$$
+
+- **Exponential function** The function $f(x)=e^x=\exp(x)$ in which the base is the number $e=2.7183$.
+
+- **Natural logarithm** A logarithm to base $e$. IF $M=e^n$ then n is the natural logarithm of $M$, and we write $n=\ln M$.
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
 
