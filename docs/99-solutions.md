@@ -276,7 +276,163 @@ As the price of a complementary good decreases, the demand of the good that we c
 
 ## Examination questions {- #eq1}
 
-Questions 1-5 are homework. The solutions to them will be announced later.
+
+### Question 1 {- #eq1.1}
+
+**(a)**
+The graphs are omitted, please refer to textbook answers(page 672 ).
+
+**(b)**
+The distance is **12**.
+
+**(c)** 
+EatMeNow : y=9+0.5x
+
+Deliver4U: y=1.25x 
+$$\begin{cases} y=9+0.5x\\ y=1.25x \end{cases}$$
+Equation 1 minus equation 2,we get:
+$$ 0=9+0.5x-1.25x\\
+    =9-0.75x$$
+$$ x=12 $$
+It's the same answer you got in part (b).
+
+### Question 2 {- #eq1.2}
+
+**(a)**
+When P=5, substitute P=5 into the demand function, we can get the quantity demand, that is:
+$$ Q_D = 400-15\times5\\
+       = 325 $$
+When P=5, substitute P=5 into the supply function, we can get the quantity supply, that is:
+$$ Q_S = -50+10\times5\\
+       = 0 $$
+When P=10, 
+$$ Q_D = 400-15\times10\\
+       = 250 $$
+$$ Q_S = -50+10\times10\\
+       = 50 $$
+When P=15, 
+$$ Q_D = 400-15\times15\\
+       = 175 $$
+$$ Q_S = -50+10\times15\\
+       = 100 $$
+When P=20, 
+$$ Q_D = 400-15\times20\\
+       = 100 $$
+$$ Q_S = -50+10\times20\\
+       = 150 $$
+When P=25, 
+$$ Q_D = 400-15\times25\\
+       = 25 $$
+$$ Q_S = -50+10\times25\\
+       = 200 $$
+The graphs are omitted, please refer to textbook answers(page 673 ).
+
+**(b)**
+$$\begin{cases} Q=400-15P\\ Q=-50+10P \end{cases}$$
+Equation 1 minus equation 2,we get:
+$$ 0=(400-15P)-(-50+10P)\\
+    =450-25P $$
+$$ P=18 $$
+$$ Q=400-15P\\
+    =400-15\times18\\
+    =130 $$
+Thus, the equilibrium price is 18 and the equilibrium quantity is 130.
+
+**(c)**
+As you can see in the graphs, to the left of the equilibrium point, when P<18, the demand curve is above the supply curve, there is excess demand.
+ 
+**(d)**
+When a fixed tax of $5 is imposed, the supply function is changed, the price in the supply function is reduced by 5 on each good, that is:
+$$ Q_S = -50+10(P-5) \\
+       = -100+10P$$
+$$\begin{cases} Q=400-15P\\ Q=-100+10P \end{cases}$$
+Equation 1 minus equation 2,we get:
+$$ 0=(400-15P)-(-100+10P)\\
+    =500-25P $$
+$$ P=20 $$
+$$ Q=400-15P\\
+    =400-15\times20\\
+    =100 $$
+Thus, the new equilibrium price is 20 and the equilibrium quantity is 100.
+
+
+### Question 3 {- #eq1.3}
+
+**(a)**
+P and Q are negatively correlated in the demand equation; P and Q are positively correlated in the supply equation.Thus, **the first equation represents the demand curve, and the second equation represents the supply curve.**
+
+**(b)**
+
+In order to get the values of slope and vertical intercept, we transform the equation.
+$$ Q+3P=48 $$
+$$ 3P=-Q+48 $$
+$$ P=-\frac{Q}{3}+16 $$
+Thus, the coefficient of Q is the slope, and when Q=0, the P value obtained is the vertical intercept.So for the demand curve, the slope is -1/3, the vertical intercept is 16.
+
+**(c)**
+$$\begin{cases} Q+3P=48\\ Q-2P=30 \end{cases}$$
+Equation 1 minus equation 2,we get:
+$$ 3P+2P=48-30 $$
+$$ 5P=18 $$
+$$ P=3.6 $$
+Substitute P into one of the equation(we choose equation 1), we get:
+$$ Q+3\times3.6=48 $$
+$$ Q=37.2 $$
+Thus, the equilibrium price is 3.6, the equilibrium quantity is 37.2.
+
+### Question 4 {- #eq1.4}
+
+**(a)**
+As $$ Y=C+I+G $$
+Substitute C,I,G into the function, we get:
+$$ Y= (0.75Y_d+150)+100+250 \\
+    = [0.75(Y-T)+150]+100+250\\
+    = [0.75(Y-50)+150]+100+250\\
+    = 0.75Y-0.75\times50+150+100+250$$
+$$ Y-0.75Y=-37.5+150+100+250$$
+$$ 0.25Y=462.5 $$
+$$ Y=1850 $$
+Thus, the equilibrium level of national income is 1850.
+
+**(b)**
+$$ Y = C+I+G\\
+     = (0.75Y_d+150)+(I+G)\\
+     = [0.75(Y-T)+150]+(I+G)\\
+     = 0.75Y-0.75T+150+(I+G)$$
+$$ 0.25Y = -0.75T+150+(I+G) $$
+Substitute Y=1850+20=1870,T=50 into the function, we get:
+$$ 0.25\times1870 = -0.75\times50+150+(I+G) $$
+$$ I+G = 355 $$
+The total increase in G and I is **5** as follows.
+$$ 355-(100+250)=5 $$
+
+### Question 5 {- #eq1.5}
+
+**(a)**
+
+Substitute K=40,L=30 into the function, we get:
+$$ Q = \frac{KL}{K+2L}\\
+     = \frac{40\times30}{40+2\times30}\\
+     = \frac{1200}{100}\\
+     = 12$$
+
+**(b)**
+
+Substitute Q=4,K=10 into the function, we get:
+$$ 4 = \frac{10L}{10+2L}$$
+$$ 40+8L = 10L $$
+$$ 40 = 2L $$
+$$ L=20 $$
+
+**(c)**
+$$ Q = \frac{KL}{K+2L}$$
+$$ Q(K+2L)=KL $$
+$$ QK+2QL=KL $$
+$$ KL-QK=2QL $$
+$$ K(L-Q)=2QL $$
+$$ K=\frac{2QL}{L-Q} $$
+
+
 
 ### Question 6 {- #eq1.6}
 

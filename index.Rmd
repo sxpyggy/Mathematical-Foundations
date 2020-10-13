@@ -30,9 +30,9 @@ This website is maintained by <u>Guangyuan Gao</u> and <u>Yan Cai</u>. If you ha
 
 ## 🖊️ Homework {-}
 
-❗ Examination Questions 1-5 on page 116 is due on **2020/10/13 (18:00 Beijing Time)**. 
+❗ Examination Questions 1-5 on page 193 is due on **2020/10/20 18:00 Beijing Time)**. 
 
-Homework is normally due right before the next lecture. 
+❗ We  will continue with GNP applications in more details  and explain the exponential and logarithm function more in the next lecture. So homework is due on next Tuesday.
 
 You should send either a typed document or a scanned/photoed handwritten manuscript to the tutor's email address <2017201678@ruc.edu.cn>. You should show the **calculation/proof details** in your submitted document.
 

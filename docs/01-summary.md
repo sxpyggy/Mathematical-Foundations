@@ -152,7 +152,7 @@
   
 - **Homogeneous function** A function with the property that when all of the inputs are multiplied by a constant, $\lambda$, the output is multiplied by $\lambda^n$ where $n$ is the degree of homogeneity.
 
-#### The exponential and natural logarithm functions
+#### The exponential and natural logarithm functions {-}
 
 - **Euler number** $$e=\lim_{m\rightarrow\infty}\left(1+\frac{1}{m}\right)$$
 
