@@ -1,7 +1,7 @@
 --- 
 title: "Mathematical Foundations"
 # author: "Financial Mathematics"
-date: "2020-10-13 22:16:21"
+date: "2020-10-13 22:31:25"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -30,7 +30,7 @@ This website is maintained by <u>Guangyuan Gao</u> and <u>Yan Cai</u>. If you ha
 
 ## 🖊️ Homework {-}
 
-❗ Examination Questions 1-5 on page 193 is due on **2020/10/20 18:00 Beijing Time)**. 
+❗ Examination Questions 1-5 on page 193 is due on **2020/10/20 (18:00 Beijing Time)**. 
 
 ❗ We  will continue with GNP applications in more details  and explain the exponential and logarithm function more in the next lecture. So homework is due on next Tuesday.
 
@@ -46,6 +46,10 @@ Our homework is far from enough to master the knowledge in the textbook. **You a
 ## 🤔 Q and A {-}
 
 **I will update this section frequently to answer the important questions. You are welcomed to ask questions!**
+
+**👉 Procedure v.s. Final answer** (2020/10/13)
+
+<img src="./plots/homework-mark.png" width="50%" style="display: block; margin: auto;" />
 
 **👉 Components of the final result** (2020/10/11)
  
