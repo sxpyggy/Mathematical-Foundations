@@ -154,7 +154,7 @@
 
 #### The exponential and natural logarithm functions {-}
 
-- **Euler number** $$e=\lim_{m\rightarrow\infty}\left(1+\frac{1}{m}\right)$$
+- **Euler number** $$e=\lim_{m\rightarrow\infty}\left(1+\frac{1}{m}\right)^m$$
 
 - **Exponential function** The function $f(x)=e^x=\exp(x)$ in which the base is the number $e=2.7183$.
 
