@@ -160,6 +160,36 @@
 
 - **Natural logarithm** A logarithm to base $e$. IF $M=e^n$ then n is the natural logarithm of $M$, and we write $n=\ln M$.
 
+# Mathematics of Finance
+
+#### Percentages
+
+**Index number** The scale factor of a variable measured from the base year multiplied by 100.
+
+**Inflation** The percentage increase in the level of prices over a $12$-month period.
+
+**Nominal data** Monetary values prevailing at the time that they were measured.
+
+**Real data** Monetary values adjusted to take inflation into account.
+
+#### Compound interest
+
+**Simple interest** The interest which is paid directly to the investor instead of being added to the original amount.
+
+**Compound interest** The interest which is added on to the initial investment, so that this will itself gain interest in subsequent time periods.
+
+**Continuous compounding** The limiting value when interest is compounded with ever-increasing frequency.
+
+**Annual percentage rate** The equivalent annual interest paid for a loan, taking into account the compounding over a variety of time periods.
+
+**Principal** The value of the original sum invested.
+
+**Future value** The final value of an investment after one or more time periods.
+
+
+
+
+
 
   
   
