@@ -8,11 +8,202 @@ knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 
 ## Multiple choice questions {- #mq2}
 
-### Question 1 {- #mq2.1}   
+
+### Question 1 {- #mq2.1}
+
+**Answer : B**
+
+It is obvious to choose B.
+
+### Question 2 {- #mq2.2}
+
+**Answer : D**
+
+As $$ 3x^2-7x+1 =0 $$
+Then $$ x= \frac{-b \pm \sqrt{b^2-4ac}}{2a}\\
+    = \frac{7 \pm \sqrt{37}}{6}$$
+
+### Question 3 {- #mq2.3}
+
+**Answer : C**
+
+As $$ \pi = TR - TC ; TR=PQ$$
+From the question, we can get $$ TC = 20+2Q $$
+As $$ P+2Q=24 $$
+Then $$P = -2Q+24 $$
+$$ \pi = TR-TC \\
+       = PQ-TC\\
+       = (-2Q+24)Q-(20+2Q)\\
+       = -2Q^2+22Q-20 $$
+
+### Question 4 {- #mq2.4}
+
+**Answer : B**
+
+From the graph, we can get the expressions of the curves. TR is a quadratic equation about Q, TC is a first order equation about Q.You can substitute the value of the special points into the equation to solve the problem.
+$$  TR = -2Q^2+200Q  $$
+$$ TC = 55Q+500 $$
+$$ \pi = TR-TC \\
+       = (-2Q^2+200Q) - (55Q+500) \\
+       = -2Q^2+145Q-500 $$
+When $$ Q=-\frac{b}{2a}\\
+         =\frac{145}{4} $$
+Substitute the value of Q into the equation to get the maximum profit.
+$$ \pi = -2\times (\frac{145}{4})^2+145\times \frac{145}{4}-500\\
+       = 2128.125$$
+It is closest to 2100, so we choose B.
+
+### Question 5 {- #mq2.5}
+
+**Answer : C**
+
+$$ TC=300Q+80000 $$
+When TC=123800
+Then $$ 123800=TC=300Q+80000 $$
+$$ Q=146 $$
+
+### Question 6 {- #mq2.6}
+
+**Answer : D**
+
+$$ Q=f(K,L) $$ is said to be homogeneous if $$ f(\lambda K, \lambda L)=\lambda^n f(K,L) $$
+As $$ f(K, L)= 8 \sqrt{L^2K}+2KL $$
+$$ f(\lambda K, \lambda L)=8 \sqrt{(\lambda L)^2\lambda K}+2(\lambda K)(\lambda L) \\
+  =8 \lambda^\frac{3}{2} \sqrt{L^2K}+2 \lambda^2 KL\\
+  \neq\lambda^n f(K,L) $$
+Thus, it is not homogeneous, we choose D.
+
+### Question 7 {- #mq2.7}
+
+**Answer : C**
+
+As$$ TC=3Q^2+50 $$,
+Thus $$ AC = \frac{TC}{Q}\\
+           = 3Q+\frac{50}{Q} $$
+          
+It is obviously that we choose C.
+
+### Question 8 {- #mq2.8}
+
+**Answer : A**
+
+$$ log_a14 - log_a7 +2log_ax - 3log_ay - log_a1  \\
+  =log_a14 - log_a7 +log_ax^2 - log_ay^3 - 0 \\
+  =log_a(\frac{14x^2}{7y^3})\\
+  =log_a(\frac{2x^2}{y^3})$$
+
+### Question 9 {- #mq2.9}
+
+**Answer : A**
+
+$$ 21x^2+cx-10 = 0 $$
+Substitute the value of x=2/7 into the equation, we get c.
+$$ 21(\frac{2}{7})^2+c\frac{2}{7}-10 = 0 $$
+$$ c=29 $$
+$$ 21x^2+29x-10 = 0 $$
+$$ x= \frac{-29 \pm \sqrt{29^2-4\times21\times(-10)}}{2\times21} \\
+    = \frac{-29 \pm 41}{42} \\
+    = \frac{2}{7} or -\frac{5}{3}$$
+
+### Question 10 {- #mq2.10}
+
+**Answer : B**
+
+As $$3P+2Q=60 $$
+Thus $$ P=-\frac{2}{3}Q+20 $$
+As $$ TC = 4Q+13   $$
+
+$$ \pi=TR-TC\\
+      =PQ-TC\\
+      =(-\frac{2}{3}Q+20)Q-(4Q+13) \\
+      =-\frac{2}{3}Q^2+16Q-13 $$
+When $$ \pi =77 $$
+Then $$ 77=-\frac{2}{3}Q^2+16Q-13 $$
+$$ \frac{2}{3}Q^2-16Q+90=0 $$
+$$ Q = \frac{16 \pm \sqrt{(-16)^2-4\times\frac{2}{3}\times90}}{2\times \frac{2}{3}}\\
+     = 9or15$$
+
+### Question 11 {- #mq2.11}
+
+**Answer : D** 
+
+As $$ P \geq 0  $$
+Thus $$ P=15-2Q-Q^2 \geq 0 $$
+This is a one-dimensional quadratic curve with a downward opening,we can get :
+$$ -5\leq Q \leq 3  $$
+As $$ Q \geq 0  $$
+Thus $$ 0\leq Q \leq 3  $$
+Thus the largest possible value Q is 3.
+
+### Question 12 {- #mq2.12}
+
+**Answer : E** 
+
+$$  V(t)=Ae^{0.05t} $$
+As when t=0, V(0)=50,so 
+$$ 50=Ae^{0.05\times0}=A $$
+$$ V(t)=50e^{0.05t} $$
+$$ 175=50e^{0.05t} $$
+$$ t=20ln(\frac{7}{2}) $$
+
+### Question 13 {- #mq2.13}
+
+**Answer : D**
+
+$$ P=Q^2+8Q+25=-Q^2-7Q+273 $$
+$$ 2Q^2+15Q-248=0 $$
+$$ Q = \frac{-15 \pm \sqrt{15^2-4\times2     \times(-248)}}{2\times2} \\
+     =8or-15.5 $$
+As $$ Q \geq 0  $$
+Then $$ Q=8 $$
+$$ P=Q^2+8Q+25\\
+    =153 $$
+Thus, the equilibrium price is 153.
+
+### Question 14 {- #mq2.14}
+
+**Answer : B**
+
+$$ -Q^2+7Q \geq 10 $$
+$$ -Q^2+7Q-10 \geq 0 $$
+This is a one-dimensional quadratic curve with a downward opening,we can get :
+$$ 2\leq Q \leq 5 $$
+
+### Question 15 {- #mq2.15}
+
+**Answer : A**
+
+$$  18e^{-3x}=2e^{-5x} $$
+$$  ln({18e^{-3x}}) = ln({2e^{-5x}})$$
+$$  ln18 -3x=ln2 -5x $$
+$$ 2x = ln2-ln18 \\
+      = ln{\frac{2}{18}}\\
+      = ln{3^{-2}}\\
+      = -2ln3 $$
+$$ x = -ln3 $$
 
 ## Examination questions {- #eq2}
 
-### Question 1 {- #eq2.1}   
+### Question 9 {- #eq2.9}
+
+(a)For IT: $$TC = 1+(0.04Q+0.5)Q$$
+$$ AC = \frac{TC}{Q} \\
+      = \frac{1}{Q}+0.04Q+0.5$$
+      
+For Retail: $$TC = 5+0.5Q$$
+$$ AC = \frac{TC}{Q} \\
+      = \frac{5}{Q}+0.5$$
+
+For Printing: $$TC = Q$$
+$$ AC = \frac{TC}{Q} \\
+      = 1$$
+
+(b)As AC of Printing is 1, this is a straight line, it is B; As AC of Retail is $$\frac{5}{Q}+0.5$$, AC decreases with the increase of Q, it is C;So graph of IT is A.
+
+(c)$$ \frac{1}{Q}+0.04Q+0.5 < 1 $$
+$$ \frac{1}{Q}+0.04Q-0.5 < 0 $$
+$$ 0.04Q^2-0.5Q+1 < 0 $$
+$$ 2.5 < Q < 10 $$ 
 
 # Chapter 1 {- #s1}
 
