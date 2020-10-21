@@ -2,6 +2,15 @@
 
 
 
+
+# Chapter 3 {- #s3}
+
+## Multiple choice questions {- #mq3}
+
+
+### Question 1 {- #mq3.1}
+
+
 # Chapter 2 {- #s2}
 
 ## Multiple choice questions {- #mq2}

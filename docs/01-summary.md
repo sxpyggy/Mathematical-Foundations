@@ -2,6 +2,8 @@
 
 # Linear Equations
 
+We do not contain the last two sections: Transposition of formula and National income determination. They are not examinable. 
+
 #### Algebra {-}
 
 - **Equation** Equality of two algebraic expressions which is true only for certain values of the variable.
@@ -58,6 +60,8 @@
 
 #### Functions {-}
 
+This part is from the Formal Mathematics section of this chapter. 
+
 - **Function** A rule that assigns to each incoming number, $x$, a uniquely defined outgoing number, $y$. 
 
 - **Parameter** A constant whose value affects the specific values but not the general form of a mathematical expression, such as the constants $a, b$ and $c$ in $ax^2 + bx + c$.
@@ -106,6 +110,8 @@
 
 #### Polynomials {-}
 
+This part is contained in the Formal Mathematics part at the end of this chapter. We put it here since it is an extension of quadratic functions.
+
 - **Polynomial** A function of the form $a_nx^n+a_{n-1}x^{n-1}+\ldots+a_0$. The highest power $n$ is called the degree of the polynomial.
 
 - **Continuous** When $\lim_{x\rightarrow a}f(x)=f(a)$ at all points in the domain.
@@ -152,7 +158,7 @@
   
 - **Homogeneous function** A function with the property that when all of the inputs are multiplied by a constant, $\lambda$, the output is multiplied by $\lambda^n$ where $n$ is the degree of homogeneity.
 
-#### The exponential and natural logarithm functions {-}
+#### Exponential and natural logarithm functions {-}
 
 - **Euler number** $$e=\lim_{m\rightarrow\infty}\left(1+\frac{1}{m}\right)^m$$
 
@@ -162,29 +168,75 @@
 
 # Mathematics of Finance
 
-#### Percentages
+#### Percentages {-}
 
-**Index number** The scale factor of a variable measured from the base year multiplied by 100.
+- **Index number** The scale factor of a variable measured from the base year multiplied by 100.
 
-**Inflation** The percentage increase in the level of prices over a $12$-month period.
+- **Inflation** The percentage increase in the level of prices over a $12$-month period.
 
-**Nominal data** Monetary values prevailing at the time that they were measured.
+- **Nominal data** Monetary values prevailing at the time that they were measured.
 
-**Real data** Monetary values adjusted to take inflation into account.
+- **Real data** Monetary values adjusted to take inflation into account.
 
-#### Compound interest
+#### Compound interest {-}
 
-**Simple interest** The interest which is paid directly to the investor instead of being added to the original amount.
+- **Simple interest** The interest which is paid directly to the investor instead of being added to the original amount.
 
-**Compound interest** The interest which is added on to the initial investment, so that this will itself gain interest in subsequent time periods.
+$$S=P\times(1+rt)$$
 
-**Continuous compounding** The limiting value when interest is compounded with ever-increasing frequency.
+- **Compound interest** The interest which is added on to the initial investment, so that this will itself gain interest in subsequent time periods.
 
-**Annual percentage rate** The equivalent annual interest paid for a loan, taking into account the compounding over a variety of time periods.
+$$S=P\times(1+r)^t$$
 
-**Principal** The value of the original sum invested.
+- **Continuous compounding** The limiting value when interest is compounded with ever-increasing frequency.
 
-**Future value** The final value of an investment after one or more time periods.
+$$S=P\times e^{rt}$$
+
+- **Annual percentage rate** The equivalent annual interest paid for a loan, taking into account the compounding over a variety of time periods.
+
+- **Principal** The value of the original sum invested.
+
+- **Future value** The final value of an investment after one or more time periods.
+
+#### Geometric series {-}
+
+- **Arithmetic progression** A sequence of numbers with a constant difference between consecutive terms; the $n$th term takes the form, $a+bn$.
+
+- **Geometric progression** A sequence of numbers with a constant ratio between consecutive terms; the $n$th term takes the form of $ar^{n-1}$. 
+
+- **Geometric ratio** The constant multiplier $r$ in a geometric series.
+
+- **Formula of sum of geometric series** 
+
+$$\sum_{i=1}^n ar^{i-1}=a\left(\frac{r^n-1}{r-1}\right)$$
+
+- **Sinking fund** A fixed sum of money saved at regular intervals which is used to fund some future financial commitment.
+
+#### Investment appraisal {-}
+
+- **Net present value (NPV)** The present value of a revenue flow minus the original cost. NPV is preferred than IRR sometimes.
+
+- **Internal rate of return (IRR)** The interest rate for which the net present value is zero
+
+- **Discount rate** The interest rate that is used when going backwards in time to calculate the present value from a future value.
+
+- **Discounting** The process of working backwards in time to find the present values from a future value.
+
+- **Annuity** A lump-sum investment designed to produce a sequence of equal regular payments over time.
+
+# Differentiation
+
+#### Indefinite integration {-}
+
+
+#### Definite integration {-}
+
+
+
+
+
+
+
 
 
 
