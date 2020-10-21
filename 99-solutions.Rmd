@@ -184,6 +184,191 @@ $$ x = -ln3 $$
 
 ## Examination questions {- #eq2}
 
+
+### Question 1 {- #eq2.1}
+
+(a)$$ Q = 100K^{\frac{2}{3}}L^{\frac{1}{2}} \\
+        = 100\times8^{\frac{2}{3}}25^{\frac{1}{2}} \\
+        = 2000$$
+(b)$$ Q = 9000\\
+        = 100K^{\frac{2}{3}}L^{\frac{1}{2}} \\
+        = 100\times27^{\frac{2}{3}}L^{\frac{1}{2}} \\
+        = 900L^{\frac{1}{2}}  $$
+   $$ L = 100 $$  
+(c)$$ Q = 3200\\
+        = 100K^{\frac{2}{3}}L^{\frac{1}{2}} \\
+        = 100K^{\frac{2}{3}}4^{\frac{1}{2}} \\
+        = 200K^{\frac{2}{3}}  $$
+   $$ K = 64 $$
+(d)$$ f(\lambda K, \lambda L)=100(\lambda K)^{\frac{2}{3}}(\lambda L)^{\frac{1}{2}} \\
+      = \lambda^{\frac{7}{6}}100K^{\frac{2}{3}}L^{\frac{1}{2}} \\
+      = \lambda^{\frac{7}{6}}f(K,L)$$
+Thus this function is **homogeneous**.
+
+As $$ n=\frac{7}{6}>1 $$
+Thus this function is **increasing returns to scale**.
+
+### Question 2 {- #eq2.2}
+
+As $$ TC = 2Q+8;P=8-Q $$
+Thus $$\pi = TR-TC\\
+           = PQ-TC\\
+           = (8-Q)Q-(2Q+8)\\
+           = -Q^2+6Q-8 $$
+The graph is omitted, you can refer to the answers in the textbook.
+
+(a)When the firm break-even, the profit is equal to 0.
+$$ \pi = 0\\
+       = -Q^2+6Q-8 $$
+$$ Q = 2 or 4 $$
+(b)When $$ Q = -\frac{b}{2a}\\
+             = -\frac{6}{-2}\\
+             = 3$$
+$$ \pi_{max}=-3^2+6\times3-8 \\
+            = 1$$
+Thus the maximum profit is 1.
+
+(c)As $$ \pi = TR-TC=PQ-TC $$
+When there is decrease in fixed costs, TC is decreased, profits is increased. And the fixed costs only affects the constant of the quadratic curve, so the curve shifts vertically upwards.
+
+### Question 3 {- #eq2.3}
+
+(a) $$  P=2Q^2+3Q+10=-Q^2-3Q+154 $$ 
+$$  3Q^2+6Q-144 = 0  $$
+$$ Q = 6 or -8 $$
+As $$ Q \geq 0  $$
+Then $$ Q=6 $$
+$$ P = 2Q^2+3Q+10\\
+     = 2\times6^2+3\times6+10 \\
+     = 100$$
+Thus the equilibrium price is 100 and the equilibrium quantity is 6.
+
+(b)If there is a tax of $5 per item, the supply function is changed, that is :
+$$ P-5 = 2Q_S^2+3Q_S+10$$
+$$ P = 2Q_S^2+3Q_S+15 $$
+$$ P = 2Q^2+3Q+15=-Q^2-3Q+154  $$
+$$ 3Q^2+6Q-139 = 0  $$
+$$ Q' = -1 \pm \frac{\sqrt{426}}{3}$$
+As $$ Q \geq 0  $$
+Then $$ Q=-1 + \frac{\sqrt{426}}{3}\\
+         \approx 5.88$$
+$$ P=2Q^2+3Q+15 \approx 101.79$$
+Thus the new values of equilibrium price and quantity are 101.79 and 5.88(round).
+
+The tax paid by consumer is $$ 101.79 - 100=1.79 $$
+The tax paid by producer is $$100+5-101.79=3.21 $$
+
+### Question 4 {- #eq2.4}
+
+(a)$$ TR=PQ \\
+        =(10-Q)Q\\
+        =-Q^2+10Q$$
+$$  \pi = TR-TC\\
+        = (-Q^2+10Q)-(12+2Q)\\
+        = -Q^2+8Q-12$$
+(b)$$  \pi = -Q^2+8Q-12 \geq 3$$
+$$  -Q^2+8Q-15 \geq 0$$
+$$ 3 \leq Q \leq 5 $$
+$$ P=10-Q $$
+$$ Q=10-P $$
+$$ 3 \leq 10-P \leq 5 $$
+$$ 5 \leq P \leq 7 $$
+
+### Question 5 {- #eq2.5}
+
+(a)(i)$$ 5log_ax-2log_ay+log_axy\\
+        =log_ax^5-log_ay^2+log_axy\\
+        =log_a(\frac{x^5xy}{y^2})\\
+        =log_a(\frac{x^6}{y})$$
+   (ii)$$ log_25+\frac{1}{2}log_236-log_2120 \\
+         =log_25+log_6-log_2120\\
+         =log_2\frac{5\times6}{120}\\
+         =log_2\frac{1}{4}\\
+         =log_22^{-2}\\
+         =-2$$
+(b)$$ P=Ab^t  $$
+$$ 1000=Ab^0\\
+   1100=Ab^1\\
+   1210=Ab^2 $$
+$$ A=1000;b=1.1 $$
+$$ P=10001.1^t  $$
+(i)$$ P=10001.1^{10} \approx 2594$$
+(ii)$$ P=10001.1^t \geq 8000 $$
+$$ t\geq \frac{ln8}{ln1.1} \approx 21.817$$
+Thus the number of complete years is **22**.
+
+### Question 6 {- #eq2.6}
+
+(a)$$TC = 2Q+14 $$
+$$ AC = \frac{TC}{Q}\\
+      = \frac{2Q+14}{Q}\\
+      = 2+\frac{14}{Q} $$
+The graphs are omitted.
+
+(b)$$ \pi = TR-TC\\
+          = PQ-TC\\
+          = PQ-(2Q+14)\\
+          = (P-2)Q-14$$
+The constant in the profit function is -14 ,so c=-14.
+
+(c)$$ \pi =aQ^2+bQ-14 $$
+$$\begin{cases} -6=a+b-14\\ 4=36a+6b-14 \end{cases}$$
+$$\begin{cases} a+b=8\\ 36a+6b=18 \end{cases}$$
+$$\begin{cases} a=-1\\ b=9 \end{cases}$$
+
+(d)$$ \pi =-Q^2+9Q-14 $$
+When the profit is equal to 0, we can get the break-even points.
+$$  \pi =-Q^2+9Q-14=0 $$
+$$ Q=7or 2 $$
+When $$Q=-\frac{b}{2a}=4.5 $$ 
+$$ P= -4.5^2+9\times4.5-14 \\
+    = 6.25$$
+Thus the maximum profit is 6.25.
+
+(e)$$ \pi = TR-TC = PQ-TC $$
+$$ TR = \pi + TC \\
+      = -Q^2+9Q-14+2Q+14\\
+      = -Q^2+11Q $$
+$$ PQ = TC = -Q^2+11Q  $$
+$$ P=-Q+11 $$
+
+### Question 7 {- #eq2.7}
+
+(a)(i)$$ \frac{a^5b^3}{2} $$
+(ii)$$4x^2y^4$$
+(iii)$$6$$
+(iv)$$log_b(\frac{xyxz}{\frac{x}{yz}})\\
+    = log_b(xy^2z^2)$$
+    
+(b)$$3^x=2(5^x) $$
+$$ xln3=ln2+xln5 $$
+$$ x=\frac{ln2}{ln3-ln5} \approx -1.36$$
+
+(c)(i)$$ S=2000000(1-e^{-0.4}) \\
+          \approx 659360$$
+(ii)$$S=2000000(1-e^{-0.2t}) \geq 1000000$$
+$$ t \geq 5ln2\approx3.5$$
+(iii) The graph is omitted. 
+
+### Question 8 {- #eq2.8}
+
+(a)$$ V=Ab^t $$
+$$\begin{cases} 45125=Ab^2\\ 40725=Ab^4 \end{cases}$$
+$$A= \frac{45125^2}{40725} \approx 50000$$
+$$b = \sqrt{\frac{40725}{45125}} \approx 0.95 $$
+A is the initial price.
+
+(b)$$ V=Ae^{rt} $$
+$$\begin{cases} 45125=Ae^{2r}\\ 40725=Ae^{4r} \end{cases}$$
+$$ A =\frac{45125^2}{40725} \approx 50000$$
+$$ r = 0.5ln(\frac{40725}{45125})\approx -0.051297 $$
+(c)$$ V=Ae^{rt} $$
+$$ lnV=lnA+rt \\
+      \approx 10.82-0.051297t\\
+      $$
+It is obvious that the graph is a straight line, and the gradient is -0.051297 and the vertical intercept is 10.82.
+
+
 ### Question 9 {- #eq2.9}
 
 (a)For IT: $$TC = 1+(0.04Q+0.5)Q$$
@@ -468,7 +653,6 @@ Thus, we choose D.
 As the price of a complementary good decreases, the demand of the good that we care about increases, the supply of the good doesn't shift.Thus, the demand curve of the good shifts right, and the equilibrium price and quantity both increases. We choose C.
 
 ## Examination questions {- #eq1}
-
 
 ### Question 1 {- #eq1.1}
 
