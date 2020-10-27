@@ -226,10 +226,38 @@ $$\sum_{i=1}^n ar^{i-1}=a\left(\frac{r^n-1}{r-1}\right)$$
 
 # Differentiation
 
-#### Indefinite integration {-}
+#### Derivative of a function {-}
+
+- **Derivative** The gradient of the tangent to a curve at a point.
+
+- **Derived function** The rule, $f'$, which gives the gradient of a function $f$ at a general point.
+
+- **Differentiation** The process or operation of determining the first derivative of a function.
+
+- **Tangent** A line that just touches a curve at a point.
+
+- **Notations**
+
+$$f'(x),\frac{dy}{dx}$$
+
+#### Rules of differentiation {-}
+
+- **Rule 1 The constant rule** Differentiate the function and multiply by the constant. $h(x)=cf(x)$ then $h'(x)=cf'(x)$.
+
+- **Rule 2 The sum rule** Differentiate each function separately and add. $h(x)=f(x)+g(x)$ then $h'(x)=f'(x)+g'(x)$.
+
+- **Rule 3 The difference rule** $h(x)=f(x)-g(x)$ then $h'(x)=f'(x)-g'(x)$.
+
+- **Second-order derivative** The gradient of the first-order derivative denoted by $f''(x)$ or $\frac{d^2y}{dx^2}$.
+
+- **Concave** Graph bends downwards when $f''(x)<0$.
+
+- **Convex** Graph bends upwards when $f''(x)>0$.
 
 
-#### Definite integration {-}
+
+
+
 
 
 
