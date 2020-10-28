@@ -4,11 +4,17 @@
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 ```
 
+# Chapter 4 {- #s4}
+
+## Examination questions {- #eq4}
+
+### Question 1 {- #eq4.1}
+
 # Chapter 3 {- #s3}
 
 ## Multiple choice questions {- #mq3}
 
-We will not provide the solutions to the multiple choice questions. If you have any problems, please ask via email or wechat.
+Starting from Chapter 3, we will not provide the solutions to the multiple choice questions. If you have any problems, please ask me or tutor via email or wechat.
 
 ## Examination questions {- #eq3}
 

@@ -226,10 +226,63 @@ $$\sum_{i=1}^n ar^{i-1}=a\left(\frac{r^n-1}{r-1}\right)$$
 
 # Differentiation
 
-#### Indefinite integration {-}
+#### Derivative of a function {-}
+
+- **Derivative** The gradient of the tangent to a curve at a point.
+
+- **Derived function** The rule, $f'$, which gives the gradient of a function $f$ at a general point.
+
+- **Differentiation** The process or operation of determining the first derivative of a function.
+
+- **Tangent** A line that just touches a curve at a point.
+
+- **Chord** A straight line joining two points on a curve.
+
+- **Notations**
+
+$$f'(x),\frac{dy}{dx}$$
+
+#### Rules of differentiation {-}
+
+- **Rule 1 The constant rule** Differentiate the function and multiply by the constant. $h(x)=cf(x)$ then $h'(x)=cf'(x)$.
+
+- **Rule 2 The sum rule** Differentiate each function separately and add. $h(x)=f(x)+g(x)$ then $h'(x)=f'(x)+g'(x)$.
+
+- **Rule 3 The difference rule** $h(x)=f(x)-g(x)$ then $h'(x)=f'(x)-g'(x)$.
+
+- **Second-order derivative** The gradient of the first-order derivative denoted by $f''(x)$ or $\frac{d^2y}{dx^2}$.
+
+- **Concave** Graph bends downwards when $f''(x)<0$.
+
+- **Convex** Graph bends upwards when $f''(x)>0$.
+
+#### Marginal functions in economics
+
+- **Marginal revenue** The extra revenue gained by selling 1 more unit of a good. $MR = \frac{d TR}{dQ}$.
+
+- **Average revenue** Total revenue per unit of output. Average revenue curve and demand curve are synonymous.
+
+- **Marginal cost** The cost of producing 1 more unit of output. $MC=\frac{dTC}{dQ}$.
+
+- **Marginal product of labor** The extra output produced by 1 more unit of labor. $MP_L=\frac{dQ}{dL}$.
+
+- **Marginal propensity to consume** The fraction of a rise in national income which goes into consumption. $MPC=\frac{dC}{dY}$.
+
+- **Marginal propensity to save** The fraction of a rise in national income which goes into savings. $MPS=\frac{dS}{dY}$.
+
+- **Monopolist** The only firm in the industry.
+
+- **Perfect competition** A situation in which there are no barries to entry in an industry where there are many firms selling an identical product at the market price.
+
+- **Law of diminishing marginal productivity (Law of diminishing returns)** Once the size of the workforce exceeds a particular value, the increase in output due to 1-unit increase in labor will decline. $\frac{d^2Q}{dL^2}<0$ for sufficiently large $L$.
 
 
-#### Definite integration {-}
+
+
+
+
+
+
 
 
 

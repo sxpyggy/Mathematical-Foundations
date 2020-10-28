@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Differentiation | Mathematical Foundations</title>
   <meta name="description" content="The output format is bookdown::gitbook." />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Differentiation | Mathematical Foundations" />
   <meta property="og:type" content="book" />
@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="mathematics-of-finance.html"/>
-<link rel="next" href="s3.html"/>
+<link rel="next" href="s4.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,6 +49,8 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -78,9 +80,22 @@
 <li class="chapter" data-level="3" data-path="mathematics-of-finance.html"><a href="mathematics-of-finance.html"><i class="fa fa-check"></i><b>3</b> Mathematics of Finance</a></li>
 <li class="chapter" data-level="4" data-path="differentiation.html"><a href="differentiation.html"><i class="fa fa-check"></i><b>4</b> Differentiation</a></li>
 <li class="part"><span><b>II 💡 SOLUTIONS</b></span></li>
+<li class="chapter" data-level="" data-path="s4.html"><a href="s4.html"><i class="fa fa-check"></i>Chapter 4</a><ul>
+<li class="chapter" data-level="" data-path="s4.html"><a href="s4.html#eq4"><i class="fa fa-check"></i>Examination questions</a><ul>
+<li class="chapter" data-level="" data-path="s4.html"><a href="s4.html#eq4.1"><i class="fa fa-check"></i>Question 1</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="s3.html"><a href="s3.html"><i class="fa fa-check"></i>Chapter 3</a><ul>
-<li class="chapter" data-level="" data-path="s3.html"><a href="s3.html#mq3"><i class="fa fa-check"></i>Multiple choice questions</a><ul>
-<li class="chapter" data-level="" data-path="s3.html"><a href="s3.html#mq3.1"><i class="fa fa-check"></i>Question 1</a></li>
+<li class="chapter" data-level="" data-path="s3.html"><a href="s3.html#mq3"><i class="fa fa-check"></i>Multiple choice questions</a></li>
+<li class="chapter" data-level="" data-path="s3.html"><a href="s3.html#eq3"><i class="fa fa-check"></i>Examination questions</a><ul>
+<li class="chapter" data-level="" data-path="s3.html"><a href="s3.html#eq3.1"><i class="fa fa-check"></i>Question 1</a></li>
+<li class="chapter" data-level="" data-path="s3.html"><a href="s3.html#eq3.2"><i class="fa fa-check"></i>Question 2</a></li>
+<li class="chapter" data-level="" data-path="s3.html"><a href="s3.html#eq3.3"><i class="fa fa-check"></i>Question 3</a></li>
+<li class="chapter" data-level="" data-path="s3.html"><a href="s3.html#eq3.4"><i class="fa fa-check"></i>Question 4</a></li>
+<li class="chapter" data-level="" data-path="s3.html"><a href="s3.html#eq3.5"><i class="fa fa-check"></i>Question 5</a></li>
+<li class="chapter" data-level="" data-path="s3.html"><a href="s3.html#eq3.6"><i class="fa fa-check"></i>Question 6</a></li>
+<li class="chapter" data-level="" data-path="s3.html"><a href="s3.html#eq3.7"><i class="fa fa-check"></i>Question 7</a></li>
+<li class="chapter" data-level="" data-path="s3.html"><a href="s3.html#eq3.8"><i class="fa fa-check"></i>Question 8</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="s2.html"><a href="s2.html"><i class="fa fa-check"></i>Chapter 2</a><ul>
@@ -169,11 +184,42 @@
             <section class="normal" id="section-">
 <div id="differentiation" class="section level1">
 <h1><span class="header-section-number">Chapter 4</span> Differentiation</h1>
-<div id="indefinite-integration" class="section level4 unnumbered">
-<h4>Indefinite integration</h4>
+<div id="derivative-of-a-function" class="section level4 unnumbered">
+<h4>Derivative of a function</h4>
+<ul>
+<li><p><strong>Derivative</strong> The gradient of the tangent to a curve at a point.</p></li>
+<li><p><strong>Derived function</strong> The rule, <span class="math inline">\(f&#39;\)</span>, which gives the gradient of a function <span class="math inline">\(f\)</span> at a general point.</p></li>
+<li><p><strong>Differentiation</strong> The process or operation of determining the first derivative of a function.</p></li>
+<li><p><strong>Tangent</strong> A line that just touches a curve at a point.</p></li>
+<li><p><strong>Chord</strong> A straight line joining two points on a curve.</p></li>
+<li><p><strong>Notations</strong></p></li>
+</ul>
+<p><span class="math display">\[f&#39;(x),\frac{dy}{dx}\]</span></p>
 </div>
-<div id="definite-integration" class="section level4 unnumbered">
-<h4>Definite integration</h4>
+<div id="rules-of-differentiation" class="section level4 unnumbered">
+<h4>Rules of differentiation</h4>
+<ul>
+<li><p><strong>Rule 1 The constant rule</strong> Differentiate the function and multiply by the constant. <span class="math inline">\(h(x)=cf(x)\)</span> then <span class="math inline">\(h&#39;(x)=cf&#39;(x)\)</span>.</p></li>
+<li><p><strong>Rule 2 The sum rule</strong> Differentiate each function separately and add. <span class="math inline">\(h(x)=f(x)+g(x)\)</span> then <span class="math inline">\(h&#39;(x)=f&#39;(x)+g&#39;(x)\)</span>.</p></li>
+<li><p><strong>Rule 3 The difference rule</strong> <span class="math inline">\(h(x)=f(x)-g(x)\)</span> then <span class="math inline">\(h&#39;(x)=f&#39;(x)-g&#39;(x)\)</span>.</p></li>
+<li><p><strong>Second-order derivative</strong> The gradient of the first-order derivative denoted by <span class="math inline">\(f&#39;&#39;(x)\)</span> or <span class="math inline">\(\frac{d^2y}{dx^2}\)</span>.</p></li>
+<li><p><strong>Concave</strong> Graph bends downwards when <span class="math inline">\(f&#39;&#39;(x)&lt;0\)</span>.</p></li>
+<li><p><strong>Convex</strong> Graph bends upwards when <span class="math inline">\(f&#39;&#39;(x)&gt;0\)</span>.</p></li>
+</ul>
+</div>
+<div id="marginal-functions-in-economics" class="section level4">
+<h4><span class="header-section-number">4.0.0.1</span> Marginal functions in economics</h4>
+<ul>
+<li><p><strong>Marginal revenue</strong> The extra revenue gained by selling 1 more unit of a good. <span class="math inline">\(MR = \frac{d TR}{dQ}\)</span>.</p></li>
+<li><p><strong>Average revenue</strong> Total revenue per unit of output. Average revenue curve and demand curve are synonymous.</p></li>
+<li><p><strong>Marginal cost</strong> The cost of producing 1 more unit of output. <span class="math inline">\(MC=\frac{dTC}{dQ}\)</span>.</p></li>
+<li><p><strong>Marginal product of labor</strong> The extra output produced by 1 more unit of labor. <span class="math inline">\(MP_L=\frac{dQ}{dL}\)</span>.</p></li>
+<li><p><strong>Marginal propensity to consume</strong> The fraction of a rise in national income which goes into consumption. <span class="math inline">\(MPC=\frac{dC}{dY}\)</span>.</p></li>
+<li><p><strong>Marginal propensity to save</strong> The fraction of a rise in national income which goes into savings. <span class="math inline">\(MPS=\frac{dS}{dY}\)</span>.</p></li>
+<li><p><strong>Monopolist</strong> The only firm in the industry.</p></li>
+<li><p><strong>Perfect competition</strong> A situation in which there are no barries to entry in an industry where there are many firms selling an identical product at the market price.</p></li>
+<li><p><strong>Law of diminishing marginal productivity (Law of diminishing returns)</strong> Once the size of the workforce exceeds a particular value, the increase in output due to 1-unit increase in labor will decline. <span class="math inline">\(\frac{d^2Q}{dL^2}&lt;0\)</span> for sufficiently large <span class="math inline">\(L\)</span>.</p></li>
+</ul>
 
 </div>
 </div>
@@ -186,7 +232,7 @@
         </div>
       </div>
 <a href="mathematics-of-finance.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="s3.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="s4.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

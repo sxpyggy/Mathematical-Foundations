@@ -2,14 +2,135 @@
 
 
 
+# Chapter 4 {- #s4}
+
+## Examination questions {- #eq4}
+
+### Question 1 {- #eq4.1}
 
 # Chapter 3 {- #s3}
 
 ## Multiple choice questions {- #mq3}
 
+Starting from Chapter 3, we will not provide the solutions to the multiple choice questions. If you have any problems, please ask me or tutor via email or wechat.
 
-### Question 1 {- #mq3.1}
+## Examination questions {- #eq3}
 
+### Question 1 {- #eq3.1}
+
+(a)$$ S(5)=4000(1 + \frac{0.04}{4})^{5\times4} \\
+          \approx 4880.76$$
+(b)
+$$ S(5)=4000e^{\delta t} \\
+       =4000e^{0.04 \times5}\\
+          \approx 4885.61 $$ 
+(c)$$ 4000(1 + \frac{0.04}{4})^{5\times4}=4000(1+i)^5  $$
+$$ i \approx 0.0406 $$
+$$ 4000e^{0.04\times5}=4000(1+i')^5  $$
+$$ i' \approx 0.0408 $$ 
+(d)$$ S(t) = 4500\\
+           = 4000e^{t \times 0.04}$$
+   $$ t \approx 2.94 $$
+
+### Question 2 {- #eq3.2}
+
+(a)$$ 1+i = (1+0.024)(1-0.049) $$
+$$  i \approx -0.0262 $$
+Thus the film's sales fall by 2.62% over the whole year.
+
+(b) $$  S(3) = 700 \\
+             = P(1 + \frac{0.048}{2})^{3 \times 2}) $$
+    $$ P \approx 607.15 $$
+(c)$$ P \times m \frac{1-(1+ i)^{-t} }{i} \\
+     =1500 \times12 \frac{1-(1+0.06)^{-25} }{0.06} \\
+     \approx 230000 $$
+
+### Question 3 {- #eq3.3}
+
+(a)(i)  $$  4000(1-0.1)^1+350 = 3950 $$
+
+(ii) $$ 3950(1-0.1)^1+350 = 3905  $$
+
+(b) $$ 3500 + 500(0.9) = 3950 $$
+So N=1.
+
+(c)It will tend to 3500 in the long-run, as when the number of trees is over 3500, it will decrease by 10% and increase by 350 every year, so it is reduced as a whole. Until it decreases to around 3500, the reduced number of trees is balanced with the increased number, thus it will tend to 3500 in the long-run.
+
+### Question 4 {- #eq3.4}
+
+(a)$$ \frac{6\times35+15\times15}{5\times35+12\times15} \\
+     =\frac{87}{71}\\
+     \approx 1.2254$$
+Thus the Laspeyres index is 122.54
+
+(b)$$ \frac{6\times30+15\times20}{5\times35+12\times15} \\
+     =\frac{96}{71}\\
+     \approx 1.3521$$
+Thus the Paasche index is 135.21
+
+(c)It is omitted , you cn refer to the answers in the textbook.
+
+### Question 5 {- #eq3.5}
+
+As for A：
+$$ 10000(1+i_A)^3=11500 $$
+$$ i_A = 0.0477 $$
+As for B：
+$$ 10000(1+i_B)^4=12100 $$
+$$ i_B = 0.0488 $$
+As for the advice, it is omitted , you cn refer to the answers in the textbook.
+
+### Question 6 {- #eq3.6}
+
+(a)
+
+Suppose the GDP of country B is x now, then the GDP of country B is 2x now, and suppose the GDP of country B will exceed that of country A after n years, then we can get :
+$$ x(1+0.04)^n > 2x(1+0.01)^n $$
+$$ n > 24$$
+So the GDP of country B will exceed that of country A after 24 years.
+
+(b)
+(i)$$ 4000(1.004)^n-250\times100(1.004^n-1) = 0 $$
+$$ n \approx 44 $$
+
+
+(ii) $$ 4000(1.004)^12-250x(1.004^12-1) = 0 $$
+$$ x \approx 342.06 $$
+(iii) $$ 4000(1.004)^n-250\times16(1.004^n-1)\\
+        =4000$$
+When x=16, the outstanding debt is a constant, which is 4000.
+
+### Question 7 {- #eq3.7}
+
+(a) $$ S = P(1+i)^n  $$
+(i)$$ S = 4000(1+0.03)^6 \approx 4776.21  $$
+(ii)$$ 3149.28 = P(1+0.08)^3 $$
+$$ P \approx 2500  $$
+(iii) $$ 5283.92 = 5000(1+r/100)^2 $$
+$$ r=2.8 $$
+attention: as it is **r%**, so i = r/100.
+
+(iv) $$ 120788.25 = 75000(1+0.1)^n $$
+$$ n = 5 $$
+
+(b)(i)
+$$ PV=P \frac{1-(1+i)^{-n}}{i} \\
+     =5000 \frac{1-(1+0.04)^{-10}}{0.04} \approx 40554.48$$
+(ii)
+$$ PV= P \frac{1}{i} \\
+     = 5000 \frac{1}{0.04} \approx 125000 $$
+
+### Question 8 {- #eq3.8}
+
+(a)As the rate is compounded semi-annually, the actual interest rate for 6 months is i=0.036/2=0.018 
+$$ a = 2000(1+0.018)^2= 2000(1.018)^2\\
+r = (1.018)^2\\
+S = a \frac{(r)^{n}-1}{r-1}\\
+     = 2000(1.018)^2\frac{(1.018)^{20}-1}{1.018^2-1}\\
+     \approx 24464.35 $$
+(b)As the rate is compounded semi-annually, the actual interest rate is i=0.045/2, and the actual year is doubled, that is: 
+$$ 145000(1+0.045/2)^{-1\times2} + 80000(1+0.045/2)^{-2\times2}-200000 \\
+   \approx 11876.26 $$
 
 # Chapter 2 {- #s2}
 
