@@ -6,7 +6,6 @@
 
 ## Examination questions {- #eq4}
 
-### Question 1 {- #eq4.1}
 
 # Chapter 3 {- #s3}
 

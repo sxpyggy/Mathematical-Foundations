@@ -256,7 +256,7 @@ $$f'(x),\frac{dy}{dx}$$
 
 - **Convex** Graph bends upwards when $f''(x)>0$.
 
-#### Marginal functions in economics
+#### Marginal functions in economics {-}
 
 - **Marginal revenue** The extra revenue gained by selling 1 more unit of a good. $MR = \frac{d TR}{dQ}$.
 

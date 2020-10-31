@@ -2,4 +2,3 @@ linear-equations
 non-linear-equations
 mathematics-of-finance
 differentiation
-marginal-functions-in-economics
