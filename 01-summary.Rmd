@@ -240,7 +240,7 @@ $$\sum_{i=1}^n ar^{i-1}=a\left(\frac{r^n-1}{r-1}\right)$$
 
 - **Notations**
 
-$$f'(x),\frac{dy}{dx}$$
+$$f'(x),\frac{dy}{dx}=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}$$
 
 #### Rules of differentiation {-}
 
@@ -275,6 +275,52 @@ $$f'(x),\frac{dy}{dx}$$
 - **Perfect competition** A situation in which there are no barries to entry in an industry where there are many firms selling an identical product at the market price.
 
 - **Law of diminishing marginal productivity (Law of diminishing returns)** Once the size of the workforce exceeds a particular value, the increase in output due to 1-unit increase in labor will decline. $\frac{d^2Q}{dL^2}<0$ for sufficiently large $L$.
+
+#### Further rules of differentiation {-}
+
+- **The chain rule** Differentiate the outer function and multiply by the derivative of the inner function. A composite function is given by $h(x)=f(g(x))$, then the derivative of it is $h'(x)=f'(g(x))g'(x)$. 
+
+- **The product rule** Multiply each function by the derivative of the other and add. The derivative of $h(x)=f(x)g(x)$ is given by $h'(x)=f'(x)h(x)+f(x)h'(x)$.
+
+- **The quotient rule** Bottom times derivative of top, minus top times derivative of bottom, all over bottom squared. The derivative of $h(x)=\frac{f(x)}{g(x)}$ is given by $h'(x)=\frac{f'(x)g(x)-f(x)g'(x)}{g(x)^2}$.
+
+#### Elasticity {-}
+
+- **Price elasticity of demand** A measure of the relative change in demand due to a relative change in price. 
+
+- **Price elasticity of supply** A measure of the relative change in supply due to a relative change in price.
+
+- **Arc elasticity** Elasticity measured by a chord on a curve.
+
+- **Point elasticity** Elasticity measured by a tangent on a curve, defined as $E=\frac{p}{Q}\times\frac{dQ}{dP}$.
+
+- **Elastic (inelastic/unit elastic) demand** When the relative change in demand is more (less/same) than the corresponding relative change in price, i.e., $E>1 (E<1/E=1)$.
+
+- **Derivative of an inverse function** Given $y=f(x)$ and its inverse function $x=f^{-1}(y)=h(y)$. The derivative of the inverse function $f^{-1}(y)$ is the reciprocal of the derivative of the original function. $\frac{dx}{dy}=h'(y)=\frac{1}{dy/dx}=\frac{1}{f'(x)}$.
+
+#### Optimisation of economic functions {-}
+
+- **Optimization** The determination of the optimal points of a function.
+
+- **Stationary points (critical points, turning points, extrema)** Points on a graph at which the tangent is horizontal. At such a point, the first-order derivative is zero.
+
+- **Local maximum** A point on a curve which has the highest function value in comparison with other values in its neighbourhood. At such a point, the first-order derivative is zero and the second-order derivative is negative.
+
+- **Local minimum** A point on a curve which has the lowest function value in comparison with other values in its neighbourhood. At such a point, the first-order derivative is zero and the second-order derivative is positive.
+
+- **Stationary point of inflection** A stationary point that is neither a maximum nor a minimum. At such a point, the first-order derivative is zero and the second-order derivative is zero.
+
+- **Average product of labour (labour productivity)** Output per worker. $AQ_L=Q/L$.
+
+- If a firm maximizes profit, then $MR=MC$.
+
+- If a firm maximizes average product of labour, then $AP_L=MP_L$.
+
+- **Economic order quantity** The quantity of a product that should be ordered so as to minimize the total cost that includes ordering costs and holding costs.
+
+
+
+
 
 
 

@@ -4,8 +4,95 @@
 
 # Chapter 4 {- #s4}
 
-## Examination questions {- #eq4}
+## Exercise 4.1* {- #e4.1}
 
+### Question 3 {- #e4.1.3}
+
+(i)(a) $$ y_A = 2 $$
+$$ y_B = \sqrt{4.1} \approx 2.025 $$
+(b)$$ y_A = 8 $$
+$$ y_B = 4.1\sqrt{4.1} \approx 8.302 $$
+(c)$$ y_A = \frac{1}{2} $$
+$$ y_B = \frac{1}{\sqrt{4.1}} \approx 0.494 $$
+(ii)(a)$$ \frac{\Delta y}{\Delta x} = \frac{\sqrt{4.1}-2}{4.1-4} \approx 0.248 $$
+(b)$$ \frac{\Delta y}{\Delta x} = \frac{4.1\sqrt{4.1}-8}{4.1-4} \approx 3.019 $$
+(c)$$ \frac{\Delta y}{\Delta x} = \frac{\frac{1}{\sqrt{4.1}}-\frac{1}{2}}{4.1-4} \approx -0.061 $$
+(iii)(a) $$\frac{dy}{dx} = \frac{1}{2}x^{-\frac{1}{2}} = \frac{1}{4} $$
+(b) $$ y = x \sqrt{x} = x^{\frac{3}{2}}$$
+$$\frac{dy}{dx} = \frac{3}{2}x^{\frac{1}{2}} = 3 $$
+(c) $$ y = \frac{1}{\sqrt{x}} = x^{-\frac{1}{2}}$$
+$$\frac{dy}{dx} = -\frac{1}{2}x^{-\frac{3}{2}} = -\frac{1}{16} $$
+
+The answers to part(ii) is close to part (iii).
+
+
+## Exercise 4.2* {- #e4.2}
+
+### Question 1 {- #e4.2.1}
+
+$$ y' = \frac{3}{2}x^{-\frac{1}{2}} + \frac{81}{x^2} $$
+When x = 9 , $$ y' = \frac{3}{2} $$
+
+### Question 4 {- #e4.2.4}
+
+(a)$$ f'(x) = 10x^4 -12x^3+4x-17 $$
+$$ f'(-1) = 1 > 0 $$
+Thus the tranger slopes upstill at x=-1.
+
+(b) $$ f''(x) = 40x^3-36x^2+4 $$
+$$ f''(-1) = -72 < 0 $$
+Thus the graph is concave at x=-1.
+
+### Question 6 {- #e4.2.6}
+
+$$ y' = 12x^2 -10x+1 $$
+When x = 0 ,$$ y = -3 ; y' = 1 > 0 $$
+Thus $$ y = x-3 $$
+
+## Exercise 4.3* {- #e4.3}
+
+### Question 1 {- #e4.3.1}
+
+(a) $$ TR  = PQ\\
+           = (100-4\sqrt{Q}-3Q)Q\\
+           = 100Q-4Q^{1.5}-3Q^2 $$
+(b) $$ MR = 100-6 \sqrt{Q} -6Q $$
+When Q = 9 , $$ MR = 28 $$
+
+(c) $$ \Delta{TR} = MR \times \Delta{Q} \\
+                  = 28\times 0.25\\
+                  = 7$$
+When Q = 9, TR=549 ; 
+When Q = 9.25, $$ TR \approx 555.78 $$
+Thus $$\Delta{TR}= 555.78-549 = 6.78 $$
+Thus the exact change in TR is 6.78.
+
+### Question 4 {- #e4.3.4}
+
+$$ \frac{dQ}{dL} = 12L-0.6L^2 $$
+$$ \frac{d^2Q}{dL^2} = 12-1.2L $$
+When $$ \frac{d^2Q}{dL^2} < 0 $$
+$$ L > 10 $$
+
+### Question 7 {- #e4.3.7}
+$$ MC=20 $$
+Thus when Q increasrs by 1 unit, TC increases by 20 units.
+
+As the MR is 18 at Q=219 ,when Q increases by 1 unit, TR increases by 18 units.
+
+18-20 =-2 < 0
+
+Thus the profit decreases.
+
+### Question 9 {- #e4.3.9}
+
+$$ AC = \frac{TC}{Q}\\
+      = aQ+b+\frac{c}{Q} $$
+$$ \frac{dAC}{dQ} = a - \frac{c}{Q^2}$$
+$$ MC = \frac{dTC}{dQ}\\
+      = 2aQ+b $$
+$$ \frac{MC-AC}{Q} = \frac{(2aQ+b) - (aQ+b+\frac{c}{Q}) }{Q} = a - \frac{c}{Q^2} $$
+Thus $$ \frac{dAC}{dQ} = \frac{MC-AC}{Q} $$
 
 # Chapter 3 {- #s3}
 
