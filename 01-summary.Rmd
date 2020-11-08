@@ -318,8 +318,11 @@ $$f'(x),\frac{dy}{dx}=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}$$
 
 - **Economic order quantity** The quantity of a product that should be ordered so as to minimize the total cost that includes ordering costs and holding costs.
 
+#### The derivative of the exponential and natural logarithm functions {-}
 
+- **The derivative of the exponential function** If $f(x)=e^x$ then $f'(x)=e^x$. If $f(x)=c^x$ then $f'(x)=c^x\ln c$.
 
+- **The derivative of the logarithm function** If $f(x)=\ln x$ then $f'(x)=\frac{1}{x}$. If $f(x)=\log_c x$ then $f'(x)=\frac{1}{x\ln c}$.
 
 
 
