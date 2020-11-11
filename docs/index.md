@@ -1,7 +1,7 @@
 --- 
 title: "Mathematical Foundations"
 # author: "Financial Mathematics"
-date: "2020-11-08 16:03:23"
+date: "2020-11-11 21:27:51"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -20,7 +20,7 @@ This is the website of Mathematical Foundations. We create this website  to
 
 - Summarize the key concepts of each chapter.
 
-- Provide the solutions to `Multiple choice questions` and `Examination questions` at the end of each chapter.
+- Provide the solutions to the selected questions of each chapter.
 
 - Answer the important questions raised by students.
 
@@ -30,7 +30,7 @@ This website is maintained by <u>Guangyuan Gao</u> and <u>Yan Cai</u>. If you ha
 
 ## 🖊️ Homework {-}
 
-❗ Homework: Exercise 4.4* (page 313), Q4, 7, 8; Exercise 4.5* (page 327), Q2, 4, 8; Exercise 4.6* (page 347), Q2, 5, 7, 8 are due on **2020/Nov/10 (18:00 Beijing Time)**. 
+❗ Homework: Exercise 4.6* (page 347) Q6，Exercise 4.7* (page 359) Q1, Q2, Q3, Q6, Q9, Exercise 4.8* (page 371) Q1, Q3, Q7, Q10, Q11, Q12, Q13 are due on **2020/Nov/17 (18:00 Beijing Time)**. 
 
 You should send either a typed document or a scanned/photoed handwritten manuscript to the tutor's email address <2017201678@ruc.edu.cn>. You should show the **calculation/proof details** in your submitted document.
 

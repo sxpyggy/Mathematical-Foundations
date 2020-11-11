@@ -96,6 +96,189 @@ $$ MC = \frac{dTC}{dQ}\\
 $$ \frac{MC-AC}{Q} = \frac{(2aQ+b) - (aQ+b+\frac{c}{Q}) }{Q} = a - \frac{c}{Q^2} $$
 Thus $$ \frac{dAC}{dQ} = \frac{MC-AC}{Q} $$
 
+
+## Exercise 4.4* {- #e4.4}
+
+### Question 4 {- #eq4.4.4}
+
+(a)$$ y'=(x-3)^4 + x\times4(x-3)^3\\
+        =(5x-3)(x-3)^3$$
+(b)$$ y'=\sqrt{2x-3} + x \times \frac{1}{2} \frac{1}{\sqrt{2x-3}}\times2\\
+        =\frac{3(x-1)}{\sqrt{2x-3}}$$
+(c)$$ y'=\frac{3x^2(3x+5)^2-x^3\times2(3x+5)\times3}{(3x+5)^4}\\
+        =\frac{3x^2(x+5)}{(3x+5)^3}$$
+(d)$$ y'=\frac{(x^2+1)-x\times2x}{(x^2+1)^2} \\
+        =\frac{1-x^2}{(x^2+1)^2}$$
+(e)$$ y'=\frac{a(cx+d)-c(ax+b)}{(cx+d)^2} \\
+        =\frac{ad-cb}{(cx+d)^2}$$
+
+(f)$$ y'=am(ax+b)^{m-1}(cx+d)^n+cn(ax+b)^m(cx+d)^{n-1} \\
+        =[(m+n)acx+adm+bcn](ax+b)^{m-1}(cx+d)^{n-1}$$
+(g)$$ y'=(x+2)^2(x+3)^3+x\times2(x+2)(x+3)^3+x(x+2)^2\times3(x+3)^2\\
+        =(6x^2+17x+6)(x+2)(x+3)^2$$
+
+### Question 7 {- #eq4.4.7}
+
+$$ MC = \frac{dC}{dY}\\
+      = \frac{4Y(9+Y)-(650+2Y^2)}{(9+Y)^2}\\
+      = \frac{2Y^2+36Y-650}{(9+Y)^2}\\
+      = 2 - \frac{812}{(9+Y)^2}$$
+When Y=21, $$ MC \approx 1.098 $$
+$$ MR + MS = 1 $$
+Thus $$ MS = 1-1.098 \approx -0.098 $$
+The comment you can refer to the answers on the textbook.
+
+### Question 8 {- #eq4.4.8}
+
+$$ MC = \frac{dTC}{dQ}\\
+      = \frac{(4Q+10)(Q+3)-(2Q^2+10Q)}{(Q+3)^2}\\
+      = \frac{2Q^2+12Q+30}{(Q+3)^2}\\
+      = \frac{2(Q+3)^2+12}{(Q+3)^2}\\
+      = 2+\frac{12}{(Q+3)^2}$$
+$$ MC'= \frac{dMC}{dQ}\\
+      = -\frac{24}{(Q+3)^3} < 0$$
+As MC' is always less than 0, so MC decreases and converges to 2 as Q increases.
+
+## Exercise 4.5* {- #e4.5}
+
+### Question 2 {- #eq4.5.2}
+
+When P =105 ,Q = 7(As Q>0)
+$$ \frac{dP}{dQ} = 4Q $$
+$$  E = \frac{dQ}{dP} \times \frac{P}{Q}\\
+      = \frac{1}{\frac{dP}{dQ}} \times \frac{P}{Q}\\
+      = \frac{1}{4Q} \times \frac{P}{Q}\\
+      = \frac{P}{4Q^2}$$
+Thus $$ \frac{\Delta P }{4Q^2} = \frac{0.07\times105}{4\times7^2} = 0.0375 $$
+Thus the percentage increase in supply is 3.75%  when the price rises by 7%.
+
+### Question 4 {- #eq4.5.4}
+
+$$ \frac{dP}{dQ} = -\frac{nA}{Q^{n+1}} $$
+$$  E = \frac{dQ}{dP} \times \frac{P}{Q}\\
+      = \frac{1}{\frac{dP}{dQ}} \times \frac{P}{Q}\\
+      = \frac{1}{-\frac{nA}{Q^{n+1}}} \times \frac{\frac{A}{Q^n}}{Q}\\
+      = -\frac{1}{n} $$
+
+### Question 8 {- #eq4.5.8}
+
+(a)As for Q = f(P):
+$$ \frac{dQ}{dP} = f'(P) $$
+$$  E = \frac{dQ}{dP} \times \frac{P}{Q}\\
+      = f'(P) \frac{P}{f(P)} $$
+(i)$$ \frac{dQ}{dP} = n[f(P)]^{n-1}f'(P) $$
+$$  E_1 = \frac{dQ}{dP} \times \frac{P}{Q}\\
+      = n[f(P)]^{n-1}f'(P) \frac{P}{[f(P)]^n}\\
+      = nf'(P) \frac{P}{f(P)}\\
+      = nE $$
+(ii)$$ \frac{dQ}{dP} = \lambda f'(P) $$
+$$  E_2 = \frac{dQ}{dP} \times \frac{P}{Q}\\
+      = \lambda f'(P) \frac{P}{[\lambda f(P)] }\\
+      = f'(P) \frac{P}{f(P)}\\
+      = E $$
+(iii)$$ \frac{dQ}{dP} = f'(P) $$
+$$  E_3 = \frac{dQ}{dP} \times \frac{P}{Q}\\
+      = f'(P) \frac{P}{[\lambda + f(P)] }\\
+      = \frac{f(P) E}{\lambda + f(P)}$$
+
+
+(b)As for Q = P:
+$$ \frac{dQ}{dP} = 1 $$
+$$  E = \frac{dQ}{dP} \times \frac{P}{Q}\\
+      = 1 \times \frac{P}{P}\\
+      = 1$$
+(i)$$E_1 = nE = 3 $$
+(ii)$$ Q = f_1(P) = P \\
+          f_2(P) = P^{\frac{3}{2}} = f_1(P)^{\frac{3}{2}}\\
+          Q_2 = \lambda f_2(P) = 10 P^{\frac{3}{2}} $$
+Then $$E_2 = nE = \frac{3}{2} $$
+If you don't know why that is 3/2, you can refer to the following.
+$$ Q = 10 P^{\frac{3}{2}} $$
+$$ \frac{dQ}{dP} = 15P^{\frac{1}{2}} $$
+$$  E_2 = \frac{dQ}{dP} \times \frac{P}{Q}\\
+      = 15P^{\frac{1}{2}} \frac{P}{10 P^{\frac{3}{2}}}\\
+      = \frac{3}{2} $$
+(iii)
+$$ Q = 5 P^{\frac{1}{2}} - 2 $$
+$$ \frac{dQ}{dP} = \frac{5}{2\sqrt{P}} $$
+$$  E_2 = \frac{dQ}{dP} \times \frac{P}{Q}\\
+      = \frac{5}{2\sqrt{P}} \frac{P}{5 P^{\frac{1}{2}} - 2}\\
+      = \frac{5P}{10P-4\sqrt{P}} $$
+      
+## Exercise 4.6* {- #e4.6}
+
+### Question 2 {- #eq4.6.2}
+
+(a)$$ f'(x)=3x^2 $$
+When f'(x)=0,we get x=0, so it has a stationary point at x=0.
+$$ f''(x)=6x $$
+Thus $$ f''(0)=0 $$
+When x=0,f(0)=0.
+You can find (0,0) is an inflection as the graph shows(the graph is omitted).
+
+(b)$$ f'(x)=4x^3 $$
+When f'(x)=0,we get x=0, so it has a stationary point at x=0.
+$$ f''(x)=12x^2 $$
+Thus $$ f''(0)=0 $$
+When x=0,f(0)=0.
+You can find (0,0) is a local min as the graph shows(the graph is omitted).
+
+(c)$$ f'(x)=-6x^5 $$
+When f'(x)=0,we get x=0, so it has a stationary point at x=0.
+$$ f''(x)=-30x^4 $$
+Thus $$ f''(0)=0 $$
+When x=0,f(0)=0.
+You can find (0,0) is a local max as the graph shows(the graph is omitted).
+
+### Question 5 {- #eq4.6.5}
+
+$$ TR = PQ \\
+      = \sqrt{1000-4Q}Q $$
+$$ MR = \frac{d(TR)}{dQ}\\
+      = \sqrt{1000-4Q} -\frac{2Q}{\sqrt{1000-4Q}}\\
+      = \frac{1000-6Q}{\sqrt{1000-4Q}} $$
+When MR = 0, we get Q = 500/3
+$$ (MR)' =  \frac{-6\sqrt{1000-4Q}-(1000-6Q)\frac{-2}{\sqrt{1000-4Q}}}{1000-4Q}\\
+         = \frac{12Q-4000}{(1000-4Q)^{1.5}}$$
+When Q = 500/3 , (MR)' < 0.Thus Q = 500/3 maximises total revenue.
+
+### Question 7 {- #eq4.6.7}
+
+$$ f'(x)=3x^2+2ax+b $$
+As (2,5) is a stationary point, f'(2)=0.
+$$ \begin{cases} f(2)=5=8+4a+2b+c\\ f(1)=3=1+a+b+c\\ f'(2)=0=12+4a+b \end{cases}   $$
+$$ \begin{cases} a=-7\\ b=16\\ c=-7 \end{cases}   $$
+
+### Question 8 {- #eq4.6.8}
+
+(a) The graph is omitted.
+
+(b) As for function 1:
+$$ MR = 0.6Q^2 $$
+MR is always more than 0 when Q belong to [0,5].Thus TR is increasing when Q rises.Thus, when Q=5, there is a maximum TR which is 25.
+
+As for function 2:
+$$ MR = -8Q+55 $$
+When MR = 0, we get Q=55/8.
+As $$ (MR)' = -8<0 $$
+Thus when Q=55/8, there is a maximum TR which is 625/16.
+
+As 25 is less than 625/16, thus when Q = 55/8, there is a maximum TR which is 625/16.
+
+(c)
+$$ \begin{cases} MR = 0.6Q^2,0 \leq Q \leq 5 \\ MR = -8Q+55,5 \leq Q \leq 10 \end{cases}   $$
+As for function 1:
+$$ (MR)' = 1.2Q $$
+(MR)' is always more than 0 when Q belong to [0,5].Thus TR is increasing when Q rises.Thus, when Q=5, there is a maximum TR.
+
+As for function 2:
+$$ (MR)' = -8 $$
+(MR)' is always less than 0 when Q belong to [5,10].Thus TR is decreasing when Q rises.Thus, when Q=5, there is a maximum TR.
+
+In total, when Q=5, there is a maximum TR.
+
+
+
 # Chapter 3 {- #s3}
 
 ## Multiple choice questions {- #mq3}
