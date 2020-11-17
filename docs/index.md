@@ -1,7 +1,7 @@
 --- 
 title: "Mathematical Foundations"
 # author: "Financial Mathematics"
-date: "2020-11-13 19:57:15"
+date: "2020-11-17 19:51:35"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -30,7 +30,7 @@ This website is maintained by <u>Guangyuan Gao</u> and <u>Yan Cai</u>. If you ha
 
 ## 🖊️ Homework {-}
 
-❗ Homework: Exercise 4.6* (page 347) Q6，Exercise 4.7* (page 359) Q1, Q2, Q3, Q9 are due on **2020/Nov/17 (18:00 Beijing Time)**. You should read the textbook up to Page 356 (above the inventory control problem) before attempting to tackle the homework.
+Homework: Exercise 4.7* (page 359) Q5, Q6, Exercise 4.8* (page 371) Q2, Q5, Q8, Q12, Q13 are due on **2020/Nov/24 (18:00 Beijing Time)**. By 2020/Nov/24 you should read this chapter at least one time.
 
 You should send either a typed document or a scanned/photoed handwritten manuscript to the tutor's email address <2017201678@ruc.edu.cn>. You should show the **calculation/proof details** in your submitted document.
 

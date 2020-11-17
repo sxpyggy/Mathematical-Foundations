@@ -240,6 +240,39 @@ $$ (MR)' =  \frac{-6\sqrt{1000-4Q}-(1000-6Q)\frac{-2}{\sqrt{1000-4Q}}}{1000-4Q}\
          = \frac{12Q-4000}{(1000-4Q)^{1.5}}$$
 When Q = 500/3 , (MR)' < 0.Thus Q = 500/3 maximises total revenue.
 
+
+### Question 6 {- #eq4.6.6}
+
+(a)$$ \pi = TR - TC\\
+          = PQ - TC\\
+          = (200-4Q)Q - (Q^2+50Q+10)\\
+          = -5Q^2+150Q-10$$
+When$$ \pi' = -10Q+150 = 0  $$
+we get $$ Q = 15 $$
+As $$ \pi'' = -10 < 0$$
+Thus Q = 15 is needed to maximise the firm's profit.
+
+(b)$$ TC = Q^2+50Q+10+tQ $$
+$$ \pi = TR - TC\\
+          = PQ - TC\\
+          = (200-4Q)Q - (Q^2+50Q+10+tQ)\\
+          = -5Q^2+(150-t)Q-10$$
+When$$ \pi' = -10Q+150-t = 0  $$
+we get $$ Q = 15-0.1t $$
+As $$ \pi'' = -10 < 0$$
+Thus Q = 15-0.1t is needed to maximise the firm's profit.
+
+When Q = 15, 
+$$ P_a = 200-4Q \\
+     = 200-4\times15\\
+     = 140 $$
+When Q = 15-0.1t, 
+$$ P_b = 200-4Q \\
+     = 200-4(15-0.1t)\\
+     = 140+\frac{2}{5}t $$
+As $$ P_b-P_a = \frac{2}{5}t $$
+Thus the price of the good increases by two-fifths of the tax, irrespective of the value of t.
+
 ### Question 7 {- #eq4.6.7}
 
 $$ f'(x)=3x^2+2ax+b $$
@@ -275,6 +308,109 @@ $$ (MR)' = -8 $$
 
 In total, when Q=5, there is a maximum TR.
 
+
+
+
+## Exercise 4.7* {- #e4.7}
+
+### Question 1 {- #eq4.7.1}
+
+(a) $$ TR = PQ\\
+          = (aQ+b)Q\\
+          = aQ^2+bQ$$
+$$ TC = dQ+c $$
+(b)$$ MR = \frac{d(TR)}{dQ}\\
+         = 2aQ+b$$
+$$ MC = \frac{d(TC)}{dQ}\\
+         = d$$
+(c)When MR =MC, the profit is maximised.
+$$ MR = 2aQ+b = MC = d $$
+$$ Q = \frac{d-b}{2a} $$
+
+### Question 2 {- #eq4.7.2}
+
+(a)At the point of maximum total revenue, there is MR = 0. 
+Thus $$ MR = 0 = P(1+\frac{1}{E}) $$
+Then $$ E = -1 $$
+(b)
+$$ 2P+3Q=60 $$
+$$ P = -1.5Q+30 $$
+
+$$ TR = PQ\\
+      = (-1.5Q+30)Q\\
+      = -1.5Q^2+30Q $$
+$$ MR = -3Q+30 = 0$$
+We get $$ Q = 10 $$
+As $$ (MR)' = -3 < 0 $$
+Thus when Q = 10, the total revenue is maximised.
+When Q=10, P= 15.
+
+At the point (10,15) which maximises the total revenue, we get:
+$$ \frac{dQ}{dP} = \frac{1}{\frac{dP}{dQ}} = \frac{1}{-1.5} $$
+$$ E = \frac{P}{Q}\times \frac{dQ}{dP} \\
+     = \frac{15}{10}\times\frac{1}{-1.5}\\
+     = -1$$
+
+### Question 3 {- #eq4.7.3}
+
+(a)
+$$ MC = 10$$
+$$ TR_1 = P_1Q_1 \\
+        = (50-5Q_1)Q_1\\
+        = -5Q_1^2+50Q_1$$
+$$ MR_1 = -10Q_1 +50 $$
+$$ MR_1 = MC = -10Q_1 +50 = 10$$
+$$ Q_1 = 4 $$
+$$ P_1 = 50-5Q_1 = 30 $$
+$$ TR_2 = P_2Q_2 \\
+        = (30-4Q_2)Q_2\\
+        = -4Q_2^2+30Q_2$$
+$$ MR_2 = -8Q_2 +30 $$
+$$ MR_2 = MC = -8Q_2 +30 = 10$$
+$$ Q_2 = 2.5 $$
+$$ P_2 = 30-4Q_2 = 20 $$
+When the firm's doestic price is 30 and foreign price is 20, the profit is maximised.
+
+(b)$$ P_1 = 50-5Q_1;\\P_2 = 30-4Q_2 $$
+$$ Q_1 = -0.2P_1 + 10;\\Q_2 = -0.25P_2 + 7.5 $$
+$$ Q = Q_1+Q_2 \\
+     = -0.2P + 10 -0.25P + 7.5\\
+     = -0.45P+17.5$$
+$$ P = -\frac{20}{9}Q + \frac{350}{9}$$
+$$ TR = PQ \\
+      = (-\frac{20}{9}Q + \frac{350}{9})Q\\
+      = -\frac{20}{9}Q^2 + \frac{350}{9}Q$$
+$$ MR = -\frac{40}{9}Q + \frac{350}{9} $$
+$$ MR = MC = -\frac{40}{9}Q + \frac{350}{9} = 10$$
+$$ Q = 6.5 $$
+$$ P = -\frac{20}{9}Q + \frac{350}{9} = \frac{220}{9}$$
+When the firm's price is 220/9, the profit is maximised.
+
+$$ \pi_a = TR - TC \\
+         = P_1Q_1+P_2Q_2 - (10+10(Q_1+Q_2))\\
+         = 30\times4 + 20\times2.5-10-10(4+2.5)\\
+         = 95 $$
+$$ \pi_b = TR - TC \\
+         = PQ - (10+10Q)\\
+         = \frac{220}{9}\times6.5 - 10-10\times6.5\\
+         = \frac{755}{9}\\
+         \approx 83.89$$
+
+### Question 9 {- #eq4.7.9}
+When there is a tax, t , we get:
+$$ P-t = aQ_S+b $$$
+$$ P = aQ_S+b+t $$
+$$ \begin{cases} P=aQ+b+t\\ P =-cQ+d \end{cases}   $$
+$$ P=aQ+b+t=-cQ+d  $$
+$$ Q = \frac{d-b-t}{a+c} $$
+$$ T = tQ \\
+     = t\times\frac{d-b-t}{a+c}\\
+     = -\frac{1}{a+c}t^2+\frac{d-b}{a+c}t$$
+$$ T' = \frac{dT}{dt}\\
+      = -\frac{2}{a+c}t+\frac{d-b}{a+c} = 0$$
+we get $$ t = \frac{d-b}{2} $$
+As $$ T'' = -\frac{2}{a+c} < 0$$
+Thus T is maximised by taking t = (d-b)/2.
 
 
 # Chapter 3 {- #s3}
