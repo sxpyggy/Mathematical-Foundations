@@ -324,7 +324,36 @@ $$f'(x),\frac{dy}{dx}=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}$$
 
 - **The derivative of the logarithm function** If $f(x)=\ln x$ then $f'(x)=\frac{1}{x}$. If $f(x)=\log_c x$ then $f'(x)=\frac{1}{x\ln c}$.
 
+#### A summary of applications of differentiation {-}
 
+- Marginal revenue (compared with average revenue)
+  
+- Marginal cost (compared with average cost)
+  
+- Marginal product of labour (compared with average product of labour)
+  
+- Marginal propensity to consume
+  
+- Marginal propensity to save
+  
+- Price elasticity of demand (relationship with marginal revenue)
+  
+- Price elasticity of supply
+  
+- Maximize the profit (MR=MC, E=-1)
+  
+  - with price discrimination
+    
+  - without price discrimination
+  
+- Maximize the average product of labour (AP=MP)
+  
+- Maximize the tax revenue under the market equilibrium conditions.
+  
+- Minimize the total cost in inventory control
+  
+  
+  
 
 
 
