@@ -2,3 +2,4 @@ linear-equations
 non-linear-equations
 mathematics-of-finance
 differentiation
+partial-differentiation

@@ -352,8 +352,27 @@ $$f'(x),\frac{dy}{dx}=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}$$
   
 - Minimize the total cost in inventory control
   
+
+# Partial Differentiation
   
-  
+#### Functions of several variables {-}
+
+- **Dependent variable**
+
+- **Independent variable**
+
+- **Partial derivative**
+
+- **Second-order partial derivative**
+
+- **Differentials**
+
+- **Small increments formula**
+
+- **Implicit differentiation**
+
+
+
 
 
 
