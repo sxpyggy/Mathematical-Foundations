@@ -357,59 +357,68 @@ $$f'(x),\frac{dy}{dx}=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}$$
   
 #### Functions of several variables {-}
 
-- **Dependent variable**
+- **Dependent variable** A variable whose value is determined by that taken by the independent variable; in $z=f(x,y)$ the dependent variable is $z$.
 
-- **Independent variable**
+- **Independent variable** Variables whose values determine that of the dependent variable; in $z=f(x,y)$ the independent variable are $x,y$.
 
-- **Partial derivative**
+- **Partial derivative** The derivative of a function of two or more variables with respect to one of these variables, the others being regarded as constant.
 
-- **Second-order partial derivative**
+$$f_x=\frac{\partial z}{\partial x}, f_y=\frac{\partial z}{\partial y}$$
 
-- **Differentials**
+- **Second-order partial derivative** The partial derivative of a first-order partial derivative. For example, $f_{xy}$ is the second-order partial derivative when $f$ is differentiated with respect to $y$ and then with respect to $x$.
 
-- **Small increments formula**
+$$f_{xy}=\frac{\partial\frac{\partial z}{x}}{\partial y}$$
 
-- **Implicit differentiation**
+- **Differentials** Limiting values of incremental changes. In the limit the approximation $\Delta z \approx \partial z/\partial x\times\Delta x$ becomes $d z =\partial z/\partial x\times dx$ where $dz,dx$ are the differentials.
+
+- **Small increments formula** $$\Delta z\approx \frac{\partial z}{\partial x}\Delta x + \frac{\partial z}{\partial y} \Delta y$$
+
+- **Implicit differentiation** The process of obtaining $dy/dx$ where the function is not given explicitly as an expression for $y$ in terms of $x$.
 
 #### Partial elasticity and marginal functions {-}
 
-- **Own price elasticity of demand**
+- **Own price elasticity of demand** The responsiveness of demand for one good due to change in the price of itself.
 
-- **Cross-price elasticity of demand**
+- **Cross-price elasticity of demand** The responsiveness of demand for one good due to change in the price of the alternative good.
 
-- **Income elasticity of demand**
+- **Income elasticity of demand** The responsiveness of demand for one good due to a change in income.
 
-- **Substitutable good**
+- **Substitutable good** A pair of goods that are alternatives to each other. As the price of one good goes up, the demand for the other rises.
 
-- **Complementary good**
+- **Complementary good** A pair of goods consumed together. As the price of either goes up, the demand for both goods goes down.
 
-- **Inferior good**
+- **Inferior good** A good whose demand decreases as income increases.
 
-- **Superior good**
+- **Normal good** A good whose demand increases as income increases.
 
-- **Marginal utility**
+- **Superior good** A normal good for which the percentage rise in consumption exceeds the percentage increases in income.
 
-- **Law of diminishing marginal utility**
+- **Utility** The satisfaction gained from the consumption of a good.
 
-- **Indifference map**
+- **Marginal utility** The extra satisfaction gained by consuming 1 extra unit of a good. $\partial U/\partial x_i$.
 
-- **Marginal rate of commodity substitution**
+- **Law of diminishing marginal utility** The law which states that the increase in utility due to the consumption of an additional good will eventually decline. $\partial^2 U/\partial x_i^2<0$ for sufficiently large $x_i$.
 
-- **Marginal product of capital**
+- **Indifference curve** A curve indicating all combinations of two goods which give the same level of utility.
 
-- **Marginal product of labour**
+- **Indifference map** A diagram showing the graphs of a set of indifference curves. The further the curve is from the origin, the greater the level of utility.
 
-- **Isoquants**
+- **Marginal rate of commodity substitution** The amount by which one input $x_2$ needs to increase to maintain a constant value of utility when the other input $x_1$ decreases by 1 unit. $$MRCS=\frac{\partial U/\partial x_1}{\partial U /\partial x_2}$$.
 
-- **Marginal rate of technical substitution**
+- **Marginal product of capital** The additional output produced by one unit increase in capital. $$MP_k=\frac{\partial Q}{\partial K}$$
 
-- **Homogeneous function**
+- **Marginal product of labour** The additional ouput produced by one unit increase in labour. $$MP_L=\frac{\partial Q}{\partial L}$$
 
-- **Decreasing/constant/increasing returns to scale**
+- **Isoquants** A curve indicating all combinations of two factors which give the same level of output.
 
-- **Euler's theorem**
+- **Marginal rate of technical substitution** The amount by which capital needs to rise to maintain a constant level of output when labour decreases by 1 unit. $$MRTS=\frac{MP_L}{MP_K}$$
+
+- **Homogeneous function** A function with the property that when all of the inputs are multiplied by a constant, $\lambda$, the output is multiplied by $\lambda^n$ where $n$ is the degree of homogeneity.
 
 
+- **Euler's theorem** If each inputs is paid the value of its marginal product, the total cost of these inputs is equal to total output, provided there are constant returns to scale.
+
+#### Comparative statics  {-}
 
 
 
