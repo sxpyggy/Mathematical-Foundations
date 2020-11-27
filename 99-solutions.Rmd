@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # (PART) 💡 SOLUTIONS {-}
 
 ```{r include=FALSE}
@@ -397,6 +402,36 @@ $$ \pi_b = TR - TC \\
          = \frac{220}{9}\times6.5 - 10-10\times6.5\\
          = \frac{755}{9}\\
          \approx 83.89$$
+         
+### Question 5 {- #eq4.7.5}
+
+(a)$$ \frac{dC}{dQ} = -\frac{DR}{Q^2}+\frac{H}{2} $$
+$$ \frac{d^2C}{dQ^2} = \frac{2DR}{Q^3} $$
+As Q > 0 , when $$ \frac{dC}{dQ} = 0 $$
+we get $$ Q = \sqrt{\frac{2DR}{H}} $$
+As the second-order derivative is always more than 0, thus $$ Q = \sqrt{\frac{2DR}{H}} $$ is a minimum point.
+
+(b)When $$ Q = \sqrt{\frac{2DR}{H}} $$
+We get $$ C = \frac{DR}{Q}+\frac{HQ}{2} \\
+            = \sqrt{2DRH} $$
+
+### Question 6 {- #eq4.7.6}
+
+Using the following formula:
+$$ EOQ = Q = \sqrt{\frac{2DR}{H}} \\
+   C = \sqrt{2DRH} $$
+(a)As D = 2000, R = 40 ,H = 100, we get 
+$$ EOQ = Q = \sqrt{\frac{2DR}{H}}= 40\\
+   C = \sqrt{2DRH}=4000 $$
+(b)As D = 2000, R = 40 ,H = 64, we get 
+$$ EOQ = Q = \sqrt{\frac{2DR}{H}}= 50\\
+   C = \sqrt{2DRH}=3200 $$
+(c)As D = 2000, R = 160 ,H = 100, we get 
+$$ EOQ = Q = \sqrt{\frac{2DR}{H}}= 80\\
+   C = \sqrt{2DRH}=8000 $$
+   
+(d)Reducing (increasing) the order costs by a factor of the square of k reduces (imcreases) the minimum total cost by a factor of k. The same applies to charges in the holding costs.         
+         
 
 ### Question 9 {- #eq4.7.9}
 When there is a tax, t , we get:
@@ -414,6 +449,85 @@ we get $$ t = \frac{d-b}{2} $$
 As $$ T'' = -\frac{2}{a+c} < 0$$
 Thus T is maximised by taking t = (d-b)/2.
 
+
+## Exercise 4.8* {- #e4.8} 
+
+### Question 2 {- #eq4.8.2}
+
+(a)$$ y = ln(\frac{x}{x+1}) = lnx - ln(x+1) $$
+$$ y' = \frac{1}{x} - \frac{1}{x+1}  = \frac{1}{x(x+1)}$$
+(b)$$ y = ln(x\sqrt{3x-1}) = lnx + \frac{1}{2}ln(3x-1) $$
+$$ y' = \frac{1}{x} + \frac{3}{2(3x-1)} = \frac{9x-2}{2x(3x-1)}$$
+(c)$$ y = ln(\sqrt{\frac{x+1}{x-1}}) = \frac{1}{2}ln(x+1) - \frac{1}{2}ln(x-1) $$
+$$ y' = \frac{1}{2(x+1)} - \frac{1}{2(x-1)} = \frac{1}{1-x^2}$$
+
+### Question 5 {- #eq4.8.5}
+
+(a)$$ y'=e^{ax} + axe^{ax}\\
+        =(1+ax)e^{ax} = 0$$
+$$ x = \frac{-1}{a} $$
+$$ y''=(2a+a^2x)e^{ax} $$
+When $$ x = \frac{-1}{a} $$
+$$ y = -\frac{1}{ae} $$
+$$ y'' < 0 $$
+Thus the stationary point is $$ (-\frac{1}{a},-\frac{1}{ae}) $$ and it is a maximum at this point.
+(b)$$ y'=\frac{2ax+b}{ax^2+bx} = 0$$
+$$ x = -\frac{b}{2a} $$
+$$y'' = \frac{2a(ax^2+bx)-(2ax+b)^2}{(ax^2+bx)^2}$$
+When $$ x = -\frac{b}{2a} $$
+$$ y = ln(-\frac{b^2}{4a}) $$
+$$ y''<0 $$
+Thus the stationary point is $$ (-\frac{b}{2a},ln(-\frac{b^2}{4a})) $$ and it is a maximum at this point.
+
+### Question 8 {- #eq4.8.8}
+
+$$ \frac{dP}{dQ} = -\frac{150}{2Q+1} $$
+$$ E = \frac{dQ}{dP}\times\frac{P}{Q}\\
+     = \frac{1}{\frac{dP}{dQ}}\times\frac{P}{Q}\\
+     = \frac{1}{-\frac{150}{2Q+1}}\times\frac{500-75ln(2Q+1)}{Q}\\
+     = \frac{(3ln(2Q+1)-20)(2Q+1)}{6Q}$$
+
+### Question 12 {- #eq4.8.12}
+
+(a)$$ \frac{dy}{dt} = \frac{abke^{-at}}{(1+be^{-at})^2} $$
+As k,a,b are positive constants, the first-order derivative is more than 0, thus the gradient is positive.
+
+(b)$$ \frac{d^2y}{dt^2} = \frac{-a^2bke^{-at}(1+be^{-at})^2+2a^2b^2ke^{-2at}(1+be^{-at})}{(1+be^{-at})^4} \\
+= \frac{a^2bke^{-at}(be^{-at}-1)}{(1+be^{-at})^3}$$
+When $$ \frac{d^2y}{dt^2} > 0 $$
+we get $$ t < \frac{lnb}{a} $$
+When $$ \frac{d^2y}{dt^2} < 0 $$
+we get $$ t > \frac{lnb}{a} $$
+Thus the graph is convex when t<(lnb)/a and concave when 
+t>(lnb)/a.
+
+(c)When t=0, we get$$ y = \frac{k}{1+b} $$,thus the curve crosses the y axis at (0,k/((1+b)).When t goes to infinity, y goes to k.
+
+(d)
+I just give you two examples which k=1 and k=8,you can refer to the exact graph in the textbook.The shape of the graphs is same. 
+```{r, echo=F}
+y<-function(k,a,b,t) k/(1+b*exp(-a*t))
+
+t = pretty(c(-5,5),3000)
+a=b=1
+
+plot(t,y(8,a,b,t),type = "l",xlab="t",ylab="y")
+lines(t,y(6,a,b,t),col=2)
+abline(v=0,lty=2)
+abline(h=8,col=1,lty=2)
+abline(h=6,col=2,lty=2)
+legend("topleft",c("a=b=1,k=8","a=b=1,k=6"),col=c(1,2))
+```
+
+### Question 13 {- #eq4.8.13}
+
+(a)$$ PV = V\times e^{-0.1t}\\
+         = 2e^{\sqrt{t}}\times e^{-0.1t}\\
+         = 2e^{\sqrt{t}-0.1t}$$
+(b)$$ (PV)' = (\frac{1}{\sqrt{t}}-0.2)e^{\sqrt{t}-0.1t} = 0 $$
+$$ T = 25 $$
+$$ (PV)'' = (-\frac{1}{2t^{\frac{3}{2}}}+(\frac{1}{\sqrt{t}}-0.2)(\frac{1}{2\sqrt{t}}-0.1))e^{\sqrt{t}-0.1t} $$
+When T=25,(PV)'' < 0,thus T = 25 is chosen to maximise PV.
 
 # Chapter 3 {- #s3}
 

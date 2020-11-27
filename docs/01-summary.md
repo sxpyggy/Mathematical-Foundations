@@ -371,6 +371,45 @@ $$f'(x),\frac{dy}{dx}=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}$$
 
 - **Implicit differentiation**
 
+#### Partial elasticity and marginal functions {-}
+
+- **Own price elasticity of demand**
+
+- **Cross-price elasticity of demand**
+
+- **Income elasticity of demand**
+
+- **Substitutable good**
+
+- **Complementary good**
+
+- **Inferior good**
+
+- **Superior good**
+
+- **Marginal utility**
+
+- **Law of diminishing marginal utility**
+
+- **Indifference map**
+
+- **Marginal rate of commodity substitution**
+
+- **Marginal product of capital**
+
+- **Marginal product of labour**
+
+- **Isoquants**
+
+- **Marginal rate of technical substitution**
+
+- **Homogeneous function**
+
+- **Decreasing/constant/increasing returns to scale**
+
+- **Euler's theorem**
+
+
 
 
 
