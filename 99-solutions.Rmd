@@ -9,6 +9,148 @@ editor_options:
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 ```
 
+
+# Chapter 5 {- #s5}
+
+## Exercise 5.1* {- #e5.1}
+
+### Question 2 {- #eq5.1.2}
+
+$$ f(w,x,y)=5w^{0.34}x^{0.25}y^{0.41}  $$
+$$ f(kw,kx,ky)=5(kw)^{0.34}(kx)^{0.25}(ky)^{0.41}\\
+              =5kw^{0.34}x^{0.25}y^{0.41}\\
+              =kf(w,x,y)$$
+
+### Question 4 {- #eq5.1.4}
+
+$$ \frac{\partial z}{\partial x} = 2xy^3-10y = 78$$
+$$ \frac{\partial z}{\partial y} = 3x^2y^2-10x+2y = 94 $$
+$$ dz = \frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy \\
+= 78\times0.2+94\times(-0.1)\\
+= 6.2$$
+Thus the change in z is 6.2.
+
+### Question 12 {- #eq5.1.12}
+
+(a)$$ f_x = 3x^2y+4y^2\\
+      f_y = x^3+8xy$$
+$$\frac{dy}{dx}=-\frac{f_x}{f_y} \\
+               =-\frac{3x^2y+4y^2}{x^3+8xy}$$
+(b)$$ f_x = 4x^{-\frac{2}{3}}y^{\frac{1}{4}}+1\\
+      f_y = 3x^{\frac{1}{3}}y^{-\frac{3}{4}}$$
+$$\frac{dy}{dx}=-\frac{f_x}{f_y} \\
+               =-\frac{4x^{-\frac{2}{3}}y^{\frac{1}{4}}+1}{3x^{\frac{1}{3}}y^{-\frac{3}{4}}}$$              
+(c)$$ f_x = y^2e^{xy}\\
+      f_y = (1+xy)e^{xy}$$
+$$\frac{dy}{dx}=-\frac{f_x}{f_y} \\
+               =-\frac{y^2e^{xy}}{(1+xy)e^{xy}}\\
+               =-\frac{y^2}{1+xy}$$               
+(d)$$ f_x = \frac{2x(x+y)-(x^2+y^2)}{(x+y)^2} = \frac{x^2+2xy-y^2}{(x+y)^2} \\
+      f_y = \frac{2y(x+y)-(x^2+y^2)}{(x+y)^2}= \frac{y^2+2xy-x^2}{(x+y)^2} $$
+$$\frac{dy}{dx}=-\frac{f_x}{f_y} \\
+               =-\frac{\frac{x^2+2xy-y^2}{(x+y)^2}}{\frac{y^2+2xy-x^2}{(x+y)^2}}\\
+               =\frac{x^2+2xy-y^2}{x^2-2xy-y^2}$$
+
+## Exercise 5.2* {- #e5.2}
+
+### Question 4 {- #eq5.1.4}
+
+$$ Q(\lambda K,\lambda L) = A(\lambda K)^\alpha (\lambda L)^\beta = A\lambda^{\alpha+\beta}K^\alpha L^\beta = \lambda^{\alpha+\beta}Q  $$
+Thus it is a homogeneous of degree$$\alpha + \beta $$
+
+(a)$$ \frac{\partial Q}{\partial K} = \alpha AK^{\alpha -1}L^{\beta} $$
+$$ \frac{\partial Q}{\partial L} = \beta AK^{\alpha}L^{\beta-1} $$
+$$K \frac{\partial Q}{\partial K} + L \frac{\partial Q}{\partial L} =\alpha AK^{\alpha}L^{\beta} + \beta AK^{\alpha}L^{\beta}= (\alpha + \beta)Q $$
+(b)$$ \frac{\partial^2 Q}{\partial K^2} = \alpha(\alpha -1) AK^{\alpha - 2}L^{\beta} $$
+$$ \frac{\partial^2 Q}{\partial K \partial L} = \alpha \beta AK^{\alpha - 1}L^{\beta-1} $$
+$$ \frac{\partial^2 Q}{\partial L^2} = \beta(\beta-1) AK^{\alpha}L^{\beta-2} $$
+$$K^2 \frac{\partial^2 Q}{\partial K^2} + 2KL\frac{\partial^2 Q}{\partial K \partial L}+ L^2 \frac{\partial^2 Q}{\partial L^2} =\alpha(\alpha -1) AK^{\alpha}L^{\beta} + 2\alpha \beta AK^{\alpha}L^{\beta}+\beta(\beta-1) AK^{\alpha}L^{\beta} \\
+=(\alpha + \beta)(\alpha + \beta -1)Q $$
+
+### Question 5 {- #eq5.1.5}
+
+(a)$$ \frac{\partial U}{\partial x_1}=0.7Ax_1^{-0.3}x_2^{0.5} > 0  $$
+It is greater than 0 as it is the product of four positive numbers.Utility increases when more units of good 1 are consumed.
+
+(b)$$ \frac{\partial^2 U}{\partial x_1 \partial x_2}=0.35Ax_1^{-0.3}x_2^{-0.5}>0 $$
+It is greater than 0 as it is the product of four positive numbers.Consuming more of one good increases the marginal utility of the other good.
+
+(c)$$ \frac{\partial^2 U}{\partial x_1^2}=-0.21Ax_1^{-1.3}x_2^{0.5}<0 $$
+It is less than 0 as it is the product of three positive numbers and one negative number.Consuming more of good 1 decreases the marginal utility of good 1.There is diminishing marginal utility of good 1.
+
+### Question 6 {- #eq5.1.6}
+
+$$ 700=Q=5L+7K $$
+The graph is showed in the following.
+```{r, echo=F}
+L = pretty(c(0,140),3000)
+K=-5/7*L+100
+plot(L,K,type = "l",xlab="L",ylab="K",ylim = c(0,120))
+abline(v=0,lty=2)
+abline(h=0,lty=2)
+abline(h=100,col=2,lty=2)
+abline(v=140,col=2,lty=2)
+```
+From the graph, we can get the slope is$$ -\frac{100}{140}=-\frac{5}{7} $$
+Thus the $$ MRTS = \frac{5}{7} $$
+
+$$ \frac{\partial Q}{\partial L } = 5 \\
+    \frac{\partial Q}{\partial K } = 7 $$
+$$ MRTS = \frac{\frac{\partial Q}{\partial L }}{\frac{\partial Q}{\partial K }}= \frac{5}{7}  $$
+
+### Question 9 {- #eq5.1.9}
+
+(a)The alternative good  is complementary as the coefficient of the price of an alternative good is negative.
+
+(b)(i)
+$$ E_P = \frac{P}{Q} \times \frac{\partial Q}{\partial P}\\
+       = \frac{50}{5000} \times (-b)\\
+       = \frac{-b}{100}$$
+
+(ii)$$ E_{CP} = \frac{P_A}{Q} \times \frac{\partial Q}{\partial P_A}\\
+       = \frac{30}{5000} \times (-c)\\
+       = \frac{-3c}{500}$$
+(iii)
+$$ E_Y = \frac{Y}{Q} \times \frac{\partial Q}{\partial Y}\\
+       = \frac{1000}{5000} \times (d)\\
+       = \frac{d}{5}$$
+(c)$$  E_{CP} =  \frac{-3c}{500} = -0.012 $$
+we get c=2.
+$$E_Y = \frac{d}{5} = \frac{2%}{10%} = \frac{1}{5} $$
+we get d=1.
+
+As the price elasticity of demand is always less than 0, thus $$ E_{CP} = \frac{-b}{100} = -\frac{1}{4} \times \frac{1}{5}  $$
+we get b=5.
+$$ Q = a-bP-cP_A+dY $$
+$$5000=a-5\times 50 - 2\times 30+1 \times 1000$$
+we get a=4310.
+
+### Question 11 {- #eq5.1.11}
+
+(a)$$ \frac{\partial U}{\partial x_1}=6(2x_1+3x_2)^2 $$
+$$ \frac{\partial U}{\partial x_2}=9(2x_1+3x_2)^2 $$
+$$ MRCS = \frac{\frac{\partial U}{\partial x_1}}{\frac{\partial U}{\partial x_2}} \\
+  = \frac{6(2x_1+3x_2)^2}{9(2x_1+3x_2)^2}\\
+  = \frac{2}{3} $$
+As the MRCS is a constant , the indifference map consists of straight lines.
+(b)$$ \frac{\partial U}{\partial x_1}=15x_1^2x_2 $$
+$$ \frac{\partial U}{\partial x_2}=5x_1^3 $$
+$$ MRCS = \frac{\frac{\partial U}{\partial x_1}}{\frac{\partial U}{\partial x_2}} \\
+  = \frac{15x_1^2x_2}{5x_1^3}\\
+  = \frac{3x_2}{x_1} $$
+As the MRCS decreases when x1 increases, the indifference curve is convex.
+
+(c)$$ \frac{\partial U}{\partial x_1}=x_1^{-0.5} $$
+$$ \frac{\partial U}{\partial x_2}=3x_2^{-0.5} $$
+$$ MRCS = \frac{\frac{\partial U}{\partial x_1}}{\frac{\partial U}{\partial x_2}} \\
+  = \frac{x_1^{-0.5}}{3x_2^{-0.5}}\\
+  = \frac{\sqrt{x_2}}{3\sqrt{x_1}} $$
+As the MRCS decreases when x1 increases, the indifference curve is convex.
+
+
+
+
+
 # Chapter 4 {- #s4}
 
 ## Exercise 4.1* {- #e4.1}
