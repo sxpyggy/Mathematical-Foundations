@@ -88,7 +88,7 @@
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.1.12"><i class="fa fa-check"></i>Question 12</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#e5.2"><i class="fa fa-check"></i>Exercise 5.2*</a><ul>
-<li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.1.4"><i class="fa fa-check"></i>Question 4</a></li>
+<li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.2.4"><i class="fa fa-check"></i>Question 4</a></li>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.1.5"><i class="fa fa-check"></i>Question 5</a></li>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.1.6"><i class="fa fa-check"></i>Question 6</a></li>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.1.9"><i class="fa fa-check"></i>Question 9</a></li>
@@ -362,24 +362,21 @@
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
+"github": true,
+"facebook": false,
+"twitter": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+"all": "github"
 },
 "fontsettings": {
-"theme": "white",
-"family": "sans",
+"theme": "sepia",
+"family": "serif",
 "size": 2
 },
-"edit": {
-"link": null,
-"text": null
-},
+"edit": null,
 "history": {
 "link": null,
 "text": null
@@ -391,7 +388,12 @@ gitbook.start({
 "download": null,
 "toc": {
 "collapse": "subsection"
-}
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"info": true
 });
 });
 </script>

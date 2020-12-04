@@ -377,6 +377,8 @@ $$f_{xy}=\frac{\partial\frac{\partial z}{x}}{\partial y}$$
 
 #### Partial elasticity and marginal functions {-}
 
+##### Elasticity
+
 - **Own price elasticity of demand** The responsiveness of demand for one good due to change in the price of itself.
 
 - **Cross-price elasticity of demand** The responsiveness of demand for one good due to change in the price of the alternative good.
@@ -393,6 +395,8 @@ $$f_{xy}=\frac{\partial\frac{\partial z}{x}}{\partial y}$$
 
 - **Superior good** A normal good for which the percentage rise in consumption exceeds the percentage increases in income.
 
+##### Utility
+
 - **Utility** The satisfaction gained from the consumption of a good.
 
 - **Marginal utility** The extra satisfaction gained by consuming 1 extra unit of a good. $\partial U/\partial x_i$.
@@ -404,6 +408,8 @@ $$f_{xy}=\frac{\partial\frac{\partial z}{x}}{\partial y}$$
 - **Indifference map** A diagram showing the graphs of a set of indifference curves. The further the curve is from the origin, the greater the level of utility.
 
 - **Marginal rate of commodity substitution** The amount by which one input $x_2$ needs to increase to maintain a constant value of utility when the other input $x_1$ decreases by 1 unit. $$MRCS=\frac{\partial U/\partial x_1}{\partial U /\partial x_2}$$.
+
+##### Production
 
 - **Marginal product of capital** The additional output produced by one unit increase in capital. $$MP_k=\frac{\partial Q}{\partial K}$$
 
@@ -418,22 +424,62 @@ $$f_{xy}=\frac{\partial\frac{\partial z}{x}}{\partial y}$$
 
 - **Euler's theorem** If each inputs is paid the value of its marginal product, the total cost of these inputs is equal to total output, provided there are constant returns to scale.
 
-#### Comparative statics  {-}
+#### Unconstrained optimization  {-}
 
+- **Maximum point** (of a function of two variables): A point on a surface which has the highest function value in comparison with other values in its neighborhood; at such a point the surface looks like the top of a mountain.
 
+- **Minimum point** (of a function of two variables): A point on a surface which has the lowest function value in comparison with other values in its neighborhood; at such a point the surface looks like the bottom of a valley or bowl.
 
+- **Saddle point**: A stationary point which is neither a maximum or minimum and at which the surface looks like the middle of a horse’s saddle.
 
+- **Routine**
 
+1. Solve the simultaneous equations to find the stationary points
 
+$$
+\begin{cases}
+f_x(x,y)=0\\
+f_y(x,y)=0
+\end{cases}
+$$
 
+2. Classify the stationary points
 
+- Minimum point
 
+$$f_{xx}>0,f_{yy}>0, f_{xx}f_{yy}-f_{xy}^2>0$$
 
+- Maximum point
 
+$$f_{xx}<0,f_{yy}<0, f_{xx}f_{yy}-f_{xy}^2>0$$
 
+- Saddle point
 
+$$f_{xx}f_{yy}-f_{xy}^2<0$$
 
+#### Constrained optimization {-}
 
+- **Objective function**: A function that one seeks to optimize (usually) subject to constraints.
+
+- **Method of substitution**: The method of solving constrained optimization problems whereby the constraint is used to eliminate one of the variables in the objective function.
+
+##### Production
+
+- **Isocost curve**: A line showing all combinations of two factors which can be bought for a fixed cost.
+
+- When the production is maximized, we have the ratio of marginal product to price is the same for all inputs.
+$$\frac{MP_L}{P_L}=\frac{MP_K}{P_K}$$
+
+##### Utility
+
+- When the utility is maximized, we have the ratio of marginal utility to price is the same for all goods consumed.
+$$\frac{U_1}{P_1}=\frac{U_2}{P_2}$$
+
+#### Lagrange multipliers
+
+- **Lagrangian** The function $f(x, y) + \lambda[M − \phi(x, y)]$, where $f(x, y)$ is the objective function and $\phi(x, y) = M$ is the constraint. The stationary point of this function is the solution of the associated constrained optimization problem.
+
+- **Lagrange multiplier**: The number $\lambda$ which is used in the Lagrangian function. In economics this gives the approximate change in the optimal value of the objective function when the value of the constraint is increased by $1$ unit.
 
 
 

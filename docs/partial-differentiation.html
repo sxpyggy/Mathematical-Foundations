@@ -88,7 +88,7 @@
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.1.12"><i class="fa fa-check"></i>Question 12</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#e5.2"><i class="fa fa-check"></i>Exercise 5.2*</a><ul>
-<li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.1.4"><i class="fa fa-check"></i>Question 4</a></li>
+<li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.2.4"><i class="fa fa-check"></i>Question 4</a></li>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.1.5"><i class="fa fa-check"></i>Question 5</a></li>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.1.6"><i class="fa fa-check"></i>Question 6</a></li>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.1.9"><i class="fa fa-check"></i>Question 9</a></li>
@@ -262,6 +262,8 @@
 </div>
 <div id="partial-elasticity-and-marginal-functions" class="section level4 unnumbered">
 <h4>Partial elasticity and marginal functions</h4>
+<div id="elasticity-1" class="section level5">
+<h5><span class="header-section-number">5.0.0.0.1</span> Elasticity</h5>
 <ul>
 <li><p><strong>Own price elasticity of demand</strong> The responsiveness of demand for one good due to change in the price of itself.</p></li>
 <li><p><strong>Cross-price elasticity of demand</strong> The responsiveness of demand for one good due to change in the price of the alternative good.</p></li>
@@ -271,12 +273,22 @@
 <li><p><strong>Inferior good</strong> A good whose demand decreases as income increases.</p></li>
 <li><p><strong>Normal good</strong> A good whose demand increases as income increases.</p></li>
 <li><p><strong>Superior good</strong> A normal good for which the percentage rise in consumption exceeds the percentage increases in income.</p></li>
+</ul>
+</div>
+<div id="utility" class="section level5">
+<h5><span class="header-section-number">5.0.0.0.2</span> Utility</h5>
+<ul>
 <li><p><strong>Utility</strong> The satisfaction gained from the consumption of a good.</p></li>
 <li><p><strong>Marginal utility</strong> The extra satisfaction gained by consuming 1 extra unit of a good. <span class="math inline">\(\partial U/\partial x_i\)</span>.</p></li>
 <li><p><strong>Law of diminishing marginal utility</strong> The law which states that the increase in utility due to the consumption of an additional good will eventually decline. <span class="math inline">\(\partial^2 U/\partial x_i^2&lt;0\)</span> for sufficiently large <span class="math inline">\(x_i\)</span>.</p></li>
 <li><p><strong>Indifference curve</strong> A curve indicating all combinations of two goods which give the same level of utility.</p></li>
 <li><p><strong>Indifference map</strong> A diagram showing the graphs of a set of indifference curves. The further the curve is from the origin, the greater the level of utility.</p></li>
 <li><p><strong>Marginal rate of commodity substitution</strong> The amount by which one input <span class="math inline">\(x_2\)</span> needs to increase to maintain a constant value of utility when the other input <span class="math inline">\(x_1\)</span> decreases by 1 unit. <span class="math display">\[MRCS=\frac{\partial U/\partial x_1}{\partial U /\partial x_2}\]</span>.</p></li>
+</ul>
+</div>
+<div id="production" class="section level5">
+<h5><span class="header-section-number">5.0.0.0.3</span> Production</h5>
+<ul>
 <li><p><strong>Marginal product of capital</strong> The additional output produced by one unit increase in capital. <span class="math display">\[MP_k=\frac{\partial Q}{\partial K}\]</span></p></li>
 <li><p><strong>Marginal product of labour</strong> The additional ouput produced by one unit increase in labour. <span class="math display">\[MP_L=\frac{\partial Q}{\partial L}\]</span></p></li>
 <li><p><strong>Isoquants</strong> A curve indicating all combinations of two factors which give the same level of output.</p></li>
@@ -285,8 +297,68 @@
 <li><p><strong>Euler’s theorem</strong> If each inputs is paid the value of its marginal product, the total cost of these inputs is equal to total output, provided there are constant returns to scale.</p></li>
 </ul>
 </div>
-<div id="comparative-statics" class="section level4 unnumbered">
-<h4>Comparative statics</h4>
+</div>
+<div id="unconstrained-optimization" class="section level4 unnumbered">
+<h4>Unconstrained optimization</h4>
+<ul>
+<li><p><strong>Maximum point</strong> (of a function of two variables): A point on a surface which has the highest function value in comparison with other values in its neighborhood; at such a point the surface looks like the top of a mountain.</p></li>
+<li><p><strong>Minimum point</strong> (of a function of two variables): A point on a surface which has the lowest function value in comparison with other values in its neighborhood; at such a point the surface looks like the bottom of a valley or bowl.</p></li>
+<li><p><strong>Saddle point</strong>: A stationary point which is neither a maximum or minimum and at which the surface looks like the middle of a horse’s saddle.</p></li>
+<li><p><strong>Routine</strong></p></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Solve the simultaneous equations to find the stationary points</li>
+</ol>
+<p><span class="math display">\[
+\begin{cases}
+f_x(x,y)=0\\
+f_y(x,y)=0
+\end{cases}
+\]</span></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Classify the stationary points</li>
+</ol>
+<ul>
+<li>Minimum point</li>
+</ul>
+<p><span class="math display">\[f_{xx}&gt;0,f_{yy}&gt;0, f_{xx}f_{yy}-f_{xy}^2&gt;0\]</span></p>
+<ul>
+<li>Maximum point</li>
+</ul>
+<p><span class="math display">\[f_{xx}&lt;0,f_{yy}&lt;0, f_{xx}f_{yy}-f_{xy}^2&gt;0\]</span></p>
+<ul>
+<li>Saddle point</li>
+</ul>
+<p><span class="math display">\[f_{xx}f_{yy}-f_{xy}^2&lt;0\]</span></p>
+</div>
+<div id="constrained-optimization" class="section level4 unnumbered">
+<h4>Constrained optimization</h4>
+<ul>
+<li><p><strong>Objective function</strong>: A function that one seeks to optimize (usually) subject to constraints.</p></li>
+<li><p><strong>Method of substitution</strong>: The method of solving constrained optimization problems whereby the constraint is used to eliminate one of the variables in the objective function.</p></li>
+</ul>
+<div id="production-1" class="section level5">
+<h5><span class="header-section-number">5.0.0.0.4</span> Production</h5>
+<ul>
+<li><p><strong>Isocost curve</strong>: A line showing all combinations of two factors which can be bought for a fixed cost.</p></li>
+<li><p>When the production is maximized, we have the ratio of marginal product to price is the same for all inputs.
+<span class="math display">\[\frac{MP_L}{P_L}=\frac{MP_K}{P_K}\]</span></p></li>
+</ul>
+</div>
+<div id="utility-1" class="section level5">
+<h5><span class="header-section-number">5.0.0.0.5</span> Utility</h5>
+<ul>
+<li>When the utility is maximized, we have the ratio of marginal utility to price is the same for all goods consumed.
+<span class="math display">\[\frac{U_1}{P_1}=\frac{U_2}{P_2}\]</span></li>
+</ul>
+</div>
+</div>
+<div id="lagrange-multipliers" class="section level4">
+<h4><span class="header-section-number">5.0.0.1</span> Lagrange multipliers</h4>
+<ul>
+<li><p><strong>Lagrangian</strong> The function <span class="math inline">\(f(x, y) + \lambda[M − \phi(x, y)]\)</span>, where <span class="math inline">\(f(x, y)\)</span> is the objective function and <span class="math inline">\(\phi(x, y) = M\)</span> is the constraint. The stationary point of this function is the solution of the associated constrained optimization problem.</p></li>
+<li><p><strong>Lagrange multiplier</strong>: The number <span class="math inline">\(\lambda\)</span> which is used in the Lagrangian function. In economics this gives the approximate change in the optimal value of the objective function when the value of the constraint is increased by <span class="math inline">\(1\)</span> unit.</p></li>
+</ul>
 
 </div>
 </div>
@@ -315,24 +387,21 @@
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
+"github": true,
+"facebook": false,
+"twitter": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+"all": "github"
 },
 "fontsettings": {
-"theme": "white",
-"family": "sans",
+"theme": "sepia",
+"family": "serif",
 "size": 2
 },
-"edit": {
-"link": null,
-"text": null
-},
+"edit": null,
 "history": {
 "link": null,
 "text": null
@@ -344,7 +413,12 @@ gitbook.start({
 "download": null,
 "toc": {
 "collapse": "subsection"
-}
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"info": true
 });
 });
 </script>
