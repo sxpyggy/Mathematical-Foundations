@@ -4,8 +4,3 @@ mathematics-of-finance
 differentiation
 partial-differentiation
 elasticity-1
-utility
-production
-production-1
-utility-1
-lagrange-multipliers

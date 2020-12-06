@@ -395,7 +395,7 @@ $$f_{xy}=\frac{\partial\frac{\partial z}{x}}{\partial y}$$
 
 - **Superior good** A normal good for which the percentage rise in consumption exceeds the percentage increases in income.
 
-##### Utility
+##### Utility {-}
 
 - **Utility** The satisfaction gained from the consumption of a good.
 
@@ -409,7 +409,7 @@ $$f_{xy}=\frac{\partial\frac{\partial z}{x}}{\partial y}$$
 
 - **Marginal rate of commodity substitution** The amount by which one input $x_2$ needs to increase to maintain a constant value of utility when the other input $x_1$ decreases by 1 unit. $$MRCS=\frac{\partial U/\partial x_1}{\partial U /\partial x_2}$$.
 
-##### Production
+##### Production {-}
 
 - **Marginal product of capital** The additional output produced by one unit increase in capital. $$MP_k=\frac{\partial Q}{\partial K}$$
 
@@ -463,19 +463,19 @@ $$f_{xx}f_{yy}-f_{xy}^2<0$$
 
 - **Method of substitution**: The method of solving constrained optimization problems whereby the constraint is used to eliminate one of the variables in the objective function.
 
-##### Production
+##### Production {-}
 
 - **Isocost curve**: A line showing all combinations of two factors which can be bought for a fixed cost.
 
 - When the production is maximized, we have the ratio of marginal product to price is the same for all inputs.
 $$\frac{MP_L}{P_L}=\frac{MP_K}{P_K}$$
 
-##### Utility
+##### Utility {-}
 
 - When the utility is maximized, we have the ratio of marginal utility to price is the same for all goods consumed.
 $$\frac{U_1}{P_1}=\frac{U_2}{P_2}$$
 
-#### Lagrange multipliers
+#### Lagrange multipliers {-}
 
 - **Lagrangian** The function $f(x, y) + \lambda[M − \phi(x, y)]$, where $f(x, y)$ is the objective function and $\phi(x, y) = M$ is the constraint. The stationary point of this function is the solution of the associated constrained optimization problem.
 
