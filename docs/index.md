@@ -1,7 +1,7 @@
 --- 
 title: "Mathematical Foundations"
 # author: "Financial Mathematics"
-date: "2020-12-12 08:14:20"
+date: "2020-12-12 08:18:38"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
