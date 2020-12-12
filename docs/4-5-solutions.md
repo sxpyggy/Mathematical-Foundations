@@ -132,8 +132,123 @@ $$ MRCS = \frac{\frac{\partial U}{\partial x_1}}{\frac{\partial U}{\partial x_2}
 As the MRCS decreases when x1 increases, the indifference curve is convex.
 
 
+## Exercise 5.4* {- #e5.4}
+
+### Question 2 {- #eq5.4.2}
+
+$$ \pi = TR - TC\\
+          = PQ - TC\\
+          = 8(2L^{\frac{1}{2}}+3K^{\frac{1}{2}}) - (2L+K)\\
+          = 16L^{\frac{1}{2}}+24K^{\frac{1}{2}}-2L-K$$
+
+$$ \frac{\partial \pi}{\partial L} = 8L^{-\frac{1}{2}}-2 = 0 $$
+We get L=16.
+$$ \frac{\partial^2 \pi}{\partial L^2} = -4L^{-\frac{3}{2}} = \frac{-1}{16} < 0 $$
+$$ \frac{\partial \pi}{\partial K} = 12K^{-\frac{1}{2}}-1 $$
+We get K=144.
+$$ \frac{\partial^2 \pi}{\partial K^2} = -6K^{-\frac{3}{2}} = \frac{-1}{288} < 0 $$
+$$ \pi_{max} = 16L^{\frac{1}{2}}+24K^{\frac{1}{2}}-2L-K = 176$$
+Thus when L=16 and K=144, there is the maximum profit which is 176.
+
+### Question 4 {- #eq5.4.4}
+
+$$ \pi = TR - TC\\
+          = P_1Q_1+P_2Q_2 - TC\\
+          = (50-5Q_1)Q_1+(30-4Q_2)Q_2-(10+10(Q_1+Q_2))\\
+          = -5Q_1^2+40Q_1-4Q_2^2+20Q_2-10$$
+$$ \frac{\partial \pi}{\partial Q_1} = -10Q_1+40 = 0 $$
+We get $$ Q_1 = 4 $$.
+$$ \frac{\partial^2 \pi}{\partial Q_1^2} = -10 < 0 $$
+
+$$ \frac{\partial \pi}{\partial Q_2} = -8Q_2+20 = 0 $$
+We get $$ Q_2 = 2.5 $$.
+$$ \frac{\partial^2 \pi}{\partial Q_2^2} = -8 < 0 $$
+$$ \pi = -5Q_1^2+40Q_1-4Q_2^2+20Q_2-10 = 95$$
+$$P_1=50-5Q_1=30\\
+P_2=30-4Q_2=20$$
+Thus when $$P_1=30, P_2=20$$, there is a maximum profit which is 95.
+
+### Question 7 {- #eq5.4.7}
+
+As $$c_iQ_i^2$$ is the total cost of producing good i, $$ c_i >0$$ 
+
+$$ \pi(Q_1,Q_2) = TR - TC\\
+          = PQ - TC\\
+          = (p_1Q_1+p_2Q_2)-(c_1Q_1^2+c_2Q_2^2)\\
+          = p_1Q_1+p_2Q_2-c_1Q_1^2-c_2Q_2^2$$
+
+$$ \frac{\partial \pi}{\partial Q_1} = p_1-2c_1Q_1 = 0 $$
+We get $$ Q_1 = \frac{p_1}{2c_1} $$
+$$ \frac{\partial^2 \pi}{\partial Q_1^2} = -2c_1 < 0 $$
+$$ \frac{\partial \pi}{\partial Q_2} = p_2-2c_2Q_2 = 0 $$
+We get $$ Q_2 = \frac{p_2}{2c_2} $$
+$$ \frac{\partial^2 \pi}{\partial Q_2^2} = -2c_2 < 0 $$
+
+$$ \pi_{max} = p_1Q_1+p_2Q_2-c_1Q_1^2-c_2Q_2^2\\
+       = \frac{p_1^2}{2c_1}+\frac{p_2^2}{2c_2}-c_1(\frac{p_1}{2c_1})^2-c_2(\frac{p_2}{2c_2})^2\\
+       = \frac{p_1^2}{4c_1}+\frac{p_2^2}{4c_2}$$
+Thus when $$Q_1 = \frac{p_1}{2c_1},Q_2 = \frac{p_2}{2c_2}$$, there is a maximum profit which is $$ \pi_{max} = \frac{p_1^2}{4c_1}+\frac{p_2^2}{4c_2}$$
 
 
+## Exercise 5.5* {- #e5.5}
+
+### Question 3 {- #eq5.5.3}
+
+$$ 2L+K=99$$
+$$ K = 99-2L $$
+$$ \pi = TR - TC\\
+          = PQ - TC\\
+          = 8(2L^{\frac{1}{2}}+3K^{\frac{1}{2}}) - (2L+K)\\
+          = 16L^{\frac{1}{2}}+24(99-2L)^{\frac{1}{2}}-99$$
+$$ \frac{\partial \pi}{\partial L} = 8L^{-\frac{1}{2}}-24(99-2L)^{-\frac{1}{2}} = 0 $$
+We get L=9.
+
+$$ \frac{\partial^2 \pi}{\partial L^2} = -4L^{-\frac{3}{2}}-24(99-2L)^{-\frac{3}{2}} =-\frac{44}{243}< 0 $$
+$$ K = 99-2L =81 $$
+$$ \pi = 16L^{\frac{1}{2}}+24(99-2L)^{\frac{1}{2}}-99=165$$
+Thus when L=9 and K=81,there is the maximum profit which is 165.
+
+### Question 5 {- #eq5.5.5}
+
+(a)$$ 2x_1+4x_2=300$$
+(b)As$$ 2x_1+4x_2=300$$
+$$x_1 = 150-2x_2 $$
+
+$$ U = x_1\sqrt{x_2}\\
+     = (150-2x_2)\sqrt{x_2}$$
+$$ U'= -2\sqrt{x_2} + (150-2x_2)\frac{1}{2\sqrt{x_2}} \\
+     = -2\sqrt{x_2} + \frac{75-x_2}{\sqrt{x_2}} =0$$
+     
+we get $$ x_2 = 25 $$
+
+$$ U''= -\frac{1}{\sqrt{x_2}} + \frac{-\sqrt{x_2}-(75-x_2)\frac{1}{2\sqrt{x_2}})}{x_2}\\
+ = -0.6 <0 $$
+$$ x_1 =150-2x_2 = 100 $$
+$$ U = (150-2x_2)\sqrt{x_2} = 500$$
+Thus when $$ x_1=100,x_2=25 $$, there is a maximum value that is 500.
+
+(c)
+
+<img src="4-5-solutions_files/figure-html/unnamed-chunk-3-1.png" width="672"  />
+
+As you can see, the maximum point of the constrained problem occurs at a point where the budgetary constraint is a tangent to an indifference curve.
+
+### Question 7 {- #eq5.5.7}
+
+(a)$$U(x_1,x_2) = \sqrt{x_1}+x_2 \\
+                = \sqrt{x_1}+b-ax_1$$
+$$ U' = \frac{1}{2\sqrt{x_1}}-a = 0$$
+we get $$ x_1 = \frac{1}{4a^2} $$
+As a is positive constant,
+$$ U'' = -\frac{1}{4}x_1^{-\frac{3}{2}} < 0$$
+$$ U(x_1,x_2)_{max} = \sqrt{x_1}+b-ax_1\\
+                    = \frac{1}{2a}+b-\frac{1}{4a}\\
+                    = \frac{4ab+1}{4a}$$
+Thus when $$ x_1 = \frac{1}{4a^2} $$, there is the maximum value of U  that is $$U^* = \frac{4ab+1}{4a}$$                    
+(b)$$ \frac{\partial U^*}{\partial a} = -\frac{1}{4a^2} < 0 $$ 
+Thus an increase in a causes a decrease in optiomal utility. 
+$$ \frac{\partial U^*}{\partial b} = 1 >0 $$                      
+Thus one unit increase in b causes one unit increase in optiomal utility.   
 
 # Chapter 4 {- #s4}
 
@@ -631,7 +746,7 @@ t>(lnb)/a.
 
 (d)
 I just give you two examples which k=1 and k=8,you can refer to the exact graph in the textbook.The shape of the graphs is same. 
-<img src="4-5-solutions_files/figure-html/unnamed-chunk-3-1.png" width="672"  />
+<img src="4-5-solutions_files/figure-html/unnamed-chunk-4-1.png" width="672"  />
 
 ### Question 13 {- #eq4.8.13}
 
