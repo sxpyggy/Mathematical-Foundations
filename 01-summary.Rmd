@@ -377,7 +377,7 @@ $$f_{xy}=\frac{\partial\frac{\partial z}{x}}{\partial y}$$
 
 #### Partial elasticity and marginal functions {-}
 
-##### Elasticity
+##### Elasticity {-}
 
 - **Own price elasticity of demand** The responsiveness of demand for one good due to change in the price of itself.
 
