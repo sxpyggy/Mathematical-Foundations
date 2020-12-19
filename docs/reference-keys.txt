@@ -3,4 +3,5 @@ non-linear-equations
 mathematics-of-finance
 differentiation
 partial-differentiation
-elasticity-1
+integration
+linear-programming

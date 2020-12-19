@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Non-linear Equations | Mathematical Foundations</title>
+  <title>Chapter 7 Linear programming | Mathematical Foundations</title>
   <meta name="description" content="The output format is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Non-linear Equations | Mathematical Foundations" />
+  <meta property="og:title" content="Chapter 7 Linear programming | Mathematical Foundations" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="sxpyggy/Mathematical-Foundations" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Non-linear Equations | Mathematical Foundations" />
+  <meta name="twitter:title" content="Chapter 7 Linear programming | Mathematical Foundations" />
   
   <meta name="twitter:description" content="The output format is bookdown::gitbook." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="linear-equations.html"/>
-<link rel="next" href="mathematics-of-finance.html"/>
+<link rel="prev" href="integration.html"/>
+<link rel="next" href="s6.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -269,76 +269,31 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="non-linear-equations" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> Non-linear Equations</h1>
-<div id="quadratic-functions" class="section level4 unnumbered">
-<h4>Quadratic functions</h4>
+<div id="linear-programming" class="section level1">
+<h1><span class="header-section-number">Chapter 7</span> Linear programming</h1>
+<div id="graphical-solution-of-linear-programming-problems" class="section level2 unnumbered">
+<h2>Graphical solution of linear programming problems</h2>
 <ul>
-<li><p><strong>Quadratic function</strong> A function of the form <span class="math inline">\(f(x)=ax^2+bx+c\)</span> where <span class="math inline">\(a\neq0.\)</span></p></li>
-<li><p><strong>Solution formula</strong> The solution of a quadratic equation <span class="math inline">\(ax^2+bx+c=0\)</span> is given by <span class="math display">\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.\]</span></p></li>
-<li><p><strong>Square root</strong> The solutions of the equation <span class="math inline">\(x^2=c\)</span> which are written as <span class="math inline">\(\pm\sqrt{c}\)</span>.</p></li>
-<li><p><strong>Discriminant</strong> The number <span class="math inline">\(b^2-4ac\)</span>, which is used to indicate the number of solutions of the quadratic equation <span class="math inline">\(ax^2+bx+c=0.\)</span></p></li>
-<li><p><strong>Parabola</strong> The shape of the graph of a quadratic function.</p></li>
-<li><p><strong>U-shaped curve</strong> A curve bends upwards, like the letter U.</p></li>
+<li><p><strong>Feasible region</strong> The set of points which satisfy all of the constraints in a linear programming
+problem.</p></li>
+<li><p><strong>Objective function</strong> The function that is optimised in a linear programming problem.</p></li>
+<li><p><strong>Non-negativity constraints</strong> The constraints <span class="math inline">\(x ≥ 0, y ≥ 0\)</span>, etc.</p></li>
+<li><p><strong>Unbounded region</strong> A feasible region that is not completely enclosed by a polygon. The associated
+linear programming problem may not have a finite solution.</p></li>
 </ul>
-</div>
-<div id="polynomials" class="section level4 unnumbered">
-<h4>Polynomials</h4>
-<p>This part is contained in the Formal Mathematics part at the end of this chapter. We put it here since it is an extension of quadratic functions.</p>
-<ul>
-<li><p><strong>Polynomial</strong> A function of the form <span class="math inline">\(a_nx^n+a_{n-1}x^{n-1}+\ldots+a_0\)</span>. The highest power <span class="math inline">\(n\)</span> is called the degree of the polynomial.</p></li>
-<li><p><strong>Continuous</strong> When <span class="math inline">\(\lim_{x\rightarrow a}f(x)=f(a)\)</span> at all points in the domain.</p></li>
-<li><p><strong>Discontinuous</strong> When the graph of the function has jumps or gaps.</p></li>
-</ul>
-</div>
-<div id="profit-analysis" class="section level4 unnumbered">
-<h4>Profit analysis</h4>
-<ul>
-<li><p><strong>Total cost</strong> The sum of the total variable and fixed costs: <span class="math inline">\(TC = TVC + FC\)</span>.</p></li>
-<li><p><strong>Fixed costs</strong> Total costs that are independent of output.</p></li>
-<li><p><strong>Variable costs</strong> Total costs that change according to the amount of output produced.</p></li>
-<li><p><strong>Average cost</strong> Total cost per unit of output: <span class="math inline">\(AC = TC/Q\)</span>.</p></li>
-<li><p><strong>Rectangular hyperbola (L-shaped curve)</strong> A hyperbola with horizontal and vertical asymptotes bending like the letter L, such as the function <span class="math inline">\(f(x)=a+b/x\)</span>.</p></li>
-<li><p><strong>Total revenue</strong> A firm’s total earnings from the sales of a good: <span class="math inline">\(TR = PQ\)</span>.</p></li>
-<li><p><strong>Profit</strong> Total revenue minus total cost: <span class="math inline">\(\pi = TR − TC\)</span>.</p></li>
-</ul>
-</div>
-<div id="indices-and-logarithms" class="section level4 unnumbered">
-<h4>Indices and logarithms</h4>
-<ul>
-<li><p><span class="math inline">\(M=b^n\)</span> is called the <strong>exponential form</strong> of <span class="math inline">\(M\)</span> to <strong>base</strong> <span class="math inline">\(b\)</span>. The number <span class="math inline">\(n\)</span> is referred to as the <strong>index, power, exponent</strong> or the logarithm of <span class="math inline">\(M\)</span> to base <span class="math inline">\(b\)</span>, <span class="math inline">\(\log_b M=n\)</span>.</p></li>
-<li><p><strong>Four rules of indices</strong></p>
-<ol style="list-style-type: decimal">
-<li><p><span class="math display">\[b^m\times b^n=b^{m+n}\]</span></p></li>
-<li><p><span class="math display">\[b^m\div b^n=b^{m-n}\]</span></p></li>
-<li><p><span class="math display">\[(b^m)^n=b^{mn}\]</span></p></li>
-<li><p><span class="math display">\[(ab)^n=a^nb^n\]</span></p></li>
-</ol></li>
-<li><p><strong>Three rules of logarithms</strong></p>
-<ol style="list-style-type: decimal">
-<li><p><span class="math display">\[\log_b(x\times y)=\log_bx +\log_b y\]</span></p></li>
-<li><p><span class="math display">\[\log_b(x\div y)=\log_bx -\log_b y\]</span></p></li>
-<li><p><span class="math display">\[\log_bx^m=m\log_bx\]</span></p></li>
-</ol></li>
-<li><p><strong>Homogeneous function</strong> A function with the property that when all of the inputs are multiplied by a constant, <span class="math inline">\(\lambda\)</span>, the output is multiplied by <span class="math inline">\(\lambda^n\)</span> where <span class="math inline">\(n\)</span> is the degree of homogeneity.</p></li>
-</ul>
-</div>
-<div id="exponential-and-natural-logarithm-functions" class="section level4 unnumbered">
-<h4>Exponential and natural logarithm functions</h4>
-<ul>
-<li><p><strong>Euler number</strong> <span class="math display">\[e=\lim_{m\rightarrow\infty}\left(1+\frac{1}{m}\right)^m\]</span></p></li>
-<li><p><strong>Exponential function</strong> The function <span class="math inline">\(f(x)=e^x=\exp(x)\)</span> in which the base is the number <span class="math inline">\(e=2.7183\)</span>.</p></li>
-<li><p><strong>Natural logarithm</strong> A logarithm to base <span class="math inline">\(e\)</span>. IF <span class="math inline">\(M=e^n\)</span> then n is the natural logarithm of <span class="math inline">\(M\)</span>, and we write <span class="math inline">\(n=\ln M\)</span>.</p></li>
-</ul>
+
 </div>
 </div>
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="linear-equations.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="mathematics-of-finance.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="integration.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="s6.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

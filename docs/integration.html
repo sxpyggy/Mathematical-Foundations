@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Non-linear Equations | Mathematical Foundations</title>
+  <title>Chapter 6 Integration | Mathematical Foundations</title>
   <meta name="description" content="The output format is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Non-linear Equations | Mathematical Foundations" />
+  <meta property="og:title" content="Chapter 6 Integration | Mathematical Foundations" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="sxpyggy/Mathematical-Foundations" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Non-linear Equations | Mathematical Foundations" />
+  <meta name="twitter:title" content="Chapter 6 Integration | Mathematical Foundations" />
   
   <meta name="twitter:description" content="The output format is bookdown::gitbook." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="linear-equations.html"/>
-<link rel="next" href="mathematics-of-finance.html"/>
+<link rel="prev" href="partial-differentiation.html"/>
+<link rel="next" href="linear-programming.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -269,66 +269,27 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="non-linear-equations" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> Non-linear Equations</h1>
-<div id="quadratic-functions" class="section level4 unnumbered">
-<h4>Quadratic functions</h4>
+<div id="integration" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> Integration</h1>
+<div id="indefinite-integration" class="section level4 unnumbered">
+<h4>Indefinite integration</h4>
 <ul>
-<li><p><strong>Quadratic function</strong> A function of the form <span class="math inline">\(f(x)=ax^2+bx+c\)</span> where <span class="math inline">\(a\neq0.\)</span></p></li>
-<li><p><strong>Solution formula</strong> The solution of a quadratic equation <span class="math inline">\(ax^2+bx+c=0\)</span> is given by <span class="math display">\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.\]</span></p></li>
-<li><p><strong>Square root</strong> The solutions of the equation <span class="math inline">\(x^2=c\)</span> which are written as <span class="math inline">\(\pm\sqrt{c}\)</span>.</p></li>
-<li><p><strong>Discriminant</strong> The number <span class="math inline">\(b^2-4ac\)</span>, which is used to indicate the number of solutions of the quadratic equation <span class="math inline">\(ax^2+bx+c=0.\)</span></p></li>
-<li><p><strong>Parabola</strong> The shape of the graph of a quadratic function.</p></li>
-<li><p><strong>U-shaped curve</strong> A curve bends upwards, like the letter U.</p></li>
+<li><p><strong>Integration</strong> In calculus, the inverse of differentiation is called integration.</p></li>
+<li><p><strong>Integral</strong> In general, if <span class="math inline">\(F′(x) = f(x)\)</span>, then <span class="math inline">\(F(x)\)</span> is said to be the <strong>integral (sometimes called the anti-derivative or primitive)</strong> of <span class="math inline">\(f(x)\)</span> and is written <span class="math display">\[F(x)=\int f(x)dx.\]</span></p></li>
+<li><p><strong>Constant of integration</strong> In general, if <span class="math inline">\(F(x)\)</span> is any function that differentiates to <span class="math inline">\(f(x)\)</span>, then so does <span class="math inline">\(F(x) + c\)</span>. The arbitrary constant, <span class="math inline">\(c\)</span>, is called the <em>constant of integration</em>.</p></li>
 </ul>
 </div>
-<div id="polynomials" class="section level4 unnumbered">
-<h4>Polynomials</h4>
-<p>This part is contained in the Formal Mathematics part at the end of this chapter. We put it here since it is an extension of quadratic functions.</p>
+<div id="definite-integration" class="section level4 unnumbered">
+<h4>Definite integration</h4>
 <ul>
-<li><p><strong>Polynomial</strong> A function of the form <span class="math inline">\(a_nx^n+a_{n-1}x^{n-1}+\ldots+a_0\)</span>. The highest power <span class="math inline">\(n\)</span> is called the degree of the polynomial.</p></li>
-<li><p><strong>Continuous</strong> When <span class="math inline">\(\lim_{x\rightarrow a}f(x)=f(a)\)</span> at all points in the domain.</p></li>
-<li><p><strong>Discontinuous</strong> When the graph of the function has jumps or gaps.</p></li>
-</ul>
-</div>
-<div id="profit-analysis" class="section level4 unnumbered">
-<h4>Profit analysis</h4>
-<ul>
-<li><p><strong>Total cost</strong> The sum of the total variable and fixed costs: <span class="math inline">\(TC = TVC + FC\)</span>.</p></li>
-<li><p><strong>Fixed costs</strong> Total costs that are independent of output.</p></li>
-<li><p><strong>Variable costs</strong> Total costs that change according to the amount of output produced.</p></li>
-<li><p><strong>Average cost</strong> Total cost per unit of output: <span class="math inline">\(AC = TC/Q\)</span>.</p></li>
-<li><p><strong>Rectangular hyperbola (L-shaped curve)</strong> A hyperbola with horizontal and vertical asymptotes bending like the letter L, such as the function <span class="math inline">\(f(x)=a+b/x\)</span>.</p></li>
-<li><p><strong>Total revenue</strong> A firm’s total earnings from the sales of a good: <span class="math inline">\(TR = PQ\)</span>.</p></li>
-<li><p><strong>Profit</strong> Total revenue minus total cost: <span class="math inline">\(\pi = TR − TC\)</span>.</p></li>
-</ul>
-</div>
-<div id="indices-and-logarithms" class="section level4 unnumbered">
-<h4>Indices and logarithms</h4>
-<ul>
-<li><p><span class="math inline">\(M=b^n\)</span> is called the <strong>exponential form</strong> of <span class="math inline">\(M\)</span> to <strong>base</strong> <span class="math inline">\(b\)</span>. The number <span class="math inline">\(n\)</span> is referred to as the <strong>index, power, exponent</strong> or the logarithm of <span class="math inline">\(M\)</span> to base <span class="math inline">\(b\)</span>, <span class="math inline">\(\log_b M=n\)</span>.</p></li>
-<li><p><strong>Four rules of indices</strong></p>
-<ol style="list-style-type: decimal">
-<li><p><span class="math display">\[b^m\times b^n=b^{m+n}\]</span></p></li>
-<li><p><span class="math display">\[b^m\div b^n=b^{m-n}\]</span></p></li>
-<li><p><span class="math display">\[(b^m)^n=b^{mn}\]</span></p></li>
-<li><p><span class="math display">\[(ab)^n=a^nb^n\]</span></p></li>
-</ol></li>
-<li><p><strong>Three rules of logarithms</strong></p>
-<ol style="list-style-type: decimal">
-<li><p><span class="math display">\[\log_b(x\times y)=\log_bx +\log_b y\]</span></p></li>
-<li><p><span class="math display">\[\log_b(x\div y)=\log_bx -\log_b y\]</span></p></li>
-<li><p><span class="math display">\[\log_bx^m=m\log_bx\]</span></p></li>
-</ol></li>
-<li><p><strong>Homogeneous function</strong> A function with the property that when all of the inputs are multiplied by a constant, <span class="math inline">\(\lambda\)</span>, the output is multiplied by <span class="math inline">\(\lambda^n\)</span> where <span class="math inline">\(n\)</span> is the degree of homogeneity.</p></li>
-</ul>
-</div>
-<div id="exponential-and-natural-logarithm-functions" class="section level4 unnumbered">
-<h4>Exponential and natural logarithm functions</h4>
-<ul>
-<li><p><strong>Euler number</strong> <span class="math display">\[e=\lim_{m\rightarrow\infty}\left(1+\frac{1}{m}\right)^m\]</span></p></li>
-<li><p><strong>Exponential function</strong> The function <span class="math inline">\(f(x)=e^x=\exp(x)\)</span> in which the base is the number <span class="math inline">\(e=2.7183\)</span>.</p></li>
-<li><p><strong>Natural logarithm</strong> A logarithm to base <span class="math inline">\(e\)</span>. IF <span class="math inline">\(M=e^n\)</span> then n is the natural logarithm of <span class="math inline">\(M\)</span>, and we write <span class="math inline">\(n=\ln M\)</span>.</p></li>
+<li><p><strong>Definite integral</strong> In general, the definite integral
+<span class="math display">\[\int_{a}^b f(x)dx\]</span> denotes the <em>area</em> under the graph of <span class="math inline">\(f(x)\)</span> between <span class="math inline">\(x = a\)</span> and <span class="math inline">\(x = b\)</span>. The
+numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are called the <strong>limits of integration</strong>.</p></li>
+<li><p><strong>Consumer’s surplus</strong> The excess cost that a person would have been prepared to pay for goods
+over and above what is actually paid.</p></li>
+<li><p><strong>Producer’s surplus</strong> The excess revenue that a producer has actually received over and above the
+lower revenue that it was prepared to accept for the supply of its goods.</p></li>
+<li><p><strong>Net investment</strong> Rate of change of capital stock over time: <span class="math display">\[I = \frac{dK}{dt}.\]</span></p></li>
 </ul>
 </div>
 </div>
@@ -337,8 +298,8 @@
           </div>
         </div>
       </div>
-<a href="linear-equations.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="mathematics-of-finance.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="partial-differentiation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="linear-programming.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

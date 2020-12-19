@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="differentiation.html"/>
-<link rel="next" href="s5.html"/>
+<link rel="next" href="integration.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -80,7 +80,19 @@
 <li class="chapter" data-level="3" data-path="mathematics-of-finance.html"><a href="mathematics-of-finance.html"><i class="fa fa-check"></i><b>3</b> Mathematics of Finance</a></li>
 <li class="chapter" data-level="4" data-path="differentiation.html"><a href="differentiation.html"><i class="fa fa-check"></i><b>4</b> Differentiation</a></li>
 <li class="chapter" data-level="5" data-path="partial-differentiation.html"><a href="partial-differentiation.html"><i class="fa fa-check"></i><b>5</b> Partial Differentiation</a></li>
+<li class="chapter" data-level="6" data-path="integration.html"><a href="integration.html"><i class="fa fa-check"></i><b>6</b> Integration</a></li>
+<li class="chapter" data-level="7" data-path="linear-programming.html"><a href="linear-programming.html"><i class="fa fa-check"></i><b>7</b> Linear programming</a><ul>
+<li class="chapter" data-level="" data-path="linear-programming.html"><a href="linear-programming.html#graphical-solution-of-linear-programming-problems"><i class="fa fa-check"></i>Graphical solution of linear programming problems</a></li>
+</ul></li>
 <li class="part"><span><b>II 💡 SOLUTIONS</b></span></li>
+<li class="chapter" data-level="" data-path="s6.html"><a href="s6.html"><i class="fa fa-check"></i>Chapter 6</a><ul>
+<li class="chapter" data-level="" data-path="s6.html"><a href="s6.html#e6.1"><i class="fa fa-check"></i>Exercise 6.1*</a><ul>
+<li class="chapter" data-level="" data-path="s6.html"><a href="s6.html#eq6.1.1"><i class="fa fa-check"></i>Question 1</a></li>
+<li class="chapter" data-level="" data-path="s6.html"><a href="s6.html#eq6.1.10"><i class="fa fa-check"></i>Question 10</a></li>
+<li class="chapter" data-level="" data-path="s6.html"><a href="s6.html#eq6.1.12"><i class="fa fa-check"></i>Question 12</a></li>
+<li class="chapter" data-level="" data-path="s6.html"><a href="s6.html#eq6.1.13"><i class="fa fa-check"></i>Question 13</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html"><i class="fa fa-check"></i>Chapter 5</a><ul>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#e5.1"><i class="fa fa-check"></i>Exercise 5.1*</a><ul>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.1.2"><i class="fa fa-check"></i>Question 2</a></li>
@@ -103,6 +115,13 @@
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.5.3"><i class="fa fa-check"></i>Question 3</a></li>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.5.5"><i class="fa fa-check"></i>Question 5</a></li>
 <li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.5.7"><i class="fa fa-check"></i>Question 7</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#e5.6"><i class="fa fa-check"></i>Exercise 5.6*</a><ul>
+<li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.6.1"><i class="fa fa-check"></i>Question 1</a></li>
+<li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.6.4"><i class="fa fa-check"></i>Question 4</a></li>
+<li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.6.7"><i class="fa fa-check"></i>Question 7</a></li>
+<li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.6.9"><i class="fa fa-check"></i>Question 9</a></li>
+<li class="chapter" data-level="" data-path="s5.html"><a href="s5.html#eq5.6.11"><i class="fa fa-check"></i>Question 11</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="s4.html"><a href="s4.html"><i class="fa fa-check"></i>Chapter 4</a><ul>
@@ -272,8 +291,8 @@
 </div>
 <div id="partial-elasticity-and-marginal-functions" class="section level4 unnumbered">
 <h4>Partial elasticity and marginal functions</h4>
-<div id="elasticity-1" class="section level5">
-<h5><span class="header-section-number">5.0.0.0.1</span> Elasticity</h5>
+<div id="elasticity-1" class="section level5 unnumbered">
+<h5>Elasticity</h5>
 <ul>
 <li><p><strong>Own price elasticity of demand</strong> The responsiveness of demand for one good due to change in the price of itself.</p></li>
 <li><p><strong>Cross-price elasticity of demand</strong> The responsiveness of demand for one good due to change in the price of the alternative good.</p></li>
@@ -369,19 +388,15 @@ f_y(x,y)=0
 <li><p><strong>Lagrangian</strong> The function <span class="math inline">\(f(x, y) + \lambda[M − \phi(x, y)]\)</span>, where <span class="math inline">\(f(x, y)\)</span> is the objective function and <span class="math inline">\(\phi(x, y) = M\)</span> is the constraint. The stationary point of this function is the solution of the associated constrained optimization problem.</p></li>
 <li><p><strong>Lagrange multiplier</strong>: The number <span class="math inline">\(\lambda\)</span> which is used in the Lagrangian function. In economics this gives the approximate change in the optimal value of the objective function when the value of the constraint is increased by <span class="math inline">\(1\)</span> unit.</p></li>
 </ul>
-
 </div>
 </div>
-
-
-
             </section>
 
           </div>
         </div>
       </div>
 <a href="differentiation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="s5.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="integration.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -2,6 +2,63 @@
 
 
 
+# Chapter 6 {- #s6}
+
+## Exercise 6.1* {- #e6.1}
+
+### Question 1 {- #eq6.1.1}
+
+(a)$$ \int x(x^5-2) {\rm d}x = \int (x^6-2x) {\rm d}x\\=\frac{1}{7}x^7-x^2+c $$
+(b)$$ \int x^{10}-3\sqrt{x}+e^{-x} {\rm d}x = \frac{1}{11}x^{11}-2x^{\frac{3}{2}}-e^{-x}+c $$
+(c)$$ \int x^3-\frac{5}{x^6}+\frac{2}{x}-4e^{-4x} {\rm d}x = \frac{1}{4}x^4+\frac{1}{x^5}+2lnx+e^{-4x}+c $$
+
+### Question 10 {- #eq6.1.10}
+
+$$ N = \int 10e^{-0.1t} {\rm d}t = -100e^{-0.1t}+c $$
+The employee is unable to produce any goods at the beginning of her shift, thus when t = 0, N=0. Then we can get $$ N = 0 \\=-100e^{-0.1t}+c\\=-100+c $$
+$$ c = 100$$
+$$ N = -100e^{-0.1t}+100 $$
+When t=8, $$ N = -100e^{-0.1t}+100\\
+               = -100e^{-0.8}+100\\
+               \approx 55$$
+In the long run, t tends to infinity, 
+$$ N = -100e^{-0.1t}+100\\
+     = 100$$
+
+### Question 12 {- #eq6.1.12}
+
+$$ TR = \int MR {\rm d}Q\\
+      = \int (240-0.6Q^2) {\rm d}Q\\
+      = 240Q-0.2Q^3+c_1$$
+As TR=PQ,when Q=0, TR=0.
+Thus $$ TR = 0 =0+c_1$$
+we get $$ c_1=0 $$
+$$ TR = 240Q-0.2Q^3 $$
+$$ TC = \int MC {\rm d}Q\\
+      = \int (150+0.3Q^2) {\rm d}Q\\
+      = 150Q+0.1Q^3+c_2$$
+
+As the fixed costs are 50, which means when t=0, TC=50, then we can get 
+$$ TC = 50\\
+      = 0+c_2$$
+$$c_2 = 50 $$
+$$ TC = 150Q+0.1Q^3+50$$
+$$ \pi = TR-TC\\
+       = (240Q-0.2Q^3)-(150Q+0.1Q^3+50)\\
+       = -0.3Q^3+90Q-50$$
+$$ \frac{\partial \pi}{\partial Q} = -0.9Q^2+90 = 0 $$
+As Q>0,we get $$ Q = 10 $$
+$$ \frac{\partial^2 \pi}{\partial Q^2} = -0.18Q = -1.8<0 $$
+$$ \pi_{max} = -0.3Q^3+90Q-50 = 550  $$
+Thus when Q=10, there is the maximum profit which is 550.
+
+### Question 13 {- #eq6.1.13}
+
+(a)$$ \int (ax+b)^n {\rm d}x = \frac{(ax+b)^{n+1}}{(n+1)a}+c $$
+(b)$$ \int e^{ax+b} {\rm d}x = \frac{e^{ax+b}}{a}+c $$
+(c)$$ \int \frac{1}{ax+b} {\rm d}x = \frac{ln(ax+b)}{a}+c $$
+
+
 # Chapter 5 {- #s5}
 
 ## Exercise 5.1* {- #e5.1}
@@ -250,10 +307,78 @@ Thus an increase in a causes a decrease in optiomal utility.
 $$ \frac{\partial U^*}{\partial b} = 1 >0 $$                      
 Thus one unit increase in b causes one unit increase in optiomal utility.                     
                     
-                    
-                    
-                    
 
+## Exercise 5.6* {- #e5.6}
+
+### Question 1 {- #eq5.6.1}
+
+(a)$$ g(x,y,\lambda)=x+2y+\lambda(M-x-y^2) $$
+$$ \frac{\partial g(x,y,\lambda)}{\partial x} = 1-\lambda=0$$
+we get $$\lambda = 1 $$
+$$ \frac{\partial g(x,y,\lambda)}{\partial y} = 2-2\lambda y=0$$
+we get $$y = 1 $$
+$$ \frac{\partial g(x,y,\lambda)}{\partial \lambda} = M-x-y^2=0$$
+we get $$x=M-1 $$
+Then$$ z= x+2y \\= M-1+2 \\= M+1 $$
+
+(b)$$ \frac{\partial z}{\partial M} = 1$$
+If M increases by 1 unit, z increases by 1 unit, which is the value of $$ \lambda $$
+
+### Question 4 {- #eq5.6.4}
+
+As 1 bicycle has 1 frame and 2 wheels, we get
+$$ y =2x $$
+$$ \pi = 5x^2-10xy+3y^2+240x\\
+       = 5x^2-10x(2x)+3(2x)^2+240x\\
+       = -3x^2+240x$$
+$$ \frac{\partial \pi}{\partial x} = -6x+240 =0 $$
+$$ x=40 $$
+$$ \frac{\partial^2 \pi}{\partial x^2} = -6<0 $$
+Thus we can get the maximum profit when x = 40.
+$$ y=2x=80 $$
+$$ \pi_{max} = -3x^2+240x = 4800 $$
+
+### Question 7 {- #eq5.6.7}
+
+As the agency has $10000 to spend in total, we can get $$ x+y = 10000 $$
+$$ \pi=0.15M+\lambda(10000-x-y)\\
+      =0.15(\frac{100000x}{50+x}+\frac{40000y}{30+y})+\lambda(10000-x-y)\\
+      =\frac{15000x}{50+x}+\frac{6000y}{30+y}+\lambda(10000-x-y) $$
+$$ \frac{\partial \pi}{\partial x} = \frac{15000(50+x)-15000x}{(50+x)^2}-\lambda\\
+= \frac{15000\times50}{(50+x)^2}-\lambda\\
+= 0 $$
+$$ \frac{\partial \pi}{\partial y} = \frac{6000(30+y)-6000y}{(30+y)^2}-\lambda\\
+= \frac{6000\times30}{(30+y)^2}-\lambda\\
+= 0 $$
+$$ \frac{\partial \pi}{\partial \lambda} = 10000-x-y = 0 $$
+Then we get $$ x  \approx 6715.56\\
+               y  \approx 3284.44$$
+Thus when x=6715.56 and y=3284.44,we can get the maximum of the agency's net income.
+
+### Question 9 {- #eq5.6.9}
+
+$$ f(x,y) = 400x+800y $$
+$$ g(x,y,\lambda)=400x+800y+\lambda(67-x^2-y^2+4x+6y) $$
+$$ \frac{\partial g(x,y,\lambda)}{\partial x} = 400-2\lambda x+4\lambda=0$$
+$$ \frac{\partial g(x,y,\lambda)}{\partial y} = 800-2\lambda y +6\lambda=0$$
+$$ \frac{\partial g(x,y,\lambda)}{\partial \lambda} =67-x^2-y^2+4x+6y=0$$
+As x>0, y>0, then we can get $$ x = 6\\
+                   y = 11\\
+                   \lambda = 50$$
+Thus the firm should buy 6 units of capital in project A and 11 units in project B in order to maximise total return. 
+
+### Question 11 {- #eq5.6.11}
+
+$$ g(x,y,\lambda)=ax+by+\lambda(1-x^2-y^2) $$
+$$ \frac{\partial g(x,y,\lambda)}{\partial x} = a-2\lambda x=0$$
+$$ \frac{\partial g(x,y,\lambda)}{\partial y} = b-2\lambda y=0$$
+$$ \frac{\partial g(x,y,\lambda)}{\partial \lambda} =1-x^2-y^2=0$$
+As x>0, y>0, then we can get $$ x = \frac{a}{\sqrt{a^2+b^2}} \\
+                   y = \frac{b}{\sqrt{a^2+b^2}}\\
+                   \lambda = \frac{\sqrt{a^2+b^2}}{2}$$
+$$ z_{max} = ax+by\\
+           = \frac{a^2}{\sqrt{a^2+b^2}}+\frac{b^2}{\sqrt{a^2+b^2}}\\
+           = \sqrt{a^2+b^2}$$                  
 
 
 # Chapter 4 {- #s4}

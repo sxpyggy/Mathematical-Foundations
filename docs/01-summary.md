@@ -377,7 +377,7 @@ $$f_{xy}=\frac{\partial\frac{\partial z}{x}}{\partial y}$$
 
 #### Partial elasticity and marginal functions {-}
 
-##### Elasticity
+##### Elasticity {-}
 
 - **Own price elasticity of demand** The responsiveness of demand for one good due to change in the price of itself.
 
@@ -480,6 +480,44 @@ $$\frac{U_1}{P_1}=\frac{U_2}{P_2}$$
 - **Lagrangian** The function $f(x, y) + \lambda[M − \phi(x, y)]$, where $f(x, y)$ is the objective function and $\phi(x, y) = M$ is the constraint. The stationary point of this function is the solution of the associated constrained optimization problem.
 
 - **Lagrange multiplier**: The number $\lambda$ which is used in the Lagrangian function. In economics this gives the approximate change in the optimal value of the objective function when the value of the constraint is increased by $1$ unit.
+
+# Integration
+
+#### Indefinite integration {-}
+
+- **Integration**  In calculus, the inverse of differentiation is called integration.
+
+- **Integral** In general, if $F′(x) = f(x)$, then $F(x)$ is said to be the **integral (sometimes called the anti-derivative or primitive)** of $f(x)$ and is written $$F(x)=\int f(x)dx.$$
+
+- **Constant of integration** In general, if $F(x)$ is any function that differentiates to $f(x)$, then so does $F(x) + c$. The arbitrary constant, $c$, is called the *constant of integration*. 
+
+#### Definite integration {-}
+
+- **Definite integral** In general, the definite integral
+$$\int_{a}^b f(x)dx$$ denotes the *area* under the graph of $f(x)$ between $x = a$ and $x = b$. The
+numbers $a$ and $b$ are called the **limits of integration**.
+
+- **Consumer's surplus** The excess cost that a person would have been prepared to pay for goods
+over and above what is actually paid.
+
+- **Producer’s surplus** The excess revenue that a producer has actually received over and above the
+lower revenue that it was prepared to accept for the supply of its goods.
+
+- **Net investment** Rate of change of capital stock over time: $$I = \frac{dK}{dt}.$$
+
+# Linear programming
+
+## Graphical solution of linear programming problems {-}
+
+- **Feasible region** The set of points which satisfy all of the constraints in a linear programming
+problem.
+
+- **Objective function** The function that is optimised in a linear programming problem.
+
+- **Non-negativity constraints** The constraints $x ≥ 0, y ≥ 0$, etc.
+
+- **Unbounded region** A feasible region that is not completely enclosed by a polygon. The associated
+linear programming problem may not have a finite solution.
 
 
 
