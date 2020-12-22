@@ -2,6 +2,58 @@
 
 
 
+
+# Chapter 8 {- #s8}
+
+## Exercise 8.1* {- #e8.1}
+
+### Question 3 {- #eq8.1.3}
+
+(a)
+<img src="4-5-solutions_files/figure-html/unnamed-chunk-2-1.png" width="672"  />
+
+The feasible region has three corners: (0,5), (2,4), (4,0), and the values of 2x + 3y are 15,16, 8.Thus the maximum is 16, which occurs at (2,4). 
+
+(b)
+<img src="4-5-solutions_files/figure-html/unnamed-chunk-3-1.png" width="672"  />
+
+The feasible region has three corners: (0,3), (2,0), (1,5), and the values of -8x + 4y are 12,-16, 12.
+When x<1, a boundary line of the feasible region is y=2x+3, then -8x+4y = -8x+4(2x+3) = 12, which is a constant.
+When x>1, a boundary line of the feasible region is y=x+4, then -8x+4y = -8x+4(x+4) = -4x+16, which decreases  as x increases. And when x =1, -8x+4y = -4x+16 =12.
+
+Thus the maximum is 12, which occurs at any point on the line y = 2x+3, 0<x<1 .
+
+### Question 7 {- #eq8.1.7}
+
+(a)
+<img src="4-5-solutions_files/figure-html/unnamed-chunk-4-1.png" width="672"  />
+
+(i)The feasible region has three corners: (4/3,40/3), (6,4),(12,0).
+
+(ii)There corners are (4/3,40/3),(6,4),(12,0), and the values of x + y are 44/3,10, 12, respectively.The optional point is (6,4).
+
+(iii)It is obviously to know that is $$ x \geq 0 $$
+
+(b)(i)There is no solution since x+y increases without bound as the lines x+y = c sweep across the region to the right.
+
+(ii)The feasible region has three corners:(4/3,40/3), (6,4),(12,0), and the values of 2x + y are 16,16, 24.
+
+When x<6, a boundary line of the feasible region is y=-2x+16, then 2x+y = 2x+(-2x+16) = 16, which is a constant.
+
+When x>6, a boundary line of the feasible region is y=-2/3x+8, then 2x+y = 2x+(-2/3x+8) = 4/3x+8 , which increases  as x increases. And when x =6, 2x+y = 4/3x+8 =16.
+
+Thus the minimum is 16, which occurs at any point on the line y = -2x+16, 4/3<x<6 .
+
+(c)The line 2x+3y = 24 rearranges as y = (-2/3)x+8, and the slope is -2/3.
+
+The line ax+2y = c rearranges as y = (-a/2)x+c/2, and the slope is -a/2.
+
+As a is a positive constant and the solution (12,0), we can get
+$$ -\frac{a}{2} \geq -\frac{2}{3} $$
+$$ a \leq \frac{4}{3} $$
+
+
+
 # Chapter 6 {- #s6}
 
 ## Exercise 6.1* {- #e6.1}
@@ -58,6 +110,62 @@ Thus when Q=10, there is the maximum profit which is 550.
 (b)$$ \int e^{ax+b} {\rm d}x = \frac{e^{ax+b}}{a}+c $$
 (c)$$ \int \frac{1}{ax+b} {\rm d}x = \frac{ln(ax+b)}{a}+c $$
 
+## Exercise 6.2* {- #e6.2}
+
+### Question 1 {- #eq6.2.1}
+
+(a)$$ \int_{-1}^{2} 5x^2-4x+6 {\rm d}x \\
+    = [\frac{5x^3}{3}-2x^2+6x]_{-1}^{2}\\
+    = [\frac{5\times2^3}{3}-2\times2^2+6\times2] - [\frac{5\times(-1)^3}{3}-2\times(-1)^2+6\times(-1)]\\
+    = 27$$
+(b)$$ \int_{2}^{10} \frac{1}{(2x+5)\sqrt{2x+5}} {\rm d}x \\
+    = \int_{2}^{10} (2x+5)^{-\frac{3}{2}} {\rm d}x \\
+    = [-(2x+5)^{-\frac{1}{2}}]_{2}^{10}\\
+    = [-(2\times10+5)^{-\frac{1}{2}}] - [-(2\times2+5)^{-\frac{1}{2}}]\\
+    = \frac{2}{15}$$
+
+### Question 4 {- #eq6.2.4}
+
+$$ \begin{cases} P=Q+50\\ P=\frac{4000}{Q+20} \end{cases}$$
+$$ Q+50 = \frac{4000}{Q+20} $$
+As Q > 0 , we get Q = 30.
+$$ P = Q+50=80 $$
+$$ CS = \int_{0}^{30} \frac{4000}{(Q+20)} {\rm d}Q - PQ\\
+      = [4000ln(Q+20)]_0^{30}-80\times30 \\
+      = 4000ln50-4000ln20-2400\\
+      = 4000ln(\frac{5}{2})-2400\\
+      \approx 1265.16 $$
+$$ PS = PQ - \int_{0}^{30} Q+50 {\rm d}Q \\
+      = 80\times30 - [\frac{Q^2}{2}+50Q]_0^{30} \\
+      = 2400 - 1950\\
+      = 450 $$
+      
+### Question 6 {- #eq6.2.6}
+
+(a)$$ \int_{2}^{5} 100e^{0.1t} {\rm d}t \\
+    = [1000e^{0.1t}]_2^5\\
+    = 1000e^{0.5}-1000e^{0.2}\\
+    \approx 427.32 $$
+
+(b)$$ \int_{0}^{T} 100e^{0.1t} {\rm d}t \\
+    = [1000e^{0.1t}]_0^T\\
+    = 1000e^{0.1T}-1000\\
+    = 100000 $$
+we get $$ T \approx 46.15 $$
+As T is a integer, the capital stock exceeds the $100000 level during the 47th year.
+
+### Question 12 {- #eq6.2.12}
+
+$$ \pi =  f(Q) \\
+       = TR -TC\\
+       = 100(1-e^{-0.1Q}) - (0.1Q^2+2Q+1)\\
+       = -100e^{-0.1Q} -0.1Q^2-2Q+99$$
+As a = 3 ,b=8,we get:
+$$ \frac{1}{b-a}\int_{a}^{b} f(Q) {\rm d}Q \\ 
+  =\frac{1}{8-3}\int_{3}^{8} -100e^{-0.1Q} -0.1Q^2-2Q+99 {\rm d}Q \\ 
+  =\frac{1}{5}\times[1000e^{-0.1Q} -\frac{0.1}{3}Q^3-Q^2+99Q]_3^8 \\
+  =\frac{1}{5}\times[(1000e^{-0.8} -\frac{0.1}{3}\times8^3-8^2+99\times8)-(1000e^{-0.3} -\frac{0.1}{3}\times3^3-3^2+99\times3)]\\
+  \approx 26.5$$
 
 # Chapter 5 {- #s5}
 
@@ -131,7 +239,7 @@ It is less than 0 as it is the product of three positive numbers and one negativ
 
 $$ 700=Q=5L+7K $$
 The graph is showed in the following.
-<img src="4-5-solutions_files/figure-html/unnamed-chunk-2-1.png" width="672"  />
+<img src="4-5-solutions_files/figure-html/unnamed-chunk-5-1.png" width="672"  />
 From the graph, we can get the slope is$$ -\frac{100}{140}=-\frac{5}{7} $$
 Thus the $$ MRTS = \frac{5}{7} $$
 
@@ -286,7 +394,7 @@ Thus when $$ x_1=100,x_2=25 $$, there is a maximum value that is 500.
 
 (c)
 
-<img src="4-5-solutions_files/figure-html/unnamed-chunk-3-1.png" width="672"  />
+<img src="4-5-solutions_files/figure-html/unnamed-chunk-6-1.png" width="672"  />
 
 As you can see, the maximum point of the constrained problem occurs at a point where the budgetary constraint is a tangent to an indifference curve.
 
@@ -877,7 +985,7 @@ t>(lnb)/a.
 
 (d)
 I just give you two examples which k=1 and k=8,you can refer to the exact graph in the textbook.The shape of the graphs is same. 
-<img src="4-5-solutions_files/figure-html/unnamed-chunk-4-1.png" width="672"  />
+<img src="4-5-solutions_files/figure-html/unnamed-chunk-7-1.png" width="672"  />
 
 ### Question 13 {- #eq4.8.13}
 
