@@ -173,7 +173,6 @@ This part is contained in the Formal Mathematics part at the end of this chapter
 
 In $a^n$, $n$ and $a$ are called the exponent and base respectively.
 
-
 **Rules for exponents**
 
 1. $a^ma^n=a^{m+n}$
@@ -323,5 +322,15 @@ dx+ey+f=0
 $$
 
 we can use elimination or substitution.
+
+## Linear programming
+
+- **Feasible region** The set of points which satisfy all of the constraints in a linear programming problem.
+
+- **Objective function** The function that is optimised in a linear programming problem.
+
+- **Non-negativity constraints** The constraints $x ≥ 0, y ≥ 0$, etc.
+
+- **Unbounded region** A feasible region that is not completely enclosed by a polygon. The associated linear programming problem may not have a finite solution.
 
 

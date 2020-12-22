@@ -10,12 +10,12 @@
 ### Question 3 {- #eq8.1.3}
 
 (a)
-<img src="4-5-solutions_files/figure-html/unnamed-chunk-2-1.png" width="672"  />
+<img src="4-6-solutions_files/figure-html/unnamed-chunk-2-1.png" width="672"  />
 
 The feasible region has three corners: (0,5), (2,4), (4,0), and the values of 2x + 3y are 15,16, 8.Thus the maximum is 16, which occurs at (2,4). 
 
 (b)
-<img src="4-5-solutions_files/figure-html/unnamed-chunk-3-1.png" width="672"  />
+<img src="4-6-solutions_files/figure-html/unnamed-chunk-3-1.png" width="672"  />
 
 The feasible region has three corners: (0,3), (2,0), (1,5), and the values of -8x + 4y are 12,-16, 12.
 When x<1, a boundary line of the feasible region is y=2x+3, then -8x+4y = -8x+4(2x+3) = 12, which is a constant.
@@ -26,7 +26,7 @@ Thus the maximum is 12, which occurs at any point on the line y = 2x+3, 0<x<1 .
 ### Question 7 {- #eq8.1.7}
 
 (a)
-<img src="4-5-solutions_files/figure-html/unnamed-chunk-4-1.png" width="672"  />
+<img src="4-6-solutions_files/figure-html/unnamed-chunk-4-1.png" width="672"  />
 
 (i)The feasible region has three corners: (4/3,40/3), (6,4),(12,0).
 
@@ -239,7 +239,7 @@ It is less than 0 as it is the product of three positive numbers and one negativ
 
 $$ 700=Q=5L+7K $$
 The graph is showed in the following.
-<img src="4-5-solutions_files/figure-html/unnamed-chunk-5-1.png" width="672"  />
+<img src="4-6-solutions_files/figure-html/unnamed-chunk-5-1.png" width="672"  />
 From the graph, we can get the slope is$$ -\frac{100}{140}=-\frac{5}{7} $$
 Thus the $$ MRTS = \frac{5}{7} $$
 
@@ -394,7 +394,7 @@ Thus when $$ x_1=100,x_2=25 $$, there is a maximum value that is 500.
 
 (c)
 
-<img src="4-5-solutions_files/figure-html/unnamed-chunk-6-1.png" width="672"  />
+<img src="4-6-solutions_files/figure-html/unnamed-chunk-6-1.png" width="672"  />
 
 As you can see, the maximum point of the constrained problem occurs at a point where the budgetary constraint is a tangent to an indifference curve.
 
@@ -985,7 +985,7 @@ t>(lnb)/a.
 
 (d)
 I just give you two examples which k=1 and k=8,you can refer to the exact graph in the textbook.The shape of the graphs is same. 
-<img src="4-5-solutions_files/figure-html/unnamed-chunk-7-1.png" width="672"  />
+<img src="4-6-solutions_files/figure-html/unnamed-chunk-7-1.png" width="672"  />
 
 ### Question 13 {- #eq4.8.13}
 

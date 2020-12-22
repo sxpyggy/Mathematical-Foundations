@@ -13,6 +13,8 @@ lines
 pythagoras-theorem-distance-formula-and-circles
 parabola
 systems-of-equations
+linear-programming
+mathematics-of-finance
 differentiation
 summary-of-the-textbook
 additional-notes
@@ -21,5 +23,3 @@ summary-of-the-textbook-1
 integration
 summary-of-the-textbook-2
 additional-notes-1
-linear-programming
-mathematics-of-finance

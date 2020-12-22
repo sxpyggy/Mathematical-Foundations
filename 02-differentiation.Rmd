@@ -1,5 +1,3 @@
-# (PART) Calculus {-}
-
 # Differentiation
 
 ## Summary of the textbook
@@ -132,25 +130,22 @@ $$f'(x),\frac{dy}{dx}=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}$$
 
 ## Additional notes
 
-**Formula for slope** Suppose a curve $C$ is given by $y=f(x)$, where $f$ is a function; and a point $P(x_0;f(x_0))$ is a point on $C$. For any point $Q$ on $C$ with $Q\neq P$, its $x$-coordinate can be written as $x_0+h$ where $h\neq 0$ (if $h>0$, $Q$ is on the right of $P$; if $h<0$, Q is on the left of $P$). Thus, $Q$ can be written as $(x_0+h;f(x_0+h))$. The slope $m_{PQ} of the secant line $PQ$ is
+**Formula for slope** Suppose a curve $C$ is given by $y=f(x)$, where $f$ is a function; and a point $P(x_0;f(x_0))$ is on $C$. For any point $Q$ on $C$ with $Q\neq P$, its $x$-coordinate can be written as $x_0+h$ where $h\neq 0$ (if $h>0$, $Q$ is on the right of $P$; if $h<0$, Q is on the left of $P$). Thus, $Q$ can be written as $(x_0+h;f(x_0+h))$. The slope $m_{PQ}$ of the *secant line* $PQ$ is
 $$m_{PQ}=\frac{f(x_0+h)-f(x_0)}{(x_0+h)-x_0}=\frac{f(x_0+h)-f(x_0)}{h}$$
-Note that as $Q$ approaches $P$, the number $h$ approaches 0. From these, we see that the slope of $C$ at $P$ (denoted by $m_p$) is 
+Note that as $Q$ approaches $P$, the number $h$ approaches $0$. From these, we see that the slope of $C$ at $P$ (denoted by $m_p$) is 
 
 \begin{equation}
 m_p=\underset{h\rightarrow\infty}{\lim}\frac{f(x_0+h)-f(x_0)}{h} (\#eq:mp)
 \end{equation}
-
-
 provided that the limit exists.
 
 **Example** Find the slope of the curve $y=x^2$ at the point $P(3,9)$.
 
+**Definition** Let $x_0$ be a real number and let $f$ be a function defined on an open interval containing $x_0$. Suppose the limit in \@ref(eq:mp) exists. Then we say that $f$ is **differentiable** at $x_0$.
 
-**Definition** Let $x_0$ be a real number and let $f$ be a function defined on an open interval containing $x_0$. Suppose the limit in \@ref(eq:mp) exists. Then we say that $f$ is *differentiable* at $x_0$.
+**Example** Let $f(x)=|x|$. The domain of $f$ is $\mathbb{R}$. The function $f$ is continuous at $0$. However it is not differentiable at $0$.
 
-**Example** Let $f(x)=|x|$. The domain of $f$ is $\mathbb{R}$. The function $f$ is continuous at $0$. However it is not differetiable at $0$.
-
-*Definition** Let $f$ be a function that is differetiable at some points belonging in its domain. Then the derivative of $f$, denoted by $f'$, is the function (from a subset of $\text{dom}(f)$ into $\mathbb{R}$) given by
+**Definition** Let $f$ be a function that is differentiable at some points belonging in its domain. Then the **derivative** of $f$, denoted by $f'$, is the function (from a subset of $\text{dom}(f)$ into $\mathbb{R}$) given by
 $$f'(x)=\underset{h\rightarrow\infty}{\lim}\frac{f(x+h)-f(x)}{h}$$
 where the domain of $f'$ is $\{x\in\text{dom}(f):\underset{h\rightarrow\infty}{\lim}\frac{f(x+h)-f(x)}{h}~~ \text{exits} \}$
 
@@ -172,16 +167,13 @@ where the domain of $f'$ is $\{x\in\text{dom}(f):\underset{h\rightarrow\infty}{\
   
 **Caution** $\frac{dy}{dx}$ is not a fraction, but a function in $x$.  
 
-**Prove the following rules of differentiation**
-
 **Rate of change** The slope of a curve $y=f(x)$ at a point $P(x_0,f(x_0))$  is the rate of change of $y$ with respect to $x$ at $P$. That is, $f'(x_0)$ is the rate of change of $y$ w.r.t. $x$ when $x=x_0$.
 
-**Derivative of Identity Function** The derivative of the identity function is the constant function 1. *How to prove*
+**Prove the following rules of differentiation**
 
-**Power Rule for Differentiation (positive integer version)** Let $n$ be a positive integer. Then the power function $x^n$ is differentiate on $\mathbb{R}$ and we have $$\frac{d}{dx}x^n=nx^{n-1}$$
+- **Power Rule for Differentiation (positive integer version)** Let $n$ be a positive integer. Then the power function $x^n$ is differentiate on $\mathbb{R}$ and we have $$\frac{d}{dx}x^n=nx^{n-1}$$
 
-**Product Rule** Let $f$ and $g$ be functions with the same domain. Suppose that $f$ and $g$ are differentiable. Then the function $fg$ is also differentiable. Moreover, we have $$\frac{d}{dx}(fg)(x)=g(x)\cdot\frac{d}{dx}f(x)+f(x)\cdot\frac{d}{dx}g(x)$$
-
+- **Product Rule** Let $f$ and $g$ be functions with the same domain. Suppose that $f$ and $g$ are differentiable. Then the function $fg$ is also differentiable. Moreover, we have $$\frac{d}{dx}(fg)(x)=g(x)\cdot\frac{d}{dx}f(x)+f(x)\cdot\frac{d}{dx}g(x)$$
 
 # Partial Differentiation
 

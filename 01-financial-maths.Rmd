@@ -1,5 +1,3 @@
-# (PART) Mathematics of Finance {-}
-
 # Mathematics of Finance
 
 #### Percentages {-}
