@@ -1,5 +1,8 @@
 # (PART) 💡 SOLUTIONS {-}
 
+**[✍️ Final Exam](#final)**
+
+
 
 
 

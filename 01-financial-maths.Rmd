@@ -1,5 +1,7 @@
 # Mathematics of Finance
 
+**[✍️ Final Exam](#final)**
+
 #### Percentages {-}
 
 - **Index number** The scale factor of a variable measured from the base year multiplied by 100.

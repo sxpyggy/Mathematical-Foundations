@@ -1,7 +1,7 @@
 --- 
 title: "Mathematical Foundations"
 # author: "Financial Mathematics"
-date: "2020-12-22 23:25:42"
+date: "2020-12-23 14:46:06"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -27,6 +27,25 @@ This is the website of Mathematical Foundations. We create this website  to
 - Clarify possible confusions due to language.
 
 This website is maintained by <u>Guangyuan Gao</u> and <u>Yan Cai</u>. If you have any questions, please don't hesitate to contact us via <guangyuan.gao@ruc.edu.cn> or <2017201678@ruc.edu.cn>.
+
+## ✍️ Final Exam {- #final}
+
+- Duration: 18:00-19:30 Beijing Time on 14 Jan, 2021.
+
+- Style: Open book exam; Write solutions on the exam paper (a .doc will be sent to you).
+
+- Type of Questions: Similar to the homework (no multiple choice questions).
+
+- Number of Questions: Around 10.
+
+- Requirements: Necessary calculation/proof details.
+
+- Examinable chapters: 1-6.
+
+- Most important: (Partial) Differentiation and Optimization (60%), Integration (20%). Roughly. 
+
+- Less important: Financial Mathematics (10%), Linear equations and Non-linear Equations (10%). Roughly.
+
 
 ## 🖊️ Homework {-}
 

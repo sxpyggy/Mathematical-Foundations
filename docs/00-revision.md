@@ -1,5 +1,7 @@
 # Revision
 
+**[✍️ Final Exam](#final)**
+
 ## Linear Equations
 
 We do not contain the last two sections: Transposition of formula and National income determination. They are not examinable. 

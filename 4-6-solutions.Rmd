@@ -1,5 +1,8 @@
 # (PART) 💡 SOLUTIONS {-}
 
+**[✍️ Final Exam](#final)**
+
+
 ```{r include=FALSE}
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 ```
