@@ -1,7 +1,11 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # (PART) 💡 SOLUTIONS {-}
 
 **[✍️ Final Exam](#final)**
-
 
 
 
@@ -12,50 +16,34 @@
 
 ### Question 3 {- #eq8.1.3}
 
-(a)
+(a) The feasible region has three corners: $(0,5), (2,4), (4,0)$, and the values of $2x + 3y$ are $15,16, 8$. Thus the maximum is $16$, which occurs at $(2,4)$. 
+
 <img src="4-6-solutions_files/figure-html/unnamed-chunk-2-1.png" width="672"  />
 
-The feasible region has three corners: (0,5), (2,4), (4,0), and the values of 2x + 3y are 15,16, 8.Thus the maximum is 16, which occurs at (2,4). 
-
 (b)
+The feasible region has three corners: $(0,3), (2,0), (1,5)$, and the values of $-8x + 4y$ are $12,-16, 12$. Thus the maximum is $12$, which occurs at any point on the line $y=2x+3,0<x<1$.
+
 <img src="4-6-solutions_files/figure-html/unnamed-chunk-3-1.png" width="672"  />
-
-The feasible region has three corners: (0,3), (2,0), (1,5), and the values of -8x + 4y are 12,-16, 12.
-When x<1, a boundary line of the feasible region is y=2x+3, then -8x+4y = -8x+4(2x+3) = 12, which is a constant.
-When x>1, a boundary line of the feasible region is y=x+4, then -8x+4y = -8x+4(x+4) = -4x+16, which decreases  as x increases. And when x =1, -8x+4y = -4x+16 =12.
-
-Thus the maximum is 12, which occurs at any point on the line y = 2x+3, 0<x<1 .
 
 ### Question 7 {- #eq8.1.7}
 
 (a)
+
+    (i) The feasible region has three corners: $(4/3,40/3), (6,4),(12,0)$.
+
+    (ii) There corners are $(4/3,40/3),(6,4),(12,0)$, and the values of $x + y$ are $44/3,10, 12$, respectively. The optimal point is $(6,4)$.
+
+    (iii) $$ x \geq 0 $$ is redundant since it is not a bounary line of the feasible region.
+
+(b) 
+
+    (i) There is no solution since $x+y$ increases without bound as the lines $x+y = c$ sweep across the region to the right.
+
+    (ii) The feasible region has three corners: $(4/3,40/3), (6,4),(12,0)$, and the values of  $2x + y$ are $16,16,24$. Thus the minimum is $16$, which occurs at any point on the line   $y=-2x+16, 4/3<x<6$.
+
+(c) To get the minimum at $(12,0)$, the objective function must be less steep than the slope $-2/3$. So $-a/2 \geq-2/3$ and then $a\le 4/3$.
+
 <img src="4-6-solutions_files/figure-html/unnamed-chunk-4-1.png" width="672"  />
-
-(i)The feasible region has three corners: (4/3,40/3), (6,4),(12,0).
-
-(ii)There corners are (4/3,40/3),(6,4),(12,0), and the values of x + y are 44/3,10, 12, respectively.The optional point is (6,4).
-
-(iii)It is obviously to know that is $$ x \geq 0 $$
-
-(b)(i)There is no solution since x+y increases without bound as the lines x+y = c sweep across the region to the right.
-
-(ii)The feasible region has three corners:(4/3,40/3), (6,4),(12,0), and the values of 2x + y are 16,16, 24.
-
-When x<6, a boundary line of the feasible region is y=-2x+16, then 2x+y = 2x+(-2x+16) = 16, which is a constant.
-
-When x>6, a boundary line of the feasible region is y=-2/3x+8, then 2x+y = 2x+(-2/3x+8) = 4/3x+8 , which increases  as x increases. And when x =6, 2x+y = 4/3x+8 =16.
-
-Thus the minimum is 16, which occurs at any point on the line y = -2x+16, 4/3<x<6 .
-
-(c)The line 2x+3y = 24 rearranges as y = (-2/3)x+8, and the slope is -2/3.
-
-The line ax+2y = c rearranges as y = (-a/2)x+c/2, and the slope is -a/2.
-
-As a is a positive constant and the solution (12,0), we can get
-$$ -\frac{a}{2} \geq -\frac{2}{3} $$
-$$ a \leq \frac{4}{3} $$
-
-
 
 # Chapter 6 {- #s6}
 
@@ -65,7 +53,7 @@ $$ a \leq \frac{4}{3} $$
 
 (a)$$ \int x(x^5-2) {\rm d}x = \int (x^6-2x) {\rm d}x\\=\frac{1}{7}x^7-x^2+c $$
 (b)$$ \int x^{10}-3\sqrt{x}+e^{-x} {\rm d}x = \frac{1}{11}x^{11}-2x^{\frac{3}{2}}-e^{-x}+c $$
-(c)$$ \int x^3-\frac{5}{x^6}+\frac{2}{x}-4e^{-4x} {\rm d}x = \frac{1}{4}x^4+\frac{1}{x^5}+2lnx+e^{-4x}+c $$
+(c)$$ \int x^3-\frac{5}{x^6}+\frac{2}{x}-4e^{-4x} {\rm d}x = \frac{1}{4}x^4+\frac{1}{x^5}+2\lnx+e^{-4x}+c $$
 
 ### Question 10 {- #eq6.1.10}
 
@@ -111,7 +99,7 @@ Thus when Q=10, there is the maximum profit which is 550.
 
 (a)$$ \int (ax+b)^n {\rm d}x = \frac{(ax+b)^{n+1}}{(n+1)a}+c $$
 (b)$$ \int e^{ax+b} {\rm d}x = \frac{e^{ax+b}}{a}+c $$
-(c)$$ \int \frac{1}{ax+b} {\rm d}x = \frac{ln(ax+b)}{a}+c $$
+(c)$$ \int \frac{1}{ax+b} {\rm d}x = \frac{\ln(ax+b)}{a}+c $$
 
 ## Exercise 6.2* {- #e6.2}
 
@@ -134,9 +122,9 @@ $$ Q+50 = \frac{4000}{Q+20} $$
 As Q > 0 , we get Q = 30.
 $$ P = Q+50=80 $$
 $$ CS = \int_{0}^{30} \frac{4000}{(Q+20)} {\rm d}Q - PQ\\
-      = [4000ln(Q+20)]_0^{30}-80\times30 \\
-      = 4000ln50-4000ln20-2400\\
-      = 4000ln(\frac{5}{2})-2400\\
+      = [4000\ln(Q+20)]_0^{30}-80\times30 \\
+      = 4000\ln50-4000\ln20-2400\\
+      = 4000\ln(\frac{5}{2})-2400\\
       \approx 1265.16 $$
 $$ PS = PQ - \int_{0}^{30} Q+50 {\rm d}Q \\
       = 80\times30 - [\frac{Q^2}{2}+50Q]_0^{30} \\
@@ -809,17 +797,17 @@ In total, when Q=5, there is a maximum TR.
           = (aQ+b)Q\\
           = aQ^2+bQ$$
 $$ TC = dQ+c $$
-(b)$$ MR = \frac{d(TR)}{dQ}\\
+(b) $$ MR = \frac{d(TR)}{dQ}\\
          = 2aQ+b$$
 $$ MC = \frac{d(TC)}{dQ}\\
          = d$$
-(c)When MR =MC, the profit is maximised.
+(c) When $MR =MC$, the profit is maximised.
 $$ MR = 2aQ+b = MC = d $$
 $$ Q = \frac{d-b}{2a} $$
 
 ### Question 2 {- #eq4.7.2}
 
-(a)At the point of maximum total revenue, there is MR = 0. 
+(a) At the point of maximum total revenue, there is MR = 0. 
 Thus $$ MR = 0 = P(1+\frac{1}{E}) $$
 Then $$ E = -1 $$
 (b)
@@ -832,10 +820,10 @@ $$ TR = PQ\\
 $$ MR = -3Q+30 = 0$$
 We get $$ Q = 10 $$
 As $$ (MR)' = -3 < 0 $$
-Thus when Q = 10, the total revenue is maximised.
-When Q=10, P= 15.
+Thus when $Q = 10$, the total revenue is maximised.
+When $Q=10, P= 15$.
 
-At the point (10,15) which maximises the total revenue, we get:
+At the point $(10,15)$ which maximises the total revenue, we get:
 $$ \frac{dQ}{dP} = \frac{1}{\frac{dP}{dQ}} = \frac{1}{-1.5} $$
 $$ E = \frac{P}{Q}\times \frac{dQ}{dP} \\
      = \frac{15}{10}\times\frac{1}{-1.5}\\
@@ -861,7 +849,7 @@ $$ Q_2 = 2.5 $$
 $$ P_2 = 30-4Q_2 = 20 $$
 When the firm's doestic price is 30 and foreign price is 20, the profit is maximised.
 
-(b)$$ P_1 = 50-5Q_1;\\P_2 = 30-4Q_2 $$
+(b) $$ P_1 = 50-5Q_1;\\P_2 = 30-4Q_2 $$
 $$ Q_1 = -0.2P_1 + 10;\\Q_2 = -0.25P_2 + 7.5 $$
 $$ Q = Q_1+Q_2 \\
      = -0.2P + 10 -0.25P + 7.5\\
@@ -874,7 +862,7 @@ $$ MR = -\frac{40}{9}Q + \frac{350}{9} $$
 $$ MR = MC = -\frac{40}{9}Q + \frac{350}{9} = 10$$
 $$ Q = 6.5 $$
 $$ P = -\frac{20}{9}Q + \frac{350}{9} = \frac{220}{9}$$
-When the firm's price is 220/9, the profit is maximised.
+When the firm's price is $220/9$, the profit is maximised.
 
 $$ \pi_a = TR - TC \\
          = P_1Q_1+P_2Q_2 - (10+10(Q_1+Q_2))\\
@@ -888,13 +876,13 @@ $$ \pi_b = TR - TC \\
          
 ### Question 5 {- #eq4.7.5}
 
-(a)$$ \frac{dC}{dQ} = -\frac{DR}{Q^2}+\frac{H}{2} $$
+(a) $$ \frac{dC}{dQ} = -\frac{DR}{Q^2}+\frac{H}{2} $$
 $$ \frac{d^2C}{dQ^2} = \frac{2DR}{Q^3} $$
-As Q > 0 , when $$ \frac{dC}{dQ} = 0 $$
+As $Q > 0 $, when $$ \frac{dC}{dQ} = 0 $$
 we get $$ Q = \sqrt{\frac{2DR}{H}} $$
 As the second-order derivative is always more than 0, thus $$ Q = \sqrt{\frac{2DR}{H}} $$ is a minimum point.
 
-(b)When $$ Q = \sqrt{\frac{2DR}{H}} $$
+(b) When $$ Q = \sqrt{\frac{2DR}{H}} $$
 We get $$ C = \frac{DR}{Q}+\frac{HQ}{2} \\
             = \sqrt{2DRH} $$
 
@@ -903,21 +891,21 @@ We get $$ C = \frac{DR}{Q}+\frac{HQ}{2} \\
 Using the following formula:
 $$ EOQ = Q = \sqrt{\frac{2DR}{H}} \\
    C = \sqrt{2DRH} $$
-(a)As D = 2000, R = 40 ,H = 100, we get 
+(a) As $D = 2000, R = 40 ,H = 100$, we get 
 $$ EOQ = Q = \sqrt{\frac{2DR}{H}}= 40\\
    C = \sqrt{2DRH}=4000 $$
-(b)As D = 2000, R = 40 ,H = 64, we get 
+(b) As $D = 2000, R = 40 ,H = 64$, we get 
 $$ EOQ = Q = \sqrt{\frac{2DR}{H}}= 50\\
    C = \sqrt{2DRH}=3200 $$
-(c)As D = 2000, R = 160 ,H = 100, we get 
+(c) As $D = 2000, R = 160 ,H = 100$, we get 
 $$ EOQ = Q = \sqrt{\frac{2DR}{H}}= 80\\
    C = \sqrt{2DRH}=8000 $$
    
-(d)Reducing (increasing) the order costs by a factor of the square of k reduces (imcreases) the minimum total cost by a factor of k. The same applies to charges in the holding costs.         
+(d) Reducing (increasing) the order costs by a factor of the square of $k$ reduces (imcreases) the minimum total cost by a factor of $k$. The same applies to charges in the holding costs.         
          
 
 ### Question 9 {- #eq4.7.9}
-When there is a tax, t , we get:
+When there is a tax, $t$ , we get:
 $$ P-t = aQ_S+b $$$
 $$ P = aQ_S+b+t $$
 $$ \begin{cases} P=aQ+b+t\\ P =-cQ+d \end{cases}   $$
@@ -930,18 +918,18 @@ $$ T' = \frac{dT}{dt}\\
       = -\frac{2}{a+c}t+\frac{d-b}{a+c} = 0$$
 we get $$ t = \frac{d-b}{2} $$
 As $$ T'' = -\frac{2}{a+c} < 0$$
-Thus T is maximised by taking t = (d-b)/2.
+Thus T is maximised by taking $t = (d-b)/2$.
 
 
 ## Exercise 4.8* {- #e4.8} 
 
 ### Question 2 {- #eq4.8.2}
 
-(a)$$ y = ln(\frac{x}{x+1}) = lnx - ln(x+1) $$
+(a)$$ y = \ln(\frac{x}{x+1}) = \lnx - \ln(x+1) $$
 $$ y' = \frac{1}{x} - \frac{1}{x+1}  = \frac{1}{x(x+1)}$$
-(b)$$ y = ln(x\sqrt{3x-1}) = lnx + \frac{1}{2}ln(3x-1) $$
+(b)$$ y = \ln(x\sqrt{3x-1}) = \lnx + \frac{1}{2}\ln(3x-1) $$
 $$ y' = \frac{1}{x} + \frac{3}{2(3x-1)} = \frac{9x-2}{2x(3x-1)}$$
-(c)$$ y = ln(\sqrt{\frac{x+1}{x-1}}) = \frac{1}{2}ln(x+1) - \frac{1}{2}ln(x-1) $$
+(c)$$ y = \ln(\sqrt{\frac{x+1}{x-1}}) = \frac{1}{2}\ln(x+1) - \frac{1}{2}\ln(x-1) $$
 $$ y' = \frac{1}{2(x+1)} - \frac{1}{2(x-1)} = \frac{1}{1-x^2}$$
 
 ### Question 5 {- #eq4.8.5}
@@ -958,36 +946,36 @@ Thus the stationary point is $$ (-\frac{1}{a},-\frac{1}{ae}) $$ and it is a maxi
 $$ x = -\frac{b}{2a} $$
 $$y'' = \frac{2a(ax^2+bx)-(2ax+b)^2}{(ax^2+bx)^2}$$
 When $$ x = -\frac{b}{2a} $$
-$$ y = ln(-\frac{b^2}{4a}) $$
+$$ y = \ln(-\frac{b^2}{4a}) $$
 $$ y''<0 $$
-Thus the stationary point is $$ (-\frac{b}{2a},ln(-\frac{b^2}{4a})) $$ and it is a maximum at this point.
+Thus the stationary point is $$ (-\frac{b}{2a},\ln(-\frac{b^2}{4a})) $$ and it is a maximum at this point.
 
 ### Question 8 {- #eq4.8.8}
 
 $$ \frac{dP}{dQ} = -\frac{150}{2Q+1} $$
 $$ E = \frac{dQ}{dP}\times\frac{P}{Q}\\
      = \frac{1}{\frac{dP}{dQ}}\times\frac{P}{Q}\\
-     = \frac{1}{-\frac{150}{2Q+1}}\times\frac{500-75ln(2Q+1)}{Q}\\
-     = \frac{(3ln(2Q+1)-20)(2Q+1)}{6Q}$$
+     = \frac{1}{-\frac{150}{2Q+1}}\times\frac{500-75\ln(2Q+1)}{Q}\\
+     = \frac{(3\ln(2Q+1)-20)(2Q+1)}{6Q}$$
 
 ### Question 12 {- #eq4.8.12}
 
 (a)$$ \frac{dy}{dt} = \frac{abke^{-at}}{(1+be^{-at})^2} $$
-As k,a,b are positive constants, the first-order derivative is more than 0, thus the gradient is positive.
+As $k,a,b$ are positive constants, the first-order derivative is more than 0, thus the gradient is positive.
 
 (b)$$ \frac{d^2y}{dt^2} = \frac{-a^2bke^{-at}(1+be^{-at})^2+2a^2b^2ke^{-2at}(1+be^{-at})}{(1+be^{-at})^4} \\
 = \frac{a^2bke^{-at}(be^{-at}-1)}{(1+be^{-at})^3}$$
 When $$ \frac{d^2y}{dt^2} > 0 $$
-we get $$ t < \frac{lnb}{a} $$
+we get $$ t < \frac{\ln b}{a} $$
 When $$ \frac{d^2y}{dt^2} < 0 $$
-we get $$ t > \frac{lnb}{a} $$
-Thus the graph is convex when t<(lnb)/a and concave when 
-t>(lnb)/a.
+we get $$ t > \frac{\ln b}{a} $$
+Thus the graph is convex when $t<(\lnb)/a$ and concave when 
+$t>(\ln b)/a$.
 
-(c)When t=0, we get$$ y = \frac{k}{1+b} $$,thus the curve crosses the y axis at (0,k/((1+b)).When t goes to infinity, y goes to k.
+(c) When $t=0$, we get$$ y = \frac{k}{1+b} $$,thus the curve crosses the $y$ axis at $(0,k/((1+b))$.When t goes to infinity, y goes to k.
 
 (d)
-I just give you two examples which k=1 and k=8,you can refer to the exact graph in the textbook.The shape of the graphs is same. 
+I just give you two examples which $k=1$ and $k=8$,you can refer to the exact graph in the textbook.The shape of the graphs is same. 
 <img src="4-6-solutions_files/figure-html/unnamed-chunk-7-1.png" width="672"  />
 
 ### Question 13 {- #eq4.8.13}
@@ -998,6 +986,6 @@ I just give you two examples which k=1 and k=8,you can refer to the exact graph 
 (b)$$ (PV)' = (\frac{1}{\sqrt{t}}-0.2)e^{\sqrt{t}-0.1t} = 0 $$
 $$ T = 25 $$
 $$ (PV)'' = (-\frac{1}{2t^{\frac{3}{2}}}+(\frac{1}{\sqrt{t}}-0.2)(\frac{1}{2\sqrt{t}}-0.1))e^{\sqrt{t}-0.1t} $$
-When T=25,(PV)'' < 0,thus T = 25 is chosen to maximise PV.
+When $T=25$, $(PV)'' < 0$,thus $T = 25$ is chosen to maximise PV.
 
 

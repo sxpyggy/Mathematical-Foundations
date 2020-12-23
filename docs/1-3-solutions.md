@@ -265,7 +265,7 @@ As when t=0, V(0)=50,so
 $$ 50=Ae^{0.05\times0}=A $$
 $$ V(t)=50e^{0.05t} $$
 $$ 175=50e^{0.05t} $$
-$$ t=20ln(\frac{7}{2}) $$
+$$ t=20\ln(\frac{7}{2}) $$
 
 ### Question 13 {- #mq2.13}
 
@@ -295,13 +295,13 @@ $$ 2\leq Q \leq 5 $$
 **Answer : A**
 
 $$  18e^{-3x}=2e^{-5x} $$
-$$  ln({18e^{-3x}}) = ln({2e^{-5x}})$$
-$$  ln18 -3x=ln2 -5x $$
-$$ 2x = ln2-ln18 \\
-      = ln{\frac{2}{18}}\\
-      = ln{3^{-2}}\\
-      = -2ln3 $$
-$$ x = -ln3 $$
+$$  \ln({18e^{-3x}}) = \ln({2e^{-5x}})$$
+$$  \ln18 -3x=\ln2 -5x $$
+$$ 2x = \ln2-\ln18 \\
+      = \ln{\frac{2}{18}}\\
+      = \ln{3^{-2}}\\
+      = -2\ln3 $$
+$$ x = -\ln3 $$
 
 ## Examination questions {- #eq2}
 
@@ -415,7 +415,7 @@ $$ A=1000;b=1.1 $$
 $$ P=10001.1^t  $$
 (i)$$ P=10001.1^{10} \approx 2594$$
 (ii)$$ P=10001.1^t \geq 8000 $$
-$$ t\geq \frac{ln8}{ln1.1} \approx 21.817$$
+$$ t\geq \frac{\ln8}{\ln1.1} \approx 21.817$$
 Thus the number of complete years is **22**.
 
 ### Question 6 {- #eq2.6}
@@ -462,13 +462,13 @@ $$ P=-Q+11 $$
     = log_b(xy^2z^2)$$
     
 (b)$$3^x=2(5^x) $$
-$$ xln3=ln2+xln5 $$
-$$ x=\frac{ln2}{ln3-ln5} \approx -1.36$$
+$$ x\ln3=\ln2+x\ln5 $$
+$$ x=\frac{\ln2}{\ln3-\ln5} \approx -1.36$$
 
 (c)(i)$$ S=2000000(1-e^{-0.4}) \\
           \approx 659360$$
 (ii)$$S=2000000(1-e^{-0.2t}) \geq 1000000$$
-$$ t \geq 5ln2\approx3.5$$
+$$ t \geq 5\ln2\approx3.5$$
 (iii) The graph is omitted. 
 
 ### Question 8 {- #eq2.8}
@@ -482,9 +482,9 @@ A is the initial price.
 (b)$$ V=Ae^{rt} $$
 $$\begin{cases} 45125=Ae^{2r}\\ 40725=Ae^{4r} \end{cases}$$
 $$ A =\frac{45125^2}{40725} \approx 50000$$
-$$ r = 0.5ln(\frac{40725}{45125})\approx -0.051297 $$
+$$ r = 0.5\ln(\frac{40725}{45125})\approx -0.051297 $$
 (c)$$ V=Ae^{rt} $$
-$$ lnV=lnA+rt \\
+$$ \lnV=\lnA+rt \\
       \approx 10.82-0.051297t\\
       $$
 It is obvious that the graph is a straight line, and the gradient is -0.051297 and the vertical intercept is 10.82.

@@ -2,10 +2,10 @@ new_session: true
 book_filename: "MF"
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: ""
 delete_merged_file: true
 output_dir: "docs"
-rmd_files: ["index.Rmd","00-revision.Rmd","01-financial-maths.Rmd",
-"02-differentiation.Rmd","03-integration.Rmd",
-"4-6-solutions.Rmd","1-3-solutions.Rmd"]
+rmd_files: ["index.Rmd","00-revision.Rmd","01-sets.Rmd","02-functions.Rmd",
+"09-financial-maths.Rmd","04-differentiation.Rmd","05-partial-d.Rmd",
+"06-integration.Rmd", "4-6-solutions.Rmd","1-3-solutions.Rmd"]
 #rmd_files: ["index.Rmd","01-interest.Rmd","02-level-annuity.Rmd","90-homework.Rmd"]
