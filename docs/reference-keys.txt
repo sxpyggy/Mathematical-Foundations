@@ -4,8 +4,8 @@ eq:area
 linear-equations
 non-linear-equations
 more-revisions
-sets
-functions-1
+s
+f
 mathematics-of-finance
 percentages
 compound-interest

@@ -4,7 +4,7 @@ Note that *an italic title* indicates an application section which is less impor
 
 ## Notes {-}
 
-**Formula for slope** Suppose a curve $C$ is given by $y=f(x)$, where $f$ is a function; and a point $P(x_0;f(x_0))$ is on $C$. For any point $Q$ on $C$ with $Q\neq P$, its $x$-coordinate can be written as $x_0+h$ where $h\neq 0$ (if $h>0$, $Q$ is on the right of $P$; if $h<0$, Q is on the left of $P$). Thus, $Q$ can be written as $(x_0+h;f(x_0+h))$. The slope $m_{PQ}$ of the *secant line* $PQ$ is
+**Formula for slope** Suppose a curve $C$ is given by $y=f(x)$, where $f$ is a function; and a point $P(x_0;f(x_0))$ is on $C$. For any point $Q$ on $C$ with $Q\neq P$, its $x$-coordinate can be written as $x_0+h$ where $h\neq 0$ (if $h>0$, $Q$ is on the right of $P$; if $h<0$, Q is on the left of $P$). Thus, $Q$ can be written as $(x_0+h,f(x_0+h))$. The slope $m_{PQ}$ of the *secant line* $PQ$ is
 $$m_{PQ}=\frac{f(x_0+h)-f(x_0)}{(x_0+h)-x_0}=\frac{f(x_0+h)-f(x_0)}{h}$$
 Note that as $Q$ approaches $P$, the number $h$ approaches $0$. From these, we see that the slope of $C$ at $P$ (denoted by $m_p$) is 
 

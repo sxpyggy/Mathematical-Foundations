@@ -32,6 +32,8 @@ S_n&=\frac{1}{n}\cdot 0^2 + \frac{1}{n}\cdot\left(\frac{1}{n}\right)^2+\cdots+\f
 $$\underset{n\rightarrow\infty}{\lim}\sum_{i=1}^n f(x_{i-1})\cdot\frac{b-a}{n}$$
 where $x_i=a+\frac{i}{n}(b-a)$ for $0\le i\le n$.
 
+**Remark** This theorem does not require the range of $f$ is positive.
+
 ```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 knitr::include_graphics("./plots/2/area.png")
@@ -40,7 +42,9 @@ knitr::include_graphics("./plots/2/area.png")
 **Definition** Let $f$ be a function that is continuous on a closed and bounded interval $[a,b]$. The number $\underset{n\rightarrow\infty}{\lim}\sum_{i=1}^n f(x_{i-1})\cdot\frac{b-a}{n}$, where $x_i=a+\frac{i}{n}(b-a)$ for $0\le i\le n$, is called the **definite integral** of $f$ from $a$ to $b$ and is denoted by $\int_{a}^bf(x)dx$, that is 
 $$\int_{a}^bf(x)dx=\underset{n\rightarrow\infty}{\lim}\sum_{i=1}^n f(x_{i-1})\cdot\frac{b-a}{n}$$
 
-In the notation $\int_{a}^{b}f(x)dx$  the variable $x$ is called a *dummy* variable; it can be replaced by any other symbol. For example $\int_{0}^1t^2dt=\frac{1}{3}$.
+**Remark** The above definition does not require the range of $f(x)$  positive. If $f(x)$ intersect with $x$-axis, the definite integral is the difference between the area of region above $x$-axis and that below $x$-axis. 
+
+**Remark** In the notation $\int_{a}^{b}f(x)dx$  the variable $x$ is called a *dummy* variable; it can be replaced by any other symbol. For example $\int_{0}^1t^2dt=\frac{1}{3}$.
 
 **Remark** More generally,the sub-intervals $[x_0,x_1],\ldots, [x_{n−1},x_n]$ need not be of equal lengths. All we need is that the lengths are small enough: if $a=x_0<x_1<···<x_n=b$ and $\Delta x_1, \ldots, \Delta x_n$ are small enough, where $\Delta x_i$ is the length of the $i$th sub-interval $[x_{i−1},x_i]$, then for every choice of $t_1,\ldots, t_n$ with $t_i\in[x_{i−1},x_i]$ for $1≤i≤n$, the sum (called a **Riemann Sum**)
 $$\sum_{i=1}^nf(t_i)\Delta x_i$$
@@ -69,7 +73,7 @@ $\int_{0}^1x^2dx=\frac{1}{3}$
 
 **Convention** Let $f$ be a function that is continuous on a closed and bounded interval $[a,b]$ and let $c\in(a,b)$. Then we have
 
-1. $\int_a^bf(x)dx=-\int_a^bf(x)dx$
+1. $\int_b^af(x)dx=-\int_a^bf(x)dx$
 
 2. $\int_c^cf(x)dx=0$
 
@@ -149,6 +153,21 @@ Therefore, we have
 
 **Notation** $G(b)-G(a)=\left[G(x)\right]_a^b=G(x)|_a^b$
 
+
+**Example: Area under Graph of Function** Find the area of the region that is bounded by the curve $y=\sqrt{x}$, the line $x=1$ and the $x$-axis.
+
+**Example: Area between Graphs of Functions** Find the area of the region bounded by the parabola $y=x^2$ and the line $y=x+2$.
+
+**Fundamental Theorem of Calculus V3** Let $f$ be a function such that $f'$ is continuous on an open interval $(a,b)$. Then for every $x_0\in(a,b)$, we have 
+$$f(x)=\int_{x_0}^xf'(t)dt+f(x_0)$$
+for all $x\in(a,b)$.
+
+**Example** Find the cost function if the marginal cost is $3+40x-5x^2$ and the fixed cost is $45$.
+
+**Theorem** Let $f$ be a function such that $f'$ is continuous on an open interval $(a,b)$. Then for every pair of number $x_0,x_1$ in $(a,b)$, we have $$\int_{x_0}^{x_1}f'(t)dt=f(x_1)-f(x_0).$$
+
+**Example** A particle moves along a line so that its velocity at time $t$ is $v(t)=t^2-t$ meters per second. Find the displacement of the particle during the time period $1\leq t\leq 2.$
+
 ## Notes on indefinite integrals {-}
 
 **Definition** Let $f$ be a function that is continuous on an open interval $(a,b)$. Suppose $F$ is a function defined on $(a,b)$ such that $F'(x)=f(x)$ for all $x\in(a,b)$. Then we say $F$ is an **antiderivative** for $f$ on $(a,b)$.
@@ -163,20 +182,6 @@ Therefore, we have
 where $F$ is a function such that $F'(x)=f(x)$ for all $x\in(a,b)$ (i.e., $F$ is an antiderivative of $f$ on $(a,b)$) and $C$ is an arbitrary constant, called **constant of integration**.
 
 **Power Rule for Integration** Let $n$ be a positive integer. Then we have $$\int x^ndx=\frac{x^{n+1}}{n+1}+C, ~~~~, -\infty<x<\infty.$$
-
-**Example: Area under Graph of Function** Find the area of the region that is bounded by the curve $y=\sqrt{x}$, the line $x=1$ and the $x$-axis.
-
-**Example: Area between Graphs of Functions** Find the area of the region bounded by the parabola $y=x^2$ and the line $y=x+2$.
-
-**Fundamental Theorem of Calculus V3** Let $f$ be a function such that $f'$ is continuous on an open interval $(a,b)$. Then for every $x_0\in(a,b)$, we have 
-$$f(x)=\int_{x_0}^xf'(t)dt+f(x_0)$$
-for all $x\in(a,b)$.
-
-**Example** Find the cost function if the marginal cost is $3+40x-5x^2$ and the fixed cost is $45$.
-
-**Theorem** Let $f$ be a function such that $f'$ is continuous on an open interval $(a,b)$. Then for every pair of number $x_0,x_1$ in $(a,b)$, we have $$\int_{x_0}^{x_1}dt=f(x_1)-f(x_0).$$
-
-**Example** A particle moves along a line so that its velocity at time $t$ is $v(t)=t^2-t$ meters per second. Find the displacement of the particle during the time period $1\leq t\leq 2.$
 
 ## Indefinite integration
 
