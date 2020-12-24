@@ -146,7 +146,8 @@
 <li class="chapter" data-level="5.6" data-path="partial-differentiation.html"><a href="partial-differentiation.html#lagrange-multipliers"><i class="fa fa-check"></i><b>5.6</b> Lagrange multipliers</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="integration.html"><a href="integration.html"><i class="fa fa-check"></i><b>6</b> Integration</a><ul>
-<li class="chapter" data-level="" data-path="integration.html"><a href="integration.html#notes-1"><i class="fa fa-check"></i>Notes</a></li>
+<li class="chapter" data-level="" data-path="integration.html"><a href="integration.html#notes-on-definite-integrals"><i class="fa fa-check"></i>Notes on definite integrals</a></li>
+<li class="chapter" data-level="" data-path="integration.html"><a href="integration.html#notes-on-indefinite-integrals"><i class="fa fa-check"></i>Notes on indefinite integrals</a></li>
 <li class="chapter" data-level="6.1" data-path="integration.html"><a href="integration.html#indefinite-integration"><i class="fa fa-check"></i><b>6.1</b> Indefinite integration</a></li>
 <li class="chapter" data-level="6.2" data-path="integration.html"><a href="integration.html#definite-integration"><i class="fa fa-check"></i><b>6.2</b> Definite integration</a><ul>
 <li><a href="integration.html#definite-integration-of-economic-functions"><em>Definite integration of economic functions</em></a></li>
@@ -352,10 +353,11 @@
 <div id="integration" class="section level1">
 <h1><span class="header-section-number">6</span> Integration</h1>
 <p>Note that <em>an italic title</em> indicates an application section which is less important than a theoretical one.</p>
-<p>It is quite surprising that differentiation and integration are related— they are <em>reverse process</em> of each other.</p>
-<div id="notes-1" class="section level2 unnumbered">
-<h2>Notes</h2>
+<p>It is quite surprising that differentiation and integration are related— they are <em>reverse process</em> of each other (see <strong>Fundamental Theorem of Calculus</strong>).</p>
+<div id="notes-on-definite-integrals" class="section level2 unnumbered">
+<h2>Notes on definite integrals</h2>
 <p><strong>Area under a curve</strong> Find the area of the region that lies under the curve <span class="math inline">\(y=x^2\)</span> and above the <span class="math inline">\(x\)</span>-axis for <span class="math inline">\(x\)</span> between <span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span>.</p>
+<p><img src="plots/2/area0.png" width="30%" style="display: block; margin: auto;" /></p>
 <ul>
 <li><p>First we divide the interval <span class="math inline">\([0,1]\)</span> into finitely many sub-intervals of equal lengths:
 <span class="math display">\[\left[0,\frac{1}{n}\right],\left[\frac{1}{n},\frac{2}{n}\right],\ldots,\left[\frac{n-1}{n},1\right].\]</span></p></li>
@@ -374,14 +376,15 @@ S_n&amp;=\frac{1}{n}\cdot 0^2 + \frac{1}{n}\cdot\left(\frac{1}{n}\right)^2+\cdot
 <p><strong>Theorem</strong> Let <span class="math inline">\(f\)</span> be a function that is <em>continuous</em> on a <em>closed and bounded</em> interval <span class="math inline">\([a,b]\)</span>. Then the following limit exists:
 <span class="math display">\[\underset{n\rightarrow\infty}{\lim}\sum_{i=1}^n f(x_{i-1})\cdot\frac{b-a}{n}\]</span>
 where <span class="math inline">\(x_i=a+\frac{i}{n}(b-a)\)</span> for <span class="math inline">\(0\le i\le n\)</span>.</p>
-<p><img src="plots/2/area.png" width="50%" style="display: block; margin: auto;" /></p>
-<p><strong>Definition</strong> Let <span class="math inline">\(f\)</span> be a function that is continuous on a closed and bounded interval <span class="math inline">\([a,b]\)</span>. The number <span class="math inline">\(\underset{n\rightarrow\infty}{\lim}\sum_{i=1}^n f(x_{i-1})\cdot\frac{b-a}{n}\)</span>, where <span class="math inline">\(x_i=a+\frac{i}{n}(b-a)\)</span> for <span class="math inline">\(0\le i\le n\)</span> is called the <strong>definite integral</strong> of <span class="math inline">\(f\)</span> from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span> and is denoted by <span class="math inline">\(\int_{a}^bf(x)dx\)</span>, that is
+<p><img src="plots/2/area.png" width="30%"  style="display: block; margin: auto;" /></p>
+<p><strong>Definition</strong> Let <span class="math inline">\(f\)</span> be a function that is continuous on a closed and bounded interval <span class="math inline">\([a,b]\)</span>. The number <span class="math inline">\(\underset{n\rightarrow\infty}{\lim}\sum_{i=1}^n f(x_{i-1})\cdot\frac{b-a}{n}\)</span>, where <span class="math inline">\(x_i=a+\frac{i}{n}(b-a)\)</span> for <span class="math inline">\(0\le i\le n\)</span>, is called the <strong>definite integral</strong> of <span class="math inline">\(f\)</span> from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span> and is denoted by <span class="math inline">\(\int_{a}^bf(x)dx\)</span>, that is
 <span class="math display">\[\int_{a}^bf(x)dx=\underset{n\rightarrow\infty}{\lim}\sum_{i=1}^n f(x_{i-1})\cdot\frac{b-a}{n}\]</span></p>
 <p>In the notation <span class="math inline">\(\int_{a}^{b}f(x)dx\)</span> the variable <span class="math inline">\(x\)</span> is called a <em>dummy</em> variable; it can be replaced by any other symbol. For example <span class="math inline">\(\int_{0}^1t^2dt=\frac{1}{3}\)</span>.</p>
 <p><strong>Remark</strong> More generally,the sub-intervals <span class="math inline">\([x_0,x_1],\ldots, [x_{n−1},x_n]\)</span> need not be of equal lengths. All we need is that the lengths are small enough: if <span class="math inline">\(a=x_0&lt;x_1&lt;···&lt;x_n=b\)</span> and <span class="math inline">\(\Delta x_1, \ldots, \Delta x_n\)</span> are small enough, where <span class="math inline">\(\Delta x_i\)</span> is the length of the <span class="math inline">\(i\)</span>th sub-interval <span class="math inline">\([x_{i−1},x_i]\)</span>, then for every choice of <span class="math inline">\(t_1,\ldots, t_n\)</span> with <span class="math inline">\(t_i\in[x_{i−1},x_i]\)</span> for <span class="math inline">\(1≤i≤n\)</span>, the sum (called a <strong>Riemann Sum</strong>)
 <span class="math display">\[\sum_{i=1}^nf(t_i)\Delta x_i\]</span>
 is close to the definite integral <span class="math inline">\(\int_{a}^bf(x)dx\)</span>. That is <span class="math display">\[\int_{a}^bf(x)dx=\underset{||\Delta x||\rightarrow 0}{\lim}{\sum_{i=1}^nf(t_i)\Delta x_i},\]</span>
 where <span class="math inline">\(||\Delta x||\rightarrow0\)</span> means the lengths <span class="math inline">\(\Delta x_i\)</span>’s tend to zero.</p>
+<p><img src="plots/2/area1.png" width="30%"  style="display: block; margin: auto;" /></p>
 <p><strong>Notation</strong> The symbol <span class="math inline">\(\int\)</span> was introduced by Leibniz and is called the <strong>integral sign</strong>. It is an elongated <span class="math inline">\(S\)</span> and was chosen because a deﬁnite integral is a limit of sums.</p>
 <p><strong>Example</strong> The result in <a href="integration.html#eq:area">(6.1)</a> can be written as
 <span class="math inline">\(\int_{0}^1x^2dx=\frac{1}{3}\)</span></p>
@@ -390,7 +393,12 @@ where <span class="math inline">\(||\Delta x||\rightarrow0\)</span> means the le
 <ol style="list-style-type: decimal">
 <li><p><span class="math inline">\(\int_a^b[f(x)+g(x)]dx=\int_a^bf(x)dx+\int_a^bg(x)dx\)</span></p></li>
 <li><p><span class="math inline">\(\int_a^b\alpha f(x)dx=\alpha\int_a^b f(x)dx\)</span></p></li>
-<li><p><span class="math inline">\(\int_a^b\alpha f(x)dx=\int_a^c f(x)dx+\int_c^b f(x)dx\)</span></p></li>
+<li><p><span class="math inline">\(\int_a^b f(x)dx=\int_a^c f(x)dx+\int_c^b f(x)dx\)</span></p></li>
+</ol>
+<p><strong>Convention</strong> Let <span class="math inline">\(f\)</span> be a function that is continuous on a closed and bounded interval <span class="math inline">\([a,b]\)</span> and let <span class="math inline">\(c\in(a,b)\)</span>. Then we have</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(\int_a^bf(x)dx=-\int_a^bf(x)dx\)</span></p></li>
+<li><p><span class="math inline">\(\int_c^cf(x)dx=0\)</span></p></li>
 </ol>
 <p><strong>Terminology</strong> In a definite integral <span class="math inline">\(\int_a^bf(x)dx\)</span>,</p>
 <ul>
@@ -400,15 +408,17 @@ where <span class="math inline">\(||\Delta x||\rightarrow0\)</span> means the le
 <p><strong>Fundamental Theorem of Calculus V1</strong> Let <span class="math inline">\(f\)</span> be a function that is continuous on a closed and bounded interval <span class="math inline">\([a,b]\)</span>. Let <span class="math inline">\(F\)</span> be the function from <span class="math inline">\([a,b]\)</span> into <span class="math inline">\(\mathbb{R}\)</span> defined by
 <span class="math display">\[F(x)=\int_a^xf(t)dt ~~~ for ~~ a\leq t \leq b.\]</span></p>
 <p>Then <span class="math inline">\(F\)</span> is continuous on <span class="math inline">\([a,b]\)</span> and differentiable on <span class="math inline">\((a,b)\)</span> with <span class="math inline">\(F&#39;(x)=f(x)\)</span> for all <span class="math inline">\(x\in(a,b)\)</span>.</p>
-<p><img src="plots/2/Fx.png" width="50%"  style="display: block; margin: auto;" /></p>
-<p><strong>Proof</strong> We have <span class="math inline">\(F&#39;(x)=\underset{h\rightarrow 0}{\lim}\frac{F(x+h)-F(x)}{h}\)</span></p>
+<p><img src="plots/2/Fx.png" width="30%"  style="display: block; margin: auto;" /></p>
+<p><em>Explanation</em> We have <span class="math inline">\(F&#39;(x)=\underset{h\rightarrow 0}{\lim}\frac{F(x+h)-F(x)}{h}\)</span></p>
 <p>For <span class="math inline">\(x\in(a,b)\)</span> and for sufficiently small <span class="math inline">\(h&gt;0\)</span> such that <span class="math inline">\(a+h\leq b\)</span>, we have
 <span class="math display">\[\begin{align}
 F(x+h)-F(x) &amp;= \int_a^{x+h}f(t)dt-\int_a^xf(t)dt\\
 &amp;= \left(\int_a^xf(t)dt+\int_x^{x+h}f(t)dt\right)-\int_a^xf(t)dt\\
 &amp;=\int_x^{x+h}f(t)dt
 \end{align}\]</span>
-Note that <span class="math inline">\(\int_x^{x+h}f(t)dt\)</span> is the area of the region below the graph of <span class="math inline">\(f\)</span> from <span class="math inline">\(x\)</span> to <span class="math inline">\(x+h\)</span>. If <span class="math inline">\(h\)</span> is small, then the area of the small region under consideration can be approximated by the area of the rectangular region with base <span class="math inline">\([x,x+h]\)</span> on the horizontal axis and height equal to <span class="math inline">\(f(x)\)</span>. Thus we have
+Note that <span class="math inline">\(\int_x^{x+h}f(t)dt\)</span> is the area of the region below the graph of <span class="math inline">\(f\)</span> from <span class="math inline">\(x\)</span> to <span class="math inline">\(x+h\)</span>.</p>
+<p><img src="plots/2/areaf.png" width="30%"  style="display: block; margin: auto;" /></p>
+<p>If <span class="math inline">\(h\)</span> is small, then the area of the small region under consideration can be approximated by the area of the rectangular region with base <span class="math inline">\([x,x+h]\)</span> on the horizontal axis and height equal to <span class="math inline">\(f(x)\)</span>. Thus we have
 <span class="math inline">\(\int_{x}^{x+h}f(t)dt\)</span>
 is close to <span class="math inline">\(f(x)\cdot h\)</span> if <span class="math inline">\(h\)</span> is small, from which we obtain
 <span class="math display">\[\frac{F(x+h)-F(x)}{h}=\frac{\int_x^{x+h}f(t)dt}{h}\]</span>
@@ -424,18 +434,30 @@ is close to <span class="math inline">\(f(x)\)</span> if <span class="math inlin
 <p><strong>Theorem</strong> Let <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> be functions that are defined on a closed and bounded interval <span class="math inline">\([a,b]\)</span>. Suppose that they are continuous on <span class="math inline">\([a,b]\)</span> and are differentiable on <span class="math inline">\((a,b)\)</span> with <span class="math inline">\(F&#39;(x)=G&#39;(x)\)</span> for all <span class="math inline">\(x\in(a,b)\)</span>. Then on <span class="math inline">\([a,b]\)</span>, the functions <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> differ by a constant, that is, there exists a constant <span class="math inline">\(C\)</span> such that
 <span class="math display">\[F(x)-G(x)=C\]</span>
 for all <span class="math inline">\(x\in[a,b]\)</span>.</p>
-<p><strong>Proof</strong> <span class="math inline">\(F&#39;(x)=G&#39;(x)\)</span> for all <span class="math inline">\(x\in(a,b)\)</span> indicates that at corresponding points (same <span class="math inline">\(x\)</span>-coordinates) tangents to the graphs of <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> are parallel. Hence, the graph of <span class="math inline">\(F\)</span> can be obtained from that of <span class="math inline">\(G\)</span> by moving it upward (<span class="math inline">\(C&gt;0\)</span>) or downward (<span class="math inline">\(C&lt;0\)</span>).</p>
+<p><em>Explanation</em> <span class="math inline">\(F&#39;(x)=G&#39;(x)\)</span> for all <span class="math inline">\(x\in(a,b)\)</span> indicates that at corresponding points (same <span class="math inline">\(x\)</span>-coordinates) tangents to the graphs of <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> are parallel. Hence, the graph of <span class="math inline">\(F\)</span> can be obtained from that of <span class="math inline">\(G\)</span> by moving it upward (<span class="math inline">\(C&gt;0\)</span>) or downward (<span class="math inline">\(C&lt;0\)</span>).</p>
 <p><strong>Corollary</strong> Let <span class="math inline">\(f\)</span> be a function that is continuous on a closed and bounded interval <span class="math inline">\([a,b]\)</span>. Suppose that <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> are <em>primitives</em> for <span class="math inline">\(f\)</span> on <span class="math inline">\([a,b]\)</span>. Then on <span class="math inline">\([a,b]\)</span>, the functions <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> differ by a constant.</p>
 <p><strong>Example</strong> Find the value of the definite integral <span class="math inline">\(\int_1^23x^2dx\)</span>.</p>
 <p><strong>Fundamental Theorem of Calculus V2</strong> Let <span class="math inline">\(f\)</span> be a function that is continuous on a closed and bounded interval <span class="math inline">\([a,b]\)</span>. Suppose <span class="math inline">\(G\)</span> is a primitive for <span class="math inline">\(f\)</span> on <span class="math inline">\([a,b]\)</span>. Then we have
 <span class="math display">\[\int_a^bf(x)dx=G(b)-G(a)\]</span></p>
+<p><em>Proof</em> Let <span class="math inline">\(F\)</span> be the function from <span class="math inline">\([a,b]\)</span> into <span class="math inline">\(\mathbb{R}\)</span> defined by <span class="math display">\[F(x)=\int_a^xf(t)dt, ~~~ a\le x\le b.\]</span>
+By V1, the function <span class="math inline">\(F\)</span> is a primitive for <span class="math inline">\(f\)</span> on <span class="math inline">\([a,b]\)</span>. Hence, by the Corollary, there exists a constant <span class="math inline">\(C\)</span> such that <span class="math display">\[F(x)-G(x)=C ~~~~ \text{for all }~~x\in[a,b].\]</span>
+Therefore, we have
+<span class="math display">\[\begin{align}
+\int_a^bf(x)dx=&amp;F(b)\\
+=&amp;F(b)-F(a)\\
+=&amp;(G(b)+C)-(G(a)+C)\\
+=&amp;G(b)-G(a)
+\end{align}\]</span></p>
 <p><strong>Example</strong> Find the value of the definite integral <span class="math inline">\(\int_1^23x^2dx\)</span>.</p>
 <p><strong>Notation</strong> <span class="math inline">\(G(b)-G(a)=\left[G(x)\right]_a^b=G(x)|_a^b\)</span></p>
+</div>
+<div id="notes-on-indefinite-integrals" class="section level2 unnumbered">
+<h2>Notes on indefinite integrals</h2>
 <p><strong>Definition</strong> Let <span class="math inline">\(f\)</span> be a function that is continuous on an open interval <span class="math inline">\((a,b)\)</span>. Suppose <span class="math inline">\(F\)</span> is a function defined on <span class="math inline">\((a,b)\)</span> such that <span class="math inline">\(F&#39;(x)=f(x)\)</span> for all <span class="math inline">\(x\in(a,b)\)</span>. Then we say <span class="math inline">\(F\)</span> is an <strong>antiderivative</strong> for <span class="math inline">\(f\)</span> on <span class="math inline">\((a,b)\)</span>.</p>
 <p><strong>Example</strong> <span class="math inline">\(f(x)=\frac{1}{\sqrt{x}}\)</span>, and <span class="math inline">\(F(x)=2\sqrt{x}\)</span>. We have <span class="math inline">\(F&#39;(x)=f(x)\)</span> for all <span class="math inline">\(x\in(0,\infty)\)</span>. Thus <span class="math inline">\(G\)</span> is an <em>antiderivative</em> for <span class="math inline">\(g\)</span> on every open interval contained in <span class="math inline">\((0,\infty)\)</span>.</p>
 <p><strong>Theorem</strong> Let <span class="math inline">\(f\)</span> be a function that is continuous on an open interval <span class="math inline">\((a,b)\)</span>. Suppose that <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> are <em>antiderivatives</em> for <span class="math inline">\(f\)</span> on <span class="math inline">\((a,b)\)</span>. Then on <span class="math inline">\((a,b)\)</span>, the functions <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> differ by a constant.</p>
 <p><strong>Remark</strong> If we can find one <em>antiderivative</em> for a continuous function <span class="math inline">\(f\)</span> on an open interval <span class="math inline">\((a,b)\)</span>, then we can find all. That is, if <span class="math inline">\(F\)</span> is an antiderivative for <span class="math inline">\(f\)</span> on <span class="math inline">\((a,b)\)</span>, then all the antiderivatives for <span class="math inline">\(f\)</span> on <span class="math inline">\((a,b)\)</span> are in the form <span class="math display">\[F(x)+C,~~~,a\leq x \leq b\]</span> where <span class="math inline">\(C\)</span> is a constant.</p>
-<p><strong>Definition</strong> We call the family of all antiderivatives for <span class="math inline">\(f\)</span> on <span class="math inline">\((a,b)\)</span> to be <strong>the indefinite integral</strong> of <span class="math inline">\(f\)</span> (w.r.t. <span class="math inline">\(x\)</span>) and we denote it by <span class="math inline">\(\int f(x)dx\)</span>. That is, <span class="math display">\[\int f(x)dx=F(x)+C, ~~~~ a\leq x\leq b\]</span>
+<p><strong>Definition</strong> We call the family of all antiderivatives for <span class="math inline">\(f\)</span> on <span class="math inline">\((a,b)\)</span> to be <strong>the indefinite integral</strong> of <span class="math inline">\(f\)</span> (w.r.t. <span class="math inline">\(x\)</span>) and we denote it by <span class="math inline">\(\int f(x)dx\)</span>. That is, <span class="math display">\[\int f(x)dx=F(x)+C, ~~~~ a&lt; x&lt; b\]</span>
 where <span class="math inline">\(F\)</span> is a function such that <span class="math inline">\(F&#39;(x)=f(x)\)</span> for all <span class="math inline">\(x\in(a,b)\)</span> (i.e., <span class="math inline">\(F\)</span> is an antiderivative of <span class="math inline">\(f\)</span> on <span class="math inline">\((a,b)\)</span>) and <span class="math inline">\(C\)</span> is an arbitrary constant, called <strong>constant of integration</strong>.</p>
 <p><strong>Power Rule for Integration</strong> Let <span class="math inline">\(n\)</span> be a positive integer. Then we have <span class="math display">\[\int x^ndx=\frac{x^{n+1}}{n+1}+C, ~~~~, -\infty&lt;x&lt;\infty.\]</span></p>
 <p><strong>Example: Area under Graph of Function</strong> Find the area of the region that is bounded by the curve <span class="math inline">\(y=\sqrt{x}\)</span>, the line <span class="math inline">\(x=1\)</span> and the <span class="math inline">\(x\)</span>-axis.</p>

@@ -2,11 +2,16 @@
 
 Note that *an italic title* indicates an application section which is less important than a theoretical one.
 
-It is quite surprising that differentiation and integration are related— they are *reverse process* of each other.
+It is quite surprising that differentiation and integration are related— they are *reverse process* of each other (see **Fundamental Theorem of Calculus**).
 
-## Notes {-}
+## Notes on definite integrals {-}
 
 **Area under a curve** Find the area of the region that lies under the curve $y=x^2$ and above the $x$-axis for $x$ between $0$ and $1$.
+
+```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
+knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
+knitr::include_graphics("./plots/2/area0.png")
+```
 
 - First we divide the interval $[0,1]$ into finitely many sub-intervals of equal lengths:
   $$\left[0,\frac{1}{n}\right],\left[\frac{1}{n},\frac{2}{n}\right],\ldots,\left[\frac{n-1}{n},1\right].$$
@@ -27,12 +32,12 @@ S_n&=\frac{1}{n}\cdot 0^2 + \frac{1}{n}\cdot\left(\frac{1}{n}\right)^2+\cdots+\f
 $$\underset{n\rightarrow\infty}{\lim}\sum_{i=1}^n f(x_{i-1})\cdot\frac{b-a}{n}$$
 where $x_i=a+\frac{i}{n}(b-a)$ for $0\le i\le n$.
 
-```{r,echo=FALSE,out.width="50%",fig.align = 'center'}
+```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 knitr::include_graphics("./plots/2/area.png")
 ```
 
-**Definition** Let $f$ be a function that is continuous on a closed and bounded interval $[a,b]$. The number $\underset{n\rightarrow\infty}{\lim}\sum_{i=1}^n f(x_{i-1})\cdot\frac{b-a}{n}$, where $x_i=a+\frac{i}{n}(b-a)$ for $0\le i\le n$ is called the **definite integral** of $f$ from $a$ to $b$ and is denoted by $\int_{a}^bf(x)dx$, that is 
+**Definition** Let $f$ be a function that is continuous on a closed and bounded interval $[a,b]$. The number $\underset{n\rightarrow\infty}{\lim}\sum_{i=1}^n f(x_{i-1})\cdot\frac{b-a}{n}$, where $x_i=a+\frac{i}{n}(b-a)$ for $0\le i\le n$, is called the **definite integral** of $f$ from $a$ to $b$ and is denoted by $\int_{a}^bf(x)dx$, that is 
 $$\int_{a}^bf(x)dx=\underset{n\rightarrow\infty}{\lim}\sum_{i=1}^n f(x_{i-1})\cdot\frac{b-a}{n}$$
 
 In the notation $\int_{a}^{b}f(x)dx$  the variable $x$ is called a *dummy* variable; it can be replaced by any other symbol. For example $\int_{0}^1t^2dt=\frac{1}{3}$.
@@ -41,6 +46,11 @@ In the notation $\int_{a}^{b}f(x)dx$  the variable $x$ is called a *dummy* varia
 $$\sum_{i=1}^nf(t_i)\Delta x_i$$
 is close to the definite integral $\int_{a}^bf(x)dx$. That is $$\int_{a}^bf(x)dx=\underset{||\Delta x||\rightarrow 0}{\lim}{\sum_{i=1}^nf(t_i)\Delta x_i},$$
 where $||\Delta x||\rightarrow0$ means the lengths $\Delta x_i$'s tend to zero.
+
+```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
+knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
+knitr::include_graphics("./plots/2/area1.png")
+```
 
 **Notation** The symbol $\int$ was introduced by Leibniz and is called the **integral sign**. It is an elongated $S$ and was chosen because a deﬁnite integral is a limit of sums.
 
@@ -55,7 +65,13 @@ $\int_{0}^1x^2dx=\frac{1}{3}$
 
 2. $\int_a^b\alpha f(x)dx=\alpha\int_a^b f(x)dx$
 
-3. $\int_a^b\alpha f(x)dx=\int_a^c f(x)dx+\int_c^b f(x)dx$
+3. $\int_a^b f(x)dx=\int_a^c f(x)dx+\int_c^b f(x)dx$
+
+**Convention** Let $f$ be a function that is continuous on a closed and bounded interval $[a,b]$ and let $c\in(a,b)$. Then we have
+
+1. $\int_a^bf(x)dx=-\int_a^bf(x)dx$
+
+2. $\int_c^cf(x)dx=0$
 
 **Terminology** In a definite integral $\int_a^bf(x)dx$,
 
@@ -68,12 +84,12 @@ $$F(x)=\int_a^xf(t)dt ~~~ for ~~ a\leq t \leq b.$$
 
 Then $F$ is continuous on $[a,b]$ and differentiable on $(a,b)$ with $F'(x)=f(x)$ for all $x\in(a,b)$.
 
-```{r,echo=FALSE,out.width="50%",fig.align = 'center'}
+```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 knitr::include_graphics("./plots/2/Fx.png")
 ```
 
-**Proof** We have $F'(x)=\underset{h\rightarrow 0}{\lim}\frac{F(x+h)-F(x)}{h}$
+*Explanation* We have $F'(x)=\underset{h\rightarrow 0}{\lim}\frac{F(x+h)-F(x)}{h}$
 
 For $x\in(a,b)$ and for sufficiently small $h>0$ such that $a+h\leq b$, we have 
 \begin{align}
@@ -81,7 +97,14 @@ F(x+h)-F(x) &= \int_a^{x+h}f(t)dt-\int_a^xf(t)dt\\
 &= \left(\int_a^xf(t)dt+\int_x^{x+h}f(t)dt\right)-\int_a^xf(t)dt\\
 &=\int_x^{x+h}f(t)dt
 \end{align}
-Note that $\int_x^{x+h}f(t)dt$ is the area of the region below the graph of $f$ from $x$ to $x+h$. If $h$ is small, then the area of the small region under consideration can be approximated by the area of the rectangular region with base $[x,x+h]$ on the horizontal axis and height equal to $f(x)$. Thus we have 
+Note that $\int_x^{x+h}f(t)dt$ is the area of the region below the graph of $f$ from $x$ to $x+h$. 
+
+```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
+knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
+knitr::include_graphics("./plots/2/areaf.png")
+```
+
+If $h$ is small, then the area of the small region under consideration can be approximated by the area of the rectangular region with base $[x,x+h]$ on the horizontal axis and height equal to $f(x)$. Thus we have 
 $\int_{x}^{x+h}f(t)dt$
 is close to $f(x)\cdot h$ if $h$ is small, from which we obtain
 $$\frac{F(x+h)-F(x)}{h}=\frac{\int_x^{x+h}f(t)dt}{h}$$
@@ -103,7 +126,7 @@ Then we say that $G$ is a **primitive** for $f$ on $[a,b]$.
 $$F(x)-G(x)=C$$
 for all $x\in[a,b]$.
 
-**Proof** $F'(x)=G'(x)$ for all $x\in(a,b)$ indicates that at corresponding points (same $x$-coordinates) tangents to the graphs of $F$ and $G$ are parallel. Hence, the graph of $F$ can be obtained from that of $G$ by moving it upward ($C>0$) or downward ($C<0$).
+*Explanation* $F'(x)=G'(x)$ for all $x\in(a,b)$ indicates that at corresponding points (same $x$-coordinates) tangents to the graphs of $F$ and $G$ are parallel. Hence, the graph of $F$ can be obtained from that of $G$ by moving it upward ($C>0$) or downward ($C<0$).
 
 **Corollary** Let $f$ be a function that is continuous on a closed and bounded interval $[a,b]$. Suppose that $F$ and $G$ are *primitives* for $f$ on $[a,b]$. Then on $[a,b]$, the functions $F$ and $G$ differ by a constant.
 
@@ -112,9 +135,21 @@ for all $x\in[a,b]$.
 **Fundamental Theorem of Calculus V2** Let $f$ be a function that is continuous on a closed and bounded interval $[a,b]$. Suppose $G$ is a primitive for $f$ on $[a,b]$. Then we have 
 $$\int_a^bf(x)dx=G(b)-G(a)$$
  
+*Proof* Let $F$ be the function from $[a,b]$ into $\mathbb{R}$ defined by $$F(x)=\int_a^xf(t)dt, ~~~ a\le x\le b.$$
+By V1, the function $F$ is a primitive for $f$ on $[a,b]$. Hence, by the Corollary, there exists a constant $C$ such that $$F(x)-G(x)=C ~~~~ \text{for all }~~x\in[a,b].$$
+Therefore, we have 
+\begin{align}
+\int_a^bf(x)dx=&F(b)\\
+=&F(b)-F(a)\\
+=&(G(b)+C)-(G(a)+C)\\
+=&G(b)-G(a)
+\end{align}
+ 
 **Example** Find the value of the definite integral $\int_1^23x^2dx$.
 
 **Notation** $G(b)-G(a)=\left[G(x)\right]_a^b=G(x)|_a^b$
+
+## Notes on indefinite integrals {-}
 
 **Definition** Let $f$ be a function that is continuous on an open interval $(a,b)$. Suppose $F$ is a function defined on $(a,b)$ such that $F'(x)=f(x)$ for all $x\in(a,b)$. Then we say $F$ is an **antiderivative** for $f$ on $(a,b)$.
 
@@ -124,7 +159,7 @@ $$\int_a^bf(x)dx=G(b)-G(a)$$
 
 **Remark** If we can find one *antiderivative* for a continuous function $f$ on an open interval $(a,b)$, then we can find all. That is, if $F$ is an antiderivative for $f$ on $(a,b)$, then all the antiderivatives for $f$ on $(a,b)$ are in the form $$F(x)+C,~~~,a\leq x \leq b$$ where $C$ is a constant.
 
-**Definition** We call the family of all antiderivatives for $f$ on $(a,b)$  to be **the indefinite integral** of $f$ (w.r.t. $x$) and we denote it by $\int f(x)dx$. That is, $$\int f(x)dx=F(x)+C, ~~~~ a\leq x\leq b$$
+**Definition** We call the family of all antiderivatives for $f$ on $(a,b)$  to be **the indefinite integral** of $f$ (w.r.t. $x$) and we denote it by $\int f(x)dx$. That is, $$\int f(x)dx=F(x)+C, ~~~~ a< x< b$$
 where $F$ is a function such that $F'(x)=f(x)$ for all $x\in(a,b)$ (i.e., $F$ is an antiderivative of $f$ on $(a,b)$) and $C$ is an arbitrary constant, called **constant of integration**.
 
 **Power Rule for Integration** Let $n$ be a positive integer. Then we have $$\int x^ndx=\frac{x^{n+1}}{n+1}+C, ~~~~, -\infty<x<\infty.$$

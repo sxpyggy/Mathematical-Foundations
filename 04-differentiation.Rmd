@@ -13,6 +13,11 @@ m_p=\underset{h\rightarrow\infty}{\lim}\frac{f(x_0+h)-f(x_0)}{h} (\#eq:mp)
 \end{equation}
 provided that the limit exists.
 
+```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
+knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
+knitr::include_graphics("./plots/2/slope.png")
+```
+
 **Example** Find the slope of the curve $y=x^2$ at the point $P(3,9)$.
 
 **Definition** Let $x_0$ be a real number and let $f$ be a function defined on an open interval containing $x_0$. Suppose the limit in \@ref(eq:mp) exists. Then we say that $f$ is **differentiable** at $x_0$.

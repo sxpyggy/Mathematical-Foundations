@@ -13,6 +13,8 @@ m_p=\underset{h\rightarrow\infty}{\lim}\frac{f(x_0+h)-f(x_0)}{h} (\#eq:mp)
 \end{equation}
 provided that the limit exists.
 
+<img src="./plots/2/slope.png" width="30%" style="display: block; margin: auto;" />
+
 **Example** Find the slope of the curve $y=x^2$ at the point $P(3,9)$.
 
 **Definition** Let $x_0$ be a real number and let $f$ be a function defined on an open interval containing $x_0$. Suppose the limit in \@ref(eq:mp) exists. Then we say that $f$ is **differentiable** at $x_0$.
