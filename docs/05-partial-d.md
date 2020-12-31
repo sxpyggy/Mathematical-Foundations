@@ -2,6 +2,96 @@
 
 Note that *an italic title* indicates an application section which is less important than a theoretical one.
 
+## Notes{-}
+
+**Definition** A function $f$ of two variables is a rule that assigns to each ordered pair of real numbers $(x,y)$ in a set $D$ a unique real number denoted by $f(x,y)$. The set $D$ is the domain of $f$ and its range is the set of values that $f$ takes on, that is $\{f(x,y):(x,y)\in D\}$.
+
+**Remark** We often write $z=f(x,y)$ to make explicit the value taken on by $f$ at the general point $(x,y)$. The values $x$ and $y$ are independent variables and $z$ is the dependent variable.
+
+<img src="./plots/5/illus.png" width="30%" style="display: block; margin: auto;" />
+
+**Definition** If $f$ is a function of two variables with domain $D$, then the graph of $f$ is the set of all points $(x,y,z)\in \mathbb{R}^3$ such that $z=f(x,y)$ and $(x,y) \in D$.
+
+<img src="./plots/5/graph.png" width="30%"  style="display: block; margin: auto;" />
+
+**Remark** Just as the graph of a function $f$ of one variable is a curve $C$ with equation $y=f(x)$, so the graph of a function f of two variables is a surface $S$ with equation $z=f(x,y)$. We can visualize the graph $S$ of $f$ as lying directly above or below its domain $D$ in the $xy$-plane.
+
+**Example** The graph of the **linear function** $f(x,y)=6-3x-2y.$
+
+<img src="./plots/5/example1.png" width="30%"  style="display: block; margin: auto;" />
+
+**Definition** The **level curves** of a function $f$ of two variables are curves with equations $f(x,y)=k$, where $k$ is a constant (in the range of $f$).
+
+**Remark** A level curve $f(x,y)=k$ is the set of all points in the domain of $f$ at which $f$ takes on a given value $k$. In other words, it shows where the graph of $f$ has height $k$.
+
+<img src="./plots/5/contour.png" width="30%"  style="display: block; margin: auto;" />
+
+**Example** Topographic maps of mountainous regions. 
+
+<img src="./plots/5/mountain.png" width="30%"  style="display: block; margin: auto;" />
+
+**Example** The level curves of the $f(x,y)=6-3x-2y.$
+
+<img src="./plots/5/contour1.png" width="30%"  style="display: block; margin: auto;" />
+
+**Definition** Let $f$ be a function of two variables whose domain $D$ includes points arbitrarily close to $(a,b)$. Then we say that the limit of $f(x,y)$ as $(x,y)$ approaches $(a,b)$ is $L$ and we write
+$$\underset{(x,y)\rightarrow(a,b)}{\lim}f(x,y)=L$$
+if for every number $\epsilon>0$ there is a corresponding number $\delta>0$ such that
+if $(x,y)\in D$ and $0<\sqrt{(x-a)^2+(y-b)^2}<\delta$ then $|f(x,y)-L|<\epsilon$.
+<img src="./plots/5/limit.png" width="30%"  style="display: block; margin: auto;" />
+
+**Definition** A **polynomial function** of two variables is a sum of terms of the form $cx^my^n$, where $c$ is a constant and $m$ and $n$ are non-negative integers. A  **rational function** is a ratio of polynomials.
+
+**Definition** Let $f$ is a function of two variables $x$ and $y$. Suppose we let only $x$ vary while keeping $y$ fixed $y=b$, namely, $g(x)=f(x,b)$. If $g$ has a derivative at $a$, then we call it the **partial derivative of $f$ with respect to $x$ at $(a,b)$** and denote it by $f_x(a,b)$.
+
+**Remarks** $$f_x(a,b)=g'(a)=\underset{h\rightarrow 0}{\lim}\frac{g(a+h)-g(a)}{h}$$
+
+$$f_x(a,b)=\underset{h\rightarrow 0}{\lim}\frac{f(a+h,b)-f(a,b)}{h}$$
+
+**Notations** If $f$ is a function of two variables, its partial derivatives are functions $f_x$ and $f_y$ defined by 
+$$f_x(x,y)=\underset{h\rightarrow 0}{\lim}\frac{f(x+h,y)-f(x,y)}{h}$$
+$$f_y(x,y)=\underset{h\rightarrow 0}{\lim}\frac{f(x,y+h)-f(x,y)}{h}$$
+$$f_x(x,y)=f_x=\frac{\partial f}{\partial x}=\frac{\partial}{\partial x}f(x,y)=\frac{\partial z}{\partial x}=f_1=D_1f=D_xf$$
+
+$$f_y(x,y)=f_y=\frac{\partial f}{\partial y}=\frac{\partial}{\partial y}f(x,y)=\frac{\partial z}{\partial y}=f_2=D_2f=D_yf$$
+
+**Rules** for finding partial derivatives of $z=f(x,y)$. To find $f_x$, regard $y$ as a constant and differentiate $f(x,y)$ with respect to $x$.
+
+**Interpretations** If $f(a,b)=c$, then the point $P(a,b,c)$ lies on $S$.
+$C_1$ is the trace of $S$ in the plane $y=b$, and it is the graph of the function $g(x)=f(x,b)$. The slope of its tangent $T_1$ at $P(a,b,c)$ is $g'(a)=f_x(a,b)$. The partial derivatives $f_x(a,b)$ and $f_y(a,b)$ can be interpreted geometrically as the slopes of the tangent lines at $P(a,b,c)$ to the traces $C_1$ and $C_2$ of $S$ in the planes $y=b$ and $x=a$.
+$\partial z/\partial x$ represent the rate of change of $z$ w.r.t. $x$ when $y$ is fixed.
+
+<img src="./plots/5/interpretation.png" width="30%"  style="display: block; margin: auto;" />
+
+**Example** If $f(x,y)=4-x^2-2y^2$, find $f_x(1,1)$ and $f_y(1,1)$.
+<img src="./plots/5/example2.png" width="60%"  style="display: block; margin: auto;" />
+
+**Clairaut's Theorem** Suppose $f$ is defined on a region $D$ that contains the point $(a,b)$. If the functions $f_{xy}$ and $f_{yx}$ are both continuous on $D$, then $$f_{xy}(a,b)=f_{yx}(a,b).$$ 
+
+**Definition** The **directional derivative of f at $x_0,y_0$ in the direction of a unit vector $\boldsymbol{u}=\langle a,b\rangle$ is
+$$D_{\boldsymbol{u}}f(x_0,y_0)=\underset{h\rightarrow 0}{\lim}\frac{f(x_0+ah,y_0+bh)-f(x_0,y_0)}{h}$$
+**Theorem** If $f$ is a differentiable function of $x$ and $y$, then $f$ has a directional derivative in the direction of any unit vector $\boldsymbol{u}=\langle a,b\rangle$ and 
+$$D_{\boldsymbol{u}}f(x,y)=f_x(x,y)a+f_y(x,y)b$$
+**Definition** If $f$ is a function of two variables $x$ and $y$, then the gradient of $f$ is the vector function $\nabla f$ defined by
+$$\nabla f(x,y)=\langle f_x(x,y),f_y(x,y)\rangle=f_x\mathbf{i}+f_y\mathbf{j}$$
+**Remark** $D_{\boldsymbol{u}}f(x,y)=\nabla f(x,y)\cdot\boldsymbol{u}$.
+
+**Theorem** Suppose $f$ is a differentiable function of two or three variables. The maximum value of the directional derivative $D_{\boldsymbol{u}}f(\boldsymbol{x})$ is $|\nabla f(\boldsymbol{x})|$ and it occurs when $\boldsymbol{u}$ has the same direction as the gradient vector $\nabla f(\boldsymbol{x})$.
+
+**Lagrange multipliers** Maximize $f(x,y)$ with the constraint $g(x,y)=k$.
+
+<img src="./plots/5/lagrange.png" width="60%"  style="display: block; margin: auto;" />
+
+It appears that this happens when these curves just touch each other, that is, when they have a common tangent line. This means that the tangent lines at the point $_0,y_0$ where they touch are identical. So the gradient vectors are parallel; that is, $\nabla f(x_0,y_0)=\lambda \nabla g(x_0,y_0)$ for some scalar $\lambda$.
+
+**Method of Lagrange Multipliers** To find the maximum and minimum values of $f(x,y,z)$ subject to the constraint $g(x,y,z)=k$ [assuming that these extreme  values exist and $\nabla g\neq0$ on the surface $g(x,y,z)=k$]:
+
+1.  Find all values of $x, y, z$, and $\lambda$ such that
+$$\nabla f(x,y,z)=\lambda \nabla g(x,y,z)$$
+and $$g(x,y,z)=k$$
+
+2. Evaluate $f$ at all the points $x, y, z$  that result from step 1. The largest of these values is the maximum value of $f$; the smallest is the minimum value of $f$.
+
 ## Functions of several variables
 
 **Dependent variable** A variable whose value is determined by that taken by the independent variable; in $z=f(x,y)$ the dependent variable is $z$.

@@ -90,16 +90,37 @@ knitr::include_graphics("./plots/5/interpretation.png")
 **Example** If $f(x,y)=4-x^2-2y^2$, find $f_x(1,1)$ and $f_y(1,1)$.
 ```{r,echo=FALSE,out.width="60%",fig.align = 'center'}
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
-knitr::include_graphics("./plots/5/example2新.png")
+knitr::include_graphics("./plots/5/example2.png")
 ```
 
 **Clairaut's Theorem** Suppose $f$ is defined on a region $D$ that contains the point $(a,b)$. If the functions $f_{xy}$ and $f_{yx}$ are both continuous on $D$, then $$f_{xy}(a,b)=f_{yx}(a,b).$$ 
 
+**Definition** The **directional derivative of f at $x_0,y_0$ in the direction of a unit vector $\boldsymbol{u}=\langle a,b\rangle$ is
+$$D_{\boldsymbol{u}}f(x_0,y_0)=\underset{h\rightarrow 0}{\lim}\frac{f(x_0+ah,y_0+bh)-f(x_0,y_0)}{h}$$
+**Theorem** If $f$ is a differentiable function of $x$ and $y$, then $f$ has a directional derivative in the direction of any unit vector $\boldsymbol{u}=\langle a,b\rangle$ and 
+$$D_{\boldsymbol{u}}f(x,y)=f_x(x,y)a+f_y(x,y)b$$
+**Definition** If $f$ is a function of two variables $x$ and $y$, then the gradient of $f$ is the vector function $\nabla f$ defined by
+$$\nabla f(x,y)=\langle f_x(x,y),f_y(x,y)\rangle=f_x\mathbf{i}+f_y\mathbf{j}$$
+**Remark** $D_{\boldsymbol{u}}f(x,y)=\nabla f(x,y)\cdot\boldsymbol{u}$.
 
+**Theorem** Suppose $f$ is a differentiable function of two or three variables. The maximum value of the directional derivative $D_{\boldsymbol{u}}f(\boldsymbol{x})$ is $|\nabla f(\boldsymbol{x})|$ and it occurs when $\boldsymbol{u}$ has the same direction as the gradient vector $\nabla f(\boldsymbol{x})$.
 
+**Lagrange multipliers** Maximize $f(x,y)$ with the constraint $g(x,y)=k$.
 
+```{r,echo=FALSE,out.width="60%",fig.align = 'center'}
+knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
+knitr::include_graphics("./plots/5/lagrange.png")
+```
 
+It appears that this happens when these curves just touch each other, that is, when they have a common tangent line. This means that the tangent lines at the point $_0,y_0$ where they touch are identical. So the gradient vectors are parallel; that is, $\nabla f(x_0,y_0)=\lambda \nabla g(x_0,y_0)$ for some scalar $\lambda$.
 
+**Method of Lagrange Multipliers** To find the maximum and minimum values of $f(x,y,z)$ subject to the constraint $g(x,y,z)=k$ [assuming that these extreme  values exist and $\nabla g\neq0$ on the surface $g(x,y,z)=k$]:
+
+1.  Find all values of $x, y, z$, and $\lambda$ such that
+$$\nabla f(x,y,z)=\lambda \nabla g(x,y,z)$$
+and $$g(x,y,z)=k$$
+
+2. Evaluate $f$ at all the points $x, y, z$  that result from step 1. The largest of these values is the maximum value of $f$; the smallest is the minimum value of $f$.
 
 ## Functions of several variables
 
