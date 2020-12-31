@@ -4,16 +4,16 @@ Note that *an italic title* indicates an application section which is less impor
 
 ## Notes{-}
 
-**Definition** A function $f$ of two variables is a rule that assigns to each ordered pair of real numbers $(x,y)$ in a set $D$ a unique real number denoted by $f(x,y)$. The set $D$ is the domain of $f$ and its range is the set of values that $f$ takes on, that is $\{f(x,y):(x,y)\in D\}$.
+**Definition** A function $f$ of two variables is a rule that assigns to each *ordered pair of real numbers* $(x,y)$ in a set $D$ a unique real number denoted by $f(x,y)$. The set $D$ is the *domain* of $f$ and its *range* is the set of values that $f$ takes on, that is $\{f(x,y):(x,y)\in D\}$.
 
-**Remark** We often write $z=f(x,y)$ to make explicit the value taken on by $f$ at the general point $(x,y)$. The values $x$ and $y$ are independent variables and $z$ is the dependent variable.
+**Remark** We often write $z=f(x,y)$ to make explicit the value taken on by $f$ at the general point $(x,y)$. The values $x$ and $y$ are *independent* variables and $z$ is the *dependent* variable.
 
 ```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 knitr::include_graphics("./plots/5/illus.png")
 ```
 
-**Definition** If $f$ is a function of two variables with domain $D$, then the graph of $f$ is the set of all points $(x,y,z)\in \mathbb{R}^3$ such that $z=f(x,y)$ and $(x,y) \in D$.
+**Definition** If $f$ is a function of two variables with domain $D$, then the *graph* of $f$ is the set of all points $(x,y,z)\in \mathbb{R}^3$ such that $z=f(x,y)$ and $(x,y) \in D$.
 
 ```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
@@ -33,14 +33,14 @@ knitr::include_graphics("./plots/5/example1.png")
 
 **Remark** A level curve $f(x,y)=k$ is the set of all points in the domain of $f$ at which $f$ takes on a given value $k$. In other words, it shows where the graph of $f$ has height $k$.
 
-```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
+```{r,echo=FALSE,out.width="60%",fig.align = 'center'}
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 knitr::include_graphics("./plots/5/contour.png")
 ```
 
 **Example** Topographic maps of mountainous regions. 
 
-```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
+```{r,echo=FALSE,out.width="60%",fig.align = 'center'}
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 knitr::include_graphics("./plots/5/mountain.png")
 ```
@@ -52,16 +52,17 @@ knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 knitr::include_graphics("./plots/5/contour1.png")
 ```
 
-**Definition** Let $f$ be a function of two variables whose domain $D$ includes points arbitrarily close to $(a,b)$. Then we say that the limit of $f(x,y)$ as $(x,y)$ approaches $(a,b)$ is $L$ and we write
+*Definition* Let $f$ be a function of two variables whose domain $D$ includes points arbitrarily close to $(a,b)$. Then we say that the limit of $f(x,y)$ as $(x,y)$ approaches $(a,b)$ is $L$ and we write
 $$\underset{(x,y)\rightarrow(a,b)}{\lim}f(x,y)=L$$
 if for every number $\epsilon>0$ there is a corresponding number $\delta>0$ such that
 if $(x,y)\in D$ and $0<\sqrt{(x-a)^2+(y-b)^2}<\delta$ then $|f(x,y)-L|<\epsilon$.
+
 ```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 knitr::include_graphics("./plots/5/limit.png")
 ```
 
-**Definition** A **polynomial function** of two variables is a sum of terms of the form $cx^my^n$, where $c$ is a constant and $m$ and $n$ are non-negative integers. A  **rational function** is a ratio of polynomials.
+*Definition* A **polynomial function** of two variables is a sum of terms of the form $cx^my^n$, where $c$ is a constant and $m$ and $n$ are non-negative integers. A  **rational function** is a ratio of polynomials.
 
 **Definition** Let $f$ is a function of two variables $x$ and $y$. Suppose we let only $x$ vary while keeping $y$ fixed $y=b$, namely, $g(x)=f(x,b)$. If $g$ has a derivative at $a$, then we call it the **partial derivative of $f$ with respect to $x$ at $(a,b)$** and denote it by $f_x(a,b)$.
 
@@ -76,10 +77,14 @@ $$f_x(x,y)=f_x=\frac{\partial f}{\partial x}=\frac{\partial}{\partial x}f(x,y)=\
 
 $$f_y(x,y)=f_y=\frac{\partial f}{\partial y}=\frac{\partial}{\partial y}f(x,y)=\frac{\partial z}{\partial y}=f_2=D_2f=D_yf$$
 
-**Rules** for finding partial derivatives of $z=f(x,y)$. To find $f_x$, regard $y$ as a constant and differentiate $f(x,y)$ with respect to $x$.
+**Rules**  To find $f_x$, regard $y$ as a constant and differentiate $f(x,y)$ with respect to $x$.
 
-**Interpretations** If $f(a,b)=c$, then the point $P(a,b,c)$ lies on $S$.
-$C_1$ is the trace of $S$ in the plane $y=b$, and it is the graph of the function $g(x)=f(x,b)$. The slope of its tangent $T_1$ at $P(a,b,c)$ is $g'(a)=f_x(a,b)$. The partial derivatives $f_x(a,b)$ and $f_y(a,b)$ can be interpreted geometrically as the slopes of the tangent lines at $P(a,b,c)$ to the traces $C_1$ and $C_2$ of $S$ in the planes $y=b$ and $x=a$.
+**Interpretations** 
+
+If $f(a,b)=c$, then the point $P(a,b,c)$ lies on $S$.
+$C_1$ is the *trace* of $S$ in the plane $y=b$, and it is the graph of the function $g(x)=f(x,b)$. The slope of its tangent $T_1$ at $P(a,b,c)$ is $g'(a)=f_x(a,b)$. 
+
+The partial derivatives $f_x(a,b)$ and $f_y(a,b)$ can be interpreted geometrically as the slopes of the tangent lines at $P(a,b,c)$ to the traces $C_1$ and $C_2$ of $S$ in the planes $y=b$ and $x=a$.
 $\partial z/\partial x$ represent the rate of change of $z$ w.r.t. $x$ when $y$ is fixed.
 
 ```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
@@ -88,6 +93,7 @@ knitr::include_graphics("./plots/5/interpretation.png")
 ```
 
 **Example** If $f(x,y)=4-x^2-2y^2$, find $f_x(1,1)$ and $f_y(1,1)$.
+
 ```{r,echo=FALSE,out.width="60%",fig.align = 'center'}
 knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 knitr::include_graphics("./plots/5/example2.png")
@@ -95,15 +101,18 @@ knitr::include_graphics("./plots/5/example2.png")
 
 **Clairaut's Theorem** Suppose $f$ is defined on a region $D$ that contains the point $(a,b)$. If the functions $f_{xy}$ and $f_{yx}$ are both continuous on $D$, then $$f_{xy}(a,b)=f_{yx}(a,b).$$ 
 
-**Definition** The **directional derivative of f at $x_0,y_0$ in the direction of a unit vector $\boldsymbol{u}=\langle a,b\rangle$ is
+*Definition* The *directional derivative* of f at $x_0,y_0$ in the direction of a unit vector $\boldsymbol{u}=\langle a,b\rangle$ is
 $$D_{\boldsymbol{u}}f(x_0,y_0)=\underset{h\rightarrow 0}{\lim}\frac{f(x_0+ah,y_0+bh)-f(x_0,y_0)}{h}$$
-**Theorem** If $f$ is a differentiable function of $x$ and $y$, then $f$ has a directional derivative in the direction of any unit vector $\boldsymbol{u}=\langle a,b\rangle$ and 
-$$D_{\boldsymbol{u}}f(x,y)=f_x(x,y)a+f_y(x,y)b$$
-**Definition** If $f$ is a function of two variables $x$ and $y$, then the gradient of $f$ is the vector function $\nabla f$ defined by
-$$\nabla f(x,y)=\langle f_x(x,y),f_y(x,y)\rangle=f_x\mathbf{i}+f_y\mathbf{j}$$
-**Remark** $D_{\boldsymbol{u}}f(x,y)=\nabla f(x,y)\cdot\boldsymbol{u}$.
 
-**Theorem** Suppose $f$ is a differentiable function of two or three variables. The maximum value of the directional derivative $D_{\boldsymbol{u}}f(\boldsymbol{x})$ is $|\nabla f(\boldsymbol{x})|$ and it occurs when $\boldsymbol{u}$ has the same direction as the gradient vector $\nabla f(\boldsymbol{x})$.
+*Theorem* If $f$ is a differentiable function of $x$ and $y$, then $f$ has a directional derivative in the direction of any unit vector $\boldsymbol{u}=\langle a,b\rangle$ and 
+$$D_{\boldsymbol{u}}f(x,y)=f_x(x,y)a+f_y(x,y)b$$
+
+*Definition* If $f$ is a function of two variables $x$ and $y$, then the *gradient* of $f$ is the vector function $\nabla f$ defined by
+$$\nabla f(x,y)=\langle f_x(x,y),f_y(x,y)\rangle=f_x\mathbf{i}+f_y\mathbf{j}$$
+
+*Remark* $D_{\boldsymbol{u}}f(x,y)=\nabla f(x,y)\cdot\boldsymbol{u}$.
+
+*Theorem* Suppose $f$ is a differentiable function of two or three variables. The maximum value of the directional derivative $D_{\boldsymbol{u}}f(\boldsymbol{x})$ is $|\nabla f(\boldsymbol{x})|$ and it occurs when $\boldsymbol{u}$ has the same direction as the gradient vector $\nabla f(\boldsymbol{x})$.
 
 **Lagrange multipliers** Maximize $f(x,y)$ with the constraint $g(x,y)=k$.
 
@@ -112,13 +121,13 @@ knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 knitr::include_graphics("./plots/5/lagrange.png")
 ```
 
-It appears that this happens when these curves just touch each other, that is, when they have a common tangent line. This means that the tangent lines at the point $_0,y_0$ where they touch are identical. So the gradient vectors are parallel; that is, $\nabla f(x_0,y_0)=\lambda \nabla g(x_0,y_0)$ for some scalar $\lambda$.
+It appears that this happens when these curves just touch each other, that is, when they have *a common tangent line*. This means that the tangent lines at the point $x_0,y_0$ where they touch are identical. So the gradient vectors are parallel; that is, $\nabla f(x_0,y_0)=\lambda \nabla g(x_0,y_0)$ for some scalar $\lambda$.
 
-**Method of Lagrange Multipliers** To find the maximum and minimum values of $f(x,y,z)$ subject to the constraint $g(x,y,z)=k$ [assuming that these extreme  values exist and $\nabla g\neq0$ on the surface $g(x,y,z)=k$]:
+**Method of Lagrange Multipliers** To find the maximum and minimum values of $f(x,y,z)$ subject to the constraint $g(x,y,z)=k$ [assuming that these extreme  values exist and $\nabla g\neq0$ on the surface $g(x,y,z)=k$].
 
 1.  Find all values of $x, y, z$, and $\lambda$ such that
 $$\nabla f(x,y,z)=\lambda \nabla g(x,y,z)$$
-and $$g(x,y,z)=k$$
+and $$g(x,y,z)=k.$$
 
 2. Evaluate $f$ at all the points $x, y, z$  that result from step 1. The largest of these values is the maximum value of $f$; the smallest is the minimum value of $f$.
 
