@@ -1,5 +1,30 @@
 # Mathematics of Finance
 
+## Notes {-}
+
+**Effective interest rate $i$** 
+
+The accumulation function is $a(t)=(1+i)^t$, where $t$ is in the unit of year.
+
+**Nominal interest rate $i^{(m)}$ (compounded $m$th-ly in a year)** 
+
+The accumulation function is $a(t)=\left(1+\frac{i^{(m)}}{m}\right)^{tm}$, where $t$ is in the unit of year.
+
+**Nominal interest rate $i^{(m)}$ and effective interest rate (annual percentage rate, annual equivalent rate) $i$**
+$$1+i=\left(1+\frac{i^{(m)}}{m}\right)^m$$
+
+**Force of interest rate $\delta$ (compounded continuously)** $$a(t)=\underset{m\rightarrow\infty}{\lim}\left(1+\frac{i^{(m)}}{m}\right)^{mt}=e^{i^{(m)}t}=e^{\delta t},$$ where we denote $\underset{m\rightarrow\infty}{\lim}i^{(m)}$ by $\delta$.
+
+**Formula of sum of geometric series** 
+$$\sum_{i=1}^n ar^{i-1}=a\left(\frac{r^n-1}{r-1}\right)$$
+**Net present value (NPV)** 
+
+The present value of a revenue flow minus the original cost. NPV is preferred than IRR sometimes.
+
+**Internal rate of return (IRR)** 
+
+The interest rate for which the net present value is zero.
+
 ## Percentages
 
 **Index number** The scale factor of a variable measured from the base year multiplied by 100.
@@ -44,7 +69,7 @@ $$\sum_{i=1}^n ar^{i-1}=a\left(\frac{r^n-1}{r-1}\right)$$
 
 **Net present value (NPV)** The present value of a revenue flow minus the original cost. NPV is preferred than IRR sometimes.
 
-**Internal rate of return (IRR)** The interest rate for which the net present value is zero
+**Internal rate of return (IRR)** The interest rate for which the net present value is zero.
 
 **Discount rate** The interest rate that is used when going backwards in time to calculate the present value from a future value.
 

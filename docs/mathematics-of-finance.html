@@ -105,13 +105,14 @@
 <li class="chapter" data-level="1" data-path="s.html"><a href="s.html"><i class="fa fa-check"></i><b>1</b> S</a></li>
 <li class="chapter" data-level="2" data-path="f.html"><a href="f.html"><i class="fa fa-check"></i><b>2</b> F</a></li>
 <li class="chapter" data-level="3" data-path="mathematics-of-finance.html"><a href="mathematics-of-finance.html"><i class="fa fa-check"></i><b>3</b> Mathematics of Finance</a><ul>
+<li class="chapter" data-level="" data-path="mathematics-of-finance.html"><a href="mathematics-of-finance.html#notes"><i class="fa fa-check"></i>Notes</a></li>
 <li class="chapter" data-level="3.1" data-path="mathematics-of-finance.html"><a href="mathematics-of-finance.html#percentages"><i class="fa fa-check"></i><b>3.1</b> Percentages</a></li>
 <li class="chapter" data-level="3.2" data-path="mathematics-of-finance.html"><a href="mathematics-of-finance.html#compound-interest"><i class="fa fa-check"></i><b>3.2</b> Compound interest</a></li>
 <li class="chapter" data-level="3.3" data-path="mathematics-of-finance.html"><a href="mathematics-of-finance.html#geometric-series"><i class="fa fa-check"></i><b>3.3</b> Geometric series</a></li>
 <li class="chapter" data-level="3.4" data-path="mathematics-of-finance.html"><a href="mathematics-of-finance.html#investment-appraisal"><i class="fa fa-check"></i><b>3.4</b> Investment appraisal</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="ordinary-differentiation.html"><a href="ordinary-differentiation.html"><i class="fa fa-check"></i><b>4</b> Ordinary differentiation</a><ul>
-<li class="chapter" data-level="" data-path="ordinary-differentiation.html"><a href="ordinary-differentiation.html#notes"><i class="fa fa-check"></i>Notes</a></li>
+<li class="chapter" data-level="" data-path="ordinary-differentiation.html"><a href="ordinary-differentiation.html#notes-1"><i class="fa fa-check"></i>Notes</a></li>
 <li class="chapter" data-level="4.1" data-path="ordinary-differentiation.html"><a href="ordinary-differentiation.html#derivative-of-a-function"><i class="fa fa-check"></i><b>4.1</b> Derivative of a function</a></li>
 <li class="chapter" data-level="4.2" data-path="ordinary-differentiation.html"><a href="ordinary-differentiation.html#rules-of-differentiation"><i class="fa fa-check"></i><b>4.2</b> Rules of differentiation</a></li>
 <li class="chapter" data-level="4.3" data-path="ordinary-differentiation.html"><a href="ordinary-differentiation.html#marginal-functions-in-economics"><i class="fa fa-check"></i><b>4.3</b> <em>Marginal functions in economics</em></a><ul>
@@ -132,7 +133,7 @@
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="partial-differentiation.html"><a href="partial-differentiation.html"><i class="fa fa-check"></i><b>5</b> Partial Differentiation</a><ul>
-<li class="chapter" data-level="" data-path="partial-differentiation.html"><a href="partial-differentiation.html#notes-1"><i class="fa fa-check"></i>Notes</a></li>
+<li class="chapter" data-level="" data-path="partial-differentiation.html"><a href="partial-differentiation.html#notes-2"><i class="fa fa-check"></i>Notes</a></li>
 <li class="chapter" data-level="5.1" data-path="partial-differentiation.html"><a href="partial-differentiation.html#functions-of-several-variables"><i class="fa fa-check"></i><b>5.1</b> Functions of several variables</a></li>
 <li class="chapter" data-level="5.2" data-path="partial-differentiation.html"><a href="partial-differentiation.html#partial-elasticity-and-marginal-functions"><i class="fa fa-check"></i><b>5.2</b> <em>Partial elasticity and marginal functions</em></a><ul>
 <li><a href="partial-differentiation.html#elasticity-2"><em>Elasticity</em></a></li>
@@ -353,6 +354,22 @@
             <section class="normal" id="section-">
 <div id="mathematics-of-finance" class="section level1">
 <h1><span class="header-section-number">3</span> Mathematics of Finance</h1>
+<div id="notes" class="section level2 unnumbered">
+<h2>Notes</h2>
+<p><strong>Effective interest rate <span class="math inline">\(i\)</span></strong></p>
+<p>The accumulation function is <span class="math inline">\(a(t)=(1+i)^t\)</span>, where <span class="math inline">\(t\)</span> is in the unit of year.</p>
+<p><strong>Nominal interest rate <span class="math inline">\(i^{(m)}\)</span> (compounded <span class="math inline">\(m\)</span>th-ly in a year)</strong></p>
+<p>The accumulation function is <span class="math inline">\(a(t)=\left(1+\frac{i^{(m)}}{m}\right)^{tm}\)</span>, where <span class="math inline">\(t\)</span> is in the unit of year.</p>
+<p><strong>Nominal interest rate <span class="math inline">\(i^{(m)}\)</span> and effective interest rate (annual percentage rate, annual equivalent rate) <span class="math inline">\(i\)</span></strong>
+<span class="math display">\[1+i=\left(1+\frac{i^{(m)}}{m}\right)^m\]</span></p>
+<p><strong>Force of interest rate <span class="math inline">\(\delta\)</span> (compounded continuously)</strong> <span class="math display">\[a(t)=\underset{m\rightarrow\infty}{\lim}\left(1+\frac{i^{(m)}}{m}\right)^{mt}=e^{i^{(m)}t}=e^{\delta t},\]</span> where we denote <span class="math inline">\(\underset{m\rightarrow\infty}{\lim}i^{(m)}\)</span> by <span class="math inline">\(\delta\)</span>.</p>
+<p><strong>Formula of sum of geometric series</strong>
+<span class="math display">\[\sum_{i=1}^n ar^{i-1}=a\left(\frac{r^n-1}{r-1}\right)\]</span>
+<strong>Net present value (NPV)</strong></p>
+<p>The present value of a revenue flow minus the original cost. NPV is preferred than IRR sometimes.</p>
+<p><strong>Internal rate of return (IRR)</strong></p>
+<p>The interest rate for which the net present value is zero.</p>
+</div>
 <div id="percentages" class="section level2">
 <h2><span class="header-section-number">3.1</span> Percentages</h2>
 <p><strong>Index number</strong> The scale factor of a variable measured from the base year multiplied by 100.</p>
@@ -384,7 +401,7 @@
 <div id="investment-appraisal" class="section level2">
 <h2><span class="header-section-number">3.4</span> Investment appraisal</h2>
 <p><strong>Net present value (NPV)</strong> The present value of a revenue flow minus the original cost. NPV is preferred than IRR sometimes.</p>
-<p><strong>Internal rate of return (IRR)</strong> The interest rate for which the net present value is zero</p>
+<p><strong>Internal rate of return (IRR)</strong> The interest rate for which the net present value is zero.</p>
 <p><strong>Discount rate</strong> The interest rate that is used when going backwards in time to calculate the present value from a future value.</p>
 <p><strong>Discounting</strong> The process of working backwards in time to find the present values from a future value.</p>
 <p><strong>Annuity</strong> A lump-sum investment designed to produce a sequence of equal regular payments over time.</p>
