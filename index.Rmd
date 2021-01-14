@@ -72,6 +72,6 @@ Our homework is far from enough to master the knowledge in the textbook. **You a
 
 5. More Integration
 
-6. More Partial Differentiation
+6. Vectors
 
 7. Matrices
