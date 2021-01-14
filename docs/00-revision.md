@@ -1,4 +1,6 @@
-# Revision {-}
+# (PART) 💡 LECTURE NOTES {-}
+
+# Revision and Warm-up {-}
 
 Note that *an italic title* indicates an application section which is less important than a theoretical one.
 

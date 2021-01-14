@@ -1,5 +1,5 @@
 --- 
-title: "Mathematical Foundations"
+title: "Mathematical Foundations (II)"
 # author: "Financial Mathematics"
 date: "`r Sys.time()`"
 site: bookdown::bookdown_site
@@ -16,7 +16,7 @@ editor_options:
 
 # 👨‍🏫 Welcome  {-}
 
-This is the website of Mathematical Foundations. We create this website  to 
+This is the website of Mathematical Foundations (II). We create this website  to 
 
 - Summarize the key concepts of each chapter.
 
@@ -28,30 +28,9 @@ This is the website of Mathematical Foundations. We create this website  to
 
 This website is maintained by <u>Guangyuan Gao</u> and <u>Yan Cai</u>. If you have any questions, please don't hesitate to contact us via <guangyuan.gao@ruc.edu.cn> or <2017201678@ruc.edu.cn>.
 
-## ✍️ Final Exam {- #final}
-
-- Duration: 18:00-19:30 Beijing Time on 14 Jan, 2021.
-
-- Style: Open book exam; Write solutions on the exam paper (a .doc will be sent to you).
-
-- Type of Questions: Similar to the homework (no multiple choice questions).
-
-- Number of Questions: Around 10.
-
-- Requirements: Necessary calculation/proof details.
-
-- Examinable chapters: 1-6.
-
-- Most important: (Partial) Differentiation and Optimization (60%), Integration (20%). Roughly. 
-
-- Less important: Financial Mathematics (10%), Linear equations and Non-linear Equations (10%). Roughly.
-
-
 ## 🖊️ Homework {-}
 
-No homework this week. Merry Christmas 🎄 and Happy New Year 🎁!
-
-<!-- Homework: Exercise 6.2* (page 510) Q1, Q4, Q6, Q12, Exercise 8.1* (page 602) Q3, Q7 are due on **2020/Dec/22 (18:00 Beijing Time)**.  -->
+Homework: Exercise 6.2* (page 510) Q1, Q4, Q6, Q12, Exercise 8.1* (page 602) Q3, Q7 are due on **2020/Dec/22 (18:00 Beijing Time)**.
 
 You should send either a typed document or a scanned/photoed handwritten manuscript to the tutor's email address <2017201678@ruc.edu.cn>. You should show the **calculation/proof details** in your submitted document.
 
@@ -66,17 +45,33 @@ Our homework is far from enough to master the knowledge in the textbook. **You a
 
 **I will update this section frequently to answer the important questions. You are welcomed to ask questions!**
 
-**👉 Procedure v.s. Final answer** (2020/10/13)
+<!-- **👉 Procedure v.s. Final answer** (2020/10/13) -->
 
-```{r,echo=FALSE,out.width="50%",fig.align = 'center'}
-knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
-knitr::include_graphics("./plots/homework-mark.png")
-```
+<!-- ```{r,echo=FALSE,out.width="50%",fig.align = 'center'} -->
+<!-- knitr::opts_chunk$set(fig.pos = "!H", out.extra = "") -->
+<!-- knitr::include_graphics("./plots/homework-mark.png") -->
+<!-- ``` -->
 
-**👉 Components of the final result** (2020/10/11)
- 
-Final result = Attending zoom lecture (10%) + Homework (60%) + Final exam (30%).
+<!-- **👉 Components of the final result** (2020/10/11) -->
 
-At this moment, the final examination (open book) is scheduled on **2021/01/14 during the last lecture of week 19**. However, the schedule may be changed due to unforeseeable events.
+<!-- Final result = Attending zoom lecture (10%) + Homework (60%) + Final exam (30%). -->
 
+<!-- At this moment, the final examination (open book) is scheduled on **2021/01/14 during the last lecture of week 19**. However, the schedule may be changed due to unforeseeable events. -->
 
+## Course Outline {-}
+
+0. Revision and Warm-up
+
+1. Sets, Real Numbers and Inequalities
+
+2. More Functions and Graphs
+
+3. Limits
+
+4. Trigonometric Functions
+
+5. More Integration
+
+6. More Partial Differentiation
+
+7. Matrices

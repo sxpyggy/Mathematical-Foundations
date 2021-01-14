@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>7 Mathematics of Finance | Mathematical Foundations (II)</title>
+  <title>6 More partial differentiation | Mathematical Foundations (II)</title>
   <meta name="description" content="The output format is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="7 Mathematics of Finance | Mathematical Foundations (II)" />
+  <meta property="og:title" content="6 More partial differentiation | Mathematical Foundations (II)" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="sxpyggy/Mathematical-Foundations" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="7 Mathematics of Finance | Mathematical Foundations (II)" />
+  <meta name="twitter:title" content="6 More partial differentiation | Mathematical Foundations (II)" />
   
   <meta name="twitter:description" content="The output format is bookdown::gitbook." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="more-partial-differentiation.html"/>
-
+<link rel="prev" href="more-integration.html"/>
+<link rel="next" href="mathematics-of-finance.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -161,59 +161,16 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="mathematics-of-finance" class="section level1">
-<h1><span class="header-section-number">7</span> Mathematics of Finance</h1>
-<div id="notes" class="section level2 unnumbered">
-<h2>Notes</h2>
-<p><strong>Effective interest rate <span class="math inline">\(i\)</span></strong></p>
-<p>The accumulation function is <span class="math inline">\(a(t)=(1+i)^t\)</span>, where <span class="math inline">\(t\)</span> is in the unit of year.</p>
-<p><strong>Nominal interest rate <span class="math inline">\(i^{(m)}\)</span> (compounded <span class="math inline">\(m\)</span>th-ly in a year)</strong></p>
-<p>The accumulation function is <span class="math inline">\(a(t)=\left(1+\frac{i^{(m)}}{m}\right)^{tm}\)</span>, where <span class="math inline">\(t\)</span> is in the unit of year.</p>
-<p><strong>Nominal interest rate <span class="math inline">\(i^{(m)}\)</span> and effective interest rate (annual percentage rate, annual equivalent rate) <span class="math inline">\(i\)</span></strong>
-<span class="math display">\[1+i=\left(1+\frac{i^{(m)}}{m}\right)^m\]</span></p>
-<p><strong>Force of interest rate <span class="math inline">\(\delta\)</span> (compounded continuously)</strong> <span class="math display">\[a(t)=\underset{m\rightarrow\infty}{\lim}\left(1+\frac{i^{(m)}}{m}\right)^{mt}=e^{i^{(m)}t}=e^{\delta t},\]</span> where we denote <span class="math inline">\(\underset{m\rightarrow\infty}{\lim}i^{(m)}\)</span> by <span class="math inline">\(\delta\)</span>.</p>
-<p><strong>Formula of sum of geometric series</strong>
-<span class="math display">\[\sum_{i=1}^n ar^{i-1}=a\left(\frac{r^n-1}{r-1}\right)\]</span>
-<strong>Net present value (NPV)</strong></p>
-<p>The present value of a revenue flow minus the original cost. NPV is preferred than IRR sometimes.</p>
-<p><strong>Internal rate of return (IRR)</strong></p>
-<p>The interest rate for which the net present value is zero.</p>
+<div id="more-partial-differentiation" class="section level1">
+<h1><span class="header-section-number">6</span> More partial differentiation</h1>
+<div id="vectors" class="section level2">
+<h2><span class="header-section-number">6.1</span> Vectors</h2>
 </div>
-<div id="percentages" class="section level2">
-<h2><span class="header-section-number">7.1</span> Percentages</h2>
-<p><strong>Index number</strong> The scale factor of a variable measured from the base year multiplied by 100.</p>
-<p><strong>Inflation</strong> The percentage increase in the level of prices over a <span class="math inline">\(12\)</span>-month period.</p>
-<p><strong>Nominal data</strong> Monetary values prevailing at the time that they were measured.</p>
-<p><strong>Real data</strong> Monetary values adjusted to take inflation into account.</p>
+<div id="vector-functions" class="section level2">
+<h2><span class="header-section-number">6.2</span> Vector Functions</h2>
 </div>
-<div id="compound-interest" class="section level2">
-<h2><span class="header-section-number">7.2</span> Compound interest</h2>
-<p><strong>Simple interest</strong> The interest which is paid directly to the investor instead of being added to the original amount.
-<span class="math display">\[S=P\times(1+rt)\]</span></p>
-<p><strong>Compound interest</strong> The interest which is added on to the initial investment, so that this will itself gain interest in subsequent time periods.
-<span class="math display">\[S=P\times(1+r)^t\]</span></p>
-<p><strong>Continuous compounding</strong> The limiting value when interest is compounded with ever-increasing frequency.
-<span class="math display">\[S=P\times e^{rt}\]</span></p>
-<p><strong>Annual percentage rate</strong> The equivalent annual interest paid for a loan, taking into account the compounding over a variety of time periods.</p>
-<p><strong>Principal</strong> The value of the original sum invested.</p>
-<p><strong>Future value</strong> The final value of an investment after one or more time periods.</p>
-</div>
-<div id="geometric-series" class="section level2">
-<h2><span class="header-section-number">7.3</span> Geometric series</h2>
-<p><strong>Arithmetic progression</strong> A sequence of numbers with a constant difference between consecutive terms; the <span class="math inline">\(n\)</span>th term takes the form, <span class="math inline">\(a+bn\)</span>.</p>
-<p><strong>Geometric progression</strong> A sequence of numbers with a constant ratio between consecutive terms; the <span class="math inline">\(n\)</span>th term takes the form of <span class="math inline">\(ar^{n-1}\)</span>.</p>
-<p><strong>Geometric ratio</strong> The constant multiplier <span class="math inline">\(r\)</span> in a geometric series.</p>
-<p><strong>Formula of sum of geometric series</strong>
-<span class="math display">\[\sum_{i=1}^n ar^{i-1}=a\left(\frac{r^n-1}{r-1}\right)\]</span></p>
-<p><strong>Sinking fund</strong> A fixed sum of money saved at regular intervals which is used to fund some future financial commitment.</p>
-</div>
-<div id="investment-appraisal" class="section level2">
-<h2><span class="header-section-number">7.4</span> Investment appraisal</h2>
-<p><strong>Net present value (NPV)</strong> The present value of a revenue flow minus the original cost. NPV is preferred than IRR sometimes.</p>
-<p><strong>Internal rate of return (IRR)</strong> The interest rate for which the net present value is zero.</p>
-<p><strong>Discount rate</strong> The interest rate that is used when going backwards in time to calculate the present value from a future value.</p>
-<p><strong>Discounting</strong> The process of working backwards in time to find the present values from a future value.</p>
-<p><strong>Annuity</strong> A lump-sum investment designed to produce a sequence of equal regular payments over time.</p>
+<div id="lagrange-multipliers" class="section level2">
+<h2><span class="header-section-number">6.3</span> Lagrange Multipliers</h2>
 
 </div>
 </div>
@@ -222,8 +179,8 @@
           </div>
         </div>
       </div>
-<a href="more-partial-differentiation.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="more-integration.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="mathematics-of-finance.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
