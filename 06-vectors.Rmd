@@ -1,16 +1,16 @@
-# Vectors and the Geometry of Space
+# Vectors and Geometry of Space
 
 ## Three-Dimensinal Coordinate Systems 
 
 ## Vectors
 
-## The Dot Product
+## Dot Product
 
-## The Cross Product
+## Cross Product
 
 ## Equations of Lines and Planes
 
-## Directional Derivatives and the Gradient Vector
+## Directional Derivatives and  Gradient Vector
 
 ## More on Lagrange Multipliers
 
