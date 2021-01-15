@@ -1,4 +1,3 @@
-
 # Sets, Real Numbers and Inequalities
 
 ## Sets

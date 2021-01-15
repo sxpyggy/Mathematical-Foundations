@@ -30,11 +30,11 @@ This website is maintained by <u>Guangyuan Gao</u> and <u>Yan Cai</u>. If you ha
 
 ## 🖊️ Homework {-}
 
-Homework: Exercise 6.2* (page 510) Q1, Q4, Q6, Q12, Exercise 8.1* (page 602) Q3, Q7 are due on **2020/Dec/22 (18:00 Beijing Time)**.
+<!-- Homework: Exercise 6.2* (page 510) Q1, Q4, Q6, Q12, Exercise 8.1* (page 602) Q3, Q7 are due on **2020/Dec/22 (18:00 Beijing Time)**. -->
 
 You should send either a typed document or a scanned/photoed handwritten manuscript to the tutor's email address <2017201678@ruc.edu.cn>. You should show the **calculation/proof details** in your submitted document.
 
-Please name the subject of your email as `your uni id-chapter-question numbers`, e.g.,  `u2017201678-Chapter1-Q1-Q5`.
+Please name the subject of your email as `your uni id - week number`, e.g., `u2017201678-week2`.
 
 The solutions to homework will be announced in this website. 
 
@@ -58,7 +58,7 @@ Our homework is far from enough to master the knowledge in the textbook. **You a
 
 <!-- At this moment, the final examination (open book) is scheduled on **2021/01/14 during the last lecture of week 19**. However, the schedule may be changed due to unforeseeable events. -->
 
-## Course Outline {-}
+## 🕮 Course Outline {-}
 
 0. Revision and Warm-up
 

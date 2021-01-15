@@ -1,5 +1,4 @@
 eq:line
-algebraic-identities-and-algebraic-expressions
 sets-real-numbers-and-inequalities
 sets
 real-numbers
@@ -29,13 +28,13 @@ subsitution-method
 integration-of-rational-functions
 integration-by-parts
 more-applications-of-definite-integrals
-vectors-and-the-geometry-of-space
+vectors-and-geometry-of-space
 three-dimensinal-coordinate-systems
 vectors
-the-dot-product
-the-cross-product
+dot-product
+cross-product
 equations-of-lines-and-planes
-directional-derivatives-and-the-gradient-vector
+directional-derivatives-and-gradient-vector
 more-on-lagrange-multipliers
 matrices
 basic-matrix-operations

@@ -18,7 +18,7 @@ In $a^n$, $n$ and $a$ are called the **exponent** and **base** respectively.
 
 5. $\left(\frac{a}{b}\right)^n=\frac{a^n}{b^n}$
 
-## Algebraic Identities and Algebraic Expressions
+## Algebraic Identities and Algebraic Expressions {-}
 
 **Identities** Let $a$ and $b$ be real numbers. Then we have
 
