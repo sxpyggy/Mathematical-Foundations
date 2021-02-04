@@ -1,7 +1,7 @@
 --- 
 title: "Mathematical Foundations (II)"
 # author: "Financial Mathematics"
-date: "2021-01-15 09:11:14"
+date: "2021-02-04 22:28:25"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -58,7 +58,7 @@ Our homework is far from enough to master the knowledge in the textbook. **You a
 
 <!-- At this moment, the final examination (open book) is scheduled on **2021/01/14 during the last lecture of week 19**. However, the schedule may be changed due to unforeseeable events. -->
 
-## 🕮 Course Outline {-}
+## 📖 Course Outline {-}
 
 0. Revision and Warm-up
 

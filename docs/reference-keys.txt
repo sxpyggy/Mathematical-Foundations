@@ -1,7 +1,11 @@
 eq:line
 sets-real-numbers-and-inequalities
 sets
+introduction
+set-operations
 real-numbers
+the-number-systems
+radicals
 solving-inequalities
 more-functions-and-graphs
 functions
@@ -12,7 +16,7 @@ compositions-of-functions
 inverse-functions
 more-on-solving-equations
 limits
-introduction
+introduction-1
 limits-of-sequences
 limits-of-functions-at-infinity
 one-sided-limits

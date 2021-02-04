@@ -58,7 +58,7 @@ Our homework is far from enough to master the knowledge in the textbook. **You a
 
 <!-- At this moment, the final examination (open book) is scheduled on **2021/01/14 during the last lecture of week 19**. However, the schedule may be changed due to unforeseeable events. -->
 
-## 🕮 Course Outline {-}
+## 📖 Course Outline {-}
 
 0. Revision and Warm-up
 
