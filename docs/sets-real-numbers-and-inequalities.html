@@ -231,22 +231,78 @@ Then we have <span class="math inline">\(B\subseteq A\)</span> and <span class="
 <h2><span class="header-section-number">1.2</span> Real Numbers</h2>
 <div id="the-number-systems" class="section level3">
 <h3><span class="header-section-number">1.2.1</span> The Number Systems</h3>
-<p><strong>Natural numbers</strong></p>
-<p><strong>Integers</strong></p>
-<p><strong>Rational numbers</strong></p>
-<p><strong>Real numbers</strong></p>
-<p><strong>Real number line</strong></p>
-<p><strong>Notations</strong></p>
+<p><strong>Natural numbers</strong> <span class="math inline">\(\mathbb{N}=\{0,1,2,\ldots\}\)</span></p>
+<p><strong>Integers</strong> <span class="math inline">\(\mathbb{Z}=\{\ldots,-2,-1,0,1,2,\ldots\}\)</span></p>
+<p><strong>Rational numbers</strong> <span class="math inline">\(\mathbb{Q}=\{\frac{p}{q}:p,q~~ \text{are integers, and}~~q\neq 0\}.\)</span> <span class="math inline">\(\mathbb{Z}\subseteq\mathbb{Q}.\)</span></p>
+<p><strong>Irrational numbers</strong> Numbers that can be represented by non-terminating and non-repeating decimals. For example <span class="math inline">\(\pi\)</span> and <span class="math inline">\(\sqrt{2}\)</span>.</p>
+<p><strong>Real numbers</strong> Rational numbers together with irrational numbers are called real numbers, denoted by <span class="math inline">\(\mathbb{R}\)</span>.</p>
+<p><strong>Real number line</strong> Real numbers can be represented by points on a line, called the real number line.</p>
+<p><img src="plots/1/real_number_line.png" width="50%"  style="display: block; margin: auto;" /></p>
+<p><strong>Intervals</strong> The following types of subsets of <span class="math inline">\(\mathbb{R}\)</span> are called intervals</p>
+<p><span class="math display">\[[a,b]=\{x\in\mathbb{R}:a\le x\le b\}\]</span>
+<span class="math display">\[(a,b)=\{x\in\mathbb{R}:a&lt; x&lt; b\}\]</span>
+<span class="math display">\[[a,b)=\{x\in\mathbb{R}:a\le x&lt; b\}\]</span>
+<span class="math display">\[(a,b]=\{x\in\mathbb{R}:a&lt; x\le b\}\]</span>
+<span class="math display">\[[a,\infty)=\{x\in\mathbb{R}:a\le x\}\]</span>
+<span class="math display">\[(a,\infty)=\{x\in\mathbb{R}:a&lt; x\}\]</span>
+<span class="math display">\[(\infty,b]=\{x\in\mathbb{R}:x\le b\}\]</span>
+<span class="math display">\[(\infty,b)=\{x\in\mathbb{R}:x&lt; b\}\]</span>
+<span class="math display">\[(-\infty,\infty)=\mathbb{R}\]</span></p>
 <p><strong>Terminology</strong></p>
-<p><strong>Example</strong></p>
+<ul>
+<li><p>Bounded intervals: <span class="math inline">\([a,b],(a,b),(a,b],[a,b)\)</span></p></li>
+<li><p>Unbouded intervals: <span class="math inline">\((-\infty,b),(-\infty,b],(a,\infty),[a,\infty),(-\infty,\infty)\)</span></p></li>
+<li><p>Open intervals: <span class="math inline">\((a,b),(-\infty,b),(a,\infty),(-\infty,\infty)\)</span></p></li>
+<li><p>Closed intervals: <span class="math inline">\([a,b],(\infty,b],[a,\infty),(-\infty,\infty)\)</span></p></li>
+<li><p>Closed and bounded intervals: <span class="math inline">\([a,b]\)</span></p></li>
+<li><p>Degenerated interval: An interval containing only one element of <span class="math inline">\(\mathbb{R}\)</span>. For example <span class="math inline">\(\{a\}\)</span>.</p></li>
+<li><p>Empty interval: <span class="math inline">\(\emptyset\)</span>.</p></li>
+</ul>
+<p><strong>Example</strong> <span class="math inline">\(A=[1,5]\)</span> and <span class="math inline">\(B=(3,10]\)</span>. Find <span class="math inline">\(A\cap B\)</span> and <span class="math inline">\(A\cup B\)</span>.</p>
 </div>
 <div id="radicals" class="section level3">
 <h3><span class="header-section-number">1.2.2</span> Radicals</h3>
-<p><strong>Definition</strong></p>
+<p><strong>Root</strong> Let <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> be real numbers and let <span class="math inline">\(q\)</span> be a positive integer. If <span class="math inline">\(a^q=b\)</span>, we say that <span class="math inline">\(a\)</span> is a <span class="math inline">\(q\)</span>th root of <span class="math inline">\(b\)</span>.</p>
+<p><strong>Example</strong> <span class="math inline">\(-2\)</span> is the cube root of <span class="math inline">\(-8\)</span>. <span class="math inline">\(3\)</span> and <span class="math inline">\(-3\)</span> are the square roots of <span class="math inline">\(9\)</span>.</p>
+<p><strong>Note</strong> If <span class="math inline">\(q\)</span> is odd, then every real number has a unique <span class="math inline">\(q\)</span>th root. If <span class="math inline">\(q\)</span> is even, then</p>
+<ol style="list-style-type: decimal">
+<li><p>every positive real number has two <span class="math inline">\(q\)</span>th roots;</p></li>
+<li><p>negative real numbers do not have <span class="math inline">\(q\)</span>th root;</p></li>
+<li><p>the <span class="math inline">\(q\)</span>th root of <span class="math inline">\(0\)</span> is <span class="math inline">\(0\)</span>.</p></li>
+</ol>
+<p><strong>Principal root</strong> Denoted by <span class="math inline">\(\sqrt[q]{b}\)</span>.</p>
+<ol style="list-style-type: decimal">
+<li><p>If <span class="math inline">\(q\)</span> is odd, <span class="math inline">\(\sqrt[q]{b}\)</span> is the <span class="math inline">\(q\)</span>th root of <span class="math inline">\(b\)</span>.</p></li>
+<li><p>If <span class="math inline">\(q\)</span> is even,</p></li>
+</ol>
+<ul>
+<li><p>If <span class="math inline">\(b&gt;0\)</span>, <span class="math inline">\(\sqrt[q]{b}\)</span> is the positive <span class="math inline">\(q\)</span>th root of <span class="math inline">\(b\)</span>.</p></li>
+<li><p>If <span class="math inline">\(b&lt;0\)</span>, the principal root is undefined.</p></li>
+<li><p>If <span class="math inline">\(b=0\)</span>, <span class="math inline">\(\sqrt[q]{b}=0\)</span>.</p></li>
+</ul>
+<p><strong>Terminology</strong> The symbol <span class="math inline">\(\sqrt[q]{b}\)</span> is called a radical, in which <span class="math inline">\(q\)</span> is called the index and b the radicand.</p>
+<p><strong>Formula</strong> <span class="math inline">\(b^{\frac{p}{q}}=\sqrt[q]{b^p}\)</span>.</p>
 </div>
 </div>
 <div id="solving-inequalities" class="section level2">
 <h2><span class="header-section-number">1.3</span> Solving Inequalities</h2>
+<p>An inequality in one unknown <span class="math inline">\(x\)</span> can be written in one of the following forms:</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(F(x)&gt;0\)</span></p></li>
+<li><p><span class="math inline">\(F(x)\geq0\)</span></p></li>
+<li><p><span class="math inline">\(F(x)&lt;0\)</span></p></li>
+<li><p><span class="math inline">\(F(x)\le 0\)</span></p></li>
+</ol>
+<p><strong>Definition</strong> Consider an inequality in the form <span class="math inline">\(F(x)&gt;0\)</span>.</p>
+<ol style="list-style-type: decimal">
+<li><p>A real number <span class="math inline">\(x_0\)</span> satisfying <span class="math inline">\(F(x_0)&gt;0\)</span> is caleed a solution to the inequality.</p></li>
+<li><p>The set of all solutions to the inequality is called the solution set to the inequality.</p></li>
+</ol>
+<p><strong>Polynomial inequalities</strong> have a liking form of <span class="math inline">\(a_nx^n+a_{n-1}x^{n-1}+\cdots+a_0&lt;0\)</span>. Note that when <span class="math inline">\(n=1\)</span> it is a linear inequality.</p>
+<p><strong>Example</strong> Find the solution set to <span class="math inline">\(1\le3-2x\le9.\)</span> Find the solution set to <span class="math inline">\(2x+1&lt;3\)</span> and <span class="math inline">\(3x+10&lt;4\)</span>.</p>
+<p><strong>Quadratic inequalities</strong> Example: Find the solution set to the inequality <span class="math inline">\(x^2+2x-15&gt;0\)</span>.</p>
+<p><strong>Polynomial inequality with degrees <span class="math inline">\(\geq 3\)</span></strong> Example: Factorize the polynomial <span class="math inline">\(p(x)=x^3+3x^2-4x-12\)</span> and find the solution set to <span class="math inline">\(p(x)\le0\)</span>.</p>
+<p><strong>Theorem</strong> Let <span class="math display">\[p(x)=c_nx^n+c_{n-1}x^{n-1}+\cdots+c_1x+c_0\]</span> be a polynomial of degree <span class="math inline">\(n\)</span> where <span class="math inline">\(c_0,c_1,\ldots,c_n\in\mathbb{Z}\)</span>. Suppose <span class="math inline">\((ax-b)\)</span> is a factor of <span class="math inline">\(p(x)\)</span> where <span class="math inline">\(a,b\in\mathbb{Z}\)</span>. Then <span class="math inline">\(a\)</span> divides <span class="math inline">\(c_n\)</span> and <span class="math inline">\(b\)</span> divides <span class="math inline">\(c_0\)</span>.</p>
 
 </div>
 </div>
