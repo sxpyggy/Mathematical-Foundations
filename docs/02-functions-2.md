@@ -2,9 +2,79 @@
 
 ## Functions
 
+**Informal definition** Let $A$ and $B$ be sets. A function from $A$ to $B$, denoted by $f:A\rightarrowB$, is a rule that assigns to each element of $A$ exactly one element of $B$.
+
+**Terminology** The sets $A$ and $B$ are called the domain and codomain of $f$, respectively. The domain is denoted by $\text{dom}(f)$.
+
+**Terminology** For each $x$ in $A$, the corresponding element assigned by $f$ is denoted by $f(x)$ and is called the **image** of $x$ under $f$.
+
+**Terminology** The input variable for a function is called an independent variable. The output variable is called a dependent variable because its value depends on the value of the independent variable.
+
+**Example** $f:\mathbb{R}\rightarrow\mathbb{R},~x\mapsto f(x)=x^2+2$.
+
 ## Domains and Ranges
 
+**Natural domain** The natural domain of $f$ is the set of all real numbers $x$ such that $f(x)$ is defined.
+
+**Example** Find the (natural) domains of the following functions:
+
+1. $g(x)=\frac{1}{x-2}$
+
+2. $h(x)=\sqrt{1+5x}$
+
+**Definition** Let $f:A\rightarrow B$ be a function and let $S\subseteq A$. The image of $S$ under $f$, denoted by $f[S]$, is the subset of $B$ given by the subset of $B$ consisting of all the images under $f$ of elements in $S$:
+$$f[S]=\{y\in B:y=f(x)~~\text{for some}~~x\in S\}.$$
+
+**Example** Let $f:\mathbb{R}\rightarrow\mathbb{R}, x\mapsto f(x)=x^2$. For $S=\{1,2,3\}$, we have $f[S]=\{1,4,9\}$.
+
+**Definition** Let $f:A\rightarrow B$ be a function. The range of $f$, denoted by $\text{ran}(f)$, is the image of $A$ under $f$, that is, $\text{ran}(f)=f[A]$.
+
+**Example** Let $f:\mathbb{R}\rightarrow\mathbb{R}, x\mapsto f(x)=x^2+2$. Then $3$ and $2$ belongs to the range of $f$ but $1$ does not belong to the range of $f$.
+
+**Steps to find range of function**
+
+1. Put $y=f(x)$.
+
+2. Solve $x$ in terms of $y$.
+
+3. The range of $f$ is the set of all real numbers $y$ such that $x$ can be solved.
+
+**Example** Find the ranges of the following functions:
+
+1. $f(x)=x^2+2$
+
+2. $g(x)=\frac{1}{x-2}$
+
+3. $h(x)=\sqrt{1+5x}$
+
+4. $l(x)=\frac{2x+1}{x^2+1}$
+
 ## Graphs of Equations
+
+**Ordered pair of real numbers** An ordered pair of real numbers represents a point in the coordinate plane.
+The set of all ordered pairs $(x_0,y_0)$ is denoted by $\mathbb{R}^2$, i.e., $(x_0,y_0)\in\mathbb{R}^2$.
+So the plane is also denoted by $\mathbb{R}^2$.
+
+**Functions of two variables** $f:A\rightarrow\mathbb{R},(x,y)\in A\mapsto f((x,y))\in\mathbb{R}$, where $A\subseteq\mathbb{R}^2$. Note that $f((x,y))$ is normally simplified as $f(x,y)$.
+
+**Example** $f:\mathbb{R}^2\rightarrow\mathbb{R}, (x,y)\mapsto f(x,y)=x+y^2.$
+
+**Graph of a function** Let $F$ be a function of two variables $(x,y)\in\mathbb{R}^2\mapsto F(x,y)\in\mathbb{R}$. Consider an equation in the form of $F(x,y)=0$. The set of all ordered pairs $(x,y)$ satisfying $F(x,y)=0$ is called the graph of the equation $F(x,y)=0$, i.e., it is a subset of the plane $\mathbb{R}^2$:
+$$\{(x,y)\in\mathbb{R}^2:F(x,y)=0\}.$$
+
+**Definition** An $x$-intercept ($y$-intercept) of the graph of an equation $F(x,y)=0$ is a point where the graph intersects the $x$-axis ($y$-axis).
+
+**Example** The graph of equation $x^2+y^2=1$ is a circle with two $x$-intercepts $(1,0),(-1,0)$ and two $y$-intercepts $(0,1),(0,-1)$.
+
+**Symmetry** Consider the graph of the equation $y=x^2$. The graph is a parabola. If $(a,b)$ is a point belonging to the parabola, then $(-a,b)$ also belongs to the parabola since $b=(-a)^2$. We say that the parabola is symmetric about the $y$-axis.
+
+<img src="./plots/2/parabola.png" width="30%" style="display: block; margin: auto;" />
+
+**Symmetry** In general, a subset $\mathcal{A}$ of the plane $\mathbb{R}^2$ is said to be symmetric about a line $\mathcal{L}$ if the following condition is satisfied: For any point $P$ belonging to $\mathcal{A}$, there is a point $Q$ belonging to $\mathcal{A}$ such that
+
+1. the line segment $PQ$ is perpendicular to $\mathcal{L}$;
+
+2. $P$ and $Q$ are equidistant from $\mathcal{L}$.
 
 ## Graphs of Functions
 

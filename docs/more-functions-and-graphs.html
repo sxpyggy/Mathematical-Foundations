@@ -166,12 +166,57 @@
 <h1><span class="header-section-number">2</span> More Functions and Graphs</h1>
 <div id="functions" class="section level2">
 <h2><span class="header-section-number">2.1</span> Functions</h2>
+<p><strong>Informal definition</strong> Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be sets. A function from <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span>, denoted by <span class="math inline">\(f:A\rightarrowB\)</span>, is a rule that assigns to each element of <span class="math inline">\(A\)</span> exactly one element of <span class="math inline">\(B\)</span>.</p>
+<p><strong>Terminology</strong> The sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are called the domain and codomain of <span class="math inline">\(f\)</span>, respectively. The domain is denoted by <span class="math inline">\(\text{dom}(f)\)</span>.</p>
+<p><strong>Terminology</strong> For each <span class="math inline">\(x\)</span> in <span class="math inline">\(A\)</span>, the corresponding element assigned by <span class="math inline">\(f\)</span> is denoted by <span class="math inline">\(f(x)\)</span> and is called the <strong>image</strong> of <span class="math inline">\(x\)</span> under <span class="math inline">\(f\)</span>.</p>
+<p><strong>Terminology</strong> The input variable for a function is called an independent variable. The output variable is called a dependent variable because its value depends on the value of the independent variable.</p>
+<p><strong>Example</strong> <span class="math inline">\(f:\mathbb{R}\rightarrow\mathbb{R},~x\mapsto f(x)=x^2+2\)</span>.</p>
 </div>
 <div id="domains-and-ranges" class="section level2">
 <h2><span class="header-section-number">2.2</span> Domains and Ranges</h2>
+<p><strong>Natural domain</strong> The natural domain of <span class="math inline">\(f\)</span> is the set of all real numbers <span class="math inline">\(x\)</span> such that <span class="math inline">\(f(x)\)</span> is defined.</p>
+<p><strong>Example</strong> Find the (natural) domains of the following functions:</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(g(x)=\frac{1}{x-2}\)</span></p></li>
+<li><p><span class="math inline">\(h(x)=\sqrt{1+5x}\)</span></p></li>
+</ol>
+<p><strong>Definition</strong> Let <span class="math inline">\(f:A\rightarrow B\)</span> be a function and let <span class="math inline">\(S\subseteq A\)</span>. The image of <span class="math inline">\(S\)</span> under <span class="math inline">\(f\)</span>, denoted by <span class="math inline">\(f[S]\)</span>, is the subset of <span class="math inline">\(B\)</span> given by the subset of <span class="math inline">\(B\)</span> consisting of all the images under <span class="math inline">\(f\)</span> of elements in <span class="math inline">\(S\)</span>:
+<span class="math display">\[f[S]=\{y\in B:y=f(x)~~\text{for some}~~x\in S\}.\]</span></p>
+<p><strong>Example</strong> Let <span class="math inline">\(f:\mathbb{R}\rightarrow\mathbb{R}, x\mapsto f(x)=x^2\)</span>. For <span class="math inline">\(S=\{1,2,3\}\)</span>, we have <span class="math inline">\(f[S]=\{1,4,9\}\)</span>.</p>
+<p><strong>Definition</strong> Let <span class="math inline">\(f:A\rightarrow B\)</span> be a function. The range of <span class="math inline">\(f\)</span>, denoted by <span class="math inline">\(\text{ran}(f)\)</span>, is the image of <span class="math inline">\(A\)</span> under <span class="math inline">\(f\)</span>, that is, <span class="math inline">\(\text{ran}(f)=f[A]\)</span>.</p>
+<p><strong>Example</strong> Let <span class="math inline">\(f:\mathbb{R}\rightarrow\mathbb{R}, x\mapsto f(x)=x^2+2\)</span>. Then <span class="math inline">\(3\)</span> and <span class="math inline">\(2\)</span> belongs to the range of <span class="math inline">\(f\)</span> but <span class="math inline">\(1\)</span> does not belong to the range of <span class="math inline">\(f\)</span>.</p>
+<p><strong>Steps to find range of function</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Put <span class="math inline">\(y=f(x)\)</span>.</p></li>
+<li><p>Solve <span class="math inline">\(x\)</span> in terms of <span class="math inline">\(y\)</span>.</p></li>
+<li><p>The range of <span class="math inline">\(f\)</span> is the set of all real numbers <span class="math inline">\(y\)</span> such that <span class="math inline">\(x\)</span> can be solved.</p></li>
+</ol>
+<p><strong>Example</strong> Find the ranges of the following functions:</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(f(x)=x^2+2\)</span></p></li>
+<li><p><span class="math inline">\(g(x)=\frac{1}{x-2}\)</span></p></li>
+<li><p><span class="math inline">\(h(x)=\sqrt{1+5x}\)</span></p></li>
+<li><p><span class="math inline">\(l(x)=\frac{2x+1}{x^2+1}\)</span></p></li>
+</ol>
 </div>
 <div id="graphs-of-equations" class="section level2">
 <h2><span class="header-section-number">2.3</span> Graphs of Equations</h2>
+<p><strong>Ordered pair of real numbers</strong> An ordered pair of real numbers represents a point in the coordinate plane.
+The set of all ordered pairs <span class="math inline">\((x_0,y_0)\)</span> is denoted by <span class="math inline">\(\mathbb{R}^2\)</span>, i.e., <span class="math inline">\((x_0,y_0)\in\mathbb{R}^2\)</span>.
+So the plane is also denoted by <span class="math inline">\(\mathbb{R}^2\)</span>.</p>
+<p><strong>Functions of two variables</strong> <span class="math inline">\(f:A\rightarrow\mathbb{R},(x,y)\in A\mapsto f((x,y))\in\mathbb{R}\)</span>, where <span class="math inline">\(A\subseteq\mathbb{R}^2\)</span>. Note that <span class="math inline">\(f((x,y))\)</span> is normally simplified as <span class="math inline">\(f(x,y)\)</span>.</p>
+<p><strong>Example</strong> <span class="math inline">\(f:\mathbb{R}^2\rightarrow\mathbb{R}, (x,y)\mapsto f(x,y)=x+y^2.\)</span></p>
+<p><strong>Graph of a function</strong> Let <span class="math inline">\(F\)</span> be a function of two variables <span class="math inline">\((x,y)\in\mathbb{R}^2\mapsto F(x,y)\in\mathbb{R}\)</span>. Consider an equation in the form of <span class="math inline">\(F(x,y)=0\)</span>. The set of all ordered pairs <span class="math inline">\((x,y)\)</span> satisfying <span class="math inline">\(F(x,y)=0\)</span> is called the graph of the equation <span class="math inline">\(F(x,y)=0\)</span>, i.e., it is a subset of the plane <span class="math inline">\(\mathbb{R}^2\)</span>:
+<span class="math display">\[\{(x,y)\in\mathbb{R}^2:F(x,y)=0\}.\]</span></p>
+<p><strong>Definition</strong> An <span class="math inline">\(x\)</span>-intercept (<span class="math inline">\(y\)</span>-intercept) of the graph of an equation <span class="math inline">\(F(x,y)=0\)</span> is a point where the graph intersects the <span class="math inline">\(x\)</span>-axis (<span class="math inline">\(y\)</span>-axis).</p>
+<p><strong>Example</strong> The graph of equation <span class="math inline">\(x^2+y^2=1\)</span> is a circle with two <span class="math inline">\(x\)</span>-intercepts <span class="math inline">\((1,0),(-1,0)\)</span> and two <span class="math inline">\(y\)</span>-intercepts <span class="math inline">\((0,1),(0,-1)\)</span>.</p>
+<p><strong>Symmetry</strong> Consider the graph of the equation <span class="math inline">\(y=x^2\)</span>. The graph is a parabola. If <span class="math inline">\((a,b)\)</span> is a point belonging to the parabola, then <span class="math inline">\((-a,b)\)</span> also belongs to the parabola since <span class="math inline">\(b=(-a)^2\)</span>. We say that the parabola is symmetric about the <span class="math inline">\(y\)</span>-axis.</p>
+<p><img src="plots/2/parabola.png" width="30%" style="display: block; margin: auto;" /></p>
+<p><strong>Symmetry</strong> In general, a subset <span class="math inline">\(\mathcal{A}\)</span> of the plane <span class="math inline">\(\mathbb{R}^2\)</span> is said to be symmetric about a line <span class="math inline">\(\mathcal{L}\)</span> if the following condition is satisfied: For any point <span class="math inline">\(P\)</span> belonging to <span class="math inline">\(\mathcal{A}\)</span>, there is a point <span class="math inline">\(Q\)</span> belonging to <span class="math inline">\(\mathcal{A}\)</span> such that</p>
+<ol style="list-style-type: decimal">
+<li><p>the line segment <span class="math inline">\(PQ\)</span> is perpendicular to <span class="math inline">\(\mathcal{L}\)</span>;</p></li>
+<li><p><span class="math inline">\(P\)</span> and <span class="math inline">\(Q\)</span> are equidistant from <span class="math inline">\(\mathcal{L}\)</span>.</p></li>
+</ol>
 </div>
 <div id="graphs-of-functions" class="section level2">
 <h2><span class="header-section-number">2.4</span> Graphs of Functions</h2>
