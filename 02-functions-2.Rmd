@@ -81,6 +81,33 @@ knitr::include_graphics("./plots/2/parabola.png")
 
 ## Graphs of Functions
 
+Let $f:A\rightarrow \mathbb{R}$ be a function where $A\subseteq \mathbb{R}$. The graph of $f$ is the following subset of $\mathbb{R}^2$:
+$$\{(x,y)\in\mathbb{R}^2:x\in A~~\text{and}~~y=f(x)\}.$$
+**Examples**
+
+1. Constant functions $f(x)=c$
+
+2. Linear functions $f(x)=ax+b$
+
+3. Quadratic functions $f(x)=ax^2+bx+c$
+
+4. Polynomial functions
+
+5. Rational functions
+
+6.Square-root function
+
+7. Exponential functions
+
+8. Logarithmic functions
+
+9. Trigonometric functions
+
+10. Absolute value function
+
+11. Piecewise-defined functions
+
+
 ## Compositions of Functions
 
 ## Inverse Functions
