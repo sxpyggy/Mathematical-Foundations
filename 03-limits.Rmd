@@ -1,6 +1,19 @@
 # Limits
 
+Both concepts of differentiation and integration are based on the idea of limit.
+
 ## Introduction
+
+**Problem 1** Suppose an object moves along the $x$-axis and its displacement $s$ in meters  at time $t$ in seconds is given by $$s(t)=t^2,~~~t\geq 0.$$
+Find its velocity at time $t=2$.
+
+*Solution* Velocity (or speed) is defined by 
+$$\text{velocity}=\frac{\text{distance traveled}}{\text{time elapsed}}$$
+
+**Problem 2** Find the area of the region that lies under the curve $y=x^2$ and above the $x$-axis for $x$ between $0$ and $1$.
+
+*Solution*
+
 
 ## Limits of Sequences
 
