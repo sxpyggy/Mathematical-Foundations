@@ -78,6 +78,135 @@ $$\{(x,y)\in\mathbb{R}^2:F(x,y)=0\}.$$
 
 ## Graphs of Functions
 
+Let $f:A\rightarrow \mathbb{R}$ be a function where $A\subseteq \mathbb{R}$. The graph of $f$ is the following subset of $\mathbb{R}^2$:
+$$\{(x,y)\in\mathbb{R}^2:x\in A~~\text{and}~~y=f(x)\}.$$
+
+1. Constant functions $f(x)=c$. The domain is $\mathbb{R}$. The range is a singleton $\{c\}$.
+<div class="figure" style="text-align: center">
+<img src="./plots/2/constant.png" alt="constant function" width="30%"  />
+<p class="caption">(\#fig:unnamed-chunk-2)constant function</p>
+</div>
+
+
+2. Linear functions $f(x)=ax+b$. The domain is $\mathbb{R}$. The range is $\mathbb{R}$.
+<div class="figure" style="text-align: center">
+<img src="./plots/2/line.png" alt="linear function" width="30%"  />
+<p class="caption">(\#fig:unnamed-chunk-3)linear function</p>
+</div>
+
+3. Quadratic functions $f(x)=ax^2+bx+c$. The domain is $\mathbb{R}$. The range is $[k,\infty)$ if $a>0$ and $(-\infty,k]$ if $a<0$, where $k$ is the $y$-coordinate of the vertex.
+<div class="figure" style="text-align: center">
+<img src="./plots/2/quadratic.png" alt="quadratic function" width="60%"  />
+<p class="caption">(\#fig:unnamed-chunk-4)quadratic function</p>
+</div>
+
+
+4. Polynomial functions with degree $n$ $f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0$.
+The domain is $\mathbb{R}$. There are three possibilities for the range.
+
+    1. If the degree $n$ is odd, then $\text{ran}(f)=\mathbb{R}$.
+
+    2. If the degree $n$ is even and positive, then
+
+      - If $a_n>0$ $\text{ran}(f)=[k,\infty)$;
+  
+      - If $a_n<0$ $\text{ran}(f)=(\infty,k]$.
+    
+**Example** $f(x)=x^3-3x^2+x-1.$
+<div class="figure" style="text-align: center">
+<img src="./plots/2/polynomial.png" alt="quadratic function" width="40%"  />
+<p class="caption">(\#fig:unnamed-chunk-5)quadratic function</p>
+</div>
+  
+5. Rational functions are in the form of 
+$$f(x)=\frac{p(x)}{q(x)},$$
+where $p$ and $q$ are polynomial functions.
+
+**Example** $f(x)=\frac{1}{x}$. 
+The domain of $f$ is $\mathbb{R}\backslash \{0\}$. 
+The range of $f$ is also $\mathbb{R}\backslash \{0\}$. 
+The graph of it is symmetric about the origin because $f(-x)=-f(x)$.
+<div class="figure" style="text-align: center">
+<img src="./plots/2/rational1.png" alt="quadratic function" width="40%"  />
+<p class="caption">(\#fig:unnamed-chunk-6)quadratic function</p>
+</div>
+
+6. Principle-square-root function. Denoted by sqrt or $\sqrt$. Given by $\text{sqrt}(x)=\sqrt{x}$. The domain is $[0,\infty)$. The range is $[0,\infty)$.
+<div class="figure" style="text-align: center">
+<img src="./plots/2/sqrt1.png" alt="quadratic function" width="40%"  />
+<p class="caption">(\#fig:unnamed-chunk-7)quadratic function</p>
+</div>
+
+**Example** For each of the following equations, sketch its graph.
+
+    1. $y=\sqrt{x}-2$
+<div class="figure" style="text-align: center">
+<img src="./plots/2/sqrt2.png" alt="quadratic function" width="40%"  />
+<p class="caption">(\#fig:unnamed-chunk-8)quadratic function</p>
+</div>
+  
+    2. $y=\sqrt{x-2}$
+<div class="figure" style="text-align: center">
+<img src="./plots/2/sqrt3.png" alt="quadratic function" width="40%"  />
+<p class="caption">(\#fig:unnamed-chunk-9)quadratic function</p>
+</div>
+    
+    3. $y=\sqrt{2-x}$
+<div class="figure" style="text-align: center">
+<img src="./plots/2/sqrt4.png" alt="quadratic function" width="40%"  />
+<p class="caption">(\#fig:unnamed-chunk-10)quadratic function</p>
+</div>
+
+**Remark** Let $a$ be a positive constant.
+
+- The graph of $y=f(x)+a$ can be obtained from that of $y=f(x)$ by moving it $a$ units up.
+
+- The graph of $y=f(x)-a$ can be obtained from that of $y=f(x)$ by moving it $a$ units down
+
+- The graph of $y=f(x+a)$ can be obtained from that of $y=f(x)$ by moving it $a$ units to the left.
+
+- The graph of $y=f(x-a)$ can be obtained from that of $y=f(x)$ by moving it $a$ units to the right.
+
+- The graph of $y=\sqrt{2-x}$ and that of $y=\sqrt{x-2}$ are symmetric w.r.t.  the vertical line $x=2$.
+
+7. Exponential functions with base $b$ is given by $$\exp_b(x)=b^x$$. The domain is $\mathbb{R}$. The range is $(0,\infty)$. The $y$-intercept of the graph of every exponential function is $(0,1)$.
+
+**Example** The graph of $\exp_2$ goes up and the rate that the graph goes up increases as $x$ increases.
+<div class="figure" style="text-align: center">
+<img src="./plots/2/exp2.png" alt="quadratic function" width="40%"  />
+<p class="caption">(\#fig:unnamed-chunk-11)quadratic function</p>
+</div>
+
+**Example** The graph of $\exp_{\frac{1}{3}}$ goes down as $x$ increases.
+<div class="figure" style="text-align: center">
+<img src="./plots/2/exp13.png" alt="quadratic function" width="40%"  />
+<p class="caption">(\#fig:unnamed-chunk-12)quadratic function</p>
+</div>
+
+8. Logarithmic functions. The function, denoted by $\log$, is called the common logarithmic function. 
+For each positive real number $x$, $\log(x)$ is defined to be the unique real number such that $10^{\log (x)}=x$.
+That is, $\log(x)=y$ if and only if $y=10^x$.
+The domain of log is $(0,\infty)$. The range is $\mathbb{R}$.
+<div class="figure" style="text-align: center">
+<img src="./plots/2/log.png" alt="quadratic function" width="40%"  />
+<p class="caption">(\#fig:unnamed-chunk-13)quadratic function</p>
+</div>
+
+<!-- 9. Trigonometric functions -->
+
+9. Absolute value function, denoted by $|\cdot|$, is the function from $\mathbb{R}$ to $\mathbb{R}$, given by 
+\begin{equation}
+|x|=
+\begin{cases}
+x~~&\text{if}~~ x>0,\\
+0~~&\text{if}~~ x=0,\\
+-x~~&\text{if}~~x<0.
+\end{cases}
+\end{equation}
+
+10. Piecewise-defined functions
+
+
 ## Compositions of Functions
 
 ## Inverse Functions
