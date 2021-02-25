@@ -33,6 +33,15 @@ S_n&=\frac{1}{n}\cdot 0+\frac{1}{n}\cdot\left(\frac{1}{n}\right)^2+\frac{1}{n}\c
 
 ## Limits of Sequences
 
+**Definition**
+
+- A sequence is a function whose domain is $\mathbb{Z}_+$.
+
+- A sequence of real numbers is a sequence whose codomain is $
+\mathbb{R}$.
+
+**Illustration** Let $f:~ \mathbb{Z}_+\rightarrow \mathbb{R}$ be a sequence. For each 
+
 ## Limits of Functions at Infinity
 
 ## One-sided Limits
