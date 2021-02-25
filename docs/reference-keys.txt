@@ -17,6 +17,7 @@ fig:unnamed-chunk-16
 fig:unnamed-chunk-17
 fig:unnamed-chunk-18
 fig:unnamed-chunk-19
+fig:unnamed-chunk-1
 sets-real-numbers-and-inequalities
 sets
 introduction
