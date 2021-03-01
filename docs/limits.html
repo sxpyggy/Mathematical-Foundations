@@ -219,9 +219,69 @@ S_n&amp;=\frac{1}{n}\cdot 0+\frac{1}{n}\cdot\left(\frac{1}{n}\right)^2+\frac{1}{
 </div>
 <div id="limits-of-sequences" class="section level2">
 <h2><span class="header-section-number">3.2</span> Limits of Sequences</h2>
+<p><strong>Definition</strong></p>
+<ul>
+<li><p>A sequence is a function whose domain is <span class="math inline">\(\mathbb{Z}_+\)</span>.</p></li>
+<li><p>A sequence of real numbers is a sequence whose codomain is $
+$.</p></li>
+</ul>
+<p><strong>Illustration</strong> Let <span class="math inline">\(f:~ \mathbb{Z}_+\rightarrow \mathbb{R}\)</span> be a sequence. For each positive integer <span class="math inline">\(n\)</span>, the value <span class="math inline">\(f(n)\)</span> is called the <span class="math inline">\(n\)</span>-th term of the sequence and is usually denoted by a small letter together with <span class="math inline">\(n\)</span> in the subscript, for example <span class="math inline">\(a_n\)</span>. The sequence is also denoted by <span class="math inline">\((a_n)_{n=1}^\infty\)</span>.</p>
+<p><strong>Definition</strong> A sequency <span class="math inline">\((a_n)_{n=1}^\infty\)</span> is said to be convergent if there exists a real number <span class="math inline">\(L\)</span> such that <span class="math inline">\(a_n\)</span> is arbitrarily close to <span class="math inline">\(L\)</span> if <span class="math inline">\(n\)</span> is sufficiently large. For simplicity, we will say <span class="math inline">\(a_n\)</span> is close to <span class="math inline">\(L\)</span> if <span class="math inline">\(n\)</span> is large.</p>
+<p><strong>Remark</strong> In the definition of convergent, it is clear that if <span class="math inline">\(L\)</span> exists, then it is unique. We say <span class="math inline">\(L\)</span> is the limit of <span class="math inline">\((a_n)_{n=1}^\infty\)</span> and write <span class="math inline">\(\underset{n\rightarrow\infty}{\lim}a_n=L\)</span>.</p>
+<p><strong>Rules for limits of sequences</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(\underset{n\rightarrow\infty}{\lim}k=k\)</span></p></li>
+<li><p><span class="math inline">\(\underset{n\rightarrow\infty}{\lim}\frac{1}{n^p}=0\)</span>, where <span class="math inline">\(p\)</span> is a positive constant.</p></li>
+<li><p><span class="math inline">\(\underset{n\rightarrow\infty}{\lim}\frac{1}{b^n}=0\)</span>, where <span class="math inline">\(b\)</span> is a positive constant greater than <span class="math inline">\(1\)</span>.</p></li>
+<li><p><span class="math inline">\(\underset{n\rightarrow\infty}{\lim}(a_n+b_n)=\underset{n\rightarrow\infty}{\lim}a_n+\underset{n\rightarrow\infty}{\lim}b_n\)</span>.</p></li>
+<li><p><span class="math inline">\(\underset{n\rightarrow\infty}{\lim}a_nb_n=\underset{n\rightarrow\infty}{\lim}a_n\cdot\underset{n\rightarrow\infty}{\lim}b_n\)</span>.</p></li>
+<li><p><span class="math inline">\(\underset{n\rightarrow\infty}{\lim}\frac{a_n}{b_n}=\frac{\underset{n\rightarrow\infty}{\lim}a_n}{\underset{n\rightarrow\infty}{\lim}b_n}\)</span>.</p></li>
+</ol>
+<p><strong>Example</strong> Find <span class="math inline">\(\underset{n\rightarrow\infty}{\lim}\left(4+\frac{1}{2^n}\right)\)</span>, if it exists.</p>
+<p><strong>Example</strong> Find <span class="math inline">\(\underset{n\rightarrow\infty}{\lim}\frac{2n^3-3n^2+n}{6n^3}\)</span>, if it exists.</p>
+<p><strong>Example</strong> Find <span class="math inline">\(\underset{n\rightarrow\infty}{\lim}(1+2n)\)</span>, if it exists.</p>
+<p><strong>Example</strong> Find <span class="math inline">\(\underset{n\rightarrow\infty}{\lim}\frac{n+1}{2n+1}\)</span>, if it exists.</p>
 </div>
 <div id="limits-of-functions-at-infinity" class="section level2">
 <h2><span class="header-section-number">3.3</span> Limits of Functions at Infinity</h2>
+<p><strong>Definition</strong> Let <span class="math inline">\(f\)</span> be a function such that <span class="math inline">\(f(x)\)</span> is defined for sufficiently large <span class="math inline">\(x\)</span>. Suppose <span class="math inline">\(L\)</span> is a real number satisfying the following condition: <span class="math inline">\(f(x)\)</span> is arbitrarily close to <span class="math inline">\(L\)</span> if <span class="math inline">\(x\)</span> is sufficiently large. Then we say that <span class="math inline">\(L\)</span> is the limit of <span class="math inline">\(f\)</span> at infinity and write <span class="math inline">\(\underset{n\rightarrow\infty}{\lim}f(x)=L\)</span>.</p>
+<p><strong>Remark</strong></p>
+<ul>
+<li><p>The condition <span class="math inline">\(f(x)\)</span> is defined for sufficiently large <span class="math inline">\(x\)</span> means that there is a real number <span class="math inline">\(r\)</span> such that <span class="math inline">\(f(x)\)</span> is defined for all <span class="math inline">\(x&gt;r\)</span>.</p></li>
+<li><p><span class="math inline">\(L\)</span> is called the limit because it is unique if it exists.</p></li>
+<li><p>For simplicity we will say <span class="math inline">\(f(x)\)</span> is close to <span class="math inline">\(L\)</span> if <span class="math inline">\(x\)</span> is large.</p></li>
+</ul>
+<p><strong>Rules for limits of functions at infinity</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(\underset{x\rightarrow\infty}{\lim}k=k\)</span></p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow\infty}{\lim}\frac{1}{x^p}=0\)</span>, where <span class="math inline">\(p\)</span> is a positive constant.</p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow\infty}{\lim}\frac{1}{b^x}=0\)</span>, where <span class="math inline">\(b\)</span> is a positive constant greater than <span class="math inline">\(1\)</span>.</p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow\infty}{\lim}(f(x)\pm g(x))=\underset{x\rightarrow\infty}{\lim}f(x)\pm \underset{x\rightarrow\infty}{\lim}g(x)\)</span>.</p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow\infty}{\lim}(f(x)\cdot g(x))=\underset{x\rightarrow\infty}{\lim}f(x)\cdot\underset{x\rightarrow\infty}{\lim}g(x)\)</span>.</p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow\infty}{\lim}\frac{f(x)}{g(x)}=\frac{\underset{x\rightarrow\infty}{\lim}f(x)}{\underset{x\rightarrow\infty}{\lim}g(x)}\)</span>.</p></li>
+</ol>
+<p><strong>Example</strong> Find the following limits if they exist.</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(\underset{x\rightarrow\infty}{\lim}\left(1-\frac{2}{x^3}\right)\)</span></p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow\infty}{\lim}\left(2^{-x}+3\right)\)</span></p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow\infty}{\lim}\frac{x^2+1}{3x^3-4x+5}\)</span></p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow\infty}{\lim}\frac{x^3+1}{3x^3-4x+5}\)</span></p></li>
+</ol>
+<p><strong>Leading terms rule</strong> Let <span class="math inline">\(f(x)=a_nx^n+\cdots+a_1x+a_0\)</span> and <span class="math inline">\(g(x)=b_mx^m+\cdots+b_1x+b_0\)</span>, where <span class="math inline">\(a_n\neq 0\)</span> and <span class="math inline">\(b_m\neq 0\)</span>. Then we have
+<span class="math display">\[\underset{x\rightarrow\infty}{\lim}\frac{f(x)}{g(x)}=\underset{x\rightarrow\infty}{\lim}\frac{a_nx^n}{b_mx^m}.\]</span></p>
+<p><strong>Remark</strong></p>
+<ul>
+<li><p>If <span class="math inline">\(n=m\)</span>, the limit is <span class="math inline">\(\frac{a_n}{b_n}\)</span>.</p></li>
+<li><p>If <span class="math inline">\(n&lt;m\)</span>, the limit is <span class="math inline">\(0\)</span>.</p></li>
+<li><p>If <span class="math inline">\(n&gt;m\)</span>, the limit does not exist.</p></li>
+<li><p>The Leading terms rule can’t be applied to limits of rational functions at a point: <span class="math inline">\(\underset{x\rightarrow a}{\lim}\frac{f(x)}{g(x)}\)</span>, where <span class="math inline">\(a\in\mathbb{R}\)</span>.</p></li>
+</ul>
+<p><strong>Sandwich Theorem</strong> Let <span class="math inline">\(f,g\)</span> and <span class="math inline">\(h\)</span> be functions such that <span class="math inline">\(f(x)\)</span>, <span class="math inline">\(g(x)\)</span> and <span class="math inline">\(h(x)\)</span> are defined for sufficiently large <span class="math inline">\(x\)</span>. Suppose that <span class="math inline">\(f(x)\le g(x)\le h(x)\)</span> if <span class="math inline">\(x\)</span> is sufficiently large and that both <span class="math inline">\(\underset{x\rightarrow a}{\lim}f(x)\)</span> and <span class="math inline">\(\underset{x\rightarrow a}{\lim}h(x)\)</span> exist and are equal (with common limit denoted by <span class="math inline">\(L\)</span>). Then we have <span class="math inline">\(\underset{x\rightarrow a}{\lim}g(x)=L\)</span>.</p>
+<p><strong>Example</strong> Find <span class="math inline">\(\underset{x\rightarrow a}{\lim}\frac{\sin x}{x}\)</span>, if it exists.</p>
+<p><strong>Infinite limits</strong> Let <span class="math inline">\(f\)</span> be a function such that <span class="math inline">\(f(x)\)</span> is defined for sufficiently large <span class="math inline">\(x\)</span>. Suppose that <span class="math inline">\(f(x)\)</span> is arbitrarily large if <span class="math inline">\(x\)</span> is sufficiently large. Then we write <span class="math inline">\(\underset{x\rightarrow \infty}{\lim}f(x)=\infty\)</span>. Because <span class="math inline">\(\infty\)</span> is not a real number, <span class="math inline">\(\underset{x\rightarrow \infty}{\lim}f(x)=\infty\)</span> does not mean the limit exists. In fact, it indicates that the limit does not exist and explains why it does not exist.</p>
+<p><strong>Example</strong> <span class="math inline">\(\underset{x\rightarrow \infty}{\lim}(1+x^2)=\infty\)</span>. <span class="math inline">\(\underset{x\rightarrow \infty}{\lim}(1-x^2)=-\infty\)</span></p>
+<p><strong>Limits at negative infinity</strong> Similar to limits at infinity, we may consider limits at negative infinity provided that <span class="math inline">\(f(x)\)</span> is defined for <span class="math inline">\(x\)</span> sufficiently large negative.</p>
+<p><strong>Example</strong> <span class="math inline">\(\underset{x\rightarrow -\infty}{\lim}\frac{1}{x}=0\)</span>. <span class="math inline">\(\underset{x\rightarrow -\infty}{\lim}x^3=-\infty\)</span>. <span class="math inline">\(\underset{x\rightarrow -\infty}{\lim}(1-x^3)=\infty\)</span></p>
 </div>
 <div id="one-sided-limits" class="section level2">
 <h2><span class="header-section-number">3.4</span> One-sided Limits</h2>
