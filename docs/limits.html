@@ -285,12 +285,103 @@ $.</p></li>
 </div>
 <div id="one-sided-limits" class="section level2">
 <h2><span class="header-section-number">3.4</span> One-sided Limits</h2>
+<p><strong>Right-side limits</strong> Let <span class="math inline">\(a\in\mathbb{R}\)</span> and let <span class="math inline">\(f\)</span> be a function such that <span class="math inline">\(f(x)\)</span> is defined for <span class="math inline">\(x\)</span> sufficiently close to and greater than <span class="math inline">\(a\)</span>. Suppose <span class="math inline">\(L\)</span> is a real number satisfying that <span class="math inline">\(f(x)\)</span> is arbitrarily close to <span class="math inline">\(L\)</span> if <span class="math inline">\(x\)</span> is sufficiently close and greater than <span class="math inline">\(a\)</span>. Then we say that <span class="math inline">\(L\)</span> is the right-side limit of <span class="math inline">\(f\)</span> at <span class="math inline">\(a\)</span> and we write <span class="math inline">\(\underset{x\rightarrow a+}{\lim}f(x)=L\)</span>.</p>
+<p><strong>Remark</strong> In the definition, it doesn’t matter whether <span class="math inline">\(f\)</span> is defined at <span class="math inline">\(a\)</span> or not. If <span class="math inline">\(f(a)\)</span> is defined, its value has no effect on the existence and the value of <span class="math inline">\(\underset{x\rightarrow a+}{\lim}f(x)\)</span>. This is because right-side limit depends on the values of <span class="math inline">\(f(x)\)</span> for <span class="math inline">\(x\)</span> close to and greater than <span class="math inline">\(a\)</span>.</p>
+<p><strong>Example</strong> <span class="math inline">\(f(x)=1-2^{-\frac{1}{\sqrt{x}}}\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<img src="plots/3/right_limit.png" alt="Figure of f(x)" width="40%"  />
+<p class="caption">
+Figure 2.1: Figure of f(x)
+</p>
+</div>
+<p><strong>Left-side limits</strong> If a function <span class="math inline">\(f\)</span> is defined on the left-side of <span class="math inline">\(a\)</span>, we can consider its left-side limit. The notation <span class="math inline">\(\underset{x\rightarrow a-}{\lim}f(x)=L\)</span> means that <span class="math inline">\(f(x)\)</span> is arbitrarily close to <span class="math inline">\(L\)</span> if <span class="math inline">\(x\)</span> is sufficiently close to and less than <span class="math inline">\(a\)</span>.</p>
+<p><strong>Example</strong> If the one-sided limit (approaching to <span class="math inline">\(a\)</span>) is infinity, then the line <span class="math inline">\(x=a\)</span> is a vertical asymptote for the graph of <span class="math inline">\(f\)</span>.</p>
+<ul>
+<li><p><span class="math inline">\(\underset{x\rightarrow 0+}{\lim}\frac{1}{x}=\infty\)</span>.</p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow 1-}{\lim}\frac{1}{x-1}=-\infty\)</span>.</p></li>
+</ul>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
+<img src="plots/3/asymptote.png" alt="Figure of f(x)" width="70%"  />
+<p class="caption">
+Figure 2.2: Figure of f(x)
+</p>
+</div>
 </div>
 <div id="two-sided-limits" class="section level2">
 <h2><span class="header-section-number">3.5</span> Two-sided Limits</h2>
+<p><strong>Definition</strong> Let <span class="math inline">\(a\in\mathbb{R}\)</span> and let <span class="math inline">\(f\)</span> be a function that is defined on the left-side and right-side of <span class="math inline">\(a\)</span>. Suppose that both <span class="math inline">\(\underset{x\rightarrow a-}{\lim}f(x)\)</span> and <span class="math inline">\(\underset{x\rightarrow a+}{\lim}f(x)\)</span> exist and are equal (with the common limit denoted by <span class="math inline">\(L\)</span> which is a real number). Then the two-sided limit, or more simply, the limit of <span class="math inline">\(f\)</span> at <span class="math inline">\(a\)</span> is defined to be <span class="math inline">\(L\)</span>, written <span class="math inline">\(\underset{x\rightarrow a}{\lim}f(x)=L\)</span>.</p>
+<p><strong>Example</strong> Let <span class="math inline">\(f(x)=\frac{x}{|x|}\)</span>. <span class="math inline">\(\underset{x\rightarrow 0}{\lim}f(x)\)</span> does not exist.</p>
+<p><strong>Rules for limits of functions at a point</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(\underset{x\rightarrow a}{\lim}k=k\)</span></p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow a}{\lim}x^n=a^n\)</span>, where <span class="math inline">\(a\in\mathbb{R}\)</span> and <span class="math inline">\(n\)</span> is a positive constant.</p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow a}{\lim}{b^x}=b^a\)</span>, where <span class="math inline">\(a\in\mathbb{R}\)</span> and <span class="math inline">\(b\)</span> is a positive constant.</p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow a}{\lim}(f(x)\pm g(x))=\underset{x\rightarrow a}{\lim}f(x)\pm \underset{x\rightarrow a}{\lim}g(x)\)</span>.</p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow a}{\lim}(f(x)\cdot g(x))=\underset{x\rightarrow a}{\lim}f(x)\cdot\underset{x\rightarrow a}{\lim}g(x)\)</span>.</p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow a}{\lim}\frac{f(x)}{g(x)}=\frac{\underset{x\rightarrow a}{\lim}f(x)}{\underset{x\rightarrow a}{\lim}g(x)}\)</span>.</p></li>
+</ol>
+<p><strong>Theorem</strong> Let <span class="math inline">\(p(x)\)</span> be a polynomial and let <span class="math inline">\(a\)</span> be a real number. Then we have
+<span class="math display">\[\underset{x\rightarrow a}{\lim}p(x)=p(a)\]</span></p>
+<p><strong>Theorem</strong> Let <span class="math inline">\(p(x)\)</span> and <span class="math inline">\(q(x)\)</span> be polynomials and let <span class="math inline">\(a\)</span> be a real number. Suppose that <span class="math inline">\(q(a)\neq 0\)</span>. Then we have
+<span class="math display">\[\underset{x\rightarrow a}{\lim}\frac{p(x)}{q(x)}=\frac{p(a)}{q(a)}.\]</span></p>
+<p><strong>Example</strong> Find <span class="math inline">\(\underset{x\rightarrow 4}{\lim}(1+x^2)\)</span>, if it exists.</p>
+<p><strong>Example</strong> Find <span class="math inline">\(\underset{x\rightarrow 1}{\lim}\frac{x-1}{x^2+x-2}\)</span>, if it exists.</p>
+<p><strong>Example</strong> Find <span class="math inline">\(\underset{x\rightarrow 1}{\lim}\frac{x+1}{x^2+x-2}\)</span>, if it exists.</p>
+<p><strong>Example</strong> Let <span class="math inline">\(f(x)=x^2+3\)</span>. Find <span class="math inline">\(\underset{h\rightarrow 0}{\lim}\frac{f(x+h)-f(x)}{h}\)</span>.</p>
 </div>
 <div id="continunous-functions" class="section level2">
 <h2><span class="header-section-number">3.6</span> Continunous Functions</h2>
+<p><strong>Definition</strong> Let <span class="math inline">\(a\in\mathbb{R}\)</span> and let <span class="math inline">\(f\)</span> be a function such that <span class="math inline">\(f(x)\)</span> is defined for <span class="math inline">\(x\)</span> sufficiently close to <span class="math inline">\(a\)</span> (including a). If the following condtion holds,
+<span class="math display">\[\underset{x\rightarrow a}{\lim}f(x)=f(a),\]</span>
+then we say that <span class="math inline">\(f\)</span> is continuous at <span class="math inline">\(a\)</span>. Otherwise, we say that <span class="math inline">\(f\)</span> is discontinuous at <span class="math inline">\(a\)</span>.</p>
+<p><strong>Remark</strong> Since <span class="math inline">\(\underset{x\rightarrow a}{\lim}x=a\)</span>, we have <span class="math inline">\(\underset{x\rightarrow a}{\lim}f(x)=f\left(\underset{x\rightarrow a}{\lim}x\right)\)</span>. If we consider <span class="math inline">\(f\)</span> and <span class="math inline">\(\lim\)</span> as two operations, it means that the operation of taking <span class="math inline">\(f\)</span> and that of taking limit commute. That is the order of taking <span class="math inline">\(f\)</span> and taking limit can be interchanged.</p>
+<p><strong>Remark</strong> If a function <span class="math inline">\(f\)</span> is undefined at <span class="math inline">\(a\)</span>, it is meaningless to talk about whether <span class="math inline">\(f\)</span> is continuous at <span class="math inline">\(a\)</span>. The condition in the definition means that (1) the limit exists and (2) the limit equals to <span class="math inline">\(f(a)\)</span>.</p>
+<p><strong>Example</strong> Let
+<span class="math display">\[\begin{equation}
+f(x)=
+\begin{cases}
+-1 ~~&amp;\text{if}~~x&lt;0 \\ 
+0  ~~&amp;\text{if}~~x=0\\
+1  ~~&amp;\text{if}~~x&gt;0
+\end{cases}
+\end{equation}\]</span>
+Determine whether <span class="math inline">\(f\)</span> is continuous at <span class="math inline">\(0\)</span> or not.</p>
+<p><strong>Definition</strong> Let <span class="math inline">\(I\)</span> be an open interval and let <span class="math inline">\(f\)</span> be a function defined on <span class="math inline">\(I\)</span>. If <span class="math inline">\(f\)</span> is continuous at every <span class="math inline">\(a\in I\)</span>, then we say that <span class="math inline">\(f\)</span> is continuous on <span class="math inline">\(I\)</span>.</p>
+<p><strong>Example</strong> Let <span class="math inline">\(f(x)=\frac{1}{x}\)</span>. Show that <span class="math inline">\(f\)</span> is continuous on <span class="math inline">\((0,\infty)\)</span> as well as on <span class="math inline">\((-\infty,0).\)</span></p>
+<p><strong>Remark</strong> Geometrically, a function <span class="math inline">\(f\)</span> is continuous on an open interval <span class="math inline">\(I\)</span> means that the graph of <span class="math inline">\(f\)</span> on <span class="math inline">\(I\)</span> has no breaks; if we use a pen to draw the graph on paper, we can draw it continuously without raising the pen above the paper.</p>
+<p><strong>Theorem</strong> Every polynomial function is continuous on <span class="math inline">\(\mathbb{R}\)</span>.</p>
+<p><strong>Theorem</strong> Every rational function is continuous on every open interval contained in its domain.</p>
+<p><strong>Definition</strong> Let <span class="math inline">\(a\)</span> be a real number and let <span class="math inline">\(f\)</span> be a function defined on the right-side of <span class="math inline">\(a\)</span> as well as at <span class="math inline">\(a\)</span>. If <span class="math inline">\(\underset{x\rightarrow a+}{\lim}f(x)=f(a)\)</span>, then we say that <span class="math inline">\(f\)</span> is right-continuous at <span class="math inline">\(a\)</span>.</p>
+<p><strong>Definition</strong> Let <span class="math inline">\(a\)</span> be a real number and let <span class="math inline">\(f\)</span> be a function defined on the left-side of <span class="math inline">\(a\)</span> as well as at <span class="math inline">\(a\)</span>. If <span class="math inline">\(\underset{x\rightarrow a-}{\lim}f(x)=f(a)\)</span>, then we say that <span class="math inline">\(f\)</span> is left-continuous at <span class="math inline">\(a\)</span>.</p>
+<p><strong>Definition</strong> Let <span class="math inline">\(I\)</span> be an interval in the form <span class="math inline">\([c,d)\)</span> where <span class="math inline">\(c\)</span> is a real number and <span class="math inline">\(d\)</span> is <span class="math inline">\(\infty\)</span> or a real number greater than <span class="math inline">\(c\)</span>. Let <span class="math inline">\(f\)</span> be a function defined on <span class="math inline">\(I\)</span>. We say that <span class="math inline">\(f\)</span> is continuous on <span class="math inline">\(I\)</span> if it is continuous at every <span class="math inline">\(a\in(c,d)\)</span> and is right-continuous at <span class="math inline">\(c\)</span>.</p>
+<p><strong>Definition</strong> Let <span class="math inline">\(I\)</span> be an interval in the form <span class="math inline">\((c,d]\)</span> where <span class="math inline">\(c\)</span> is <span class="math inline">\(-\infty\)</span> or a real number less than <span class="math inline">\(d\)</span> and <span class="math inline">\(d\)</span> is a real number. Let <span class="math inline">\(f\)</span> be a function defined on <span class="math inline">\(I\)</span>. We say that <span class="math inline">\(f\)</span> is continuous on <span class="math inline">\(I\)</span> if it is continuous at every <span class="math inline">\(a\in(c,d)\)</span> and is left-continuous at <span class="math inline">\(d\)</span>.</p>
+<p><strong>Definition</strong> Let <span class="math inline">\(I\)</span> be an interval in the form <span class="math inline">\([c,d]\)</span> where <span class="math inline">\(c\)</span> and <span class="math inline">\(d\)</span> are real numbers and <span class="math inline">\(c&lt;d\)</span>. Let <span class="math inline">\(f\)</span> be a function defined on <span class="math inline">\(I\)</span>. We say that <span class="math inline">\(f\)</span> is continuous on <span class="math inline">\(I\)</span> if it is continuous at every <span class="math inline">\(a\in(c,d)\)</span> and is right-continuous at <span class="math inline">\(c\)</span> and left-continuous at <span class="math inline">\(d\)</span>.</p>
+<p><strong>Example</strong> Let <span class="math inline">\(f:\mathbb{R}\rightarrow \mathbb{R}\)</span> be the function given by
+<span class="math display">\[\begin{equation}
+f(x)=
+\begin{cases}
+|x|~~&amp;\text{if}~~-1\le x\le 1,\\
+-1~~&amp;\text{otherwise.}
+\end{cases}
+\end{equation}\]</span>
+Discuss whether <span class="math inline">\(f\)</span> is continuous on <span class="math inline">\([-1,1].\)</span></p>
+<p><strong>Intermediate value theorem</strong> Let <span class="math inline">\(f\)</span> be a function that is defined and continuous on an interval <span class="math inline">\(I\)</span>. Then for every pair of elements <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> of <span class="math inline">\(I\)</span>, and for every real number <span class="math inline">\(\eta\)</span> between <span class="math inline">\(f(a)\)</span> and <span class="math inline">\(f(b)\)</span>, there exists a number <span class="math inline">\(\xi\)</span> between <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> such that <span class="math inline">\(f(\xi)=\eta\)</span>.</p>
+<p><strong>Corollary</strong> Let <span class="math inline">\(f\)</span> be a function that is defined and continuous on an interval <span class="math inline">\(I\)</span>. Suppose that <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are elements of <span class="math inline">\(I\)</span> such that <span class="math inline">\(f(a)\)</span> and <span class="math inline">\(f(b)\)</span> have opposite signs. Then there exists <span class="math inline">\(\xi\)</span> between <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> such that <span class="math inline">\(f(\xi)=0\)</span>.</p>
+<p><strong>Corollary</strong> Let <span class="math inline">\(f\)</span> be a function that is defined and continuous on an interval <span class="math inline">\(I\)</span>. Suppose that <span class="math inline">\(f\)</span> has no zero in <span class="math inline">\(I\)</span>. Then <span class="math inline">\(f\)</span> is either always positive in <span class="math inline">\(I\)</span> or always negative in <span class="math inline">\(I\)</span>.</p>
+<p><strong>Example</strong> Find the solution set to the inequality <span class="math inline">\(x^3+3x^2-4x-12\le 0\)</span>.</p>
+<p><strong>Extreme value theorem</strong> Let <span class="math inline">\(f\)</span> be a function that is defined and continuous on a closed and bounded interval <span class="math inline">\([a,b]\)</span>. Then <span class="math inline">\(f\)</span> attains its maximum and minimum in <span class="math inline">\([a,b]\)</span>, that is, there exist <span class="math inline">\(x_1,x_2\in[a,b]\)</span> such that
+<span class="math display">\[f(x_1)\le f(x)\le f(x_2)\]</span>
+for all <span class="math inline">\(x\in[a,b]\)</span>.</p>
+<p><strong>Example</strong> Let <span class="math inline">\(f:(0,1)\rightarrow \mathbb{R}\)</span> be the function given by <span class="math display">\[f(x)=\frac{1}{x}\]</span>. It is straightforward to show that <span class="math inline">\(f\)</span> is continuous on <span class="math inline">\((0,1)\)</span>. However, the function <span class="math inline">\(f\)</span> does not attain its maximum nor minimum in <span class="math inline">\((0,1)\)</span>.</p>
+<p><strong>Example</strong> Let <span class="math inline">\(f:[0,1]\rightarrow \mathbb{R}\)</span> be the function given by
+<span class="math display">\[\begin{equation}
+f(x)=
+\begin{cases}
+1~~&amp;\text{if}~~x=-\\
+\frac{1}{x}~~&amp;\text{if}~~0&lt;x\le 1.
+\end{cases}
+\end{equation}\]</span>
+The function <span class="math inline">\(f\)</span> does not attain its maximum in <span class="math inline">\([0,1]\)</span>.</p>
 
 </div>
 </div>

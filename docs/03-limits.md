@@ -83,7 +83,6 @@ S_n&=\frac{1}{n}\cdot 0+\frac{1}{n}\cdot\left(\frac{1}{n}\right)^2+\frac{1}{n}\c
 
 **Rules for limits of functions at infinity**
 
-
 1. $\underset{x\rightarrow\infty}{\lim}k=k$
 
 2. $\underset{x\rightarrow\infty}{\lim}\frac{1}{x^p}=0$, where $p$ is a positive constant.
@@ -134,11 +133,138 @@ $$\underset{x\rightarrow\infty}{\lim}\frac{f(x)}{g(x)}=\underset{x\rightarrow\in
 
 ## One-sided Limits
 
+**Right-side limits** Let $a\in\mathbb{R}$ and let $f$ be a function such that $f(x)$ is defined for $x$ sufficiently close to and greater than $a$. Suppose $L$ is a real number satisfying that $f(x)$ is arbitrarily close to $L$ if $x$ is sufficiently close and greater than $a$. Then we say that $L$ is the right-side limit of $f$ at $a$ and we write $\underset{x\rightarrow a+}{\lim}f(x)=L$.
+
+**Remark** In the definition, it doesn't matter whether $f$ is defined at $a$ or not. If $f(a)$ is defined, its value has no effect on the existence and the value of $\underset{x\rightarrow a+}{\lim}f(x)$. This is because right-side limit depends on the values of $f(x)$ for $x$ close to and greater than $a$.
+
+**Example** $f(x)=1-2^{-\frac{1}{\sqrt{x}}}$.
+
+<div class="figure" style="text-align: center">
+<img src="./plots/3/right_limit.png" alt="Figure of f(x)" width="40%"  />
+<p class="caption">(\#fig:unnamed-chunk-2)Figure of f(x)</p>
+</div>
+
+**Left-side limits** If a function $f$ is defined on the left-side of $a$, we can consider its left-side limit. The notation $\underset{x\rightarrow a-}{\lim}f(x)=L$ means that $f(x)$ is arbitrarily close to $L$ if $x$ is sufficiently close to and less than $a$.
+
+**Example** If the one-sided limit (approaching to $a$) is infinity, then the line $x=a$ is a vertical asymptote for the graph of $f$. 
+
+- $\underset{x\rightarrow 0+}{\lim}\frac{1}{x}=\infty$.
+
+- $\underset{x\rightarrow 1-}{\lim}\frac{1}{x-1}=-\infty$.
+
+<div class="figure" style="text-align: center">
+<img src="./plots/3/asymptote.png" alt="Figure of f(x)" width="70%"  />
+<p class="caption">(\#fig:unnamed-chunk-3)Figure of f(x)</p>
+</div>
+
 ## Two-sided Limits
+
+**Definition** Let $a\in\mathbb{R}$ and let $f$ be a function that is defined on the left-side and right-side of $a$. Suppose that both $\underset{x\rightarrow a-}{\lim}f(x)$ and $\underset{x\rightarrow a+}{\lim}f(x)$ exist and are equal (with the common limit denoted by $L$ which is a real number). Then the two-sided limit, or more simply, the limit of $f$ at $a$ is defined to be $L$, written $\underset{x\rightarrow a}{\lim}f(x)=L$.
+
+**Example** Let $f(x)=\frac{x}{|x|}$. $\underset{x\rightarrow 0}{\lim}f(x)$ does not exist.
+
+**Rules for limits of functions at a point**
+
+1. $\underset{x\rightarrow a}{\lim}k=k$
+
+2. $\underset{x\rightarrow a}{\lim}x^n=a^n$, where $a\in\mathbb{R}$ and $n$ is a positive constant.
+
+3. $\underset{x\rightarrow a}{\lim}{b^x}=b^a$, where $a\in\mathbb{R}$ and $b$ is a positive constant.
+
+4. $\underset{x\rightarrow a}{\lim}(f(x)\pm g(x))=\underset{x\rightarrow a}{\lim}f(x)\pm \underset{x\rightarrow a}{\lim}g(x)$.
+
+5. $\underset{x\rightarrow a}{\lim}(f(x)\cdot g(x))=\underset{x\rightarrow a}{\lim}f(x)\cdot\underset{x\rightarrow a}{\lim}g(x)$.
+
+6. $\underset{x\rightarrow a}{\lim}\frac{f(x)}{g(x)}=\frac{\underset{x\rightarrow  a}{\lim}f(x)}{\underset{x\rightarrow a}{\lim}g(x)}$.
+
+**Theorem** Let $p(x)$ be a polynomial and let $a$ be a real number. Then we have
+$$\underset{x\rightarrow a}{\lim}p(x)=p(a)$$
+
+**Theorem** Let $p(x)$ and $q(x)$ be polynomials and let $a$ be a real number. Suppose that $q(a)\neq 0$. Then we have
+$$\underset{x\rightarrow a}{\lim}\frac{p(x)}{q(x)}=\frac{p(a)}{q(a)}.$$
+
+**Example** Find $\underset{x\rightarrow 4}{\lim}(1+x^2)$, if it exists.
+
+**Example** Find $\underset{x\rightarrow 1}{\lim}\frac{x-1}{x^2+x-2}$, if it exists.
+
+**Example** Find $\underset{x\rightarrow 1}{\lim}\frac{x+1}{x^2+x-2}$, if it exists.
+
+**Example** Let $f(x)=x^2+3$. Find $\underset{h\rightarrow 0}{\lim}\frac{f(x+h)-f(x)}{h}$.
 
 ## Continunous Functions
 
+**Definition** Let $a\in\mathbb{R}$ and let $f$ be a function such that $f(x)$ is defined for $x$ sufficiently close to $a$ (including a). If the following condtion holds,
+$$\underset{x\rightarrow a}{\lim}f(x)=f(a),$$
+then we say that $f$ is continuous at $a$. Otherwise, we say that $f$ is discontinuous at $a$.
 
+**Remark** Since $\underset{x\rightarrow a}{\lim}x=a$, we have $\underset{x\rightarrow a}{\lim}f(x)=f\left(\underset{x\rightarrow a}{\lim}x\right)$. If we consider $f$ and $\lim$ as two operations, it means that the operation of taking $f$ and that of taking limit commute. That is the order of taking $f$ and taking limit can be interchanged.
+
+**Remark** If a function $f$ is undefined at $a$, it is meaningless to talk about whether $f$ is continuous at $a$. The condition in the definition means that (1) the limit exists and (2) the limit equals to $f(a)$.
+
+**Example** Let 
+\begin{equation}
+f(x)=
+\begin{cases}
+-1 ~~&\text{if}~~x<0 \\ 
+0  ~~&\text{if}~~x=0\\
+1  ~~&\text{if}~~x>0
+\end{cases}
+\end{equation}
+Determine whether $f$ is continuous at $0$ or not.
+
+**Definition** Let $I$ be an open interval and let $f$ be a function defined on $I$. If $f$ is continuous at every $a\in I$, then we say that $f$ is continuous on $I$.
+
+**Example** Let $f(x)=\frac{1}{x}$. Show that $f$ is continuous on $(0,\infty)$ as well as on $(-\infty,0).$
+
+**Remark** Geometrically, a function $f$ is continuous on an open interval $I$ means that the graph of $f$ on $I$ has no breaks; if we use a pen to draw the graph on paper, we can draw it continuously without raising the pen above the paper.
+
+**Theorem** Every polynomial function is continuous on $\mathbb{R}$.
+
+**Theorem** Every rational function is continuous on every open interval contained in its domain.
+
+**Definition** Let $a$ be a real number and let $f$ be a function defined on the right-side of $a$ as well as at $a$. If $\underset{x\rightarrow a+}{\lim}f(x)=f(a)$, then we say that $f$ is right-continuous at $a$.
+
+**Definition** Let $a$ be a real number and let $f$ be a function defined on the left-side of $a$ as well as at $a$. If $\underset{x\rightarrow a-}{\lim}f(x)=f(a)$, then we say that $f$ is left-continuous at $a$.
+
+**Definition** Let $I$ be an interval in the form $[c,d)$ where $c$ is a real number and $d$ is $\infty$ or a real number greater than $c$. Let $f$ be a function defined on $I$. We say that $f$ is continuous on $I$ if it is continuous at every $a\in(c,d)$ and is right-continuous at $c$.
+
+**Definition** Let $I$ be an interval in the form $(c,d]$ where $c$ is $-\infty$ or a real number less than $d$ and $d$ is a real number. Let $f$ be a function defined on $I$. We say that $f$ is continuous on $I$ if it is continuous at every $a\in(c,d)$ and is left-continuous at $d$.
+
+**Definition** Let $I$ be an interval in the form $[c,d]$ where $c$ and $d$ are real numbers and $c<d$. Let $f$ be a function defined on $I$. We say that $f$ is continuous on $I$ if it is continuous at every $a\in(c,d)$ and is right-continuous at $c$ and left-continuous at $d$.
+
+**Example** Let $f:\mathbb{R}\rightarrow \mathbb{R}$ be the function given by
+\begin{equation}
+f(x)=
+\begin{cases}
+|x|~~&\text{if}~~-1\le x\le 1,\\
+-1~~&\text{otherwise.}
+\end{cases}
+\end{equation}
+Discuss whether $f$ is continuous on $[-1,1].$
+
+**Intermediate value theorem** Let $f$ be a function that is defined and continuous on an interval $I$. Then for every pair of elements $a$ and $b$ of $I$, and for every real number $\eta$ between $f(a)$ and $f(b)$, there exists a number $\xi$ between $a$ and $b$ such that $f(\xi)=\eta$.
+
+**Corollary** Let $f$ be a function that is defined and continuous on an interval $I$. Suppose that $a$ and $b$ are elements of $I$ such that $f(a)$ and $f(b)$ have opposite signs. Then there exists $\xi$ between $a$ and $b$ such that $f(\xi)=0$.
+
+**Corollary** Let $f$ be a function that is defined and continuous on an interval $I$. Suppose that $f$ has no zero in $I$. Then $f$ is either always positive in $I$ or always negative in $I$.
+
+**Example** Find the solution set to the inequality $x^3+3x^2-4x-12\le 0$.
+
+**Extreme value theorem** Let $f$ be a function that is defined and continuous on a closed and bounded interval $[a,b]$. Then $f$ attains its maximum and minimum in $[a,b]$, that is, there exist $x_1,x_2\in[a,b]$ such that 
+$$f(x_1)\le f(x)\le f(x_2)$$
+for all $x\in[a,b]$.
+
+**Example** Let $f:(0,1)\rightarrow \mathbb{R}$ be the function given by $$f(x)=\frac{1}{x}$$. It is straightforward to show that $f$ is continuous on $(0,1)$. However, the function $f$ does not attain its maximum nor minimum in $(0,1)$.
+
+**Example** Let $f:[0,1]\rightarrow \mathbb{R}$ be the function given by 
+\begin{equation}
+f(x)=
+\begin{cases}
+1~~&\text{if}~~x=-\\
+\frac{1}{x}~~&\text{if}~~0<x\le 1.
+\end{cases}
+\end{equation}
+The function $f$ does not attain its maximum in $[0,1]$.
 
 
 

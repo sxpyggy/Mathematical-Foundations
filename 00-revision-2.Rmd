@@ -53,7 +53,7 @@ $b^2−4ac$ is called the *discriminant*
 
 ## Solving Linear Inequalities {-}
 
-**Definition** A solution to an inequality $F(x)<0$ is a real number $x_0$ such that $F(x0)<0$. The definition also applies to other types of inequalities.
+**Definition** A solution to an inequality $F(x)<0$ is a real number $x_0$ such that $F(x_0)<0$. The definition also applies to other types of inequalities.
 
 **Rules for Inequalities** Let $a,b$ and $c$ be real numbers. Then the following holds.
 
@@ -76,9 +76,9 @@ $$F(x,y)=0$$
 where $F$ is a function (from a collection of ordered pairs into $\mathbb{R}$).
 
 
-**Definition** An ordered pair (of real numbers) is a pair of real numbers $x_0$, $y_0$ enclosed in side parenthesis: $(x_0,y_0)$.
+**Definition** An ordered pair (of real numbers) is a pair of real numbers $x_0$, $y_0$ enclosed inside parenthesis: $(x_0,y_0)$.
 
-**Definition** A solution to Equation (??) is an ordered pair $(x_0,y_0)$ such that $F(x_0,y_0)=0$.
+**Definition** A solution to Equation $F(x,y)=0$ is an ordered pair $(x_0,y_0)$ such that $F(x_0,y_0)=0$.
 
 
 **Rectangular Coordinate System** Given a plane, there is a one-to-one correspondence between points in the plane and ordered pairs of real numbers. The plane described in this way is called the **Cartesian plane** or the **rectangular coordinate plane**.
