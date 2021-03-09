@@ -36,6 +36,8 @@ You should send either a typed document or a scanned/photoed handwritten manuscr
 
 Please name the subject of your email as `your uni id - week number`, e.g., `u2017201678-week2`.
 
+We will select 3-4 students to present their solutions on Monday's lecture. Please refer to the [solution part](#ch1) of this website.
+
 The solutions to homework will be announced in this website. 
 
 To get the most of mathematics, you should practice as much as possible.

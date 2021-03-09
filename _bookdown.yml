@@ -7,5 +7,5 @@ delete_merged_file: true
 output_dir: "docs"
 rmd_files: ["index.Rmd","00-revision-2.Rmd","01-sets.Rmd","02-functions-2.Rmd",
 "03-limits.Rmd","04-trigonometric.Rmd","05-integration-2.Rmd","06-vectors.Rmd",
-"07-matrices.Rmd"]
+"07-matrices.Rmd","1-3-solutions.Rmd"]
 #rmd_files: ["index.Rmd","4-6-solutions.Rmd","1-3-solutions.Rmd"]

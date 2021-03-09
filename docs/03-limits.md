@@ -260,7 +260,7 @@ for all $x\in[a,b]$.
 \begin{equation}
 f(x)=
 \begin{cases}
-1~~&\text{if}~~x=-\\
+1~~&\text{if}~~x=0\\
 \frac{1}{x}~~&\text{if}~~0<x\le 1.
 \end{cases}
 \end{equation}

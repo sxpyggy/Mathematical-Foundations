@@ -1,7 +1,7 @@
 --- 
 title: "Mathematical Foundations (II)"
 # author: "Financial Mathematics"
-date: "2021-03-02 16:54:31"
+date: "2021-03-09 19:42:59"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -35,6 +35,8 @@ This website is maintained by <u>Guangyuan Gao</u> and <u>Yan Cai</u>. If you ha
 You should send either a typed document or a scanned/photoed handwritten manuscript to the tutor's email address <2017201678@ruc.edu.cn>. You should show the **calculation/proof details** in your submitted document.
 
 Please name the subject of your email as `your uni id - week number`, e.g., `u2017201678-week2`.
+
+We will select 3-4 students to present their solutions on Monday's lecture. Please refer to the [solution part](#ch1) of this website.
 
 The solutions to homework will be announced in this website. 
 
