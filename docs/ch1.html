@@ -185,33 +185,116 @@
 <div id="q1.1.1" class="section level3 unnumbered">
 <h3>Q1</h3>
 <p>(Fernando Li)</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[ A \cap B = \lbrace 2,3,5,7 \rbrace \]</span></li>
+<li><span class="math display">\[ A \cap C = \lbrace 2,4,6,8,10 \rbrace \]</span></li>
+<li><span class="math display">\[ B \cap C = \lbrace 2 \rbrace \]</span></li>
+<li><span class="math display">\[ A \cup B = \lbrace 1,2,3,4,5,6,7,8,9,10,11,13,17,19 \rbrace \]</span></li>
+<li><span class="math display">\[ A \cup C = \lbrace 1,2,3,4,5,6,7,8,9,10,12,14,16,18 \rbrace \]</span></li>
+<li><span class="math display">\[ B \cup C = \lbrace 2,3,4,5,6,7,8,10,11,12,13,14,16,17,18,19 \rbrace \]</span></li>
+<li><span class="math display">\[ A \cup B \cup C = \lbrace 1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19 \rbrace \]</span></li>
+<li><span class="math display">\[ A \cap B \cap C = \lbrace 2 \rbrace \]</span></li>
+<li><span class="math display">\[ (A \cup B) \cap C = \lbrace 2,4,6,8,10 \rbrace \]</span></li>
+<li><span class="math display">\[ (A \cap B) \cup C = \lbrace 2,3,4,5,6,7,8,10,12,14,16,18 \rbrace \]</span></li>
+<li><span class="math display">\[ A \cap B&#39; = \lbrace 1,4,6,8,9,10 \rbrace \]</span></li>
+<li><span class="math display">\[ &#39;A \cap B&#39; = \lbrace 12,14,15,16,18 \rbrace \]</span></li>
+</ol>
 </div>
 <div id="q1.1.2" class="section level3 unnumbered">
 <h3>Q2</h3>
 <p>(David Rosa)</p>
+<p>(a)false, a counterexample is as follows
+<span class="math display">\[ A = \lbrace 1,2,3,4 \rbrace \\
+   B = \lbrace 3,4,5,6 \rbrace \\
+   U = \lbrace 1,2,3,4,5,6,7,8 \rbrace \\\]</span>
+Then <span class="math display">\[ A - B = \lbrace 1,2 \rbrace \\
+        A&#39; = \lbrace 5,6,7,8 \rbrace \\
+        A&#39; \cap B = \lbrace 5,6 \rbrace \\\]</span>
+Thus <span class="math display">\[ A - B = A&#39; \cap B \]</span> is false.</p>
+<p>(b)false, a counterexample is as follows
+<span class="math display">\[ A = \lbrace 1,2 \rbrace \\
+   B = \lbrace 2,3 \rbrace \\
+   C = \lbrace 3,4 \rbrace \\
+   U = \lbrace 1,2,3,4,5 \rbrace \\\]</span>
+Then <span class="math display">\[ A \cup B = \lbrace 1,2,3 \rbrace \\
+        (A \cup B) \cap C = \lbrace 3 \rbrace \\
+        B \cap C = \lbrace 3 \rbrace \\
+        A \cup ( B \cap C) = \lbrace 1,2,3 \rbrace \\ \]</span>
+Thus <span class="math display">\[ (A \cup B) \cap C = A \cup ( B \cap C) \]</span> is false.</p>
+<p>(c)true
+As <span class="math display">\[ B&#39; \cap B = \emptyset \]</span>
+<span class="math display">\[ (A&#39; \cup B&#39;) \cap B = (A&#39; \cap B) \cup (B&#39; \cap B) \\
+= (A&#39; \cap B) \cup \emptyset \\
+= A&#39; \cap B \\
+= \lbrace x \in U : x \in B \ and \ x \in A&#39; \rbrace\\
+= \lbrace x \in U : x \in B \ and \ x \notin A \rbrace\\
+= B -A \]</span></p>
 </div>
 </div>
 <div id="q1.2" class="section level2 unnumbered">
 <h2>Exercise 1.2</h2>
 <div id="q1.2.1" class="section level3 unnumbered">
 <h3>Q1</h3>
-<p>( )</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[ \lbrace x:\pm \sqrt2 \rbrace \]</span></li>
+<li><span class="math display">\[ \lbrace x: \sqrt2 \rbrace \]</span>
+(c)Q means rational numbers, so <span class="math display">\[\lbrace x \in Q: x^2 = 2 \rbrace =  \emptyset \]</span></li>
+</ol>
 </div>
 <div id="q1.2.2" class="section level3 unnumbered">
 <h3>Q2</h3>
 <p>(Jiin Kim)</p>
+<p>(a)<span class="math display">\[ A \cap B = [3,5]  \]</span>
+(b)<span class="math display">\[ A \cup B = [1,9)  \]</span>
+(c)<span class="math display">\[ A - C = (1,5)  \]</span>
+(d)<span class="math display">\[ B \cap C = \lbrace 5 \rbrace  \]</span>
+(e)<span class="math display">\[ C - B = \lbrace 1 \rbrace  \]</span>
+(f)<span class="math display">\[ B - C = [3,5) \cup (5,9) \]</span>
+(g)<span class="math display">\[ B - (B - C) = \lbrace 5 \rbrace \]</span>
+(h)<span class="math display">\[ A \cup D = [1,\infty)  \]</span>
+(i)<span class="math display">\[ C \cap D = \lbrace 5 \rbrace  \]</span></p>
 </div>
 </div>
 <div id="q1.3" class="section level2 unnumbered">
 <h2>Exercise 1.3</h2>
 <div id="q1.3.1" class="section level3 unnumbered">
 <h3>Q1</h3>
+<p>(Maria Kahlert)</p>
 </div>
 <div id="q1.3.2" class="section level3 unnumbered">
 <h3>Q2</h3>
+<p>(a)<span class="math display">\[ 2x^3+7x^2-15x = x(2x^2+7x-15) \\
+                    = x(x+5)(2x-3)\]</span>
+(b)<span class="math display">\[ 2x^3+3x^2-2x-3 = (2x^3-2x)+(3x^2-3) \\
+                     = 2x(x^2-1) + 3(x^2-1) \\
+                     = (2x+3)(x^2-1) \\
+                     = (2x+3)(x+1)(x-1)\]</span>
+(c)<span class="math display">\[ x^3-x^2-x-2 = (x^3-1)-(x^2+x+1) \\
+                  = (x-1)(x^2+x+1)-(x^2+x1) \\
+                  = (x-1-1)(x^2+x+1) \\
+                  = (x-2)(x^2+x+1)\]</span>
+(d)<span class="math display">\[ x^4-3x^3-13x^2+15x = x(x^3-3x^2-13x+15) \\
+                         = x[(x^3-x)+(-3x^2-12x+15)] \\
+                         = x[x(x^2-1)-3(x^2+4x-5)] \\
+                         = x[x(x+1)(x-1)-3(x-1)(x+5)] \\
+                         = x(x-1)[x(x+1)-3(x+5)] \\
+                         = x(x-1)(x^2-2x-15)\\
+                         = x(x-1)(x+3)(x-5)\]</span>
+(e)<span class="math display">\[ x^4-3x^3+x^2+3x-2 = (x^4+x^2-2)+(-3x^3+3x) \\
+= (x^2+2)(x^2-1)-3x(x^2-1) \\
+= (x^2+2-3x)(x^2-1) \\
+= [(x-2)(x-1)][(x+1)(x-1)] \\
+= (x-2)(x+1)(x-1)^2\]</span></p>
+<p>(f)<span class="math display">\[  x^4-x^3+x^2-3x+2 = (x^4-x^3)+(x^2-3x+2) \\
+= x^3(x-1)+(x-1)(x-2) \\
+= (x-1)(x^3+x-2) \\
+= (x-1)[(x^3-1)+(x-1)] \\
+= (x-1)[(x-1)(x^2+x+1)+(x-1)] \\
+= (x-1)^2(x^2+x+2)\]</span></p>
 </div>
 <div id="q1.3.3" class="section level3 unnumbered">
 <h3>Q3</h3>
+<p>(Ashley a-d; Byoungchurl Lee e-h)</p>
 
 </div>
 </div>
