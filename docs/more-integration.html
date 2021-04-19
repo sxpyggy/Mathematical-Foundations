@@ -217,9 +217,35 @@
 <h1><span class="header-section-number">5</span> More Integration</h1>
 <div id="more-formulas" class="section level2">
 <h2><span class="header-section-number">5.1</span> More Formulas</h2>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(\int x^rdx=\frac{x^{r+1}}{r+1}+C\)</span></p></li>
+<li><p><span class="math inline">\(\int \sin x dx=-\cos x +C\)</span></p></li>
+<li><p><span class="math inline">\(\int \cos x dx=\sin x +C\)</span></p></li>
+<li><p><span class="math inline">\(\int \sec^2 x dx =\tan x+C\)</span></p></li>
+<li><p><span class="math inline">\(\int \frac{1}{1+x^2}dx=\tan^{-1}x+C\)</span></p></li>
+<li><p><span class="math inline">\(\int e^xdx=e^x +C\)</span></p></li>
+<li><p><span class="math inline">\(\int \frac{1}{x}dx=\ln|x| +C\)</span></p></li>
+</ol>
 </div>
 <div id="subsitution-method" class="section level2">
 <h2><span class="header-section-number">5.2</span> Subsitution Method</h2>
+<p>Let <span class="math inline">\(y\)</span> be a composition function of <span class="math inline">\(F\)</span> with <span class="math inline">\(g\)</span>:
+<span class="math display">\[y=F(g(x)).\]</span>
+Suppose that the function <span class="math inline">\(g\)</span> is differentiable on an open interval <span class="math inline">\(I\)</span> and that the function <span class="math inline">\(F\)</span> is differentiable on an open interval containing the image of <span class="math inline">\(I\)</span> under <span class="math inline">\(g\)</span>. By the chain rule, the composition function <span class="math inline">\(F\circ g\)</span> is differentiable on <span class="math inline">\(I\)</span>:
+<span class="math display">\[\frac{d}{dx}F(g(x))=\frac{dy}{dx}=\frac{dy}{d g(x)}\frac{d g(x)}{dx}=F&#39;(g(x))g&#39;(x),\]</span></p>
+<p>Since the integration is the reverse process of differentiation, we have
+<span class="math display">\[\int F&#39;(g(x))\cdot g&#39;(x)dx=\int f(g(x))\cdot g&#39;(x)dx=F(g(x))+C,\]</span>
+where <span class="math inline">\(F&#39;=f\)</span>.</p>
+<p><strong>Change of variable method</strong> Putting <span class="math inline">\(u=g(x)\)</span> and using <span class="math inline">\(du=g&#39;(x)dx\)</span>, we get
+<span class="math display">\[\int f(g(x))g&#39;(x)dx=\int f(u)du=F(u)+C.\]</span></p>
+<p><strong>Remarks</strong> The notations <span class="math inline">\(du\)</span> and <span class="math inline">\(dx\)</span> are called differentials. They are related by the fact that if <span class="math inline">\(\Delta x\)</span> is small, then <span class="math inline">\(\frac{\Delta u}{\Delta x}\)</span> is approximately equal to <span class="math inline">\(g&#39;(x)\)</span>, that is
+<span class="math display">\[\Delta u=g&#39;(x)\Delta x.\]</span>
+In the limiting situation, we have <span class="math inline">\(du=g&#39;(x)dx\)</span>.</p>
+<p><strong>Example</strong> Find <span class="math inline">\(\int(x^2+1)^2 2x dx, \int\frac{\ln x}{x}dx, \int x^2e^{x^3}dx, \int\sin(2x-3)dx\)</span></p>
+<p><strong>Substitution method for definite integrals</strong>
+<span class="math display">\[\int_a^bf(g(x))g&#39;(x)dx=\int_{g(a)}^{g(b)}f(u)du\]</span></p>
+<p><strong>Example</strong> Evaluate <span class="math inline">\(\int_0^4x\sqrt{x^2+9}dx, \int_0^1(x+1)e^{x^2+2x}dx, \int_0^{\frac{\pi}{2}}\sin x\cos xdx\)</span></p>
+<p><strong>Example</strong> Find the area of the region that lies between the <span class="math inline">\(x\)</span>-axis and the graph of <span class="math inline">\(y=xe^{-x^2}\)</span> for <span class="math inline">\(-1\le x\le 2\)</span>.</p>
 </div>
 <div id="integration-of-rational-functions" class="section level2">
 <h2><span class="header-section-number">5.3</span> Integration of Rational Functions</h2>

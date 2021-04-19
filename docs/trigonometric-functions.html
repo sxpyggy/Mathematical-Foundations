@@ -217,12 +217,79 @@
 <h1><span class="header-section-number">4</span> Trigonometric Functions</h1>
 <div id="angles" class="section level2">
 <h2><span class="header-section-number">4.1</span> Angles</h2>
+<p><strong>Definition</strong> An angle is formed by rotating a ray about its endpoint. It is uniquely determined by the direction and magnitude of rotation.</p>
+<ul>
+<li><p>The initial position of the ray is called the <em>initial side</em>.</p></li>
+<li><p>The endpoint of the ray is called the <em>vertex</em>.</p></li>
+<li><p>The final position is called the <em>terminal side</em>.</p></li>
+<li><p>The direction of rotation may be counterclockwise or clockwise which will be considered to be positive or negative, respectively.</p></li>
+<li><p>Magnitudes of rotation are traditionally measured in degrees or in radians.</p></li>
+</ul>
+<p><strong>Terminology</strong> A circle with radius 1 is called a unit circle. The circle with radius 1 and center at the origin is called the unit circle.</p>
+<p><strong>Definition</strong> The angle determined by an arc of length 1 along the circumference of a unit circle is said to be of measure one radian.</p>
+<ul>
+<li><p><span class="math inline">\(360^\circ=2\pi\)</span></p></li>
+<li><p><span class="math inline">\(d^\circ=d\times\frac{\pi}{180}\)</span> radians</p></li>
+<li><p><span class="math inline">\(90^\circ=\frac{\pi}{2}, 60^\circ=\frac{\pi}{3}\)</span></p></li>
+</ul>
+<p><strong>Remark</strong> It is more convenient to consider angles in radians and the unit radian is usually omitted.</p>
 </div>
 <div id="trigonometric-functions-1" class="section level2">
 <h2><span class="header-section-number">4.2</span> Trigonometric Functions</h2>
+<p><strong>Notation</strong> Consider an angle <span class="math inline">\(\theta\)</span> in standard position. Let <span class="math inline">\(P\)</span> be the point of intersection of the terminal side and the unit circle. We define sine and cosine functions from <span class="math inline">\(\mathbb{R}\)</span> to <span class="math inline">\(\mathbb{R}\)</span>:</p>
+<ul>
+<li><p><span class="math inline">\(\sin\theta=y-\)</span>coordinate of <span class="math inline">\(P\)</span></p></li>
+<li><p><span class="math inline">\(\cos\theta=x-\)</span>coordinate of <span class="math inline">\(P\)</span></p></li>
+</ul>
+<p><strong>More trigonometric functions</strong> The tangent, cotangent, secant and cosecant functions are defined as follows:</p>
+<ul>
+<li><p><span class="math inline">\(\tan x=\frac{\sin x}{\cos x}\)</span></p></li>
+<li><p><span class="math inline">\(\cot x=\frac{\cos x}{\sin x}\)</span></p></li>
+<li><p><span class="math inline">\(\sec x= \frac{1}{\cos x}\)</span></p></li>
+<li><p><span class="math inline">\(\csc x=\frac{1}{\sin x}\)</span></p></li>
+</ul>
+<p>where the domains are</p>
+<ul>
+<li><p><span class="math inline">\(\text{dom}(\tan)=\text{dom}(\sec)=\mathbb{R}\backslash\{\pm\frac{\pi}{2},\pm\frac{3\pi}{2},\ldots\}\)</span></p></li>
+<li><p><span class="math inline">\(\text{dom}(\cot)=\text{dom}(\csc)=\mathbb{R}\backslash\{\pm\pi,\pm2\pi,\ldots\}\)</span></p></li>
+</ul>
+<p><strong>Properties</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>The sine and cosine functions are periodic with period <span class="math inline">\(2\pi\)</span></p></li>
+<li><p>The tangent function is periodic with period <span class="math inline">\(\pi\)</span>.</p></li>
+<li><p>The sine and tangent functions are odd functions and the cosine function is an even function.</p></li>
+<li><p>The graphs of the sine and tangent functions are symmetric about the origin and the graph of the cosine function is symmetric about the <span class="math inline">\(y\)</span>-axis.</p></li>
+<li><p>The graph of the cosine function can be otained from that of the since function by moving it <span class="math inline">\(\frac{\pi}{2}\)</span> units to the left.</p></li>
+</ol>
+<p><strong>CAST Rule</strong></p>
+<p><strong>Sine, Cosine and Tangent of some special angles</strong></p>
+<p><strong>Important identities</strong></p>
+<ul>
+<li><p><span class="math inline">\(\sin^2 x + \cos^2 x=1\)</span></p></li>
+<li><p><span class="math inline">\(1+\tan^2x=\sec^2x\)</span></p></li>
+<li><p><span class="math inline">\(\sin(x+\frac{\pi}{2})=\cos x\)</span></p></li>
+<li><p>$(-x)=-x $</p></li>
+</ul>
+<p><strong>Compound angle formulas</strong></p>
+<ul>
+<li><p><span class="math inline">\(\sin(A+B)=\sin A\cos B + \cos A\sin B\)</span></p></li>
+<li><p><span class="math inline">\(\cos(A+B)=\cos A\cos B-\sin A\sin B\)</span></p></li>
+</ul>
+<p><strong>Continuity of sine and cosine</strong> Both of them are continuous on <span class="math inline">\(\mathbb{R}\)</span>.</p>
+<p><strong>Important limits</strong></p>
+<ul>
+<li><p><span class="math inline">\(\underset{x\rightarrow0}{\lim}\frac{\sin x}{x}=1\)</span></p></li>
+<li><p><span class="math inline">\(\underset{h\rightarrow0}{\lim}\frac{\cos h-1}{h}=0\)</span></p></li>
+</ul>
 </div>
 <div id="differentiation-of-trigonometric-functions" class="section level2">
 <h2><span class="header-section-number">4.3</span> Differentiation of Trigonometric Functions</h2>
+<p><strong>Derivative of sine</strong> The sine function is differentiable on <span class="math inline">\(\mathbb{R}\)</span> and its derivative is the cosine function:
+<span class="math display">\[\frac{d}{dx}\sin x=\cos x\]</span></p>
+<p><strong>Derivative of cosine</strong> The cosine function is differentiable on <span class="math inline">\(\mathbb{R}\)</span> and its derivative is the negative of the sine function:
+<span class="math display">\[\frac{d}{dx}\cos x=-\sin x\]</span></p>
+<p><strong>Derivative of tangent</strong> The tangent function is differentiable on its domain and its derivative is the square of the secant function, that is,
+<span class="math display">\[\frac{d}{dx}\tan x=\sec^2 x,~~~x\neq\pm\frac{\pi}{2},\pm\frac{3\pi}{2},\ldots.\]</span></p>
 
 </div>
 </div>
