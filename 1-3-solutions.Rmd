@@ -671,3 +671,268 @@ It is clear that if n is very large (that is, if the time interval is very short
 
 
 
+## Exercise 3.2 {- #q3.2}
+
+### Q1 {- #q3.2.1}
+
+
+(e)
+
+$$\lim_{n\to \infty}\frac{5n^2+4}{2n^3+3} \\
+= \lim_{n\to \infty}\frac{\frac{5n^2+4}{n^3}}{\frac{2n^3+3}{n^3}} \\
+= \lim_{n\to \infty}\frac{\frac{5}{n}+\frac{4}{n^3}}{2+\frac{3}{n^3}} \\
+= \frac{ \lim_{n\to \infty}(\frac{5}{n}+\frac{4}{n^3})}{ \lim_{n\to \infty}(2+\frac{3}{n^3})} \\
+= \frac{ \lim_{n\to \infty}(\frac{5}{n})+ \lim_{n\to \infty}(\frac{4}{n^3})}{ \lim_{n\to \infty}(2)+ \lim_{n\to \infty}(\frac{3}{n^3})} \\
+= \frac{0+0}{2+0}\\
+= \frac{0}{2}\\
+=  0$$
+
+(f)
+
+$$\lim_{n \to \infty}(\frac{1}{n}+(-1)^n)\\
+= \lim_{n \to \infty}\frac{1}{n}+ \lim_{n \to \infty}(-1)^n \\
+= 0 + \lim_{n \to \infty}(-1)^n \\
+= \lim_{n \to \infty}(-1)^n \\
+The \ limits \ of \ \lim_{n \to \infty}(-1)^n \ do \ not \ exist. $$
+
+ 
+
+### Q2 {- #q3.2.2}
+
+(a)
+
+(i)$$ 50000 \times(1+\frac{0.02}{4})^4 \approx 51007.53 $$
+
+(ii)$$ 50000 \times(1+\frac{0.02}{12})^{12} \approx 51009.22  $$
+
+ 
+
+(b)$$ A_n = 50000 \times(1+\frac{0.02}{n})^n $$
+
+(c)
+
+```{r}
+
+n = c(1:1000)              
+
+a_n = 50000*(1+ 0.02/n)^n
+
+plot(n,a_n,type='l',xlab='n',ylab='50000(1+0.02/n)^n',xlim=c(0,300)) 
+abline(h=50000*exp(0.02),lty=2,col=2)  #画图
+
+ 
+
+```
+
+ 
+
+$$\lim_{n \to \infty} A_n \\
+= \lim_{n \to \infty}[50000 \times(1+\frac{0.02}{n})^n] \\
+= 50000 \lim_{n \to \infty}(1+\frac{1}{50n})^{50n \times \frac{1}{50}}\\
+let \ t=50n, then \ n \to \infty,we \ can \ get \ t=50n \to \infty \\
+ 50000 \lim_{n \to \infty}(1+\frac{1}{50n})^{50n \times \frac{1}{50}}\\
+=50000 \lim_{t \to \infty}(1+\frac{1}{t})^{t \times \frac{1}{50}}\\
+=50000 (\lim_{t \to \infty}(1+\frac{1}{t})^{t})^{\frac{1}{50}}\\
+= 50000e^{\frac{1}{50}}\\
+\approx 51010.07 \\
+Note: \lim_{n \to \infty}(1+\frac{1}{n})^n = e$$
+
+Thus the limit if An exist ,and the value is about 51010.07.
+
+ 
+
+### Q3 {- #q3.2.3}
+
+(a)
+
+```{r}
+
+n = c(1:1000)              
+
+a_n = (1+ 1/n)^n
+
+plot(n,a_n,type='l',xlab='n',ylab='(1+1/n)^n',xlim=c(0,300))   #画图
+abline(h=exp(1),lty=2,col=2)
+ 
+
+```
+
+ 
+
+$$\lim_{n \to \infty} a_n\\
+= \lim_{n \to \infty}(1+\frac{1}{n})^n\\
+=  e$$
+
+(b)
+
+```{r}
+
+n = c(1:1000)              
+
+a_n = (1+ 2/n)^n
+
+plot(n,a_n,type='l',xlab='n',ylab='(1+2/n)^n',xlim=c(0,300))   #画图
+abline(h=exp(2),lty=2,col=2)
+ 
+
+```
+
+ 
+
+$$ \lim_{n \to \infty} a_n\\
+=  \lim_{n \to \infty}(1+\frac{2}{n})^{n}\\
+=  \lim_{n \to \infty}(1+\frac{1}{\frac{n}{2}})^{\frac{n}{2}\times2}\\
+let \ t=\frac{n}{2}, then \ n \to \infty,we \ can \ get \ t=\frac{n}{2} \to \infty \\
+ \lim_{n \to \infty}(1+\frac{1}{\frac{n}{2}})^{\frac{n}{2}\times2}\\
+=\lim_{t \to \infty}(1+\frac{1}{t})^{2t}\\
+=(\lim_{t \to \infty}(1+\frac{1}{t})^{t})^2\\
+= e^2$$
+
+(c)
+
+```{r}
+
+n = c(1:1000)              
+
+a_n = n*sin(1/n)
+
+plot(n,a_n,type='l',xlab='n',ylab='n*sin(1/n)',xlim=c(0,15))    #画图
+abline(h=1,lty=2,col=2)
+ 
+
+```
+
+$$\lim_{n \to \infty} a_n\\
+= \lim_{n \to \infty}nsin(\frac{1}{n})\\
+= \lim_{n \to \infty}n \times \frac{1}{n}\\
+= 1 \\
+Note: \lim_{n \to \infty}sin(\frac{1}{n}) \approx \lim_{n \to \infty}\frac{1}{n}$$
+
+
+## Exercise 3.3 {- #q3.3}
+
+### Q1 {- #q3.3.1}
+
+
+(i)
+$$\lim_{x \to -\infty}\frac{|x|}{x}\\
+= \lim_{x \to -\infty}\frac{-x}{x}\\
+= -1$$
+
+ 
+
+(j)
+
+As you can see in the graph below, the limit does not exist.
+
+```{r}
+
+x = c(-1000:0)                    
+
+a_n = x*sin(x)
+
+plot(x,a_n,type='l',xlab='x',ylab='x*sin(x)') #画图
+
+```
+
+### Q3 {- #q3.3.3} 
+
+(a)
+$$\lim_{t \to \infty} P(t)\\
+= \lim_{t \to \infty} (35000+\frac{10000}{(t+2)^2})  \\
+= \lim_{t \to \infty} 35000+ \lim_{t \to \infty} \frac{10000}{(t+2)^2}\\
+=35000$$
+
+Thus the population in the long run is 35000.
+
+
+(b)
+
+```{r}
+
+t = c(0:1000)               
+
+P = 35000+10000/(t+2)^2
+
+plot(t,P,type='l',xlab='t',ylab='P',xlim=c(0,30)) #画图
+abline(h=35000,lty=2,col=2)
+ 
+
+```
+
+From the graph, we can know that the population in the long run is 35000.
+
+ 
+### Q4 {- #q3.3.4}
+
+(a)
+
+```{r}
+
+x = c(0:1000)               
+
+y = sqrt(x+1)-sqrt(x)
+
+plot(x,y,type='l',xlab='x',ylab='f(x)',xlim=c(0,1000))    #画图
+abline(h=0,lty=2,col=2)
+ 
+
+```
+
+
+$$\lim_{x \to \infty} (\sqrt{x+1}-\sqrt{x}) \\
+= \lim_{x \to \infty}(\sqrt{x+1}-\sqrt{x})(\sqrt{x+1}+\sqrt{x})\frac{1}{(\sqrt{x+1}+\sqrt{x})}\\
+= \lim_{x \to \infty}(x+1-x)\frac{1}{(\sqrt{x+1}+\sqrt{x})}\\
+= \lim_{x \to \infty}\frac{1}{(\sqrt{x+1}+\sqrt{x})}\\
+=\frac{\lim_{x \to \infty}1}{\lim_{x \to \infty}(\sqrt{x+1}+\sqrt{x})}\\
+= \frac{1}{\infty}\\
+= 0$$
+
+The limit exists and  it is 0.
+
+ 
+
+(b)
+
+```{r}
+
+x = c(0:1000)               
+
+y = sqrt(x^2+x)-x
+
+plot(x,y,type='l',xlab='x',ylab='f(x)',xlim=c(0,30))    #画图
+abline(h=0.5,lty=2,col=2)
+```
+
+ 
+
+$$\lim_{x \to \infty} (\sqrt{x^2+x}-x) \\
+= \lim_{x \to \infty}(\sqrt{x^2+x}-x)(\sqrt{x^2+x}+x)\frac{1}{(\sqrt{x^2+x}+x)}\\
+= \lim_{x \to \infty}(x^2+x-x^2)\frac{1}{\sqrt{x^2+x}+x}\\
+= \lim_{x \to \infty}x\frac{1}{\sqrt{x^2+x}+x}\\
+= \lim_{x \to \infty}\frac{x}{\sqrt{x^2+x}+x}\\
+= \lim_{x \to \infty}\frac{\frac{x}{x}}{\frac{\sqrt{x^2+x}+x}{x}}\\
+= \lim_{x \to \infty}\frac{1}{\sqrt{1+\frac{1}{x}}+1} \\
+= \frac{\lim_{x \to \infty}1}{\lim_{x \to \infty}(\sqrt{1+\frac{1}{x}}+1)}\\
+= \frac{1}{1+1}\\
+= 0.5$$
+
+The limit exists and  it is 0.5 .
+
+ 
+
+(c)
+
+```{r}
+
+x = c(0:1000)               
+
+y = x^99/2^x
+
+plot(x,y,type='l',xlab='x',ylab='f(x)',xlim=c(0,800))    #画图
+abline(h=0,lty=2,col=2)
+```
+
+$$\lim_{x \to \infty} \frac{x^{99}}{2^x}=0 \\
+$$
+
