@@ -317,15 +317,38 @@ where <span class="math inline">\(F&#39;=f\)</span>.</p>
 In the limiting situation, we have <span class="math inline">\(du=g&#39;(x)dx\)</span>.</p>
 <p><strong>Example</strong> Find <span class="math inline">\(\int(x^2+1)^2 2x dx, \int\frac{\ln x}{x}dx, \int x^2e^{x^3}dx, \int\sin(2x-3)dx\)</span></p>
 <p><strong>Substitution method for definite integrals</strong>
-<span class="math display">\[\int_a^bf(g(x))g&#39;(x)dx=\int_{g(a)}^{g(b)}f(u)du\]</span></p>
+<span class="math display">\[\int_a^bf(g(x))g&#39;(x)dx=\int_{g(a)}^{g(b)}f(u)du\]</span>
+where <span class="math inline">\(g\)</span> is a continuous function on <span class="math inline">\([a,b]\)</span> and <span class="math inline">\(f\)</span> is a function defined and continuous on an open interval <span class="math inline">\(I\)</span> containing the image of <span class="math inline">\([a,b]\)</span> under <span class="math inline">\(g\)</span>.</p>
 <p><strong>Example</strong> Evaluate <span class="math inline">\(\int_0^4x\sqrt{x^2+9}dx, \int_0^1(x+1)e^{x^2+2x}dx, \int_0^{\frac{\pi}{2}}\sin x\cos xdx\)</span></p>
 <p><strong>Example</strong> Find the area of the region that lies between the <span class="math inline">\(x\)</span>-axis and the graph of <span class="math inline">\(y=xe^{-x^2}\)</span> for <span class="math inline">\(-1\le x\le 2\)</span>.</p>
 </div>
 <div id="integration-of-rational-functions" class="section level2">
 <h2><span class="header-section-number">5.3</span> Integration of Rational Functions</h2>
+<p><span class="math display">\[\int \frac{A}{ax+b}dx\\=A\int\frac{1}{ax+b}dx\\=A\cdot\frac{1}{a}\cdot\ln|ax+b|+C\]</span>
+We consider three cases when integrate
+<span class="math display">\[\frac{Ax+B}{ax^2+bx+c}\]</span></p>
+<p><strong>Case 1</strong> <span class="math inline">\(b^2-4ac&gt;0\)</span></p>
+<p>The denominator can be factorized as <span class="math inline">\(a(x-x_1)(x-x_2)\)</span>. Moreover, there exists contants <span class="math inline">\(\alpha, \beta\)</span> such that
+<span class="math display">\[\frac{Ax+B}{ax^2+bx+c}=\frac{\alpha}{x-x_1}+\frac{\beta}{x-x_2}\]</span>
+The above process is called <strong>partial-fraction decomposition</strong> of the rational function.</p>
+<p><strong>Example</strong> Find <span class="math inline">\(\int\frac{x+1}{x^2-2x-3}dx\)</span>.</p>
+<p><strong>Case 2</strong> <span class="math inline">\(b^2-4ac=0\)</span>.</p>
+<p>The denominator can be factorized as <span class="math inline">\(a(x-x_1)^2\)</span>. Moreover, there exists contants <span class="math inline">\(\alpha, \beta\)</span> such that
+<span class="math display">\[\frac{Ax+B}{ax^2+bx+c}=\frac{\alpha}{x-x_1}+\frac{\beta}{(x-x_1)^2}.\]</span></p>
+<p><strong>Example</strong> Find <span class="math inline">\(\int\frac{2x+3}{x^2-2x+1}dx\)</span></p>
+<p><strong>Case 3</strong> <span class="math inline">\(b^2-4ac&lt;0\)</span></p>
+<p>The denominator can be written as <span class="math inline">\(a((x+s)^2+t^2)\)</span></p>
+<p><strong>Subcase 3a</strong> <span class="math inline">\(A=0\)</span>
+<span class="math display">\[\int\frac{Ax+B}{ax^2+bx+c}dx=\frac{B}{at}\tan^{-1}\frac{x+s}{t} +C\]</span></p>
+<p><strong>Subcase 3b</strong> <span class="math inline">\(Ax+B=k(2ax+b)\)</span>
+<span class="math display">\[\int\frac{Ax+B}{ax^2+bx+c}dx=\int\frac{k(2ax+b)}{ax^2+bx+c}\]</span>
+which can be integrated using substitution <span class="math inline">\(u=ax^2+bx+c\)</span>.</p>
+<p><strong>Case 3 in general</strong> We rewrite the numerator as a sum of two terms: the first one is a multiple of the derivative of the denominator and the second one is a constant.</p>
+<p><strong>Example</strong> Find <span class="math inline">\(\int\frac{2x+3}{x^2+4x+13}dx\)</span></p>
 </div>
 <div id="integration-by-parts" class="section level2">
 <h2><span class="header-section-number">5.4</span> Integration by Parts</h2>
+<p>The technique in integration that corresponds to the product rule in differentiation is called <strong>integration by parts</strong>.</p>
 </div>
 <div id="more-applications-of-definite-integrals" class="section level2">
 <h2><span class="header-section-number">5.5</span> More Applications of Definite Integrals</h2>
