@@ -349,9 +349,52 @@ which can be integrated using substitution <span class="math inline">\(u=ax^2+bx
 <div id="integration-by-parts" class="section level2">
 <h2><span class="header-section-number">5.4</span> Integration by Parts</h2>
 <p>The technique in integration that corresponds to the product rule in differentiation is called <strong>integration by parts</strong>.</p>
+<p>Let <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> be functions that are differentiable on an open interval <span class="math inline">\((a, b)\)</span>. By the product rule, we have
+<span class="math display">\[\frac{d}{dx}\left( f(x)g(x) \right)=f&#39;(x)g(x)+f(x)g&#39;(x), ~~ a&lt;x&lt;b,\]</span>
+which, written in terms of integration, becomes
+<span class="math display">\[\int f&#39;(x)g(x)dx + \int f(x)g&#39;(x)dx =f(x)g(x), ~~ a&lt;x&lt;b. \]</span></p>
+<p>Or we have
+<span class="math display">\[\int f(x)g&#39;(x)dx = f(x)g(x) - \int f&#39;(x)g(x)dx, ~~ a&lt;x&lt;b,\]</span>
+in which <span class="math inline">\(\int f&#39;(x)g(x)dx\)</span> is easier to find than <span class="math inline">\(\int f(x)g&#39;(x)dx\)</span>.</p>
+<p><strong>Example</strong> Find <span class="math inline">\(\int xe^xdx, \int x\cos xdx, \int \ln x dx\)</span>.</p>
 </div>
 <div id="more-applications-of-definite-integrals" class="section level2">
 <h2><span class="header-section-number">5.5</span> More Applications of Definite Integrals</h2>
+<p><strong>Consumers’ and Producer’s surplus</strong></p>
+<p><strong>Probability</strong></p>
+<p><strong>Definition</strong> A variable whose values depend on the outcome of a random process is called a random variable.</p>
+<p><strong>Example</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Suppose a die is rolled and <span class="math inline">\(X_1\)</span> is the number that turns up. <em>Discrete random variable</em></p></li>
+<li><p>The life (in months) of a certain computer part. <em>Continuous random variable</em></p></li>
+</ol>
+<p><strong>Definition</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with values in <span class="math inline">\(\{x_1,x_2,\ldots,x_n\}\)</span>. A <strong>probability function</strong> of <span class="math inline">\(X\)</span> is a function <span class="math inline">\(f\)</span> with domain <span class="math inline">\(\{x_1,x_2,\ldots,x_n\}\)</span> such that</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(0\le f(x_i)\)</span> for all <span class="math inline">\(i=1,\ldots,n\)</span>;</p></li>
+<li><p><span class="math inline">\(f(x_1)+\cdots+f(x_n)=1\)</span>.</p></li>
+</ol>
+<p><strong>Probabilities of Events for Discrete Random Variables</strong> Suppose that <span class="math inline">\(X\)</span> is a discrete random variable with values in the set <span class="math inline">\(\{x_1,\ldots,x_n\}\)</span> and that <span class="math inline">\(f\)</span> is a probability function of <span class="math inline">\(X\)</span>.</p>
+<ul>
+<li><p>An <em>event</em> for <span class="math inline">\(X\)</span> is a subset of <span class="math inline">\(\{x_1,\ldots,x_n\}\)</span>.</p></li>
+<li><p>The probability of an event <span class="math inline">\(E\)</span>, denoted by <span class="math inline">\(P(E)\)</span>, is the number given by
+<span class="math display">\[P(E)=\sum_{x_i\in E}f(x_i).\]</span></p></li>
+</ul>
+<p><strong>Definition</strong> Let <span class="math inline">\(X\)</span> be a <em>continuous</em> random variable in <span class="math inline">\([a,\infty)\)</span>. A <strong>probability function</strong> of <span class="math inline">\(X\)</span> is a function <span class="math inline">\(f\)</span> with domain <span class="math inline">\([a,\infty)\)</span> such that</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(0\le f(x_i)\)</span> for all <span class="math inline">\(x\in[a,\infty)\)</span>;</p></li>
+<li><p><span class="math inline">\(\int_a^\infty f(x)dx=1\)</span>.</p></li>
+</ol>
+<p><strong>Remark</strong> <span class="math inline">\(\int_a^\infty f(x)dx\)</span> is called an <em>improper integral</em> and is defined by
+<span class="math display">\[\int_a^\infty f(x)dx=\underset{R\rightarrow\infty}{\lim}\int_0^Rf(x)dx,\]</span>
+provided that the limit exists.</p>
+<p><strong>Example</strong> Find <span class="math inline">\(\int_1^\infty \frac{1}{x^2}dx\)</span>.</p>
+<p><strong>Probabilities of Events for Continuous Random Variables</strong> Suppose that <span class="math inline">\(X\)</span> is a continuous random variable with values in the interval <span class="math inline">\((a,\infty]\)</span> and that <span class="math inline">\(f\)</span> is a probability function of <span class="math inline">\(X\)</span>.</p>
+<ul>
+<li><p>An <em>event</em> for <span class="math inline">\(X\)</span> is usually an interval contained in <span class="math inline">\([a,\infty)\)</span>; such events are represented by <span class="math inline">\((\alpha\le X\le \beta)\)</span>.</p></li>
+<li><p>The probability of an event <span class="math inline">\((\alpha\le X\le\beta)\)</span>, denoted by <span class="math inline">\(P(\alpha\le X\le\beta)\)</span>, is the number given by
+<span class="math display">\[P(\alpha\le X\le\beta)=\int_\alpha^\beta f(x)dx.\]</span></p></li>
+</ul>
+<p><strong>Remark</strong> It does not matter whether we include the endpoints <span class="math inline">\(\alpha,\beta\)</span>. For a continuous random variable <span class="math inline">\(X\)</span>, the probability that <span class="math inline">\(X\)</span> equals a specific value is <span class="math inline">\(0\)</span>.</p>
 
 </div>
 </div>
