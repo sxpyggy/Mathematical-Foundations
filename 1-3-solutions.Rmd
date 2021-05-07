@@ -936,3 +936,198 @@ abline(h=0,lty=2,col=2)
 $$\lim_{x \to \infty} \frac{x^{99}}{2^x}=0 \\
 $$
 
+## Exercise 3.4 {- #q3.4}
+
+### Q1 {- #q3.4.1}
+
+(b)
+
+```{r}
+
+x = c(0:1000) 
+x=x/1000
+
+y = 1/(x^0.5)
+
+plot(x,y,type='l',xlab='x',ylab='1/(x^0.5)') #画图
+abline(v=0,lty=2,col=2)
+ 
+
+```
+
+$$ \lim_{x\to 0+}\frac{1}{\sqrt{x}} = +\infty  $$
+
+(d)
+
+$$ \lim_{x\to 0-}sin(\frac{1}{x}) \ doesn't \ exist. \\
+As \ the \ function \ y=sinx \ is \ a \ periodic \ function,\  lim_{x\to 0-}\frac{1}{x}=-\infty,  \ sin(-\infty) \ doesn't \ exist.
+$$
+
+(f)
+
+```{r}
+
+x = c(-2000:0)               
+x=x/1000
+y = 2-3^(1/x)
+
+plot(x,y,type='l',xlab='x',ylab='1/(x^0.5)',ylim = c(0,2),xlim=c(-2,0)) #画图
+abline(v=0,lty=2,col=2)
+abline(h=2,lty=2,col=2)
+
+```
+$$ \lim_{x\to 0-}(2-3^{\frac{1}{x}}) \\
+ = \lim_{x\to 0-}2-\lim_{x\to 0-}3^{\frac{1}{x}} \\
+ = 2-3^{\lim_{x\to 0-}\frac{1}{x}} \\
+ = 2-3^{-\infty} \\
+ = 2-0\\
+ = 2$$
+
+## Exercise 3.5 {- #q3.5}
+
+### Q1 {- #q3.5.1} 
+
+(b)
+
+$$ \lim_{x\to 7}(x^2-5x-8)^3 \\
+ = (7^2-5\times7-8)^3 \\
+ = 6^3 \\
+ = 216$$
+
+(d)
+
+$$ \lim_{x\to 1}\frac{x \sqrt{x^2+1}}{x+1} \\
+ = \frac{\lim_{x\to 1}x \sqrt{x^2+1}}{\lim_{x\to 1}{x+1}} \\
+ = \frac{\sqrt{2}}{2} $$
+
+(f)
+
+$$ \lim_{x\to -2}\frac{x^2-4}{x^2+x-2} \\
+ = \lim_{x\to -2}\frac{(x+2)(x-2)}{(x+2)(x-1)} \\
+ = \lim_{x\to -2}\frac{x-2}{x-1} \\
+ = \frac{\lim_{x\to -2}x-2}{\lim_{x\to -2}{x-1}} \\
+ = \frac{-2-2}{-2-1} \\
+ = \frac{4}{3} $$
+
+
+(h)
+
+$$ \lim_{x\to 6}\frac{x^2-6x}{x^2-5x-6} \\
+ = \lim_{x\to 6}\frac{x(x-6)}{(x-6)(x+1)} \\
+ = \lim_{x\to 6}\frac{x}{x+1} \\
+ = \frac{\lim_{x\to 6}x}{\lim_{x\to 6}{x+1}} \\
+ = \frac{6}{6+1} \\
+ = \frac{6}{7} $$
+
+(j)
+
+$$ \lim_{x\to 3}\frac{x-3}{x^2+9} \\
+ = \frac{\lim_{x\to 3}x-3}{\lim_{x\to 3}{x^2+9}} \\
+ = \frac{3-3}{3^2+9} \\
+ = \frac{0}{18} \\
+ = 0$$
+
+(l)
+
+$$ \lim_{x\to 2}\frac{x-5}{2-\sqrt{x-1}} \\
+ = \frac{\lim_{x\to 2}x-5}{\lim_{x\to 2}{2-\sqrt{x-1}}} \\
+ = \frac{2-5}{2-\sqrt{2-1}} \\
+ = \frac{-3}{2-1} \\
+ = -3$$
+
+
+
+## Exercise 3.6 {- #q3.6}
+
+### Q1 {- #q3.6.1}
+
+(a)
+```{r}
+fun1 <- function(x){
+  x^2
+}
+fun2 <- function(x){
+  x-x+1
+}
+fun3 <- function(x){
+  1/x
+}
+curve(fun1, 0, 1, xlim = c(0,5), ylim = c(0,2))
+curve(fun2, 1, 2, add = T)
+curve(fun3, 2, 5, add = T)
+abline(h=0,v=0,lty=2,col="darkgray")
+points(1,1,col="red",pch=19)
+points(2,1,col="red")
+points(2,0.5,col="red",pch=19)
+text(1,1.15,expression("(1,1)"),col="red")
+text(2,1.15,expression("(2,1)"),col="red")
+text(2,0.35,expression("(2,0.5)"),col="red")
+```
+
+(b)y=x^2、y=1、y=1/x are continuous in R. From the graph, we can know that f(x) is discontinuous at the point (2,0.5). 
+
+### Q2 {- #q3.6.2}
+
+(a)
+$$  \left\{\begin{aligned}
+1-\sqrt{x} \neq 0 \\
+x \geq 0 \\
+\end{aligned}\right. \\
+\left\{\begin{aligned}
+x \neq 1 \\
+x \geq 0 \\
+\end{aligned}\right. \\
+dom(f)=[0,1) \cup (1,\infty)$$
+
+(b)
+$$ \lim_{x \to 1}f(x)=\lim_{x \to 1}\frac{x^2+x-2}{1-\sqrt{x}} \\
+ = \lim_{x \to 1}\frac{(x^2+x-2)(1+\sqrt{x})}{(1-\sqrt{x})(1+\sqrt{x})} \\
+ = \lim_{x \to 1}\frac{(x+2)(x-1)(1+\sqrt{x})}{1-x} \\
+ = \lim_{x \to 1}-(x+2)(1+\sqrt{x}) \\
+ = -(1+2)(1+\sqrt{1}) \\
+ = -6$$
+
+(c)
+$$As \ \lim_{x \to 1}f(x)=-6, \ we \ can \ define \ f(1)=-6 \ to \ make \ f \ continuous.$$
+
+
+### Q3 {- #q3.6.3}
+
+(a)
+$$ dom(f)= (-\infty,0) \cup (0,\infty) $$
+(b)
+$$ \lim_{x \to 0}f(x)=\lim_{x \to 0}sin \frac{1}{x} \ doesn't \ exist.$$
+
+(c)As the limit doesn't exist, we cann't define f(0) to make f continuous at 0.
+
+
+### Q4 {- #q3.6.4}
+
+$$ p(-2)=(-2)^5-(-2)^4-5(-2)^3+(-2)^2+8(-2)+4=-16<0\\
+   p(0)=4>0\\
+   p(3)=3^5-3^4-5\times3^3+3^2+8\times3+4=64>0$$
+
+Thus we have
+
+p(x)<0 for x<-1;
+
+p(x)>0 for -1<x<2;
+
+p(x)>0 for x>2;
+
+The solution set is $$(-1,2) \cup (2,+\infty)  $$
+
+### Q5 {- #q3.6.5}
+
+(a)
+$$ p(1)=1-6-3+5+7=4>0\\
+   p(2)=2^5-6\times2^4-3\times2^3+5\times2^2+7=-61<0$$
+p(1) and p(2) have opposite sighs.As p(x) is continuous, p(x)=0 has a solution between 1 and 2.
+
+(b)
+$$ (1+2)/2=1.5 \\
+p(1.5)=1.5^5-6\times(1.5)^4-3\times(1.5)^3+5\times(1.5)^2+7=-14.65625<0\\
+p(1)=4>0$$
+
+As p(x) is continuous, p(x)=0 has a solution between 1 and 1.5.Thus the solution is closer to 1.
+
