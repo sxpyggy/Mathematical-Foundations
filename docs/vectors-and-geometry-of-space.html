@@ -320,9 +320,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">6</span> Vectors and Geometry of Space</h1>
 <div id="three-dimensinal-coordinate-systems" class="section level2">
 <h2><span class="header-section-number">6.1</span> Three-Dimensinal Coordinate Systems</h2>
+<p><strong>Definition</strong> The three coordinate axes determine the three coordinate planes. These three coordinate planes divide space into eight parts, called octants.
+The first octant is determined by the positive axes.
+<img src="plots/6/3d.png" width="30%" style="display: block; margin: auto;" /></p>
+<p><strong>Coordinates</strong> We represent the point <span class="math inline">\(P\)</span> by the ordered triple <span class="math inline">\((a,b,c)\)</span>. We call <span class="math inline">\(a, b, c\)</span> the coordinates of <span class="math inline">\(P\)</span>.</p>
+<p><strong>Projection</strong> The point <span class="math inline">\(P(a,b,c)\)</span> determines a rectangular box. If we drop a perpendicular from <span class="math inline">\(P\)</span> to each coordinate plane. We get three projections of <span class="math inline">\(P\)</span> as <span class="math inline">\(Q(a,b,0), R(0,b,c), S(a,0,c)\)</span>.
+<img src="plots/6/projection.png" width="30%"  style="display: block; margin: auto;" /></p>
+<p><strong>Three dimensional rectangular coordinate system</strong> The Cartesian product <span class="math inline">\(\mathbf{R}\times\mathbf{R}\times\mathbf{R}=\{(x,y,z)|x,y,z\in\mathbf{R}\}\)</span> is the set of all ordered triples of real numbers and is denoted by <span class="math inline">\(R^3\)</span>.</p>
+<p><strong>Surface</strong> In three-dimensional analytica geometry, an equation in <span class="math inline">\(x,y,z\)</span> represents a surface in <span class="math inline">\(R^3\)</span>.
+<img src="plots/6/plane.png" width="70%"  style="display: block; margin: auto;" /></p>
+<p><img src="plots/6/curve.png" width="70%"  style="display: block; margin: auto;" /></p>
+<p><strong>Distance</strong> The distance <span class="math inline">\(|P_1P_2|\)</span> between the points <span class="math inline">\(P_1(x_1,y_1,z_1)\)</span> and <span class="math inline">\(P_2(x_2,y_2,z_2)\)</span> is
+<span class="math display">\[|P_1P_2|=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}\]</span></p>
+<p><strong>Equation of a sphere</strong> An equation of a sphere with center <span class="math inline">\(C(h,k,l)\)</span> and radius <span class="math inline">\(r\)</span> is
+<span class="math display">\[(x-h)^2+(y-k)^2+(z-l)^2=r^2.\]</span></p>
+<p><img src="plots/6/sphere.png" width="30%"  style="display: block; margin: auto;" /></p>
 </div>
 <div id="vectors" class="section level2">
 <h2><span class="header-section-number">6.2</span> Vectors</h2>
+<p><strong>Definition</strong> A quantity (such as displacement or velocity or force) with both magnitude and direction.</p>
+<p><strong>Example</strong> For instance, suppose a particle moves along a line segment from point <span class="math inline">\(A\)</span> to point <span class="math inline">\(B\)</span>. The corresponding displacement vector <span class="math inline">\(\mathbf{v}\)</span> has initial point <span class="math inline">\(A\)</span> (the tail) and terminal point <span class="math inline">\(B\)</span> (the tip), and we indicate this by writing <span class="math inline">\(\mathbf{v}=\overset{\longrightarrow}{AB}\)</span>. Notice that if a vector <span class="math inline">\(\mathbf{u}\)</span> has the same length and the same direction even though it is in a different position. We say <span class="math inline">\(\mathbf{u}\)</span> and <span class="math inline">\(\mathbf{v}\)</span> are equivalent and we write <span class="math inline">\(\mathbf{u}=\mathbf{v}\)</span>.
+<img src="plots/6/vector.png" width="30%"  style="display: block; margin: auto;" /></p>
+<p><strong>Vector addition</strong> If <span class="math inline">\(\mathbf{u}\)</span> and <span class="math inline">\(\mathbf{v}\)</span> are vectors positioned so the initial point of <span class="math inline">\(\mathbf{v}\)</span> is at the terminal point of <span class="math inline">\(\mathbf{u}\)</span>, then the sum <span class="math inline">\(\mathbf{u}+\mathbf{v}\)</span> is the vector from the initial point of <span class="math inline">\(\mathbf{u}\)</span> to the terminal point of <span class="math inline">\(\mathbf{v}\)</span>.
+<img src="plots/6/addition.png" width="70%"  style="display: block; margin: auto;" /></p>
+<p><strong>Scalar multiplication</strong> If <span class="math inline">\(c\)</span> is a scalar and <span class="math inline">\(\mathbf{v}\)</span> is a vector, then the scalar multiple <span class="math inline">\(c\mathbf{v}\)</span> is the vector whose length is <span class="math inline">\(|c|\)</span> times the length of <span class="math inline">\(\mathbf{v}\)</span> and whose direction is the same as <span class="math inline">\(\mathbf{v}\)</span> if <span class="math inline">\(c&gt;0\)</span> and is opposite to <span class="math inline">\(\mathbf{v}\)</span> if <span class="math inline">\(c&lt;0\)</span>.
+<img src="plots/6/scalar.png" width="70%"  style="display: block; margin: auto;" /></p>
+<p><strong>Components</strong></p>
 </div>
 <div id="dot-product" class="section level2">
 <h2><span class="header-section-number">6.3</span> Dot Product</h2>
