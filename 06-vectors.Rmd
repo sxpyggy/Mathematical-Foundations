@@ -17,7 +17,7 @@ knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
 knitr::include_graphics("./plots/6/projection.png")
 ```
 
-**Three dimensional rectangular coordinate system** The Cartesian product $\mathbf{R}\times\mathbf{R}\times\mathbf{R}=\{(x,y,z)|x,y,z\in\mathbf{R}\}$ is the set of all ordered triples of real numbers and is denoted by $R^3$.
+**Three dimensional rectangular coordinate system** The Cartesian product $\mathbb{R}\times\mathbb{R}\times\mathbb{R}=\{(x,y,z)|x,y,z\in\mathbb{R}\}$ is the set of all ordered triples of real numbers and is denoted by $R^3$.
 
 **Surface** In three-dimensional analytica geometry, an equation in $x,y,z$ represents a surface in $R^3$.
 ```{r,echo=FALSE,out.width="70%",fig.align = 'center'}
@@ -65,7 +65,13 @@ knitr::include_graphics("./plots/6/scalar.png")
 ```
 
 **Components** 
+If we place the initial point of a vector $\boldsymbol{a}$ at the origin of a rectangle coordinate system, then the terminal point has coordinates $(a_1,a_2)$. These coordinates are caleed the components of $\boldsymbol{a}$. We write $$\boldsymbol{a}=\langle a_1, a_2 \rangle.$$
 
+**Position vector** Given the points $A(x_1,y_1,z_1)$ and $B(x_2,y_2,z_2)$, the vector $\boldsymbol{a}$ with **representation** $\overset{\longrightarrow}{AB}$ is $\boldsymbol{a}=\langle x_2-x_1,y_2-y_1, z_2-z_1 \rangle,$
+which is also the position vector of the point $(x_2-x_1,y_2-y_1, z_2-z_1).$
+
+**Magnitude** The length of the vector $\boldsymbol{a}=\langle a_1,a_2,a_3 \rangle$ is the length of any of its representations and is denoted by the symbol $|\boldsymbol{a}|$ or $||\boldsymbol{a}||$:
+$$|\boldsymbol{a}|=\sqrt{a_1^2+a_2^2+a_3^2}$$
 
 ## Dot Product
 

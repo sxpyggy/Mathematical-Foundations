@@ -11,7 +11,7 @@ The first octant is determined by the positive axes.
 **Projection** The point $P(a,b,c)$ determines a rectangular box. If we drop a perpendicular from $P$ to each coordinate plane. We get three projections of $P$ as $Q(a,b,0), R(0,b,c), S(a,0,c)$.
 <img src="./plots/6/projection.png" width="30%"  style="display: block; margin: auto;" />
 
-**Three dimensional rectangular coordinate system** The Cartesian product $\mathbf{R}\times\mathbf{R}\times\mathbf{R}=\{(x,y,z)|x,y,z\in\mathbf{R}\}$ is the set of all ordered triples of real numbers and is denoted by $R^3$.
+**Three dimensional rectangular coordinate system** The Cartesian product $\mathbb{R}\times\mathbb{R}\times\mathbb{R}=\{(x,y,z)|x,y,z\in\mathbb{R}\}$ is the set of all ordered triples of real numbers and is denoted by $R^3$.
 
 **Surface** In three-dimensional analytica geometry, an equation in $x,y,z$ represents a surface in $R^3$.
 <img src="./plots/6/plane.png" width="70%"  style="display: block; margin: auto;" />
@@ -41,7 +41,13 @@ $$(x-h)^2+(y-k)^2+(z-l)^2=r^2.$$
 <img src="./plots/6/scalar.png" width="70%"  style="display: block; margin: auto;" />
 
 **Components** 
+If we place the initial point of a vector $\boldsymbol{a}$ at the origin of a rectangle coordinate system, then the terminal point has coordinates $(a_1,a_2)$. These coordinates are caleed the components of $\boldsymbol{a}$. We write $$\boldsymbol{a}=\langle a_1, a_2 \rangle.$$
 
+**Position vector** Given the points $A(x_1,y_1,z_1)$ and $B(x_2,y_2,z_2)$, the vector $\boldsymbol{a}$ with **representation** $\overset{\longrightarrow}{AB}$ is $\boldsymbol{a}=\langle x_2-x_1,y_2-y_1, z_2-z_1 \rangle,$
+which is also the position vector of the point $(x_2-x_1,y_2-y_1, z_2-z_1).$
+
+**Magnitude** The length of the vector $\boldsymbol{a}=\langle a_1,a_2,a_3 \rangle$ is the length of any of its representations and is denoted by the symbol $|\boldsymbol{a}|$ or $||\boldsymbol{a}||$:
+$$|\boldsymbol{a}|=\sqrt{a_1^2+a_2^2+a_3^2}$$
 
 ## Dot Product
 

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>7 Matrices | Mathematical Foundations (II)</title>
+  <title>Chapter 10 | Mathematical Foundations (II)</title>
   <meta name="description" content="The output format is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="7 Matrices | Mathematical Foundations (II)" />
+  <meta property="og:title" content="Chapter 10 | Mathematical Foundations (II)" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="sxpyggy/Mathematical-Foundations" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="7 Matrices | Mathematical Foundations (II)" />
+  <meta name="twitter:title" content="Chapter 10 | Mathematical Foundations (II)" />
   
   <meta name="twitter:description" content="The output format is bookdown::gitbook." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="vectors-and-geometry-of-space.html"/>
-<link rel="next" href="ch1.html"/>
+<link rel="prev" href="ch4.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -343,29 +343,243 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="matrices" class="section level1">
-<h1><span class="header-section-number">7</span> Matrices</h1>
-<div id="basic-matrix-operations" class="section level2">
-<h2><span class="header-section-number">7.1</span> Basic Matrix Operations</h2>
+<div id="ch10" class="section level1 unnumbered">
+<h1>Chapter 10</h1>
+<div id="q10.1" class="section level2 unnumbered">
+<h2>Exercise 10.1</h2>
+<div id="q10.1.1" class="section level3 unnumbered">
+<h3>Q1</h3>
+<p>(a)<span class="math display">\[ \int 3\sec^2{x} \ dx = 3  \int \sec^2{x} \ dx = 3 \tan{x}+C \]</span></p>
+<p>(b)<span class="math display">\[ \int (2 e^x+\cos{x}) \ dx = \int 2e^x \ dx + \int \cos{x} \ dx \\
+                            = 2e^x+\sin{x}+C \]</span></p>
+<p>(c)<span class="math display">\[ \int \frac{2x+3}{x} \ dx = \int (2+\frac{3}{x}) \ dx \\
+                               = \int 2 \ dx + \int \frac{3}{x} \ dx \\
+                               = 2x+3\ln{\mid x \mid}+C \]</span></p>
+<p>(d)<span class="math display">\[ \int (1+\frac{1}{x})^2 \ dx = \int (1+\frac{2}{x}+\frac{1}{x^2}) \ dx \\
+= \int 1 \ dx + \int \frac{2}{x} \ dx + \int \frac{1}{x^2} \ dx \\ = x+2\ln{\mid x \mid}-\frac{1}{x}+C \]</span></p>
 </div>
-<div id="matrix-inversion" class="section level2">
-<h2><span class="header-section-number">7.2</span> Matrix Inversion</h2>
+<div id="q10.1.2" class="section level3 unnumbered">
+<h3>Q2</h3>
+<p>(a)<span class="math display">\[ \int_0^{\frac{\pi}{3}} 2\sin{x} \ dx = (-2\cos{x})\mid_0^{\frac{\pi}{3}} \\
+= -2\cos{\frac{\pi}{3}}-(-2\cos{0}) \\
+= -2 \times \frac{1}{2}-(-2) \\
+= 1\]</span></p>
+<p>(b)<span class="math display">\[ \int_{-1}^{1} (2e^x+\sin{x}) \ dx = (2e^x-\cos{x})\mid_{-1}^{1} \\
+= (2e-\cos{1})-(2e^{-1}-\cos{(-1)}) \\
+= 2e-\cos{1}-2e^{-1}+\cos{(-1)} \\
+= 2e-\cos{1}-2e^{-1}+\cos{1} \\
+= 2e-2e^{-1}\\\]</span></p>
+<p>(c)<span class="math display">\[ \int_{-4}^{-1} (e^x+\frac{1}{x}) \ dx = (e^x+\ln{\mid x \mid})\mid_{-4}^{-1} \\
+= (e^{-1}+ln1)-(e^{-4}+ln4) \\
+= e^{-1}-e^{-4}-ln4 \\ \]</span></p>
+<p>(d)<span class="math display">\[ \int_{1}^{2} \frac{2-x}{x} \ dx = \int_{1}^{2} (\frac{2}{x}-1) \ dx \\
+=(2\ln{\mid x \mid}-x)\mid_{1}^{2} \\
+= (2\ln2-2)-(2\ln1-1) \\
+= 2\ln2-1 \\ \]</span></p>
 </div>
-<div id="cramers-rule" class="section level2">
-<h2><span class="header-section-number">7.3</span> Cramer’s rule</h2>
+<div id="q10.1.3" class="section level3 unnumbered">
+<h3>Q3</h3>
+<p>(a)<span class="math display">\[ \int_{0}^{\pi} \sin{x} \ dx =  (-\cos{x}) \mid_{0}^{\pi}  \\ 
+= (-\cos{\pi})-(-\cos{0}) \\
+= 1-(-1) \\
+= 2 \]</span></p>
+<p>(b)<span class="math display">\[ \int_{\frac{1}{2}}^{e} \frac{1}{x} \ dx =  (\ln{\mid x \mid}) \mid_{\frac{1}{2}}^{e}  \\ 
+= (\ln{e})-(\ln{\frac{1}{2}}) \\
+= 1+\ln{2} \]</span></p>
+<p>(c)<span class="math display">\[ \int_{0}^{2} e^{-x} \ dx =  -e^{-x} \mid_{0}^{2}  \\ 
+= -(e^{-2}-1) \\
+= 1-e^{-2}\\
+\int_{-1}^{0} e^{x} \ dx =  e^{x} \mid_{-1}^{0}  \\ 
+= 1-e^{-1} \\
+thus\ the\ area\ is:
+1-e^{-2}+1-e^{-1}=2-e^{-2}-e^{-1}\]</span></p>
+</div>
+</div>
+<div id="q10.2" class="section level2 unnumbered">
+<h2>Exercise 10.2</h2>
+<div id="q10.2.1" class="section level3 unnumbered">
+<h3>Q1</h3>
+<p>(c)<span class="math display">\[Put \ u=x^2, \ du=2x\ dx.\\
+\int x\sin{x^2} \ dx = \int \frac{1}{2} \sin{x^2} (2x)\ dx \\
+                     = \int \frac{1}{2} \sin{u} \ du \\
+                     = -\frac{1}{2} \cos{u} +C \\
+                     = -\frac{1}{2} \cos{x^2} +C \]</span></p>
+<p>(d)<span class="math display">\[Put \ u=\cos{x}, \ du=-\sin{x}\ dx.\\
+\int \sin{x} \cos^2{x} \ dx = \int - \cos^2{x} (-\sin{x})\ dx \\
+                     = \int -u^2 \ du \\
+                     = -\frac{1}{3} u^3 +C \\
+                     = -\frac{1}{3} \cos^3{x} +C \]</span></p>
+<p>(f)<span class="math display">\[Put \ u=e^x, \ du=e^xdx.\\
+\int e^x \sec^2{(e^x)} \ dx = \int \sec^2({e^x}) \  e^xdx \\
+                     = \int \sec^2{u} \ du \\
+                     = \tan{u} +C \\
+                     = \tan{(e^x)} +C \]</span></p>
+<p>(h)<span class="math display">\[Put \ u=x^3-1, \ du=3x^2 \ dx.\\
+\int x^2e^{x^3-1} \ dx = \int \frac{1}{3}e^{x^3-1} (3x^2)\ dx \\
+                     = \int \frac{1}{3}e^{u} \ du \\
+                     = \frac{1}{3}e^{u} +C \\
+                     = \frac{1}{3}e^{x^3-1} +C \]</span></p>
+<p>(i)<span class="math display">\[Put \ u=x^2+1, \ du=2x \ dx.\\
+\int \frac{x}{x^2+1} \ dx = \int \frac{1}{2(x^2+1)} (2x)\ dx \\
+                     = \int \frac{1}{2u} \ du \\
+                     = \frac{1}{2}\ln\mid{u}\mid +C \\
+                     = \frac{1}{2}\ln\mid{x^2+1}\mid +C\\
+                     = \frac{1}{2}\ln{(x^2+1)} +C \]</span></p>
+<p>(j)<span class="math display">\[Put \ u=\frac{1}{x}, \ du=-\frac{1}{x^2} \ dx.\\
+\int \frac{\sin{\frac{1}{x}}}{x^2} \ dx = \int -\sin{\frac{1}{x}} (-\frac{1}{x^2}) \ dx \\
+                     = \int -\sin{u} \ du \\
+                     = \cos{u} +C \\
+                     = \cos{(\frac{1}{x})} +C \]</span></p>
+<p>(k)<span class="math display">\[Put \ u=x^2+2x+3, \ du=2x+2 \ dx.\\
+\int (x+1)(x^2+2x+3)^7 \ dx = \int \frac{1}{2}(x^2+2x+3)^7 (2x+2) \ dx \\
+                     = \int \frac{1}{2}u^7 \ du \\
+                     = \frac{1}{16}u^8 +C \\
+                     = \frac{1}{16}(x^2+2x+3)^8 +C \]</span></p>
+<p>(m)<span class="math display">\[Put \ u=e^x-3x, \ du=(e^x-3) \ dx.\\
+\int (e^x-3x)^4(e^x-3) \ dx = \int u^4 \ du \\
+                     = \frac{1}{5}u^5 +C \\
+                     = \frac{1}{5}(e^x-3x)^5 +C \]</span>
+(n)<span class="math display">\[Put \ u=\sqrt{x}, \ du=\frac{1}{2\sqrt{x}}\ dx.\\
+\int \frac{e^{\sqrt{x}}}{\sqrt{x}} \ dx = \int 2e^{\sqrt{x}} (\frac{1}{2\sqrt{x}}) \ dx \\
+= \int 2e^{u} \ du \\
+= 2e^u +C \\
+= 2e^{\sqrt{x}}+C \]</span></p>
+<p>(o)<span class="math display">\[Put \ u=\ln{(x+1)}, \ du=\frac{1}{x+1}\ dx.\\
+\int \frac{\ln{(x+1)}}{x+1} \ dx = \int \ln{(x+1)}(\frac{1}{x+1}) \ dx \\
+= \int u \ du \\
+= \frac{1}{2}u^2 +C \\
+= \frac{1}{2}(\ln{(x+1)})^2+C \\
+Note:x+1&gt;0\ as\ there\ is\ \ln(x+1)\ in \ the \ original\ expression. \]</span></p>
+<p>(t)<span class="math display">\[Put \ u=x+\frac{1}{x}, \ du=(1-\frac{1}{x^2})\ dx.\\
+\int \frac{(x^2-1)e^{x+\frac{1}{x}}}{x^2} \ dx = \int e^{x+\frac{1}{x}}(1-\frac{1}{x^2}) \ dx \\
+= \int e^u \ du \\
+= e^u +C \\
+= e^{x+\frac{1}{x}}+C \]</span></p>
+</div>
+<div id="q10.2.2" class="section level3 unnumbered">
+<h3>Q2</h3>
+<p>(c)<span class="math display">\[Put \ u=x^3, \ du=3x^2\ dx;when\ x=0,u=0\ and\
+ when\ x=1,u=1\\
+\int_0^1 x^2 \cos{x^3} \ dx = \int_0^1 \frac{1}{3}\cos{x^3} (3x^2) \ dx \\
+= \int_0^1 \frac{1}{3}\cos{u} \ du \\
+= \frac{1}{3}\sin{u}\mid_0^1 \\
+= \frac{1}{3}(\sin{1}-\sin{0}) \\
+= \frac{1}{3}\sin{1}  \]</span></p>
+<p>(f)<span class="math display">\[Put \ u=\ln{x}, \ du=\frac{1}{x}\ dx;when\ x=1,u=0\ and\
+ when\ x=e^{\pi},u=\pi \\
+\int_1^{e^{\pi}} \frac{\sin{(\ln{x}})}{x} \ dx = \int_1^{e^{\pi}} \sin{(\ln{x}}) \frac{1}{x} \ dx \\
+= \int_0^{\pi} \sin{u} \ du \\
+= -\cos{u}\mid_0^{\pi} \\
+= -(\cos{\pi}-\cos{0}) \\
+= -(-1-1) \\
+= 2 \]</span></p>
+<p>(h)<span class="math display">\[Put \ u=\ln{x}, \ du=\frac{1}{x}\ dx;when\ x=e,u=1\ and\
+ when\ x=e^2,u=2 \\
+\int_e^{e^2} \frac{1}{x\ln{x}} \ dx = \int_e^{e^2} \frac{1}{\ln{x}} \frac{1}{x} \ dx \\
+= \int_1^2 \frac{1}{u} \ du \\
+= \ln{\mid{u}\mid}\mid_1^2 \\
+= \ln{2}-\ln{1} \\
+= \ln{2}  \]</span></p>
+<p>(j)<span class="math display">\[Put \ u=\sqrt{x+1}, \ du=\frac{1}{2\sqrt{x+1}}\ dx,\ x=u^2-1;when\ x=0,u=1\ and\
+ when\ x=8,u=3 \\
+\int_0^8 \frac{x}{\sqrt{x+1}} \ dx = \int_0^8 2x(\frac{1}{2\sqrt{x+1}}) \ dx \\
+= \int_1^3 2(u^2-1) \ du \\
+= (\frac{2}{3}u^3-2u)\mid_1^3 \\
+= (\frac{2}{3}\times3^3-2\times3)-(\frac{2}{3}\times1^3-2\times1) \\
+= \frac{40}{3}  \]</span></p>
+</div>
+<div id="q10.2.3" class="section level3 unnumbered">
+<h3>Q3</h3>
+<p>(a)<span class="math display">\[Put \ u=x^2, \ du=2x\ dx;when\ x=0,u=0\ and\
+ when\ x=\sqrt{\pi},u=\pi \\
+ \int_0^{\sqrt{\pi}} x\sin{x^2} \ dx = \int_0^{\sqrt{\pi}} \frac{1}{2}\sin{x^2}(2x) \ dx \\
+= \int_0^{\pi} \frac{1}{2}\sin{u} \ du \\
+= (-\frac{1}{2}\cos{u})\mid_0^{\pi} \\
+= -\frac{1}{2}(\cos{\pi}-\cos{0}) \\
+= -\frac{1}{2}(-1-1) \\
+= 1\]</span></p>
+<p>(b)<span class="math display">\[Put \ u=x^2, \ du=2x\ dx;when\ x=0,u=0\ and\
+ when\ x=1,u=1 \\
+ \int_0^1 xe^{x^2} \ dx = \int_0^1 \frac{1}{2}e^{x^2}(2x) \ dx \\
+= \int_0^1 \frac{1}{2}e^u \ du \\
+= (\frac{1}{2}e^u)\mid_0^1 \\
+= \frac{1}{2}(e-1)\\
+\int_0^1 x \ dx = \frac{1}{2}x^2\mid_0^1=\frac{1}{2}\\
+Thus\ the\ area\ is: \\
+\frac{1}{2}(e-1)-\frac{1}{2}=\frac{1}{2}e-1\]</span></p>
+</div>
+</div>
+<div id="q10.3" class="section level2 unnumbered">
+<h2>Exercise 10.3</h2>
+<div id="q1" class="section level3">
+<h3><span class="header-section-number">7.3.1</span> Q1</h3>
+<p>Evaluate the integral using integration by parts</p>
+<p>(a)<span class="math display">\[ \int xe^{-2x}\ dx \]</span></p>
+<p>(b)<span class="math display">\[ \int \sqrt{x}\ln{x}\ dx \]</span></p>
+<p>(c)<span class="math display">\[ \int (\ln{x})^2\ dx \]</span></p>
+<p>(d)<span class="math display">\[ \int \tan^{-1}{x}\ dx \]</span></p>
+</div>
+<div id="q2" class="section level3">
+<h3><span class="header-section-number">7.3.2</span> Q2</h3>
+<p>First make a substitution and then use integration by parts to evaluate the integral.</p>
+<p>(a)<span class="math display">\[ \int \cos{(\ln{x})}\ dx \]</span></p>
+<p>(b)<span class="math display">\[ \int \frac{arcsin{(\ln{x})}}{x}\ dx \]</span></p>
+</div>
+<div id="q3" class="section level3">
+<h3><span class="header-section-number">7.3.3</span> Q3</h3>
+<p>Use the integration by parts to prove the reduction formula.</p>
+<p><span class="math display">\[ \int \cos^n{x}\ dx = \frac{1}{n}\cos^{n-1}{x}\sin{x}+\frac{n-1}{n}\int \cos^{n-2}{x}\ dx \]</span></p>
+</div>
+</div>
+<div id="q10.4" class="section level2 unnumbered">
+<h2>Exercise 10.4</h2>
+<div id="q1-1" class="section level3">
+<h3><span class="header-section-number">7.3.4</span> Q1</h3>
+<p>Evaluate the integral.</p>
+<p>(a)<span class="math display">\[ \int \frac{5x+1}{(2x+1)(x-1)}\ dx \]</span></p>
+<p>(b)<span class="math display">\[ \int \frac{x^2+2x-1}{2x^3+3x^2-2x} \ dx \]</span></p>
+</div>
+<div id="q2-1" class="section level3">
+<h3><span class="header-section-number">7.3.5</span> Q2</h3>
+<p>Make a substitution to express the integrand as a rational function and then evaluate the integral.</p>
+<p>(a)<span class="math display">\[ \int \frac{1}{x\sqrt{x-1}}\ dx \]</span></p>
+<p>(b)<span class="math display">\[ \int \frac{\sin{x}}{\cos^2{x}-3\cos{x}} \ dx \]</span></p>
+</div>
+<div id="section" class="section level3">
+<h3><span class="header-section-number">7.3.6</span> </h3>
+<p>Q3 Use integration by parts and integration of rational function to evaluate the integral.</p>
+<p><span class="math display">\[ \int \ln{(x^2-x+2)} \ dx \]</span></p>
+</div>
+</div>
+<div id="q10.5" class="section level2 unnumbered">
+<h2>Exercise 10.5</h2>
+<div id="q1-2" class="section level3">
+<h3><span class="header-section-number">7.3.7</span> Q1</h3>
+<p>if a birth rate of a population is <span class="math display">\[ b(t)=2200+52.3t+0.74t^2 \]</span> people per year and death rate is <span class="math display">\[ d(t)=1460+28.8t\]</span> people per year,find the area between these curves for <span class="math display">\[ 0\leq t \leq 10  \]</span>What does this area represent?</p>
+</div>
+<div id="q2-2" class="section level3">
+<h3><span class="header-section-number">7.3.8</span> Q2</h3>
+<p>(a)Prove that if f is a continuous function, then
+<span class="math display">\[ \int_0^a f(x)\ dx = \int_0^a f(a-x)\ dx   \]</span></p>
+<p>(b)Use part(a) to show that
+<span class="math display">\[ \int_0^{\pi/2} \frac{\sin^{n}{x}}{\sin^{n}{x}+\cos^{n}{x}} dx = \frac{\pi}{4}  \]</span>
+for all positive numbers n.</p>
+</div>
+<div id="q3-1" class="section level3">
+<h3><span class="header-section-number">7.3.9</span> Q3</h3>
+<p>if n is a positive integer,prove that
+<span class="math display">\[ \int_0^1 (\ln{x})^n\ dx=(-1)^{n}n! \]</span></p>
 
 </div>
 </div>
-
-
-
+</div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="vectors-and-geometry-of-space.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ch1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch4.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

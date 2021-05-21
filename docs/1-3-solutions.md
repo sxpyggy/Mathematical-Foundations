@@ -1324,3 +1324,270 @@ $$ g^{(n)}(x)=\left\{
 (-1)^{\frac{n}{2}}a^ncos({ax+b}), n~ is~ even
 \end{aligned}
 \right.  $$
+
+
+# Chapter 10 {- #ch10}
+
+## Exercise 10.1 {- #q10.1}
+
+### Q1 {- #q10.1.1}
+
+(a)$$ \int 3\sec^2{x} \ dx = 3  \int \sec^2{x} \ dx = 3 \tan{x}+C $$
+
+(b)$$ \int (2 e^x+\cos{x}) \ dx = \int 2e^x \ dx + \int \cos{x} \ dx \\
+                            = 2e^x+\sin{x}+C $$
+
+(c)$$ \int \frac{2x+3}{x} \ dx = \int (2+\frac{3}{x}) \ dx \\
+                               = \int 2 \ dx + \int \frac{3}{x} \ dx \\
+                               = 2x+3\ln{\mid x \mid}+C $$
+
+(d)$$ \int (1+\frac{1}{x})^2 \ dx = \int (1+\frac{2}{x}+\frac{1}{x^2}) \ dx \\
+= \int 1 \ dx + \int \frac{2}{x} \ dx + \int \frac{1}{x^2} \ dx \\ = x+2\ln{\mid x \mid}-\frac{1}{x}+C $$
+
+### Q2 {- #q10.1.2}
+
+(a)$$ \int_0^{\frac{\pi}{3}} 2\sin{x} \ dx = (-2\cos{x})\mid_0^{\frac{\pi}{3}} \\
+= -2\cos{\frac{\pi}{3}}-(-2\cos{0}) \\
+= -2 \times \frac{1}{2}-(-2) \\
+= 1$$
+
+(b)$$ \int_{-1}^{1} (2e^x+\sin{x}) \ dx = (2e^x-\cos{x})\mid_{-1}^{1} \\
+= (2e-\cos{1})-(2e^{-1}-\cos{(-1)}) \\
+= 2e-\cos{1}-2e^{-1}+\cos{(-1)} \\
+= 2e-\cos{1}-2e^{-1}+\cos{1} \\
+= 2e-2e^{-1}\\$$
+
+(c)$$ \int_{-4}^{-1} (e^x+\frac{1}{x}) \ dx = (e^x+\ln{\mid x \mid})\mid_{-4}^{-1} \\
+= (e^{-1}+ln1)-(e^{-4}+ln4) \\
+= e^{-1}-e^{-4}-ln4 \\ $$
+
+(d)$$ \int_{1}^{2} \frac{2-x}{x} \ dx = \int_{1}^{2} (\frac{2}{x}-1) \ dx \\
+=(2\ln{\mid x \mid}-x)\mid_{1}^{2} \\
+= (2\ln2-2)-(2\ln1-1) \\
+= 2\ln2-1 \\ $$
+
+### Q3 {- #q10.1.3}
+
+(a)$$ \int_{0}^{\pi} \sin{x} \ dx =  (-\cos{x}) \mid_{0}^{\pi}  \\ 
+= (-\cos{\pi})-(-\cos{0}) \\
+= 1-(-1) \\
+= 2 $$
+
+(b)$$ \int_{\frac{1}{2}}^{e} \frac{1}{x} \ dx =  (\ln{\mid x \mid}) \mid_{\frac{1}{2}}^{e}  \\ 
+= (\ln{e})-(\ln{\frac{1}{2}}) \\
+= 1+\ln{2} $$
+
+(c)$$ \int_{0}^{2} e^{-x} \ dx =  -e^{-x} \mid_{0}^{2}  \\ 
+= -(e^{-2}-1) \\
+= 1-e^{-2}\\
+\int_{-1}^{0} e^{x} \ dx =  e^{x} \mid_{-1}^{0}  \\ 
+= 1-e^{-1} \\
+thus\ the\ area\ is:
+1-e^{-2}+1-e^{-1}=2-e^{-2}-e^{-1}$$
+
+## Exercise 10.2 {- #q10.2}
+
+### Q1 {- #q10.2.1} 
+
+(c)$$Put \ u=x^2, \ du=2x\ dx.\\
+\int x\sin{x^2} \ dx = \int \frac{1}{2} \sin{x^2} (2x)\ dx \\
+                     = \int \frac{1}{2} \sin{u} \ du \\
+                     = -\frac{1}{2} \cos{u} +C \\
+                     = -\frac{1}{2} \cos{x^2} +C $$
+
+(d)$$Put \ u=\cos{x}, \ du=-\sin{x}\ dx.\\
+\int \sin{x} \cos^2{x} \ dx = \int - \cos^2{x} (-\sin{x})\ dx \\
+                     = \int -u^2 \ du \\
+                     = -\frac{1}{3} u^3 +C \\
+                     = -\frac{1}{3} \cos^3{x} +C $$
+
+(f)$$Put \ u=e^x, \ du=e^xdx.\\
+\int e^x \sec^2{(e^x)} \ dx = \int \sec^2({e^x}) \  e^xdx \\
+                     = \int \sec^2{u} \ du \\
+                     = \tan{u} +C \\
+                     = \tan{(e^x)} +C $$
+
+(h)$$Put \ u=x^3-1, \ du=3x^2 \ dx.\\
+\int x^2e^{x^3-1} \ dx = \int \frac{1}{3}e^{x^3-1} (3x^2)\ dx \\
+                     = \int \frac{1}{3}e^{u} \ du \\
+                     = \frac{1}{3}e^{u} +C \\
+                     = \frac{1}{3}e^{x^3-1} +C $$
+
+(i)$$Put \ u=x^2+1, \ du=2x \ dx.\\
+\int \frac{x}{x^2+1} \ dx = \int \frac{1}{2(x^2+1)} (2x)\ dx \\
+                     = \int \frac{1}{2u} \ du \\
+                     = \frac{1}{2}\ln\mid{u}\mid +C \\
+                     = \frac{1}{2}\ln\mid{x^2+1}\mid +C\\
+                     = \frac{1}{2}\ln{(x^2+1)} +C $$
+
+(j)$$Put \ u=\frac{1}{x}, \ du=-\frac{1}{x^2} \ dx.\\
+\int \frac{\sin{\frac{1}{x}}}{x^2} \ dx = \int -\sin{\frac{1}{x}} (-\frac{1}{x^2}) \ dx \\
+                     = \int -\sin{u} \ du \\
+                     = \cos{u} +C \\
+                     = \cos{(\frac{1}{x})} +C $$
+
+(k)$$Put \ u=x^2+2x+3, \ du=2x+2 \ dx.\\
+\int (x+1)(x^2+2x+3)^7 \ dx = \int \frac{1}{2}(x^2+2x+3)^7 (2x+2) \ dx \\
+                     = \int \frac{1}{2}u^7 \ du \\
+                     = \frac{1}{16}u^8 +C \\
+                     = \frac{1}{16}(x^2+2x+3)^8 +C $$
+
+(m)$$Put \ u=e^x-3x, \ du=(e^x-3) \ dx.\\
+\int (e^x-3x)^4(e^x-3) \ dx = \int u^4 \ du \\
+                     = \frac{1}{5}u^5 +C \\
+                     = \frac{1}{5}(e^x-3x)^5 +C $$
+(n)$$Put \ u=\sqrt{x}, \ du=\frac{1}{2\sqrt{x}}\ dx.\\
+\int \frac{e^{\sqrt{x}}}{\sqrt{x}} \ dx = \int 2e^{\sqrt{x}} (\frac{1}{2\sqrt{x}}) \ dx \\
+= \int 2e^{u} \ du \\
+= 2e^u +C \\
+= 2e^{\sqrt{x}}+C $$
+
+(o)$$Put \ u=\ln{(x+1)}, \ du=\frac{1}{x+1}\ dx.\\
+\int \frac{\ln{(x+1)}}{x+1} \ dx = \int \ln{(x+1)}(\frac{1}{x+1}) \ dx \\
+= \int u \ du \\
+= \frac{1}{2}u^2 +C \\
+= \frac{1}{2}(\ln{(x+1)})^2+C \\
+Note:x+1>0\ as\ there\ is\ \ln(x+1)\ in \ the \ original\ expression. $$
+
+(t)$$Put \ u=x+\frac{1}{x}, \ du=(1-\frac{1}{x^2})\ dx.\\
+\int \frac{(x^2-1)e^{x+\frac{1}{x}}}{x^2} \ dx = \int e^{x+\frac{1}{x}}(1-\frac{1}{x^2}) \ dx \\
+= \int e^u \ du \\
+= e^u +C \\
+= e^{x+\frac{1}{x}}+C $$
+
+
+### Q2 {- #q10.2.2} 
+
+(c)$$Put \ u=x^3, \ du=3x^2\ dx;when\ x=0,u=0\ and\
+ when\ x=1,u=1\\
+\int_0^1 x^2 \cos{x^3} \ dx = \int_0^1 \frac{1}{3}\cos{x^3} (3x^2) \ dx \\
+= \int_0^1 \frac{1}{3}\cos{u} \ du \\
+= \frac{1}{3}\sin{u}\mid_0^1 \\
+= \frac{1}{3}(\sin{1}-\sin{0}) \\
+= \frac{1}{3}\sin{1}  $$
+
+(f)$$Put \ u=\ln{x}, \ du=\frac{1}{x}\ dx;when\ x=1,u=0\ and\
+ when\ x=e^{\pi},u=\pi \\
+\int_1^{e^{\pi}} \frac{\sin{(\ln{x}})}{x} \ dx = \int_1^{e^{\pi}} \sin{(\ln{x}}) \frac{1}{x} \ dx \\
+= \int_0^{\pi} \sin{u} \ du \\
+= -\cos{u}\mid_0^{\pi} \\
+= -(\cos{\pi}-\cos{0}) \\
+= -(-1-1) \\
+= 2 $$
+
+(h)$$Put \ u=\ln{x}, \ du=\frac{1}{x}\ dx;when\ x=e,u=1\ and\
+ when\ x=e^2,u=2 \\
+\int_e^{e^2} \frac{1}{x\ln{x}} \ dx = \int_e^{e^2} \frac{1}{\ln{x}} \frac{1}{x} \ dx \\
+= \int_1^2 \frac{1}{u} \ du \\
+= \ln{\mid{u}\mid}\mid_1^2 \\
+= \ln{2}-\ln{1} \\
+= \ln{2}  $$
+
+(j)$$Put \ u=\sqrt{x+1}, \ du=\frac{1}{2\sqrt{x+1}}\ dx,\ x=u^2-1;when\ x=0,u=1\ and\
+ when\ x=8,u=3 \\
+\int_0^8 \frac{x}{\sqrt{x+1}} \ dx = \int_0^8 2x(\frac{1}{2\sqrt{x+1}}) \ dx \\
+= \int_1^3 2(u^2-1) \ du \\
+= (\frac{2}{3}u^3-2u)\mid_1^3 \\
+= (\frac{2}{3}\times3^3-2\times3)-(\frac{2}{3}\times1^3-2\times1) \\
+= \frac{40}{3}  $$
+
+
+### Q3 {- #q10.2.3} 
+
+(a)$$Put \ u=x^2, \ du=2x\ dx;when\ x=0,u=0\ and\
+ when\ x=\sqrt{\pi},u=\pi \\
+ \int_0^{\sqrt{\pi}} x\sin{x^2} \ dx = \int_0^{\sqrt{\pi}} \frac{1}{2}\sin{x^2}(2x) \ dx \\
+= \int_0^{\pi} \frac{1}{2}\sin{u} \ du \\
+= (-\frac{1}{2}\cos{u})\mid_0^{\pi} \\
+= -\frac{1}{2}(\cos{\pi}-\cos{0}) \\
+= -\frac{1}{2}(-1-1) \\
+= 1$$
+
+(b)$$Put \ u=x^2, \ du=2x\ dx;when\ x=0,u=0\ and\
+ when\ x=1,u=1 \\
+ \int_0^1 xe^{x^2} \ dx = \int_0^1 \frac{1}{2}e^{x^2}(2x) \ dx \\
+= \int_0^1 \frac{1}{2}e^u \ du \\
+= (\frac{1}{2}e^u)\mid_0^1 \\
+= \frac{1}{2}(e-1)\\
+\int_0^1 x \ dx = \frac{1}{2}x^2\mid_0^1=\frac{1}{2}\\
+Thus\ the\ area\ is: \\
+\frac{1}{2}(e-1)-\frac{1}{2}=\frac{1}{2}e-1$$
+
+## Exercise 10.3 {- #q10.3}
+
+### Q1 
+
+Evaluate the integral using integration by parts
+
+(a)$$ \int xe^{-2x}\ dx $$ 
+
+(b)$$ \int \sqrt{x}\ln{x}\ dx $$ 
+
+(c)$$ \int (\ln{x})^2\ dx $$ 
+
+(d)$$ \int \tan^{-1}{x}\ dx $$
+
+
+### Q2 
+
+First make a substitution and then use integration by parts to evaluate the integral.
+
+(a)$$ \int \cos{(\ln{x})}\ dx $$ 
+
+(b)$$ \int \frac{arcsin{(\ln{x})}}{x}\ dx $$ 
+
+
+### Q3 
+
+Use the integration by parts to prove the reduction formula.
+
+$$ \int \cos^n{x}\ dx = \frac{1}{n}\cos^{n-1}{x}\sin{x}+\frac{n-1}{n}\int \cos^{n-2}{x}\ dx $$
+
+
+## Exercise 10.4 {- #q10.4}
+
+### Q1 
+
+Evaluate the integral.
+
+(a)$$ \int \frac{5x+1}{(2x+1)(x-1)}\ dx $$
+
+(b)$$ \int \frac{x^2+2x-1}{2x^3+3x^2-2x} \ dx $$
+
+
+### Q2 
+
+Make a substitution to express the integrand as a rational function and then evaluate the integral.
+
+(a)$$ \int \frac{1}{x\sqrt{x-1}}\ dx $$
+
+(b)$$ \int \frac{\sin{x}}{\cos^2{x}-3\cos{x}} \ dx $$
+
+
+### 
+
+Q3 Use integration by parts and integration of rational function to evaluate the integral.
+
+$$ \int \ln{(x^2-x+2)} \ dx $$
+
+
+## Exercise 10.5 {- #q10.5}
+
+### Q1 
+
+if a birth rate of a population is $$ b(t)=2200+52.3t+0.74t^2 $$ people per year and death rate is $$ d(t)=1460+28.8t$$ people per year,find the area between these curves for $$ 0\leq t \leq 10  $$What does this area represent? 
+
+
+### Q2 
+
+(a)Prove that if f is a continuous function, then
+$$ \int_0^a f(x)\ dx = \int_0^a f(a-x)\ dx   $$
+
+(b)Use part(a) to show that
+$$ \int_0^{\pi/2} \frac{\sin^{n}{x}}{\sin^{n}{x}+\cos^{n}{x}} dx = \frac{\pi}{4}  $$
+for all positive numbers n.
+
+### Q3
+
+if n is a positive integer,prove that
+$$ \int_0^1 (\ln{x})^n\ dx=(-1)^{n}n! $$

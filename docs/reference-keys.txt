@@ -63,3 +63,12 @@ matrices
 basic-matrix-operations
 matrix-inversion
 cramers-rule
+q1
+q2
+q3
+q1-1
+q2-1
+section
+q1-2
+q2-2
+q3-1
