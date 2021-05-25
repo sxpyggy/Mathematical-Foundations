@@ -65,13 +65,58 @@ knitr::include_graphics("./plots/6/scalar.png")
 ```
 
 **Components** 
-If we place the initial point of a vector $\boldsymbol{a}$ at the origin of a rectangle coordinate system, then the terminal point has coordinates $(a_1,a_2)$. These coordinates are caleed the components of $\boldsymbol{a}$. We write $$\boldsymbol{a}=\langle a_1, a_2 \rangle.$$
+If we place the initial point of a vector $\boldsymbol{a}$ at the origin of a rectangle coordinate system, then the terminal point has coordinates $(a_1,a_2)$. These coordinates are called the components of $\boldsymbol{a}$. We write $$\boldsymbol{a}=\langle a_1, a_2 \rangle.$$
 
-**Position vector** Given the points $A(x_1,y_1,z_1)$ and $B(x_2,y_2,z_2)$, the vector $\boldsymbol{a}$ with **representation** $\overset{\longrightarrow}{AB}$ is $\boldsymbol{a}=\langle x_2-x_1,y_2-y_1, z_2-z_1 \rangle,$
-which is also the position vector of the point $(x_2-x_1,y_2-y_1, z_2-z_1).$
+**Representation** Given the points $A(x_1,y_1,z_1)$ and $B(x_2,y_2,z_2)$, the vector $\boldsymbol{a}$ with **representation** $\overset{\longrightarrow}{AB}$ is $\boldsymbol{a}=\langle x_2-x_1,y_2-y_1, z_2-z_1 \rangle,$
+
+**Position vector** The vector $\boldsymbol{a}=\overset{\longrightarrow}{OP}=\langle a_1, a_2, a_3 \rangle$ is the position vector of the point $P( a_1, a_2, a_3)$
+
+**Example** Find the vector represented by the directed line segment with initial point $A(2,-3,4)$ and terminal point $B(-2,1,1)$.
 
 **Magnitude** The length of the vector $\boldsymbol{a}=\langle a_1,a_2,a_3 \rangle$ is the length of any of its representations and is denoted by the symbol $|\boldsymbol{a}|$ or $||\boldsymbol{a}||$:
 $$|\boldsymbol{a}|=\sqrt{a_1^2+a_2^2+a_3^2}$$
+
+**Operations on algebraic vectors** If $\boldsymbol{a}=\langle a_1,a_2 \rangle$ and $\boldsymbol{b}=\langle b_1,b_2 \rangle$, then 
+$$\boldsymbol{a}+\boldsymbol{b}=\langle a_1+b_1, a_2+b_2 \rangle$$
+$$\boldsymbol{a}-\boldsymbol{b}=\langle a_1-b_1, a_2-b_2 \rangle$$
+$$c\boldsymbol{a}=\langle ca_1, ca_2 \rangle$$
+
+```{r,echo=FALSE,out.width="40%",fig.align = 'center'}
+knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
+knitr::include_graphics("./plots/6/component.png")
+```
+
+**Example** If $\boldsymbol{a}=\langle 4,0,3\rangle$ and $\boldsymbol{b}=\langle -2,1,5\rangle$, find $|\boldsymbol{a}|$ and the vectors $\boldsymbol{a}+\boldsymbol{b},2\boldsymbol{a}+5\boldsymbol{b}$.  
+
+**Properties of Vectors** Consider the set of all $n$-dimensional vectors $V_n$, we have the following properties for any $\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}\in V_n$ and $c,d\in\mathbb{R}$:
+
+1. $\boldsymbol{a} + \boldsymbol{b}= \boldsymbol{b} + \boldsymbol{a}$
+
+2. $\boldsymbol{a} + (\boldsymbol{b} +  \boldsymbol{c} )= (\boldsymbol{a} +\boldsymbol{b}) + \boldsymbol{c}$
+
+3. $\boldsymbol{a} + \boldsymbol{0} = \boldsymbol{a} $
+
+4. $\boldsymbol{a} - \boldsymbol{a} = \boldsymbol{0} $
+
+5. $c(\boldsymbol{a} + \boldsymbol{b}) = c\boldsymbol{a} + c\boldsymbol{b}$
+
+6. $(c+d)\boldsymbol{a}=c\boldsymbol{a}+d\boldsymbol{a}$
+
+7. $(cd)\boldsymbol{a}=c(d\boldsymbol{a})$
+
+8. $1\boldsymbol{a}=\boldsymbol{a}$
+
+
+**Standard basis vectors** $$\boldsymbol{i}=\langle 1, 0, 0\rangle, \boldsymbol{j}=\langle 0,1,0\rangle, \boldsymbol{k}=\langle 0, 0, 1\rangle$$
+
+**Example** If $\boldsymbol{a}=\langle a_1,a_2,a_3\rangle$, then we have $\boldsymbol{a}=a_1\boldsymbol{i}+a_2\boldsymbol{j}+a_3\boldsymbol{k}$.
+
+**Example** If $\boldsymbol{a}=\boldsymbol{i}+2\boldsymbol{j}-3\boldsymbol{k}$ and $\boldsymbol{b}=4\boldsymbol{i}+7\boldsymbol{k}$, express the vector $2\boldsymbol{a}+3\boldsymbol{b}$ in terms of the three standard basis vectors.
+
+**Unit vector** In general, if $\boldsymbol{a}\neq\boldsymbol{0}$, then the unit vector that has the same direction as $\boldsymbol{a}$ is $$\boldsymbol{u}=\frac{\boldsymbol{a}}{|\boldsymbol{a}|}$$
+
+**Example** Find the unit vector in the direction of the vector $2\boldsymbol{i}-\boldsymbol{j}-2\boldsymbol{k}$.
+
 
 ## Dot Product
 

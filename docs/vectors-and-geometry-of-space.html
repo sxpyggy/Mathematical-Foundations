@@ -373,11 +373,34 @@ The first octant is determined by the positive axes.
 <p><strong>Scalar multiplication</strong> If <span class="math inline">\(c\)</span> is a scalar and <span class="math inline">\(\mathbf{v}\)</span> is a vector, then the scalar multiple <span class="math inline">\(c\mathbf{v}\)</span> is the vector whose length is <span class="math inline">\(|c|\)</span> times the length of <span class="math inline">\(\mathbf{v}\)</span> and whose direction is the same as <span class="math inline">\(\mathbf{v}\)</span> if <span class="math inline">\(c&gt;0\)</span> and is opposite to <span class="math inline">\(\mathbf{v}\)</span> if <span class="math inline">\(c&lt;0\)</span>.
 <img src="plots/6/scalar.png" width="70%"  style="display: block; margin: auto;" /></p>
 <p><strong>Components</strong>
-If we place the initial point of a vector <span class="math inline">\(\boldsymbol{a}\)</span> at the origin of a rectangle coordinate system, then the terminal point has coordinates <span class="math inline">\((a_1,a_2)\)</span>. These coordinates are caleed the components of <span class="math inline">\(\boldsymbol{a}\)</span>. We write <span class="math display">\[\boldsymbol{a}=\langle a_1, a_2 \rangle.\]</span></p>
-<p><strong>Position vector</strong> Given the points <span class="math inline">\(A(x_1,y_1,z_1)\)</span> and <span class="math inline">\(B(x_2,y_2,z_2)\)</span>, the vector <span class="math inline">\(\boldsymbol{a}\)</span> with <strong>representation</strong> <span class="math inline">\(\overset{\longrightarrow}{AB}\)</span> is <span class="math inline">\(\boldsymbol{a}=\langle x_2-x_1,y_2-y_1, z_2-z_1 \rangle,\)</span>
-which is also the position vector of the point <span class="math inline">\((x_2-x_1,y_2-y_1, z_2-z_1).\)</span></p>
+If we place the initial point of a vector <span class="math inline">\(\boldsymbol{a}\)</span> at the origin of a rectangle coordinate system, then the terminal point has coordinates <span class="math inline">\((a_1,a_2)\)</span>. These coordinates are called the components of <span class="math inline">\(\boldsymbol{a}\)</span>. We write <span class="math display">\[\boldsymbol{a}=\langle a_1, a_2 \rangle.\]</span></p>
+<p><strong>Representation</strong> Given the points <span class="math inline">\(A(x_1,y_1,z_1)\)</span> and <span class="math inline">\(B(x_2,y_2,z_2)\)</span>, the vector <span class="math inline">\(\boldsymbol{a}\)</span> with <strong>representation</strong> <span class="math inline">\(\overset{\longrightarrow}{AB}\)</span> is <span class="math inline">\(\boldsymbol{a}=\langle x_2-x_1,y_2-y_1, z_2-z_1 \rangle,\)</span></p>
+<p><strong>Position vector</strong> The vector <span class="math inline">\(\boldsymbol{a}=\overset{\longrightarrow}{OP}=\langle a_1, a_2, a_3 \rangle\)</span> is the position vector of the point <span class="math inline">\(P( a_1, a_2, a_3)\)</span></p>
+<p><strong>Example</strong> Find the vector represented by the directed line segment with initial point <span class="math inline">\(A(2,-3,4)\)</span> and terminal point <span class="math inline">\(B(-2,1,1)\)</span>.</p>
 <p><strong>Magnitude</strong> The length of the vector <span class="math inline">\(\boldsymbol{a}=\langle a_1,a_2,a_3 \rangle\)</span> is the length of any of its representations and is denoted by the symbol <span class="math inline">\(|\boldsymbol{a}|\)</span> or <span class="math inline">\(||\boldsymbol{a}||\)</span>:
 <span class="math display">\[|\boldsymbol{a}|=\sqrt{a_1^2+a_2^2+a_3^2}\]</span></p>
+<p><strong>Operations on algebraic vectors</strong> If <span class="math inline">\(\boldsymbol{a}=\langle a_1,a_2 \rangle\)</span> and <span class="math inline">\(\boldsymbol{b}=\langle b_1,b_2 \rangle\)</span>, then
+<span class="math display">\[\boldsymbol{a}+\boldsymbol{b}=\langle a_1+b_1, a_2+b_2 \rangle\]</span>
+<span class="math display">\[\boldsymbol{a}-\boldsymbol{b}=\langle a_1-b_1, a_2-b_2 \rangle\]</span>
+<span class="math display">\[c\boldsymbol{a}=\langle ca_1, ca_2 \rangle\]</span></p>
+<p><img src="plots/6/component.png" width="40%"  style="display: block; margin: auto;" /></p>
+<p><strong>Example</strong> If <span class="math inline">\(\boldsymbol{a}=\langle 4,0,3\rangle\)</span> and <span class="math inline">\(\boldsymbol{b}=\langle -2,1,5\rangle\)</span>, find <span class="math inline">\(|\boldsymbol{a}|\)</span> and the vectors <span class="math inline">\(\boldsymbol{a}+\boldsymbol{b},2\boldsymbol{a}+5\boldsymbol{b}\)</span>.</p>
+<p><strong>Properties of Vectors</strong> Consider the set of all <span class="math inline">\(n\)</span>-dimensional vectors <span class="math inline">\(V_n\)</span>, we have the following properties for any <span class="math inline">\(\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}\in V_n\)</span> and <span class="math inline">\(c,d\in\mathbb{R}\)</span>:</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(\boldsymbol{a} + \boldsymbol{b}= \boldsymbol{b} + \boldsymbol{a}\)</span></p></li>
+<li><p><span class="math inline">\(\boldsymbol{a} + (\boldsymbol{b} + \boldsymbol{c} )= (\boldsymbol{a} +\boldsymbol{b}) + \boldsymbol{c}\)</span></p></li>
+<li><p>$ +  =  $</p></li>
+<li><p>$ -  =  $</p></li>
+<li><p><span class="math inline">\(c(\boldsymbol{a} + \boldsymbol{b}) = c\boldsymbol{a} + c\boldsymbol{b}\)</span></p></li>
+<li><p><span class="math inline">\((c+d)\boldsymbol{a}=c\boldsymbol{a}+d\boldsymbol{a}\)</span></p></li>
+<li><p><span class="math inline">\((cd)\boldsymbol{a}=c(d\boldsymbol{a})\)</span></p></li>
+<li><p><span class="math inline">\(1\boldsymbol{a}=\boldsymbol{a}\)</span></p></li>
+</ol>
+<p><strong>Standard basis vectors</strong> <span class="math display">\[\boldsymbol{i}=\langle 1, 0, 0\rangle, \boldsymbol{j}=\langle 0,1,0\rangle, \boldsymbol{k}=\langle 0, 0, 1\rangle\]</span></p>
+<p><strong>Example</strong> If <span class="math inline">\(\boldsymbol{a}=\langle a_1,a_2,a_3\rangle\)</span>, then we have <span class="math inline">\(\boldsymbol{a}=a_1\boldsymbol{i}+a_2\boldsymbol{j}+a_3\boldsymbol{k}\)</span>.</p>
+<p><strong>Example</strong> If <span class="math inline">\(\boldsymbol{a}=\boldsymbol{i}+2\boldsymbol{j}-3\boldsymbol{k}\)</span> and <span class="math inline">\(\boldsymbol{b}=4\boldsymbol{i}+7\boldsymbol{k}\)</span>, express the vector <span class="math inline">\(2\boldsymbol{a}+3\boldsymbol{b}\)</span> in terms of the three standard basis vectors.</p>
+<p><strong>Unit vector</strong> In general, if <span class="math inline">\(\boldsymbol{a}\neq\boldsymbol{0}\)</span>, then the unit vector that has the same direction as <span class="math inline">\(\boldsymbol{a}\)</span> is <span class="math display">\[\boldsymbol{u}=\frac{\boldsymbol{a}}{|\boldsymbol{a}|}\]</span></p>
+<p><strong>Example</strong> Find the unit vector in the direction of the vector <span class="math inline">\(2\boldsymbol{i}-\boldsymbol{j}-2\boldsymbol{k}\)</span>.</p>
 </div>
 <div id="dot-product" class="section level2">
 <h2><span class="header-section-number">6.3</span> Dot Product</h2>
