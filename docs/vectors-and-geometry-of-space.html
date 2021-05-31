@@ -196,7 +196,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.1" data-path="vectors-and-geometry-of-space.html"><a href="vectors-and-geometry-of-space.html#three-dimensinal-coordinate-systems"><i class="fa fa-check"></i><b>6.1</b> Three-Dimensinal Coordinate Systems</a></li>
 <li class="chapter" data-level="6.2" data-path="vectors-and-geometry-of-space.html"><a href="vectors-and-geometry-of-space.html#vectors"><i class="fa fa-check"></i><b>6.2</b> Vectors</a></li>
 <li class="chapter" data-level="6.3" data-path="vectors-and-geometry-of-space.html"><a href="vectors-and-geometry-of-space.html#dot-product"><i class="fa fa-check"></i><b>6.3</b> Dot Product</a></li>
-<li class="chapter" data-level="6.4" data-path="vectors-and-geometry-of-space.html"><a href="vectors-and-geometry-of-space.html#cross-product"><i class="fa fa-check"></i><b>6.4</b> Cross Product</a></li>
+<li class="chapter" data-level="6.4" data-path="vectors-and-geometry-of-space.html"><a href="vectors-and-geometry-of-space.html#cross-product-not-examinable"><i class="fa fa-check"></i><b>6.4</b> Cross product (not examinable)</a></li>
 <li class="chapter" data-level="6.5" data-path="vectors-and-geometry-of-space.html"><a href="vectors-and-geometry-of-space.html#equations-of-lines-and-planes"><i class="fa fa-check"></i><b>6.5</b> Equations of Lines and Planes</a></li>
 <li class="chapter" data-level="6.6" data-path="vectors-and-geometry-of-space.html"><a href="vectors-and-geometry-of-space.html#directional-derivatives-and-gradient-vector"><i class="fa fa-check"></i><b>6.6</b> Directional Derivatives and Gradient Vector</a></li>
 <li class="chapter" data-level="6.7" data-path="vectors-and-geometry-of-space.html"><a href="vectors-and-geometry-of-space.html#more-on-lagrange-multipliers"><i class="fa fa-check"></i><b>6.7</b> More on Lagrange Multipliers</a></li>
@@ -389,8 +389,8 @@ If we place the initial point of a vector <span class="math inline">\(\boldsymbo
 <ol style="list-style-type: decimal">
 <li><p><span class="math inline">\(\boldsymbol{a} + \boldsymbol{b}= \boldsymbol{b} + \boldsymbol{a}\)</span></p></li>
 <li><p><span class="math inline">\(\boldsymbol{a} + (\boldsymbol{b} + \boldsymbol{c} )= (\boldsymbol{a} +\boldsymbol{b}) + \boldsymbol{c}\)</span></p></li>
-<li><p>$ +  =  $</p></li>
-<li><p>$ -  =  $</p></li>
+<li><p><span class="math inline">\(\boldsymbol{a} + \boldsymbol{0} = \boldsymbol{a}\)</span></p></li>
+<li><p><span class="math inline">\(\boldsymbol{a} - \boldsymbol{a} = \boldsymbol{0}\)</span></p></li>
 <li><p><span class="math inline">\(c(\boldsymbol{a} + \boldsymbol{b}) = c\boldsymbol{a} + c\boldsymbol{b}\)</span></p></li>
 <li><p><span class="math inline">\((c+d)\boldsymbol{a}=c\boldsymbol{a}+d\boldsymbol{a}\)</span></p></li>
 <li><p><span class="math inline">\((cd)\boldsymbol{a}=c(d\boldsymbol{a})\)</span></p></li>
@@ -404,12 +404,162 @@ If we place the initial point of a vector <span class="math inline">\(\boldsymbo
 </div>
 <div id="dot-product" class="section level2">
 <h2><span class="header-section-number">6.3</span> Dot Product</h2>
+<p><strong>Definition</strong> If <span class="math inline">\(\mathbf{a}=\langle a_1,a_2,a_3 \rangle\)</span> and <span class="math inline">\(\mathbf{b}=\langle b_1,b_2,b_3 \rangle\)</span>, then the dot product of <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span> is the number <span class="math inline">\(\mathbf{a}\cdot\mathbf{b}\)</span> given by
+<span class="math display">\[\mathbf{a}\cdot\mathbf{b}=a_1b_1+a_2b_2+a_3b_3.\]</span>
+which is also called as scalar or inner product.</p>
+<p><strong>Properties</strong> If <span class="math inline">\(\mathbf{a},\mathbf{b}, \mathbf{c}\)</span> are vectors in <span class="math inline">\(V_3\)</span> and <span class="math inline">\(c\)</span> is a scalar, then</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(\mathbf{a}\cdot\mathbf{a}=|\mathbf{a}|^2\)</span></p></li>
+<li><p><span class="math inline">\(\mathbf{a}\cdot\mathbf{b}=\mathbf{b}\cdot\mathbf{a}\)</span></p></li>
+<li><p><span class="math inline">\(\mathbf{a}\cdot(\mathbf{b}+\mathbf{c})=\mathbf{a}\cdot\mathbf{b}+\mathbf{a}\cdot\mathbf{c}\)</span></p></li>
+<li><p><span class="math inline">\((c\mathbf{a})\cdot\mathbf{b}=c(\mathbf{a}\cdot\mathbf{b})=\mathbf{a}\cdot(c\mathbf{b})\)</span></p></li>
+<li><p><span class="math inline">\(\mathbf{0}\cdot\mathbf{a}=0\)</span></p></li>
+</ol>
+<p><strong>Theorem</strong> If <span class="math inline">\(\theta\)</span> is the angle between the vectors <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span>, then
+<span class="math display">\[\mathbf{a}\cdot\mathbf{b}=|\mathbf{a}||\mathbf{b}|\cos\theta\]</span></p>
+<p><strong>Example</strong> If the vectors <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span> have length 4 and 6, and the angle between them is <span class="math inline">\(\pi/3\)</span>, find <span class="math inline">\(\mathbf{a}\cdot\mathbf{b}\)</span>.</p>
+<p><strong>Corollary</strong> If <span class="math inline">\(\theta\)</span> is the angle between the nonzero vectors <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span>, then <span class="math display">\[\cos\theta=\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}||\mathbf{b}|}\]</span></p>
+<p><strong>Example</strong> Find the angle between the vectors <span class="math inline">\(\mathbf{a}=\langle 2,2,-1\rangle\)</span> and <span class="math inline">\(\mathbf{b}=\langle5,-3,2 \rangle\)</span>.</p>
+<p><strong>Orthogonality</strong> Two vectors <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span> are perpendicular or orthogonal if and only if <span class="math inline">\(\mathbf{a}\cdot\mathbf{b}=0\)</span>.</p>
+<p><strong>Example</strong> Show that <span class="math inline">\(2\mathbf{i}+2\mathbf{j}-\mathbf{k}\)</span> is perpendicular to <span class="math inline">\(5\mathbf{i}-4\mathbf{j}+2\mathbf{k}\)</span>.</p>
+<p><strong>Direction angles and direction cosines</strong> The <strong>direction angles</strong> of a nonzero vector <span class="math inline">\(\mathbf{a}\)</span> are the angles <span class="math inline">\(\alpha,\beta,\gamma \in [0,\pi]\)</span> that <span class="math inline">\(\mathbb{a}\)</span> makes with the positive <span class="math inline">\(x-,y-,z-\)</span> axes, respectively. The cosines of these direction angles <span class="math inline">\(\cos\alpha,\cos\beta,\cos\gamma\)</span> are called the <strong>direction cosines</strong> of the vector <span class="math inline">\(\mathbf{a}\)</span>.
+<img src="plots/6/direction.png" width="30%"  style="display: block; margin: auto;" />
+<span class="math display">\[\cos\alpha=\frac{\mathbf{a}\cdot\mathbf{i}}{|\mathbf{a}||\mathbf{i}|}=\frac{a_1}{|\mathbf{a}|}\]</span>
+<span class="math display">\[\cos\beta=\frac{a_2}{|\mathbf{a}|}\]</span></p>
+<p><span class="math display">\[\cos\gamma=\frac{a_3}{|\mathbf{a}|}\]</span></p>
+<p><span class="math display">\[\mathbf{a}=\langle a_1,a_2,a_3\rangle=\langle |\mathbf{a}|\cos\alpha,|\mathbf{a}|\cos\beta,|\mathbf{a}|\cos\gamma \rangle=|\mathbf{a}|\langle\cos\alpha,\cos\beta,\cos\gamma \rangle\]</span></p>
+<p><span class="math display">\[\frac{1}{|\mathbf{a}|}\mathbf{a}=\langle \cos\alpha,\cos\beta,\cos\gamma \rangle.\]</span>
+which says that the direction cosines of <span class="math inline">\(\mathbf{a}\)</span> are the components of the unit vector in the direction of <span class="math inline">\(\mathbf{a}\)</span>.</p>
+<p><strong>Example</strong> Find the direction angles of the vector <span class="math inline">\(\mathbf{a}=\langle1,2,3\rangle\)</span></p>
+<p><strong>Scalar projection</strong> The scalar projection of <span class="math inline">\(\mathbf{b}\)</span> onto <span class="math inline">\(\mathbf{a}\)</span> (also called the component of <span class="math inline">\(\mathbf{b}\)</span> along <span class="math inline">\(\mathbf{a}\)</span>) is defined to be the signed magnitude of the vector projection, which is the number <span class="math inline">\(|\mathbf{B}|\cos\theta\)</span>, where <span class="math inline">\(\theta\)</span> is the angle between <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span>. This is denoted by <span class="math inline">\(\text{comp}_\mathbf{a}\mathbf{b}\)</span>.
+<span class="math display">\[\text{comp}_\mathbf{a}\mathbf{b}=\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}|}=\frac{\mathbf{a}}{|\mathbf{a}|}\cdot\mathbf{b},\]</span>
+which is the dot product of <span class="math inline">\(\mathbf{b}\)</span> with the unit vector in the direction of <span class="math inline">\(\mathbf{a}\)</span>.</p>
+<p><img src="plots/6/projection_scalar.png" width="30%"  style="display: block; margin: auto;" /></p>
+<p><strong>Projections</strong> Figure 4 shows representations <span class="math inline">\(\overset{\longrightarrow}{PQ}\)</span>, <span class="math inline">\(\overset{\longrightarrow}{PR}\)</span> of two vectors <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span> with the same initial point <span class="math inline">\(P\)</span>. If <span class="math inline">\(S\)</span> is the foot of the perpendicular from <span class="math inline">\(R\)</span> to the line containing containing <span class="math inline">\(\overset{\longrightarrow}{PQ}\)</span>, then the vector with representation <span class="math inline">\(\overset{\longrightarrow}{PS}\)</span> is called the vector projection of <span class="math inline">\(\mathbf{b}\)</span> onto <span class="math inline">\(\mathbf{a}\)</span> and is denoted by <span class="math inline">\(\text{proj}_\mathbf{a}\mathbf{b}\)</span>. (a shadow of <span class="math inline">\(\mathbf{b}\)</span> on <span class="math inline">\(\mathbf{a}\)</span>).
+<span class="math display">\[\text{proj}_\mathbf{a}\mathbf{b}=\left(\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}|}\right)\frac{\mathbf{a}}{|\mathbf{a}|}=\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}|^2}\mathbf{a},\]</span>
+which is the scalar projection times the unit vector in the direction of <span class="math inline">\(\mathbf{a}\)</span>.</p>
+<p><strong>Example</strong> Find the scalar projection and vector projection of <span class="math inline">\(\mathbf{b}=\langle1,1,2\rangle\)</span> onto <span class="math inline">\(\mathbf{a}=\langle-2,3,1\rangle\)</span>.
+<img src="plots/6/projection2.png" width="30%"  style="display: block; margin: auto;" /></p>
 </div>
-<div id="cross-product" class="section level2">
-<h2><span class="header-section-number">6.4</span> Cross Product</h2>
+<div id="cross-product-not-examinable" class="section level2">
+<h2><span class="header-section-number">6.4</span> Cross product (not examinable)</h2>
+<p>Given two nonzero vectors <span class="math inline">\(\mathbf{a}=\langle a_1,a_2,a_3\rangle\)</span> and <span class="math inline">\(\mathbf{b}=\langle b_1,b_2,b_3\rangle\)</span>, it is very useful to be able to find a nonzero vector <span class="math inline">\(\mathbf{c}\)</span> that is perpendicular to both <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span>. If <span class="math inline">\(\mathbf{c}=\langle c_1,c_2,c_3\rangle\)</span> is such a vector, then <span class="math inline">\(\mathbf{a}\cdot\mathbf{c}=0\)</span> and <span class="math inline">\(\mathbf{b}\cdot\mathbf{c}=0\)</span>. We can solve for <span class="math inline">\(\mathbf{c}=\langle c_1,c_2,c_3\rangle=\langle a_2b_3-a_3b_2,a_3b_1-a_1b_3,a_1b_2-a_2b_1\rangle\)</span>.
+This resulting vector is called the cross product of <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span> and is denoted by <span class="math inline">\(\mathbf{a}\times\mathbf{b}\)</span>.</p>
+<p><strong>Definition</strong> If <span class="math inline">\(\mathbf{a}=\langle a_1,a_2,a_3 \rangle\)</span> and <span class="math inline">\(\mathbf{b}=\langle b_1,b_2,b_3\rangle\)</span>, then the cross product of <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span> is the vector
+<span class="math display">\[\mathbf{a}\times\mathbf{b}=\langle a_2b_3-a_3b_2, a_3b_1-a_1b_3,a_1b_2-a_2b_1\rangle,\]</span>
+which is also called the vector product (only defined for three-dimensional space).</p>
+<p><strong>Determinant of order 2</strong> is defined by
+<span class="math display">\[\begin{equation}
+\left|\begin{matrix}
+a &amp; b \\
+c &amp; d
+\end{matrix}
+\right|=ad-bc
+\end{equation}\]</span></p>
+<p><strong>Determinant of order 3</strong>
+<span class="math display">\[
+\left|\begin{matrix}
+a_1 &amp; a_2 &amp; a_3 \\
+b_1 &amp; b_2 &amp; b_3 \\
+c_1 &amp; c_2 &amp; c_3
+\end{matrix}
+\right|
+=
+a_1
+\left|\begin{matrix}
+b_2 &amp; b_3\\
+c_2 &amp; c_3
+\end{matrix}
+\right|-a_2 \left|
+\begin{matrix}
+b_1 &amp; b_3 \\
+c_1 &amp; c_3
+\end{matrix}
+\right|
++a_3\left|
+\begin{matrix}
+b_1 &amp; b_2 \\
+c_1 &amp; c_2
+\end{matrix}
+\right|
+\]</span></p>
+<p><strong>Cross product</strong>
+<span class="math display">\[
+\mathbf{a}\times\mathbf{b}=\left|
+\begin{matrix}
+a_2 &amp; a_3 \\
+b_2 &amp; b_3
+\end{matrix}
+\right|\mathbf{i}
+-
+\left|
+\begin{matrix}
+a_1 &amp; a_3 \\
+b_1 &amp; b_3
+\end{matrix}
+\right|
+\mathbf{j}
++\left|
+\begin{matrix}
+a_1 &amp; a_2 \\
+b_1 &amp; b_2 
+\end{matrix}
+\right|\mathbf{k}
+\]</span></p>
+<p><span class="math display">\[
+\mathbf{a}\times\mathbf{b}=\left|
+\begin{matrix}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+a_1 &amp; a_2 &amp; a_3 \\
+b_1 &amp; b_2 &amp; b_3
+\end{matrix}
+\right|
+\]</span></p>
+<p><strong>Example</strong> If <span class="math inline">\(\mathbf{a}=\langle 1,3,4 \rangle\)</span> and <span class="math inline">\(\mathbf{b}=\langle 2,7,-5 \rangle\)</span>, then find <span class="math inline">\(\mathbf{a}\times\mathbf{b}\)</span>.</p>
+<p><strong>Example</strong> Show that <span class="math inline">\(\mathbf{a}\times\mathbf{a}=\mathbf{0}\)</span> for any vector <span class="math inline">\(\mathbf{a}\in V_3\)</span>.</p>
+<p><strong>Theorem</strong> The vector <span class="math inline">\(\mathbf{a}\times\mathbf{b}\)</span> is orthogonal to both <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span>.</p>
+<p><strong>Theorem</strong> If <span class="math inline">\(\theta\)</span> is the angle between <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span>, then <span class="math display">\[|\mathbf{a}\times\mathbf{b}|=|\mathbf{a}||\mathbf{b}|\sin\theta,\]</span>
+whose length/magnitude is equal to the area of the parallelogram determined by <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span>.</p>
+<p><strong>Corollary</strong> Two nonzero vectors <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{b}\)</span> are parallel if and only if <span class="math display">\[\mathbf{a}\times\mathbf{b}=\mathbf{0}.\]</span></p>
 </div>
 <div id="equations-of-lines-and-planes" class="section level2">
 <h2><span class="header-section-number">6.5</span> Equations of Lines and Planes</h2>
+<p>A line in the <span class="math inline">\(xy\)</span>-plane is determined when a point on the line and the direction of the line (its slope) are given. The equation of the line can then be written using the point-slope form.</p>
+<p>Likewise, a line <span class="math inline">\(L\)</span> in three-dimensional space is determined when we know a point <span class="math inline">\(P_0(x_0,y_0,z_0)\)</span> on <span class="math inline">\(L\)</span> and the direction <span class="math inline">\(\mathbf{v}=\langle a,b,c\rangle\)</span>. Let <span class="math inline">\(P(x,y,z)\)</span> be an arbitrary point on <span class="math inline">\(L\)</span> and let <span class="math inline">\(\mathbf{r}_0\)</span> and <span class="math inline">\(\mathbf{r}\)</span> be the position vectors of <span class="math inline">\(P_0\)</span> and <span class="math inline">\(P\)</span> (that is, they have representations <span class="math inline">\(\overset{\longrightarrow}{OP_0}\)</span> and <span class="math inline">\(\overset{\longrightarrow}{OP}\)</span>).<br />
+If <span class="math inline">\(\mathbf{a}\)</span> is the vector with representation <span class="math inline">\(\overset{\longrightarrow}{P_0P}\)</span>, then we have <span class="math inline">\(\mathbf{r}=\mathbf{r}_0+\mathbf{a}\)</span>. But, since <span class="math inline">\(\mathbf{a}\)</span> and <span class="math inline">\(\mathbf{v}\)</span> are parallel vectors, there is a scalar <span class="math inline">\(t\)</span> such that <span class="math inline">\(\mathbf{a}=t\mathbf{v}\)</span>. Thus
+<span class="math display">\[\mathbf{r}=\mathbf{r}_0+t\mathbf{v},\]</span>
+which is a vector equation of <span class="math inline">\(L\)</span>. Each value of the parameter <span class="math inline">\(t\)</span> gives the position vector <span class="math inline">\(\mathbf{r}\)</span> of a point on <span class="math inline">\(L\)</span>. We also have the following three scalar equations:
+<span class="math display">\[x=x_0+ta, y=y_0+tb, z=z_0+tc,\]</span>
+where <span class="math inline">\(t\in\mathbb{R}.\)</span> These equations are called parametric equations of the line <span class="math inline">\(L\)</span> through the point <span class="math inline">\(P_0(x_0,y_,z_0)\)</span> and parallel to the vector <span class="math inline">\(\mathbf{v}=\langle a,b,c\rangle\)</span>. Each value of the parameter <span class="math inline">\(t\)</span> gives a point on <span class="math inline">\(L\)</span>
+<img src="plots/6/line.png" width="50%"  style="display: block; margin: auto;" /></p>
+<p><strong>Direction numbers</strong> The numbers <span class="math inline">\(a,b,c\)</span> are called direction numbers of <span class="math inline">\(L\)</span>.</p>
+<p><strong>Example</strong> Find a vector equation and parametric equations for the line that passes through the point <span class="math inline">\((5,1,3)\)</span> and is parallel to the vector <span class="math inline">\(\mathbf{i}+4\mathbf{j}-2\mathbf{k}\)</span>.</p>
+<p><strong>Symmetric equations of <span class="math inline">\(L\)</span></strong>
+<span class="math display">\[\frac{x-x_0}{a}=\frac{y-y_0}{b}=\frac{z-z_0}{c}.\]</span></p>
+<p>If one of <span class="math inline">\(a,b,c\)</span> is zero, we can still eliminate <span class="math inline">\(t\)</span>. For instance, if <span class="math inline">\(a=0\)</span>, we could write the equations of <span class="math inline">\(L\)</span> as
+<span class="math display">\[x=x_0, \frac{y-y_0}{b}=\frac{z-z_0}{c},\]</span>
+which implies a <span class="math inline">\(L\)</span> in the vertical plane <span class="math inline">\(x=x_0\)</span>.</p>
+<p><strong>Example</strong> Find parametric equations and symmetric equations of the line that passes through the points <span class="math inline">\(A(2,4,-3)\)</span> and <span class="math inline">\(B(3,-1,1)\)</span>. At what point does this line intersect the <span class="math inline">\(xy\)</span>-plane.</p>
+<p><strong>Another vector equation</strong> If we know two points on <span class="math inline">\(L\)</span> and their position vectors are <span class="math inline">\(\mathbf{r}_0\)</span> and <span class="math inline">\(\mathbf{r}_1\)</span>, then we can take line direction as <span class="math inline">\(\mathbf{v}=\mathbf{r}_1-\mathbf{r}_0\)</span>, and its vector equation is
+<span class="math display">\[\mathbf{r}=\mathbf{r}_0+t(\mathbf{r}_1-\mathbf{r}_0)=(1-t)\mathbf{r}_0+t\mathbf{r}_1\]</span></p>
+<p><strong>Line segment</strong> The line segment from <span class="math inline">\(\mathbf{r}_0\)</span> to <span class="math inline">\(\mathbf{r}_1\)</span> is given by the vector equation
+<span class="math display">\[\mathbf{r}(t)=(1-t)\mathbf{r}_0+t\mathbf{r}_1\]</span></p>
+<p><strong>Example</strong> Show that the lines <span class="math inline">\(L_1\)</span> and <span class="math inline">\(L_2\)</span> with parametric equations</p>
+<ul>
+<li><p>L1: <span class="math inline">\(x=1+t, y=-2+3t, z=4-t\)</span></p></li>
+<li><p>L2: <span class="math inline">\(x=2s, y=3+s, z=-3+4s\)</span></p></li>
+</ul>
+<p>are skew lines; that is, they do not intersect and are not parallel.</p>
+<p><strong>Plane</strong> A plane in space is determined by a point <span class="math inline">\(P_0(x_0,y_0,z_0)\)</span> in the plane and a vector <span class="math inline">\(\mathbf{n}\)</span> that is orthogonal to the plane. This orthogonal vector <span class="math inline">\(\mathbf{n}\)</span> is called a normal vector. Let <span class="math inline">\(P(x,y,z)\)</span> be an arbitrary point in the plane, and let <span class="math inline">\(\mathbf{r}_0\)</span> and <span class="math inline">\(\mathbf{r}\)</span> be the position vectors of <span class="math inline">\(P_0\)</span> and <span class="math inline">\(P\)</span>. Then the vector <span class="math inline">\(\mathbf{r}-\mathbf{r}_0\)</span> is represented by <span class="math inline">\(\overset{\longrightarrow}{P_0P}\)</span>. The normal vector <span class="math inline">\(\mathbf{n}\)</span> is orthogonal to every vector in the given plane. In particular, <span class="math inline">\(\mathbf{n}\)</span> is orthogonal to <span class="math inline">\(\mathbf{r}-\mathbf{r}_0\)</span> and so we have
+<span class="math display">\[\mathbf{n}\cdot(\mathbf{r}-\mathbf{r}_0)=0\]</span>
+which can be rewritten as
+<span class="math display">\[\mathbf{n}\cdot\mathbf{r}=\mathbf{n}\cdot\mathbf{r}_0\]</span>
+They are called a vector equation of the plane.</p>
+<p><strong>Scalar equation of plane</strong> Suppose normal vector <span class="math inline">\(\mathbf{n}=\langle a,b,c\rangle\)</span>, arbitrary point in the plane <span class="math inline">\(\mathbf{r}=\langle x,y,z\rangle\)</span> and a point in the plane<span class="math inline">\(\mathbf{r}_0=\langle x_0,y_0,z_0\rangle\)</span>. Then we have
+<span class="math display">\[a(x-x_0)+b(y-y_0)+c(z-z_0)=0\]</span>
+which gives a plane through point <span class="math inline">\(P_0(x_0,y_0,z_0)\)</span> with normal vector <span class="math inline">\(\mathbf{n}=\langle a,b,c \rangle\)</span>.</p>
+<p><img src="plots/6/plane2.png" width="50%"  style="display: block; margin: auto;" /></p>
+<p><strong>Example</strong> Find an equation of the plane throught the point <span class="math inline">\((2,4,-1)\)</span> with normal vector <span class="math inline">\(\mathbf{n}=\langle 2,3,4 \rangle\)</span>.</p>
 </div>
 <div id="directional-derivatives-and-gradient-vector" class="section level2">
 <h2><span class="header-section-number">6.6</span> Directional Derivatives and Gradient Vector</h2>

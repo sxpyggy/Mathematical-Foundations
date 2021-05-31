@@ -94,9 +94,9 @@ knitr::include_graphics("./plots/6/component.png")
 
 2. $\boldsymbol{a} + (\boldsymbol{b} +  \boldsymbol{c} )= (\boldsymbol{a} +\boldsymbol{b}) + \boldsymbol{c}$
 
-3. $\boldsymbol{a} + \boldsymbol{0} = \boldsymbol{a} $
+3. $\boldsymbol{a} + \boldsymbol{0} = \boldsymbol{a}$
 
-4. $\boldsymbol{a} - \boldsymbol{a} = \boldsymbol{0} $
+4. $\boldsymbol{a} - \boldsymbol{a} = \boldsymbol{0}$
 
 5. $c(\boldsymbol{a} + \boldsymbol{b}) = c\boldsymbol{a} + c\boldsymbol{b}$
 
@@ -120,9 +120,225 @@ knitr::include_graphics("./plots/6/component.png")
 
 ## Dot Product
 
-## Cross Product
+**Definition** If $\mathbf{a}=\langle a_1,a_2,a_3 \rangle$ and $\mathbf{b}=\langle b_1,b_2,b_3 \rangle$, then the dot product of $\mathbf{a}$ and $\mathbf{b}$ is the number $\mathbf{a}\cdot\mathbf{b}$ given by
+$$\mathbf{a}\cdot\mathbf{b}=a_1b_1+a_2b_2+a_3b_3.$$
+which is also called as scalar or inner product.
+
+**Properties** If $\mathbf{a},\mathbf{b}, \mathbf{c}$ are vectors in $V_3$ and $c$ is a scalar, then
+
+1. $\mathbf{a}\cdot\mathbf{a}=|\mathbf{a}|^2$
+
+2. $\mathbf{a}\cdot\mathbf{b}=\mathbf{b}\cdot\mathbf{a}$
+
+3. $\mathbf{a}\cdot(\mathbf{b}+\mathbf{c})=\mathbf{a}\cdot\mathbf{b}+\mathbf{a}\cdot\mathbf{c}$
+
+4. $(c\mathbf{a})\cdot\mathbf{b}=c(\mathbf{a}\cdot\mathbf{b})=\mathbf{a}\cdot(c\mathbf{b})$
+
+5. $\mathbf{0}\cdot\mathbf{a}=0$
+
+**Theorem** If $\theta$ is the angle between the vectors $\mathbf{a}$ and $\mathbf{b}$, then
+$$\mathbf{a}\cdot\mathbf{b}=|\mathbf{a}||\mathbf{b}|\cos\theta$$
+
+**Example** If the vectors $\mathbf{a}$ and $\mathbf{b}$ have length 4 and 6, and the angle between them is $\pi/3$, find $\mathbf{a}\cdot\mathbf{b}$.
+
+**Corollary** If $\theta$ is the angle between the nonzero vectors $\mathbf{a}$ and $\mathbf{b}$, then $$\cos\theta=\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}||\mathbf{b}|}$$
+
+
+**Example** Find the angle between the vectors $\mathbf{a}=\langle 2,2,-1\rangle$ and $\mathbf{b}=\langle5,-3,2 \rangle$.
+
+**Orthogonality** Two vectors $\mathbf{a}$ and $\mathbf{b}$ are perpendicular or orthogonal if and only if $\mathbf{a}\cdot\mathbf{b}=0$.
+
+**Example** Show that $2\mathbf{i}+2\mathbf{j}-\mathbf{k}$ is perpendicular to $5\mathbf{i}-4\mathbf{j}+2\mathbf{k}$.
+
+**Direction angles and direction cosines** The **direction angles** of a nonzero vector $\mathbf{a}$ are the angles $\alpha,\beta,\gamma \in [0,\pi]$ that $\mathbb{a}$ makes with the positive $x-,y-,z-$ axes, respectively. The cosines of these direction angles $\cos\alpha,\cos\beta,\cos\gamma$ are called the **direction cosines** of the vector $\mathbf{a}$.
+```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
+knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
+knitr::include_graphics("./plots/6/direction.png")
+```
+$$\cos\alpha=\frac{\mathbf{a}\cdot\mathbf{i}}{|\mathbf{a}||\mathbf{i}|}=\frac{a_1}{|\mathbf{a}|}$$
+$$\cos\beta=\frac{a_2}{|\mathbf{a}|}$$
+
+$$\cos\gamma=\frac{a_3}{|\mathbf{a}|}$$
+
+$$\mathbf{a}=\langle a_1,a_2,a_3\rangle=\langle |\mathbf{a}|\cos\alpha,|\mathbf{a}|\cos\beta,|\mathbf{a}|\cos\gamma \rangle=|\mathbf{a}|\langle\cos\alpha,\cos\beta,\cos\gamma \rangle$$
+
+$$\frac{1}{|\mathbf{a}|}\mathbf{a}=\langle \cos\alpha,\cos\beta,\cos\gamma \rangle.$$
+which says that the direction cosines of $\mathbf{a}$ are the components of the unit vector in the direction of $\mathbf{a}$.
+
+**Example** Find the direction angles of the vector $\mathbf{a}=\langle1,2,3\rangle$
+
+
+**Scalar projection** The scalar projection of $\mathbf{b}$ onto $\mathbf{a}$ (also called the component of $\mathbf{b}$ along $\mathbf{a}$) is defined to be the signed magnitude of the vector projection, which is the number $|\mathbf{B}|\cos\theta$, where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$. This is denoted by $\text{comp}_\mathbf{a}\mathbf{b}$.
+$$\text{comp}_\mathbf{a}\mathbf{b}=\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}|}=\frac{\mathbf{a}}{|\mathbf{a}|}\cdot\mathbf{b},$$
+which is the dot product of $\mathbf{b}$ with the unit vector in the direction of $\mathbf{a}$.
+
+```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
+knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
+knitr::include_graphics("./plots/6/projection_scalar.png")
+```
+
+**Projections** Figure 4 shows representations $\overset{\longrightarrow}{PQ}$, $\overset{\longrightarrow}{PR}$ of two vectors $\mathbf{a}$ and $\mathbf{b}$ with the same initial point $P$. If $S$ is the foot of the perpendicular from $R$ to the line containing containing $\overset{\longrightarrow}{PQ}$, then the vector with representation $\overset{\longrightarrow}{PS}$ is called the vector projection of $\mathbf{b}$ onto $\mathbf{a}$ and is denoted by $\text{proj}_\mathbf{a}\mathbf{b}$. (a shadow of $\mathbf{b}$ on $\mathbf{a}$).
+$$\text{proj}_\mathbf{a}\mathbf{b}=\left(\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}|}\right)\frac{\mathbf{a}}{|\mathbf{a}|}=\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}|^2}\mathbf{a},$$
+which is the scalar projection times the unit vector in the direction of $\mathbf{a}$.
+
+**Example** Find the scalar projection and vector projection of $\mathbf{b}=\langle1,1,2\rangle$ onto $\mathbf{a}=\langle-2,3,1\rangle$.
+```{r,echo=FALSE,out.width="30%",fig.align = 'center'}
+knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
+knitr::include_graphics("./plots/6/projection2.png")
+```
+
+## Cross product (not examinable)
+
+Given two nonzero vectors $\mathbf{a}=\langle a_1,a_2,a_3\rangle$ and $\mathbf{b}=\langle b_1,b_2,b_3\rangle$, it is very useful to be able to find a nonzero vector $\mathbf{c}$ that is perpendicular to both $\mathbf{a}$ and $\mathbf{b}$. If $\mathbf{c}=\langle c_1,c_2,c_3\rangle$ is such a vector, then $\mathbf{a}\cdot\mathbf{c}=0$ and $\mathbf{b}\cdot\mathbf{c}=0$. We can solve for $\mathbf{c}=\langle c_1,c_2,c_3\rangle=\langle a_2b_3-a_3b_2,a_3b_1-a_1b_3,a_1b_2-a_2b_1\rangle$.
+This resulting vector is called the cross product of $\mathbf{a}$ and $\mathbf{b}$ and is denoted by $\mathbf{a}\times\mathbf{b}$.
+
+**Definition** If $\mathbf{a}=\langle a_1,a_2,a_3 \rangle$ and $\mathbf{b}=\langle b_1,b_2,b_3\rangle$, then the cross product of $\mathbf{a}$ and $\mathbf{b}$ is the vector
+$$\mathbf{a}\times\mathbf{b}=\langle a_2b_3-a_3b_2, a_3b_1-a_1b_3,a_1b_2-a_2b_1\rangle,$$
+which is also called the vector product (only defined for three-dimensional space).
+
+**Determinant of order 2** is defined by 
+\begin{equation}
+\left|\begin{matrix}
+a & b \\
+c & d
+\end{matrix}
+\right|=ad-bc
+\end{equation}
+
+**Determinant of order 3** 
+$$
+\left|\begin{matrix}
+a_1 & a_2 & a_3 \\
+b_1 & b_2 & b_3 \\
+c_1 & c_2 & c_3
+\end{matrix}
+\right|
+=
+a_1
+\left|\begin{matrix}
+b_2 & b_3\\
+c_2 & c_3
+\end{matrix}
+\right|-a_2 \left|
+\begin{matrix}
+b_1 & b_3 \\
+c_1 & c_3
+\end{matrix}
+\right|
++a_3\left|
+\begin{matrix}
+b_1 & b_2 \\
+c_1 & c_2
+\end{matrix}
+\right|
+$$
+
+**Cross product**
+$$
+\mathbf{a}\times\mathbf{b}=\left|
+\begin{matrix}
+a_2 & a_3 \\
+b_2 & b_3
+\end{matrix}
+\right|\mathbf{i}
+-
+\left|
+\begin{matrix}
+a_1 & a_3 \\
+b_1 & b_3
+\end{matrix}
+\right|
+\mathbf{j}
++\left|
+\begin{matrix}
+a_1 & a_2 \\
+b_1 & b_2 
+\end{matrix}
+\right|\mathbf{k}
+$$
+
+$$
+\mathbf{a}\times\mathbf{b}=\left|
+\begin{matrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+a_1 & a_2 & a_3 \\
+b_1 & b_2 & b_3
+\end{matrix}
+\right|
+$$
+
+**Example**  If $\mathbf{a}=\langle 1,3,4 \rangle$ and $\mathbf{b}=\langle 2,7,-5 \rangle$, then find $\mathbf{a}\times\mathbf{b}$.
+
+**Example** Show that $\mathbf{a}\times\mathbf{a}=\mathbf{0}$ for any vector $\mathbf{a}\in V_3$.
+
+**Theorem** The vector $\mathbf{a}\times\mathbf{b}$ is orthogonal to both $\mathbf{a}$ and $\mathbf{b}$.
+
+**Theorem** If $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$, then $$|\mathbf{a}\times\mathbf{b}|=|\mathbf{a}||\mathbf{b}|\sin\theta,$$
+whose length/magnitude is equal to the area of the parallelogram determined by $\mathbf{a}$ and $\mathbf{b}$.
+
+**Corollary** Two nonzero vectors $\mathbf{a}$ and $\mathbf{b}$ are parallel if and only if $$\mathbf{a}\times\mathbf{b}=\mathbf{0}.$$
+
 
 ## Equations of Lines and Planes
+
+A line in the $xy$-plane is determined when a point on the line and the direction of the line (its slope) are given. The equation of the line can then be written using the point-slope form.
+
+Likewise, a line $L$ in three-dimensional space is determined when we know a point $P_0(x_0,y_0,z_0)$ on $L$ and the direction  $\mathbf{v}=\langle a,b,c\rangle$.  Let $P(x,y,z)$ be an arbitrary point on $L$ and let $\mathbf{r}_0$ and $\mathbf{r}$ be the position vectors of $P_0$ and $P$ (that is, they have representations $\overset{\longrightarrow}{OP_0}$ and $\overset{\longrightarrow}{OP}$). \
+If $\mathbf{a}$ is the vector with representation $\overset{\longrightarrow}{P_0P}$, then we have $\mathbf{r}=\mathbf{r}_0+\mathbf{a}$. But, since $\mathbf{a}$ and $\mathbf{v}$ are parallel vectors, there is a scalar $t$ such that $\mathbf{a}=t\mathbf{v}$. Thus
+$$\mathbf{r}=\mathbf{r}_0+t\mathbf{v},$$
+which is a vector equation of $L$. Each value of the parameter $t$ gives the position vector $\mathbf{r}$ of a point on $L$. We also have the following three scalar equations:
+$$x=x_0+ta, y=y_0+tb, z=z_0+tc,$$
+where $t\in\mathbb{R}.$ These equations are called parametric equations of the line $L$ through the point $P_0(x_0,y_,z_0)$ and parallel to the vector $\mathbf{v}=\langle a,b,c\rangle$. Each value of the parameter $t$ gives a point on $L$
+```{r,echo=FALSE,out.width="50%",fig.align = 'center'}
+knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
+knitr::include_graphics("./plots/6/line.png")
+```
+
+**Direction numbers** The numbers $a,b,c$ are called direction numbers of $L$.
+
+**Example** Find a vector equation and parametric equations for the line that passes through the point $(5,1,3)$ and is parallel to the vector $\mathbf{i}+4\mathbf{j}-2\mathbf{k}$.
+
+**Symmetric equations of $L$** 
+$$\frac{x-x_0}{a}=\frac{y-y_0}{b}=\frac{z-z_0}{c}.$$
+
+If one of $a,b,c$ is zero, we can still eliminate $t$. For instance, if $a=0$, we could write the equations of $L$ as 
+$$x=x_0, \frac{y-y_0}{b}=\frac{z-z_0}{c},$$
+which implies a $L$ in the vertical plane $x=x_0$.
+
+**Example** Find parametric equations and symmetric equations of the line that passes through the points $A(2,4,-3)$ and $B(3,-1,1)$. At what point does this line intersect the $xy$-plane.
+
+**Another  vector equation** If we know two points on $L$ and their position vectors are $\mathbf{r}_0$ and $\mathbf{r}_1$, then we can take line direction as $\mathbf{v}=\mathbf{r}_1-\mathbf{r}_0$, and its vector equation is 
+$$\mathbf{r}=\mathbf{r}_0+t(\mathbf{r}_1-\mathbf{r}_0)=(1-t)\mathbf{r}_0+t\mathbf{r}_1$$
+
+**Line segment** The line segment from $\mathbf{r}_0$ to $\mathbf{r}_1$ is given by the vector equation 
+$$\mathbf{r}(t)=(1-t)\mathbf{r}_0+t\mathbf{r}_1$$
+
+**Example** Show that the lines $L_1$ and $L_2$ with parametric equations
+
+- L1: $x=1+t, y=-2+3t, z=4-t$
+
+- L2: $x=2s, y=3+s, z=-3+4s$
+
+are skew lines; that is, they do not intersect and are not parallel.
+
+**Plane** A plane in space is determined by a point $P_0(x_0,y_0,z_0)$ in the plane and a vector $\mathbf{n}$ that is orthogonal to the plane. This orthogonal vector $\mathbf{n}$ is called a normal vector. Let $P(x,y,z)$ be an arbitrary point in the plane, and let $\mathbf{r}_0$ and $\mathbf{r}$ be the position vectors of $P_0$ and $P$. Then the vector $\mathbf{r}-\mathbf{r}_0$ is represented by $\overset{\longrightarrow}{P_0P}$. The normal vector $\mathbf{n}$ is orthogonal to every vector in the given plane. In particular, $\mathbf{n}$ is orthogonal to $\mathbf{r}-\mathbf{r}_0$ and so we have
+$$\mathbf{n}\cdot(\mathbf{r}-\mathbf{r}_0)=0$$
+which can be rewritten as
+$$\mathbf{n}\cdot\mathbf{r}=\mathbf{n}\cdot\mathbf{r}_0$$
+They are called a vector equation of the plane.
+
+
+**Scalar equation of plane** Suppose normal vector $\mathbf{n}=\langle a,b,c\rangle$, arbitrary point in the plane $\mathbf{r}=\langle x,y,z\rangle$ and a point in the plane$\mathbf{r}_0=\langle x_0,y_0,z_0\rangle$. Then we have
+$$a(x-x_0)+b(y-y_0)+c(z-z_0)=0$$
+which gives a plane through point $P_0(x_0,y_0,z_0)$ with normal vector $\mathbf{n}=\langle a,b,c \rangle$.
+
+```{r,echo=FALSE,out.width="50%",fig.align = 'center'}
+knitr::opts_chunk$set(fig.pos = "!H", out.extra = "")
+knitr::include_graphics("./plots/6/plane2.png")
+```
+
+
+**Example** Find an equation of the plane throught the point $(2,4,-1)$ with normal vector $\mathbf{n}=\langle 2,3,4 \rangle$.
 
 ## Directional Derivatives and  Gradient Vector
 

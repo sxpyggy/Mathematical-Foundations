@@ -55,7 +55,7 @@ vectors-and-geometry-of-space
 three-dimensinal-coordinate-systems
 vectors
 dot-product
-cross-product
+cross-product-not-examinable
 equations-of-lines-and-planes
 directional-derivatives-and-gradient-vector
 more-on-lagrange-multipliers
