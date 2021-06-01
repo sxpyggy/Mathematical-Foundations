@@ -296,11 +296,90 @@ which gives a plane through point $P_0(x_0,y_0,z_0)$ with normal vector $\mathbf
 <img src="./plots/6/plane2.png" width="50%"  style="display: block; margin: auto;" />
 
 
-**Example** Find an equation of the plane throught the point $(2,4,-1)$ with normal vector $\mathbf{n}=\langle 2,3,4 \rangle$.
+**Example** Find an equation of the plane through the point $(2,4,-1)$ with normal vector $\mathbf{n}=\langle 2,3,4 \rangle$.
+
+
+**Linear equation of plane** We can rewrite the equation of a plane as $$ax+by+cz+d=0$$,
+where $d=-(ax_0+by_0+cz_0)$. It can be shown that if $a,b,c$ are not all 0, then the linear equation represents a plane with normal vector $\langle a,b,c \rangle$.
+
+**Example** Find an equation of the plane that passes through the points $P(1,3,2)$, $Q(3,-1,6)$ and $R(5,2,0)$.
+<img src="./plots/6/three_points.png" width="50%"  style="display: block; margin: auto;" />
+
+**Example** Find the point at which the line with parametric equations $x=2+3t, y=-4t, z=5+t$ intersects the plane $4x+5y-2z=18$
+
+**Parallel** Two planes are parallel if their normal vectors are parallel. If  two planes are not parallel, then they intersect in a straight line and the angle between the two planes is defined as the acute angle between their normal vectors.
+<img src="./plots/6/two_planes.png" width="50%"  style="display: block; margin: auto;" />
+
+**Example** Find the angle between the planes $x+y+z=1$ and $x-2y+3z=1$. What is the symmetric equations for the line of intersection $L$ of these two planes.
+<img src="./plots/6/two_planes2.png" width="50%"  style="display: block; margin: auto;" />
+
+**Distances** The distance $D$ from a point $P_1(x_1,y_1,z_1)$ to the plane $ax+by+cz+d=0$ is given by $$D=\frac{|ax_1+by_1+cz_1+d|}{\sqrt{a^2+b^2+c^2}}.$$
+
+**Example** Find the distance between the parallel planes $10x+2y-2z=5$ and $5x+y-z=1$.
 
 ## Directional Derivatives and  Gradient Vector
 
-## More on Lagrange Multipliers
+**Partial derivatives** If $z=f(x,y)$, then the partial derivatives $f_x$ and $f_y$ are defined as
+$$f_x(a,b)=\underset{h\rightarrow 0}{\lim}\frac{f(a+h,b)-f(a,b)}{h}$$
+$$f_y(a,b)=\underset{h\rightarrow 0}{\lim}\frac{f(a,b+h)-f(a,b)}{h}$$
+<img src="./plots/6/partial.png" width="50%"  style="display: block; margin: auto;" />
+
+**Geometric interpretation of partial derivatives** $C_1$ is the intersection of the vertical plane $y=b$ and the surface $S$ (the graph of $f$), which is also called as the trace of $S$ in the plane $y=b$. The curve $C_1$ is the graph of the function $g(x)=f(x,b)$, so the slope of its tangent $T_1$ at $P$ is $g'(a)=f_x(a,b)$. 
+Hence, the partial derivatives $f_x(a,b), f_y(a,b)$ can be interpreted geometrically as the slopes of the tangent lines at $P(a,b,c)$ to the traces $C_1$ and $C_2$ of $S$ in the planes $y=b$ and $x=a$.
+In other words, the partial derivatives represent the rate of change of $z$ w.r.t. $y$ when $x$ is fixed. 
+That is to say, partial derivatives represent the rates of change of $z$ in the $x-$ and $y-$ directions, that is, in the directions of the unit vectors $\mathbf{i}$ and $\mathbf{j}$.
+
+**Directional derivatives** Suppose that we now wish to find the rate of change of $z$ at $(x_0,y_0)$ in the direction of an arbitrary unit vector $\mathbf{u}=\langle a,b\rangle$.
+The vertical plane that passes through $P$ in the direction of $\mathbf{u}$ intersects $S$ in a curve $C$. The slope of the tangent line $T$ to $C$ at the point $P$ is the rate of change of $z$ in the direction of $\mathbf{u}$.
+<img src="./plots/6/u.png" width="50%"  style="display: block; margin: auto;" />
+<img src="./plots/6/u2.png" width="50%"  style="display: block; margin: auto;" />
+$P',Q'$ are the projections of $P,Q$ onto the $xy$-plane, then the vector $\overset{\longrightarrow}{P'Q'}=h\mathbf{u}=\langle ha,hb \rangle$ for some scalar $h$. Therefore $x-x_0=ha, y-y_0=hb,$ so $x=x_0+ha, y=y_0+hb$, and
+$$\frac{\Delta z}{h}=\frac{z-z_0}{h}=\frac{f(x_0+ha,y_0+hb)-f(x_0,y_0)}{h}$$
+If we take the limit as $h\rightarrow 0,$ we obtain the rate of change of $z$ in the direction of $\mathbf{u}$, which is called the directional derivative of $f$ in the direction of $\mathbf{u}$.
+
+**Directional derivative** The directional derivative of $f$ at $(x_0,y_0)$ in the direction of a unit vector $\mathbf{u}=\langle a,b \rangle$ is 
+$$D_\mathbf{u}f(x_0,y_0)=\underset{h\rightarrow 0}{\lim}\frac{f(x_0+ha,y_0+hb)-f(x_0,y_0)}{h}.$$
+if this limit exists.
+
+**Example** If $\mathbf{u}=\mathbf{i}=\langle 1, 0\rangle$, then $D_\mathbf{i}f=f_x$ and if $\mathbf{u}=\mathbf{j}=\langle 0, 1\rangle$, then $D_{\mathbf{j}}=f_y$. In other words, the partial derivatives of $f$ w.r.t. $x,y$ are just special cases of the directional derivative.
+
+
+**Theorem** If $f$ is a differentiable function of $x$ and $y$, then $f$ has a directional derivative in the direction of any unit vector $\mathbf{u}=\langle a,b \rangle$ and 
+$$D_\mathbf{u}f(x,y)=f_x(x,y)a+f_y(x,y)b$$
+or 
+$$D_\mathbf{u}f(x,y)=f_x(x,y)\cos\theta + f_y(x,y)\sin\theta$$
+
+**Example** Find the directional derivative $D_\mathbf{u}f(x,y)$ if $$f(x,y)=x^3-3xy+4y^2$$
+and $\mathbf{u}$ is the unit vector given by angle $\theta=\pi/6$. What is $D_\mathbf{u}f(1,2)$?
+<img src="./plots/6/u3.png" width="50%"  style="display: block; margin: auto;" />
+
+
+The directional derivative of a differentiable function can be written as the dot product of two vectors:
+$$D_\mathbf{u}f(x,y)=f_x(x,y)a+f_y(x,y)b\\=\langle f_x(x,y), f_y(x,y)\rangle \cdot\langle a,b\rangle=\langle f_x(x,y), f_y(x,y)\rangle\cdot\mathbf{u}.$$
+where the first term is called the gradient of $f$, denoted by $\triangledown f$.
+
+**Definition** If $f$ is a function of two variables $x$ and $y$, then the gradient of $f$ is the vector function $\triangledown f$ defined by
+$$\triangledown f(x,y)=\langle f_x(x,y),f_y(x,y) \rangle=\frac{\partial f}{\partial x}\mathbf{i}+\frac{\partial f}{\partial y}\mathbf{j}$$
+**Vector function** A vector-valued function or vector function is a function whose domain is a set of real numbers and whose range is a set of vectors:
+$$\mathbf{r}(t)=\langle f(t),g(t),h(t)\rangle=f(t)\mathbf{i}+g(t)\mathbf{j}+h(t)\mathbf{k}.$$
+
+**Example** If $f(x,y)=\sin x+e^{xy}$, then $$\triangledown f(x,y)=\langle f_x,f_y \rangle=\langle \cos x+ye^{xy}, xe^{xy} \rangle$$
+
+**Directional derivative** $$D_\mathbf{u}f(x,y)=\triangledown f(x,y)\cdot\mathbf{u}.$$
+which implies that the directional derivative in the direction of a unit vector $\mathbf{u}$ is the projection of the gradient vector onto $\mathbf{u}$.
+
+**Example** Find the directional derivative of the function $f(x,y)=x^2y^3-4y$ at the point $(2,-1)$ in the direction of the vector $\mathbf{v}=2\mathbf{i}+5\mathbf{j}$.
+<img src="./plots/6/gradient.png" width="50%"  style="display: block; margin: auto;" />
+
+**Theorem** Suppose $f$ is a differentiable function of two or three variables. The maximum value of the directional derivative $D_\mathbf{u}f(x)$ is $|\triangledown f(x)|$ and it occurs when $\mathbf{u}$ has the same direction as the gradient vector $\triangledown f(x)$.
+
+**Example** If $f(x,y)=xe^y$, find the rate of change of $f$ at the point $P(2,0)$ in the direction from $P$ to $Q(1/2,2)$. In what direction does $f$ have the maximum rate of change? What is this maximum rate of change?
+<img src="./plots/6/gradient2.png" width="50%"  style="display: block; margin: auto;" />
+
+
+
+
+
 
 
 

@@ -199,7 +199,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.4" data-path="vectors-and-geometry-of-space.html"><a href="vectors-and-geometry-of-space.html#cross-product-not-examinable"><i class="fa fa-check"></i><b>6.4</b> Cross product (not examinable)</a></li>
 <li class="chapter" data-level="6.5" data-path="vectors-and-geometry-of-space.html"><a href="vectors-and-geometry-of-space.html#equations-of-lines-and-planes"><i class="fa fa-check"></i><b>6.5</b> Equations of Lines and Planes</a></li>
 <li class="chapter" data-level="6.6" data-path="vectors-and-geometry-of-space.html"><a href="vectors-and-geometry-of-space.html#directional-derivatives-and-gradient-vector"><i class="fa fa-check"></i><b>6.6</b> Directional Derivatives and Gradient Vector</a></li>
-<li class="chapter" data-level="6.7" data-path="vectors-and-geometry-of-space.html"><a href="vectors-and-geometry-of-space.html#more-on-lagrange-multipliers"><i class="fa fa-check"></i><b>6.7</b> More on Lagrange Multipliers</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="matrices.html"><a href="matrices.html"><i class="fa fa-check"></i><b>7</b> Matrices</a><ul>
 <li class="chapter" data-level="7.1" data-path="matrices.html"><a href="matrices.html#basic-matrix-operations"><i class="fa fa-check"></i><b>7.1</b> Basic Matrix Operations</a></li>
@@ -559,13 +558,62 @@ They are called a vector equation of the plane.</p>
 <span class="math display">\[a(x-x_0)+b(y-y_0)+c(z-z_0)=0\]</span>
 which gives a plane through point <span class="math inline">\(P_0(x_0,y_0,z_0)\)</span> with normal vector <span class="math inline">\(\mathbf{n}=\langle a,b,c \rangle\)</span>.</p>
 <p><img src="plots/6/plane2.png" width="50%"  style="display: block; margin: auto;" /></p>
-<p><strong>Example</strong> Find an equation of the plane throught the point <span class="math inline">\((2,4,-1)\)</span> with normal vector <span class="math inline">\(\mathbf{n}=\langle 2,3,4 \rangle\)</span>.</p>
+<p><strong>Example</strong> Find an equation of the plane through the point <span class="math inline">\((2,4,-1)\)</span> with normal vector <span class="math inline">\(\mathbf{n}=\langle 2,3,4 \rangle\)</span>.</p>
+<p><strong>Linear equation of plane</strong> We can rewrite the equation of a plane as <span class="math display">\[ax+by+cz+d=0\]</span>,
+where <span class="math inline">\(d=-(ax_0+by_0+cz_0)\)</span>. It can be shown that if <span class="math inline">\(a,b,c\)</span> are not all 0, then the linear equation represents a plane with normal vector <span class="math inline">\(\langle a,b,c \rangle\)</span>.</p>
+<p><strong>Example</strong> Find an equation of the plane that passes through the points <span class="math inline">\(P(1,3,2)\)</span>, <span class="math inline">\(Q(3,-1,6)\)</span> and <span class="math inline">\(R(5,2,0)\)</span>.
+<img src="plots/6/three_points.png" width="50%"  style="display: block; margin: auto;" /></p>
+<p><strong>Example</strong> Find the point at which the line with parametric equations <span class="math inline">\(x=2+3t, y=-4t, z=5+t\)</span> intersects the plane <span class="math inline">\(4x+5y-2z=18\)</span></p>
+<p><strong>Parallel</strong> Two planes are parallel if their normal vectors are parallel. If two planes are not parallel, then they intersect in a straight line and the angle between the two planes is defined as the acute angle between their normal vectors.
+<img src="plots/6/two_planes.png" width="50%"  style="display: block; margin: auto;" /></p>
+<p><strong>Example</strong> Find the angle between the planes <span class="math inline">\(x+y+z=1\)</span> and <span class="math inline">\(x-2y+3z=1\)</span>. What is the symmetric equations for the line of intersection <span class="math inline">\(L\)</span> of these two planes.
+<img src="plots/6/two_planes2.png" width="50%"  style="display: block; margin: auto;" /></p>
+<p><strong>Distances</strong> The distance <span class="math inline">\(D\)</span> from a point <span class="math inline">\(P_1(x_1,y_1,z_1)\)</span> to the plane <span class="math inline">\(ax+by+cz+d=0\)</span> is given by <span class="math display">\[D=\frac{|ax_1+by_1+cz_1+d|}{\sqrt{a^2+b^2+c^2}}.\]</span></p>
+<p><strong>Example</strong> Find the distance between the parallel planes <span class="math inline">\(10x+2y-2z=5\)</span> and <span class="math inline">\(5x+y-z=1\)</span>.</p>
 </div>
 <div id="directional-derivatives-and-gradient-vector" class="section level2">
 <h2><span class="header-section-number">6.6</span> Directional Derivatives and Gradient Vector</h2>
-</div>
-<div id="more-on-lagrange-multipliers" class="section level2">
-<h2><span class="header-section-number">6.7</span> More on Lagrange Multipliers</h2>
+<p><strong>Partial derivatives</strong> If <span class="math inline">\(z=f(x,y)\)</span>, then the partial derivatives <span class="math inline">\(f_x\)</span> and <span class="math inline">\(f_y\)</span> are defined as
+<span class="math display">\[f_x(a,b)=\underset{h\rightarrow 0}{\lim}\frac{f(a+h,b)-f(a,b)}{h}\]</span>
+<span class="math display">\[f_y(a,b)=\underset{h\rightarrow 0}{\lim}\frac{f(a,b+h)-f(a,b)}{h}\]</span>
+<img src="plots/6/partial.png" width="50%"  style="display: block; margin: auto;" /></p>
+<p><strong>Geometric interpretation of partial derivatives</strong> <span class="math inline">\(C_1\)</span> is the intersection of the vertical plane <span class="math inline">\(y=b\)</span> and the surface <span class="math inline">\(S\)</span> (the graph of <span class="math inline">\(f\)</span>), which is also called as the trace of <span class="math inline">\(S\)</span> in the plane <span class="math inline">\(y=b\)</span>. The curve <span class="math inline">\(C_1\)</span> is the graph of the function <span class="math inline">\(g(x)=f(x,b)\)</span>, so the slope of its tangent <span class="math inline">\(T_1\)</span> at <span class="math inline">\(P\)</span> is <span class="math inline">\(g&#39;(a)=f_x(a,b)\)</span>.
+Hence, the partial derivatives <span class="math inline">\(f_x(a,b), f_y(a,b)\)</span> can be interpreted geometrically as the slopes of the tangent lines at <span class="math inline">\(P(a,b,c)\)</span> to the traces <span class="math inline">\(C_1\)</span> and <span class="math inline">\(C_2\)</span> of <span class="math inline">\(S\)</span> in the planes <span class="math inline">\(y=b\)</span> and <span class="math inline">\(x=a\)</span>.
+In other words, the partial derivatives represent the rate of change of <span class="math inline">\(z\)</span> w.r.t. <span class="math inline">\(y\)</span> when <span class="math inline">\(x\)</span> is fixed.
+That is to say, partial derivatives represent the rates of change of <span class="math inline">\(z\)</span> in the <span class="math inline">\(x-\)</span> and <span class="math inline">\(y-\)</span> directions, that is, in the directions of the unit vectors <span class="math inline">\(\mathbf{i}\)</span> and <span class="math inline">\(\mathbf{j}\)</span>.</p>
+<p><strong>Directional derivatives</strong> Suppose that we now wish to find the rate of change of <span class="math inline">\(z\)</span> at <span class="math inline">\((x_0,y_0)\)</span> in the direction of an arbitrary unit vector <span class="math inline">\(\mathbf{u}=\langle a,b\rangle\)</span>.
+The vertical plane that passes through <span class="math inline">\(P\)</span> in the direction of <span class="math inline">\(\mathbf{u}\)</span> intersects <span class="math inline">\(S\)</span> in a curve <span class="math inline">\(C\)</span>. The slope of the tangent line <span class="math inline">\(T\)</span> to <span class="math inline">\(C\)</span> at the point <span class="math inline">\(P\)</span> is the rate of change of <span class="math inline">\(z\)</span> in the direction of <span class="math inline">\(\mathbf{u}\)</span>.
+<img src="plots/6/u.png" width="50%"  style="display: block; margin: auto;" />
+<img src="plots/6/u2.png" width="50%"  style="display: block; margin: auto;" />
+<span class="math inline">\(P&#39;,Q&#39;\)</span> are the projections of <span class="math inline">\(P,Q\)</span> onto the <span class="math inline">\(xy\)</span>-plane, then the vector <span class="math inline">\(\overset{\longrightarrow}{P&#39;Q&#39;}=h\mathbf{u}=\langle ha,hb \rangle\)</span> for some scalar <span class="math inline">\(h\)</span>. Therefore <span class="math inline">\(x-x_0=ha, y-y_0=hb,\)</span> so <span class="math inline">\(x=x_0+ha, y=y_0+hb\)</span>, and
+<span class="math display">\[\frac{\Delta z}{h}=\frac{z-z_0}{h}=\frac{f(x_0+ha,y_0+hb)-f(x_0,y_0)}{h}\]</span>
+If we take the limit as <span class="math inline">\(h\rightarrow 0,\)</span> we obtain the rate of change of <span class="math inline">\(z\)</span> in the direction of <span class="math inline">\(\mathbf{u}\)</span>, which is called the directional derivative of <span class="math inline">\(f\)</span> in the direction of <span class="math inline">\(\mathbf{u}\)</span>.</p>
+<p><strong>Directional derivative</strong> The directional derivative of <span class="math inline">\(f\)</span> at <span class="math inline">\((x_0,y_0)\)</span> in the direction of a unit vector <span class="math inline">\(\mathbf{u}=\langle a,b \rangle\)</span> is
+<span class="math display">\[D_\mathbf{u}f(x_0,y_0)=\underset{h\rightarrow 0}{\lim}\frac{f(x_0+ha,y_0+hb)-f(x_0,y_0)}{h}.\]</span>
+if this limit exists.</p>
+<p><strong>Example</strong> If <span class="math inline">\(\mathbf{u}=\mathbf{i}=\langle 1, 0\rangle\)</span>, then <span class="math inline">\(D_\mathbf{i}f=f_x\)</span> and if <span class="math inline">\(\mathbf{u}=\mathbf{j}=\langle 0, 1\rangle\)</span>, then <span class="math inline">\(D_{\mathbf{j}}=f_y\)</span>. In other words, the partial derivatives of <span class="math inline">\(f\)</span> w.r.t. <span class="math inline">\(x,y\)</span> are just special cases of the directional derivative.</p>
+<p><strong>Theorem</strong> If <span class="math inline">\(f\)</span> is a differentiable function of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, then <span class="math inline">\(f\)</span> has a directional derivative in the direction of any unit vector <span class="math inline">\(\mathbf{u}=\langle a,b \rangle\)</span> and
+<span class="math display">\[D_\mathbf{u}f(x,y)=f_x(x,y)a+f_y(x,y)b\]</span>
+or
+<span class="math display">\[D_\mathbf{u}f(x,y)=f_x(x,y)\cos\theta + f_y(x,y)\sin\theta\]</span></p>
+<p><strong>Example</strong> Find the directional derivative <span class="math inline">\(D_\mathbf{u}f(x,y)\)</span> if <span class="math display">\[f(x,y)=x^3-3xy+4y^2\]</span>
+and <span class="math inline">\(\mathbf{u}\)</span> is the unit vector given by angle <span class="math inline">\(\theta=\pi/6\)</span>. What is <span class="math inline">\(D_\mathbf{u}f(1,2)\)</span>?
+<img src="plots/6/u3.png" width="50%"  style="display: block; margin: auto;" /></p>
+<p>The directional derivative of a differentiable function can be written as the dot product of two vectors:
+<span class="math display">\[D_\mathbf{u}f(x,y)=f_x(x,y)a+f_y(x,y)b\\=\langle f_x(x,y), f_y(x,y)\rangle \cdot\langle a,b\rangle=\langle f_x(x,y), f_y(x,y)\rangle\cdot\mathbf{u}.\]</span>
+where the first term is called the gradient of <span class="math inline">\(f\)</span>, denoted by <span class="math inline">\(\triangledown f\)</span>.</p>
+<p><strong>Definition</strong> If <span class="math inline">\(f\)</span> is a function of two variables <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, then the gradient of <span class="math inline">\(f\)</span> is the vector function <span class="math inline">\(\triangledown f\)</span> defined by
+<span class="math display">\[\triangledown f(x,y)=\langle f_x(x,y),f_y(x,y) \rangle=\frac{\partial f}{\partial x}\mathbf{i}+\frac{\partial f}{\partial y}\mathbf{j}\]</span>
+<strong>Vector function</strong> A vector-valued function or vector function is a function whose domain is a set of real numbers and whose range is a set of vectors:
+<span class="math display">\[\mathbf{r}(t)=\langle f(t),g(t),h(t)\rangle=f(t)\mathbf{i}+g(t)\mathbf{j}+h(t)\mathbf{k}.\]</span></p>
+<p><strong>Example</strong> If <span class="math inline">\(f(x,y)=\sin x+e^{xy}\)</span>, then <span class="math display">\[\triangledown f(x,y)=\langle f_x,f_y \rangle=\langle \cos x+ye^{xy}, xe^{xy} \rangle\]</span></p>
+<p><strong>Directional derivative</strong> <span class="math display">\[D_\mathbf{u}f(x,y)=\triangledown f(x,y)\cdot\mathbf{u}.\]</span>
+which implies that the directional derivative in the direction of a unit vector <span class="math inline">\(\mathbf{u}\)</span> is the projection of the gradient vector onto <span class="math inline">\(\mathbf{u}\)</span>.</p>
+<p><strong>Example</strong> Find the directional derivative of the function <span class="math inline">\(f(x,y)=x^2y^3-4y\)</span> at the point <span class="math inline">\((2,-1)\)</span> in the direction of the vector <span class="math inline">\(\mathbf{v}=2\mathbf{i}+5\mathbf{j}\)</span>.
+<img src="plots/6/gradient.png" width="50%"  style="display: block; margin: auto;" /></p>
+<p><strong>Theorem</strong> Suppose <span class="math inline">\(f\)</span> is a differentiable function of two or three variables. The maximum value of the directional derivative <span class="math inline">\(D_\mathbf{u}f(x)\)</span> is <span class="math inline">\(|\triangledown f(x)|\)</span> and it occurs when <span class="math inline">\(\mathbf{u}\)</span> has the same direction as the gradient vector <span class="math inline">\(\triangledown f(x)\)</span>.</p>
+<p><strong>Example</strong> If <span class="math inline">\(f(x,y)=xe^y\)</span>, find the rate of change of <span class="math inline">\(f\)</span> at the point <span class="math inline">\(P(2,0)\)</span> in the direction from <span class="math inline">\(P\)</span> to <span class="math inline">\(Q(1/2,2)\)</span>. In what direction does <span class="math inline">\(f\)</span> have the maximum rate of change? What is this maximum rate of change?
+<img src="plots/6/gradient2.png" width="50%"  style="display: block; margin: auto;" /></p>
 
 </div>
 </div>

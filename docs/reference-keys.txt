@@ -58,7 +58,6 @@ dot-product
 cross-product-not-examinable
 equations-of-lines-and-planes
 directional-derivatives-and-gradient-vector
-more-on-lagrange-multipliers
 matrices
 basic-matrix-operations
 matrix-inversion
