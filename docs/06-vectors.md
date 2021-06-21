@@ -151,7 +151,7 @@ which is the scalar projection times the unit vector in the direction of $\mathb
 **Example** Find the scalar projection and vector projection of $\mathbf{b}=\langle1,1,2\rangle$ onto $\mathbf{a}=\langle-2,3,1\rangle$.
 <img src="./plots/6/projection2.png" width="30%"  style="display: block; margin: auto;" />
 
-## Cross product (not examinable)
+## Cross product 
 
 Given two nonzero vectors $\mathbf{a}=\langle a_1,a_2,a_3\rangle$ and $\mathbf{b}=\langle b_1,b_2,b_3\rangle$, it is very useful to be able to find a nonzero vector $\mathbf{c}$ that is perpendicular to both $\mathbf{a}$ and $\mathbf{b}$. If $\mathbf{c}=\langle c_1,c_2,c_3\rangle$ is such a vector, then $\mathbf{a}\cdot\mathbf{c}=0$ and $\mathbf{b}\cdot\mathbf{c}=0$. We can solve for $\mathbf{c}=\langle c_1,c_2,c_3\rangle=\langle a_2b_3-a_3b_2,a_3b_1-a_1b_3,a_1b_2-a_2b_1\rangle$.
 This resulting vector is called the cross product of $\mathbf{a}$ and $\mathbf{b}$ and is denoted by $\mathbf{a}\times\mathbf{b}$.
@@ -374,7 +374,7 @@ which implies that the directional derivative in the direction of a unit vector 
 **Theorem** Suppose $f$ is a differentiable function of two or three variables. The maximum value of the directional derivative $D_\mathbf{u}f(x)$ is $|\triangledown f(x)|$ and it occurs when $\mathbf{u}$ has the same direction as the gradient vector $\triangledown f(x)$.
 
 **Example** If $f(x,y)=xe^y$, find the rate of change of $f$ at the point $P(2,0)$ in the direction from $P$ to $Q(1/2,2)$. In what direction does $f$ have the maximum rate of change? What is this maximum rate of change?
-<img src="./plots/6/gradient2.png" width="50%"  style="display: block; margin: auto;" />
+<img src="./plots/6/gradient2.png" width="80%"  style="display: block; margin: auto;" />
 
 
 

@@ -1326,7 +1326,7 @@ $$ g^{(n)}(x)=\left\{
 \right.  $$
 
 
-# Chapter 10 {- #ch10}
+# Chapter 5 More on integration {- #ch10}
 
 ## Exercise 10.1 {- #q10.1}
 
@@ -1515,7 +1515,7 @@ Thus\ the\ area\ is: \\
 
 ## Exercise 10.3 {- #q10.3}
 
-### Q1 
+### Q1 {- #q10.3.1} 
 
 Evaluate the integral using integration by parts
 
@@ -1528,7 +1528,7 @@ Evaluate the integral using integration by parts
 (d)$$ \int \tan^{-1}{x}\ dx $$
 
 
-### Q2 
+### Q2 {- #q10.3.2} 
 
 First make a substitution and then use integration by parts to evaluate the integral.
 
@@ -1537,16 +1537,98 @@ First make a substitution and then use integration by parts to evaluate the inte
 (b)$$ \int \frac{arcsin{(\ln{x})}}{x}\ dx $$ 
 
 
-### Q3 
+### Q3 {- #q10.3.3} 
 
 Use the integration by parts to prove the reduction formula.
 
 $$ \int \cos^n{x}\ dx = \frac{1}{n}\cos^{n-1}{x}\sin{x}+\frac{n-1}{n}\int \cos^{n-2}{x}\ dx $$
 
+## Solutions to Exercise 10.3 {- #s10.3}
+
+### Q1 {- #s10.3.1}
+
+Evaluate the integral using integration by parts
+$$ \int u\ dv = uv-\int v \ du $$
+(a)$$ Put \ u=x, \ dv=e^{-2x}\ dx;\ Then \ du=dx,\ v=-\frac{1}{2}e^{-2x} \\
+\int xe^{-2x}\ dx = -\frac{1}{2}xe^{-2x}-(\int -\frac{1}{2}e^{-2x})\ dx \\
+                        = -\frac{1}{2}xe^{-2x}-\frac{1}{4}e^{-2x}+C $$ 
+
+(b)$$ Put \ u=\ln{x}, \ dv=\sqrt{x}\ dx;\ Then \ du=\frac{1}{x}\ dx,\ v=\frac{2}{3}x^{\frac{3}{2}} \\
+\int \sqrt{x}\ln{x}\ dx = \frac{2}{3}x^{\frac{3}{2}}\ln{x}-\int \frac{2}{3}x^{\frac{3}{2}} \times \frac{1}{x}\ dx \\
+                        = \frac{2}{3}x^{\frac{3}{2}}\ln{x}-\int \frac{2}{3}x^{\frac{1}{2}}\ dx \\
+                        = \frac{2}{3}x^{\frac{3}{2}}\ln{x}-\frac{4}{9}x^{\frac{3}{2}}+C $$ 
+
+(c)$$ Put \ u=(\ln{x})^2, \ dv=dx;\ Then \ du=2\frac{\ln{x}}{x}\ dx,\ v=x \\
+\int (\ln{x})^2\ dx = x(\ln{x})^2-\int x\times(2\frac{\ln{x}}{x}) \ dx \\
+                    = x(\ln{x})^2-2\int \ln{x}\ dx \\
+As\ for\ \int \ln{x}\ dx \\
+Put \ u=\ln{x}, \ dv=dx;\ Then \ du=\frac{1}{x}\ dx,\ v=x \\
+\int \ln{x}\ dx = x\ln{x}-\int x\times(\frac{1}{x}) \ dx \\
+                    = x\ln{x}-\int 1\ dx \\
+                    = x\ln{x}-x+C' \\
+\int (\ln{x})^2\ dx = x(\ln{x})^2-2(x\ln{x}-x)+C $$ 
+
+(d)$$ Put \ u=\tan^{-1}{x}, \ dv=dx;\ Then \ du=\frac{1}{x^2+1}\ dx,\ v=x \\
+\int \tan^{-1}{x}\ dx = x\tan^{-1}{x}-\int \frac{x}{x^2+1}\ dx \\
+As\ for\ \int \frac{x}{x^2+1}\ dx \\
+Put \ t=x^2+1, \ dt=2x \ dx \\
+\int \frac{x}{x^2+1}\ dx = \frac{1}{2}\int \frac{1}{x^2+1}(2x)\ dx\\
+                         = \frac{1}{2}\int \frac{1}{t}\ dt\\
+                         = \frac{1}{2}\ln{\mid t \mid} +C' \\
+                         = \frac{1}{2}\ln{(x^2+1)} +C' \\
+\int \tan^{-1}{x}\ dx = x\tan^{-1}{x}-\frac{1}{2}\ln{(x^2+1)}+C $$
+
+
+### Q2 {- #s10.3.2}
+
+First make a substitution and then use integration by parts to evaluate the integral.
+
+(a)$$ Put \ u=x, \ dv=\frac{\cos{(\ln{x}})}{x} \ dx;\ Then \ du=dx,\ v=\sin{(\ln{x})} \\
+\int \cos{(\ln{x})}\ dx = \int x\frac{\cos{(\ln{x})}}{x}\ dx \\
+                        = x\sin{(\ln{x})}-\int \sin{(\ln{x})}\ dx \\
+As\ for\ \int \sin{(\ln{x})}\ dx \\ 
+Put \ u=x, \ dv=-\frac{\sin{(\ln{x}})}{x} \ dx;\ Then \ du=dx,\ v=\cos{(\ln{x})} \\
+\int \sin{(\ln{x})}\ dx = -\int x(-\frac{\sin{(\ln{x})}}{x})\ dx \\
+                        = -[x\cos{(\ln{x})}-(\int \cos{(\ln{x})}\ dx)] \\
+                        = -x\cos{(\ln{x})}+\int \cos{(\ln{x})}\ dx \\
+\int \cos{(\ln{x})}\ dx = x\sin{(\ln{x})}-\int \sin{(\ln{x})}\ dx \\
+                        = x\sin{(\ln{x})}+x\cos{(\ln{x})}-\int \cos{(\ln{x})}\ dx \\
+2\int \cos{(\ln{x})}\ dx = x\sin{(\ln{x})}+x\cos{(\ln{x})}\\
+\int \cos{(\ln{x})}\ dx = \frac{x\sin{(\ln{x})}+x\cos{(\ln{x})}}{2}+C\\
+                        $$ 
+
+(b)$$ Put \ t=\ln{x}, \ dt=\frac{1}{x} \ dx\\
+\int \frac{arcsin{(\ln{x})}}{x}\ dx = \int arcsin{t}\ dt \\
+Put \ u=arcsin{t}, \ dv=dt;\ Then \ du=\frac{1}{\sqrt{1-t^2}}\ dt,\ v=t \\
+\int arcsin{t}\ dt = t \arcsin{t}-\int \frac{t}{\sqrt{1-t^2}}\ dt \\
+As\ for\ \int \frac{t}{\sqrt{1-t^2}}\ dt\\
+Put\ z=1-t^2,\ dz= -2t\ dt\\
+\int \frac{t}{\sqrt{1-t^2}} dt = -\frac{1}{2}\int \frac{1}{\sqrt{1-t^2}}(-2t)\ dt \\
+= -\frac{1}{2}\int \frac{1}{\sqrt{z}}\ dz \\
+= -\sqrt{z}+C\\
+= -\sqrt{1-t^2}+C\\
+\int arcsin{t}\ dt = t \arcsin{t} + \sqrt{1-t^2}+C\\
+\int \frac{arcsin{(\ln{x})}}{x}\ dx = \ln{x} \arcsin{(\ln{x})} + \sqrt{1-(\ln{x})^2}+C\\
+ $$ 
+
+
+### Q3 {- #s10.3.3}
+
+Use the integration by parts to prove the reduction formula.
+
+$$ Put \ u=\cos^{n-1}{x}, \ dv=\cos{x}\ dx;\ Then \ du=-(n-1)\cos^{n-2}{x}\sin{x}\ dx,\ v=\sin{x} \\
+\int \cos^n{x}\ dx = \cos^{n-1}{x}\sin{x}-\int -(n-1)\cos^{n-2}{x}\sin^2{x}\ dx \\
+                   = \cos^{n-1}{x}\sin{x}+(n-1)\int \cos^{n-2}{x}\sin^2{x}\ dx \\
+                   = \cos^{n-1}{x}\sin{x}+(n-1)[\int \cos^{n-2}{x}(1-\cos^2{x})\ dx] \\
+                   = \cos^{n-1}{x}\sin{x}+(n-1)\int \cos^{n-2}{x}\ dx -(n-1) \int \cos^n{x}\ dx \\
+n \int \cos^n{x}\ dx = \cos^{n-1}{x}\sin{x}+(n-1)\int \cos^{n-2}{x}\ dx \\
+\int \cos^n{x}\ dx = \frac{1}{n}\cos^{n-1}{x}\sin{x}+\frac{n-1}{n}\int \cos^{n-2}{x}\ dx \\ $$
+
+
 
 ## Exercise 10.4 {- #q10.4}
 
-### Q1 
+### Q1 {- #q10.4.1} 
 
 Evaluate the integral.
 
@@ -1555,7 +1637,7 @@ Evaluate the integral.
 (b)$$ \int \frac{x^2+2x-1}{2x^3+3x^2-2x} \ dx $$
 
 
-### Q2 
+### Q2 {- #q10.4.2} 
 
 Make a substitution to express the integrand as a rational function and then evaluate the integral.
 
@@ -1564,21 +1646,84 @@ Make a substitution to express the integrand as a rational function and then eva
 (b)$$ \int \frac{\sin{x}}{\cos^2{x}-3\cos{x}} \ dx $$
 
 
+### Q3 {- #q10.4.3}
+
+Use integration by parts and integration of rational function to evaluate the integral.
+
+$$ \int \ln{(x^2-x+2)} \ dx $$
+
+## Solutions to Exercise 10.4 {- #s10.4}
+
+### Q1 {- #s10.4.1}
+
+Evaluate the integral.
+
+(a)$$ \int \frac{5x+1}{(2x+1)(x-1)}\ dx = \int (\frac{1}{2x+1}+\frac{2}{x-1})\ dx \\
+                                        = \int \frac{1}{2x+1}\ dx +\int \frac{2}{x-1}\ dx \\ 
+                                        = \frac{1}{2}\int \frac{1}{2x+1}\ d(2x+1) +\int \frac{2}{x-1}\ d(x-1) \\ 
+                                        = \frac{1}{2}\int \frac{1}{u}\ du +\int \frac{2}{v}\ dv \\
+                                        = \frac{1}{2}\ln{\mid u \mid} + 2\ln{\mid v \mid} +C \\
+                                        = \frac{1}{2}\ln{\mid (2x+1) \mid} + 2\ln{\mid (x-1) \mid} +C$$
+
+(b)$$ \int \frac{x^2+2x-1}{2x^3+3x^2-2x} \ dx = \int \frac{x^2+2x-1}{x(x+2)(2x-1)}\ dx \\
+                                              = \int (\frac{1}{2x}-\frac{1}{10(x+2)}+\frac{1}{5(2x-1)})\ dx \\
+                                              = \int \frac{1}{2x}\ dx-\int \frac{1}{10(x+2)}\ dx+\int\frac{1}{5(2x-1)})\ dx \\
+                                              = \frac{1}{2}\ln{\mid x \mid}-\frac{1}{10}\ln{\mid (x+2)\mid}+\frac{1}{10}\ln{\mid (2x-1)\mid} +C \\ $$
+
+
+### Q2 {- #s10.4.2}
+
+Make a substitution to express the integrand as a rational function and then evaluate the integral.
+
+(a)$$ Put\ t=\sqrt{x-1}, x= t^2+1, dt= \frac{1}{2\sqrt{x-1}}\ dx \\
+\int \frac{1}{x\sqrt{x-1}}\ dx = \int \frac{2}{x}\frac{1}{2\sqrt{x-1}}\ dx \\
+                               = \int \frac{2}{t^2+1}\ dt \\
+                               = 2\arctan{t} +C \\
+                               = 2\arctan{(\sqrt{x-1})}+C \\$$
+
+(b)$$ Put\ t=\cos{x}, dt= -\sin{x}\ dx \\
+\int \frac{\sin{x}}{\cos^2{x}-3\cos{x}} \ dx = -\int \frac{-\sin{x} \ dx}{\cos^2{x}-3\cos{x}} \\
+                                             = -\int \frac{1}{t^2-3t}\ dt \\
+                                             = -\int \frac{1}{t(t-3)}\ dt \\
+                                             = -\frac{1}{3}\int (\frac{1}{t-3} - \frac{1}{t})\ dt \\
+                                             = -\frac{1}{3}\int \frac{1}{t-3}\ dt + \frac{1}{3}\int \frac{1}{t}\ dt \\
+                                             = -\frac{1}{3}\ln{\mid (t-3) \mid} +\frac{1}{3}\ln{\mid t \mid}+C \\
+                                             =  \frac{1}{3}\ln{\mid \cos{x} \mid}-\frac{1}{3}\ln{\mid (\cos{x}-3) \mid}+C \\ $$
+
+
 ### 
 
 Q3 Use integration by parts and integration of rational function to evaluate the integral.
 
-$$ \int \ln{(x^2-x+2)} \ dx $$
+Answer:
+
+$$ Put \ u=\ln{(x^2-x+2)}, \ dv=dx;\ Then \ du=\frac{2x-1}{x^2-x+2}\ dx,\ v=x \\
+\int \ln{(x^2-x+2)} \ dx = x\ln{(x^2-x+2)}- \int \frac{x(2x-1)}{x^2-x+2}\ dx \\
+As\ for\ \int \frac{x(2x-1)}{x^2-x+2}\ dx \\
+\int \frac{x(2x-1)}{x^2-x+2}\ dx = \int \frac{2(x^2-x+2)+x-4}{x^2-x+2}\ dx \\
+                                 = \int (2+\frac{x-4}{x^2-x+2})\ dx \\
+                                 = \int [2+\frac{2x-1}{2(x^2-x+2)}-\frac{7}{2(x^2-x+2)}]\ dx \\
+                                 = \int 2\ dx+\int \frac{2x-1}{2(x^2-x+2)}\ dx - \int \frac{7}{2(x^2-x+2)}\ dx \\
+                                 = 2x + \int \frac{1}{2(x^2-x+2)}\ d(x^2-x+2) - \frac{7}{2}\int \frac{1}{(x-\frac{1}{2})^2+\frac{7}{4}}\ dx \\
+                                 = 2x+\frac{1}{2}\ln{\mid x^2-x+2 \mid}-\int\frac{7}{2}\frac{1}{(x-\frac{1}{2})^2+ \frac{7}{4}}\ dx\\
+As\ for\ \int \frac{1}{(x-\frac{1}{2})^2+ \frac{7}{4}}\ dx\\
+\int \frac{1}{x^2+a^2} = \frac{1}{a}arctan{\frac{x}{a}}+C \\
+\int \frac{1}{(x-\frac{1}{2})^2+ \frac{7}{4}}\ dx = \frac{2}{\sqrt{7}}\arctan{\frac{x-\frac{1}{2}}{\frac{\sqrt{7}}{2}}}+C\\
+= \frac{2}{\sqrt{7}}\arctan{\frac{2x-1}{\sqrt{7}}}+C\\
+\int \frac{x(2x-1)}{x^2-x+2}\ dx = 2x+\frac{1}{2}\ln{\mid x^2-x+2 \mid}-\sqrt{7}\arctan{\frac{2x-1}{\sqrt{7}}}+C\\
+\int \ln{(x^2-x+2)} \ dx = x\ln{(x^2-x+2)}-2x-\frac{1}{2}\ln{\mid x^2-x+2 \mid}+\sqrt{7}\arctan{\frac{2x-1}{\sqrt{7}}}+C \\
+$$
+
 
 
 ## Exercise 10.5 {- #q10.5}
 
-### Q1 
+### Q1 {- #q10.5.1}
 
 if a birth rate of a population is $$ b(t)=2200+52.3t+0.74t^2 $$ people per year and death rate is $$ d(t)=1460+28.8t$$ people per year,find the area between these curves for $$ 0\leq t \leq 10  $$What does this area represent? 
 
 
-### Q2 
+### Q2 {- #q10.5.2}
 
 (a)Prove that if f is a continuous function, then
 $$ \int_0^a f(x)\ dx = \int_0^a f(a-x)\ dx   $$
@@ -1587,7 +1732,174 @@ $$ \int_0^a f(x)\ dx = \int_0^a f(a-x)\ dx   $$
 $$ \int_0^{\pi/2} \frac{\sin^{n}{x}}{\sin^{n}{x}+\cos^{n}{x}} dx = \frac{\pi}{4}  $$
 for all positive numbers n.
 
-### Q3
+### Q3 {- #q10.5.3}
 
 if n is a positive integer,prove that
 $$ \int_0^1 (\ln{x})^n\ dx=(-1)^{n}n! $$
+
+## Solutions to Exercise 10.5 {- #s10.5}
+
+### Q1 {- #s10.5.1}
+
+if a birth rate of a population is $$ b(t)=2200+52.3t+0.74t^2 $$ people per year and death rate is $$ d(t)=1460+28.8t$$ people per year,find the area between these curves for $$ 0\leq t \leq 10  $$What does this area represent? 
+
+Answer:
+
+$$ \int_0^{10}[b(t)-d(t)]\ dt = \int_0^{10}[(2200+52.3t+0.74t^2)-(1460+28.8t)]\ dt \\
+= \int_0^{10}(740+23.5t+0.74t^2)\ dt \\
+= (740t+11.75t^2+\frac{0.74}{3}t^3)\mid_0^{10} \\
+\approx 8822 $$
+
+The area represents  an increase in the number of people compared to last year.
+
+
+### Q2 {- #s10.5.2}
+
+(a)Prove that if f is a continuous function, then $$\int_0^a f(x)\ dx = \int_0^a f(a-x)\ dx $$
+
+Answer:
+
+$$ Put\ t=a-x,then\ x=a-t.\ dx=-dt. \ when\ x=0,t=a;\ x=a,t=0.\\ 
+\int_0^a f(x)\ dx = \int_a^0 f(a-t)\ (-dt)\\
+                  = \int_0^a f(a-t)\ dt \\
+                  = \int_0^a f(a-x)\ dx   $$
+
+(b)Use part(a) to show that
+$$ \int_0^{\pi/2} \frac{\sin^{n}{x}}{\sin^{n}{x}+\cos^{n}{x}} dx = \frac{\pi}{4}  $$
+for all positive numbers n.
+
+Answer:
+
+$$  As\ proved\ in\ (a), \int_0^a f(x)\ dx = \int_0^a f(a-x)\ dx \\
+When\ a=\frac{\pi}{2},\ f(x)=\frac{\sin^{n}{x}}{\sin^{n}{x}+\cos^{n}{x}},\\
+f(a-x)=\frac{\sin^{n}{(\frac{\pi}{2}-x)}}{\sin^{n}{(\frac{\pi}{2}-x)}+\cos^{n}{(\frac{\pi}{2}-x)}}\\
+= \frac{\cos^{n}{x}}{\cos^{n}{x}+\sin^{n}{x}}\\
+\int_0^{\pi/2} \frac{\sin^{n}{x}}{\sin^{n}{x}+\cos^{n}{x}} dx=\int_0^{\pi/2} \frac{\cos^{n}{x}}{\cos^{n}{x}+\sin^{n}{x}}\ dx \\
+2\int_0^{\pi/2} \frac{\sin^{n}{x}}{\sin^{n}{x}+\cos^{n}{x}} dx=\int_0^{\pi/2} \frac{\sin^{n}{x}}{\sin^{n}{x}+\cos^{n}{x}} dx+\int_0^{\pi/2} \frac{\cos^{n}{x}}{\cos^{n}{x}+\sin^{n}{x}}\ dx \\
+=\int_0^{\pi/2} \frac{\sin^{n}{x}+\cos^{n}{x}}{\sin^{n}{x}+\cos^{n}{x}} dx \\
+=\int_0^{\pi/2} 1 \ dx\\
+= x\mid_0^{\pi/2}\\
+=\pi/2\\
+\int_0^{\pi/2} \frac{\sin^{n}{x}}{\sin^{n}{x}+\cos^{n}{x}} dx = \frac{\pi}{4} \\$$
+
+
+### Q3 {- #s10.5.3}
+
+if n is a positive integer,prove that
+$$ \int_0^1 (\ln{x})^n\ dx=(-1)^{n}n! $$
+
+Answer:
+
+$$ Use\ the\ integration\ by\ parts\ for\ many\ times \\
+\int_0^1 (\ln{x})^n\ dx=x(\ln{x})^n\mid_0^1-\int_0^1 x [n(\ln{x})^{n-1}\frac{1}{x}]\ dx \\
+= [1(\ln{1})^n-0]-\int_0^1 n(\ln{x})^{n-1}\ dx \\
+= 0-n\int_0^1 (\ln{x})^{n-1}\ dx \\
+= -nx(\ln{x})^{n-1}\mid_0^1+n \int_0^1 x [(n-1)(\ln{x})^{n-2}\frac{1}{x}]\ dx \\
+= 0+n(n-1)\int_0^1 (\ln{x})^{n-2}\ dx \\
+= n(n-1)x(\ln{x})^{n-2}\mid_0^1-n(n-1) \int_0^1 x [(n-2)(\ln{x})^{n-3}\frac{1}{x}]\ dx \\
+= 0 - n(n-1)(n-2)\int_0^1 (\ln{x})^{n-3}\ dx \\
+= .....\\
+= (-1)^{n}n!\int_0^1 (\ln{x})^0\ dx \\
+= (-1)^{n}n!\int_0^1 1\ dx \\
+= (-1)^{n}n!x\mid_0^1  \\
+= (-1)^{n}n! $$
+
+
+# Chapter 6 Vectors {- #ch6}
+
+## Exercise 6.1 {- #q6.1}
+
+### Q1 {- #q6.1.1}
+
+Show that the equation represents a sphere, and find its center and radius. 
+
+$$ 
+(a) x^2+y^2+z^2-2x-4y+8z=15 \\
+(b) 2x^2+2y^2+2z^2=8x-24z+1 $$
+
+### Q2 {- #q6.1.2}
+
+Find a+b,4a+2b,|a|, and |a-b|.(a, b, i, j are vectors)
+
+$$ 
+(a) a=(8,1,-4),\ b=(5,-2,1)\\
+(b) a=5i+3j,\ b=-i-2j
+$$
+
+### Q3 {- #q6.1.3}
+
+Find the angle between the vectors a=(2,2,-1) and b=(5,-3,2).
+
+
+### Q4 {- #q6.1.4}
+
+If a=(1,3,4) and b=(2,7,-5), find the cross product a × b.
+
+## Solutions to Exercise 6.1 {- #s6.1}
+
+### Q1 {- #s6.1.1}
+
+Show that the equation represents a sphere, and find its center and radius. 
+
+(a) 
+$$ x^2+y^2+z^2-2x-4y+8z=15 \\
+(x^2-2x+1)+(y^2-4y+4)+(z^2+8z+16)=15+1+4+16 \\
+(x-1)^2+(y-2)^2+(z+4)^2=36 \\
+the\ center\ is\ (1,2,-4),\ and \ radius \ is \sqrt{36}=6.
+$$
+(b) 
+$$2x^2+2y^2+2z^2=8x-24z+1 \\
+ x^2+y^2+z^2=4x-12z+\frac{1}{2} \\
+ (x^2-4x+4)+y^2+(z^2+12z+36)=\frac{1}{2}+4+36 \\
+ (x-2)^2+(y-0)^2+(z+6)^2=\frac{81}{2}\\
+ the\ center\ is\ (2,0,-6),\ and \ radius \ is \sqrt{\frac{81}{2}}=
+ \frac{9}{\sqrt{2}}.
+ $$
+
+### Q2 {- #s6.1.2}
+
+Find a+b,4a+2b,|a|, and |a-b|.(a, b, i, j are vectors)
+
+(a) $$  \vec a=(8,1,-4),\ \vec b=(5,-2,1)\\ $$
+
+$$ \vec a +\vec b = (8+5,1-2,-4+1) = (13,-1,-3)\\
+\vec 4a +\vec 2b = (4\times 8+2\times5,4\times1+2\times(-2),4\times(-4)+2\times1) = (42,0,-14)\\
+\mid \vec a \mid = \sqrt{8^2+1^2+(-4)^2} = \sqrt{81} = 9 \\
+\vec a - \vec b = (8-5,1-(-2),-4-1) = (3,3,-5)\\
+\mid \vec a - \vec b \mid = \sqrt{3^2+3^2+(-5)^2} = \sqrt{43} \\
+$$
+
+(b) $$ \vec a=5\vec i+3\vec j,\ \vec b=-\vec i-2\vec j$$
+
+$$ \vec a +\vec b =(5\vec i+3\vec j)+( -\vec i-2\vec j)=(5-1)\vec i + (3-2) \vec j = 4\vec i +\vec j \\
+\vec 4a +\vec 2b = 4(5\vec i+3\vec j)+2(-\vec i-2\vec j) = 18\vec i+8\vec j \\
+\mid \vec a \mid = \sqrt{5^2+3^2}=\sqrt{34}\\
+\vec a - \vec b = (5\vec i+3\vec j)-( -\vec i-2\vec j)=6\vec i +5\vec j \\
+\mid \vec a - \vec b \mid = \sqrt{6^2+5^2} = \sqrt{61}
+ $$
+
+
+### Q3 {- #s6.1.3}
+
+Find the angle between the vectors a=(2,2,-1) and b=(5,-3,2).
+
+$$ \mid \vec a \mid = \sqrt{2^2+2^2+(-1)^2}=3 \\
+\mid \vec b \mid = \sqrt{5^2+(-3)^2+2^2}=\sqrt{38} \\
+\vec a \times \vec b = 2(5)+2(-3)+(-1)2=2 \\
+\cos \theta = \frac{\vec a \vec b}{\mid \vec a \mid \mid \vec b \mid}=\frac{2}{3\sqrt{38}} \\
+Thus\ the\ angle\ between\ \vec a\ and\ \vec b\ is \\
+\theta = \cos^{-1}{(\frac{2}{3\sqrt{38}})} $$
+
+### Q4 {- #s6.1.4}
+
+If a=(1,3,4) and b=(2,7,-5), find the cross product a × b.
+
+$$\vec a \times \vec b =
+\begin{Vmatrix}
+\vec i& \vec j & \vec k\\1&3&4\\2&7&-5\\\end{Vmatrix} \\
+= \begin{Vmatrix}3&4\\7&-5\\\end{Vmatrix} \vec i - \begin{Vmatrix}1&4\\2&-5\\\end{Vmatrix} \vec j + \begin{Vmatrix}1&3\\2&7\\\end{Vmatrix} \vec k \\
+= (-15-28)\vec i - (-5-8)\vec j + (7-6)\vec k \\
+= -43 \vec i +13\vec j+\vec k
+ $$
+
+
