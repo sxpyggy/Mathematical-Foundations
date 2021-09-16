@@ -18,7 +18,7 @@ editor_options:
 
 This is the website of Mathematical Foundations. We create this website  to 
 
-- Summarize the key concepts of each chapter.
+- Summarize the key concepts of each chapter..
 
 - Provide the solutions to the selected questions of each chapter.
 
