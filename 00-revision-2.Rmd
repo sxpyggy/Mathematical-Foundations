@@ -1,3 +1,4 @@
+
 # (PART) 💡 LECTURE NOTES {-}
 
 # Revision and Warm-up {-}
@@ -169,6 +170,30 @@ $$
 
 we can use *elimination or substitution*.
 
+# Applications {-}
 
+## Supply and demand analysis {-}
 
+**Modeling** The creation of a piece of mathematical theory which represents (a simplification of) some aspect of practical economics.
 
+**Demand function** A relationship between the quantity demanded $Q_d$ and various factors that affect demand, including price $P$.
+
+**Supply function** A relationship between the quantity supplied $Q_s$ and various factors that affect supply, including price $P$.
+
+**Transpose a formula** The rearrangement of a formula to make one of the other letters the subject.
+
+## Profit analysis {-}
+
+**Total cost** The sum of the total variable cost $TVC$ and fixed costs $FC$: $TC = TVC + FC$.
+
+**Fixed costs** Total costs that are independent of output.
+
+**Variable costs** Total costs that change according to the amount of output produced.
+
+**Average cost** Total cost per unit of output: $AC = TC/Q$.
+
+**Rectangular hyperbola (L-shaped curve)** A hyperbola with horizontal and vertical asymptotes bending like the letter L, such as the function $f(x)=a+b/x$.
+
+**Total revenue** A firm’s total earnings from the sales of a good: $TR = PQ$.
+
+**Profit** Total revenue minus total cost: $\pi = TR − TC$.
